@@ -1,0 +1,55 @@
+\version "2.16.2"
+\header {
+  title = ""
+  composer = "Rachael"
+  poet = \markup \concat { { E\flat\sub{2} A\flat\sub{2} D\sub{3} G\sub{3} B\flat\sub{3} E\flat\sub{4} } }
+  tagline = \markup {
+    Engraved at
+    \simple #(strftime "%Y-%m-%d" (localtime (current-time)))
+    with \with-url #"http://lilypond.org/"
+    \line { LilyPond \simple #(lilypond-version) (http://lilypond.org/) }
+  }
+}
+\layout { \override Voice.StringNumber #'stencil = ##f }
+upper = {
+  \time 4/4
+  \tempo 4 = 70
+  \key ees \major
+  \voiceOne
+  \tabFullNotation
+
+}
+lower = {
+  \key ees \major
+  \voiceTwo
+  \tabFullNotation
+
+}
+
+\score {
+  <<
+    \new StaffGroup = "tab with traditional" <<
+      \new Staff = "guitar traditional" <<
+        \clef "treble_8"
+        \context Voice = "upper" \upper
+        \context Voice = "lower" \lower
+      >>
+      \new TabStaff = "guitar tab" <<
+\set Staff.stringTunings = \stringTuning <ees, aes, d g bes ees'>
+        \new TabVoice = "upper" \upper
+	\new TabVoice = "lower" \lower
+      >>
+    >>
+  >>
+    \layout {
+    \context {
+    \TabVoice \consists "New_fingering_engraver" 
+    }
+    }
+    \midi {}
+
+  
+}
+\paper {
+indent = 0 
+}

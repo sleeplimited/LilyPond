@@ -1,0 +1,2 @@
+@image{stringstopping-1}
+@c eof

@@ -1,0 +1,8 @@
+\version "2.16.2"
+
+\new TabStaff {
+\tabFullNotation
+
+<c' e>8 <b d>
+
+}

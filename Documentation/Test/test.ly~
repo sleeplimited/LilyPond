@@ -1,0 +1,10 @@
+\version "2.16.2"
+
+\new TabStaff {
+    \tabFullNotation
+    \stemDown
+    \set doubleSlurs = ##t
+    \set Staff.stringTunings = \stringTuning <c, g, d g b c'>
+    \override LaissezVibrerTie #'extra-offset = #'(-2.0 . 0.0)
+    <c'^\laissezVibrer e^\laissezVibrer c^\laissezVibrer f,^\laissezVibrer>8\2\4\5\6( <b d>\2\4)
+}

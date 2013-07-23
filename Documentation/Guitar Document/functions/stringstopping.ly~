@@ -1,0 +1,90 @@
+upper = {
+  \numericTimeSignature
+  \time 4/4
+  \key ees \major
+  \voiceOne
+  \tabFullNotation
+
+}
+lower = {
+  \key ees \major
+  \voiceTwo
+  \tabFullNotation
+
+}
+tab = {
+  \key ees \major
+  \numericTimeSignature
+  \time 4/4
+  \override Beam #'damping = #100000
+  \tabFullNotation
+
+}
+
+dynamicsone = {
+  }
+
+dynamicstwo = {
+  }
+
+dynamicsthree = {
+
+
+  }
+
+dynamicsfour = {
+
+  }
+
+dynamicsfive = {
+
+  }
+
+dynamicssix = {
+
+  }
+
+sixstrlhfinger = {
+
+  }
+
+
+    
+\score {
+  <<
+    \new StaffGroup = "tab with traditional" <<
+      \new Staff = "guitar traditional" <<
+        \clef "treble_8"
+	\context Voice = "upper" \upper
+        \context Voice = "lower" \lower
+      >>
+      \new TabStaff = "guitar tab" <<
+	\set Staff.stringTunings = \stringTuning <ees, aes, d g bes ees'>
+        \new TabVoice = "tab" \tab
+	\new Dynamics = "dynamicsone" \dynamicsone
+	\new Dynamics = "dynamicstwo" \dynamicstwo
+	\new Dynamics = "dynamicsthree" \dynamicsthree
+	\new Dynamics = "dynamicssix" \dynamicssix
+	\new Dynamics = "sixstrlhfinger" \sixstrlhfinger
+>>
+    >>
+  >>
+  \header {
+    piece = \markup { \bold "String Stopping" }
+    }
+    \layout {
+    \context { 
+    }
+    }
+    \midi {}
+
+
+}
+  \markup {
+\justify
+      \italic  {
+
+}
+
+	    }
+

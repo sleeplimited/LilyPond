@@ -1,0 +1,11 @@
+\version "2.16.2"
+
+tick = {
+  \once \override TabNoteHead #'stencil = #ly:text-interface::print
+  \once \override TabNoteHead #'text = \markup { \musicglyph #"noteheads.s0la"
+}
+}
+
+\new TabStaff {
+  \tabFullNotation
+  c8 \tick c8 c8 c8 }

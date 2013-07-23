@@ -1,0 +1,4 @@
+\once \override Voice.NoteHead #'style = #'harmonic-mixed  <fis''
+b''>2 \ottava #0 b8\rest \deadNote d16 \grace f8 \glissando fis16
+\deadNote d16 d16 \deadNote a,16 b,16 |
+
