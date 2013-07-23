@@ -16,7 +16,7 @@ oneStrFlick = \markup { \rotate #180
     \raise #0.4
     \fontsize #-3 
     \arrow-head #Y #DOWN ##f
-  
+  }  
   }
 twoStrFlick = \markup { \rotate #180
   \center-column {
