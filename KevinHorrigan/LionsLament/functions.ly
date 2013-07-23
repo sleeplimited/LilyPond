@@ -189,6 +189,60 @@ lhguidethree = \markup { \fontsize #-5 \circle \pad-markup #0.2 "-3" }
 lhguidefour = \markup { \fontsize #-5 \circle \pad-markup #0.2 "-4" }
 lhguidethumb = \markup { \fontsize #-5 \circle \pad-markup #0.2 "-t" }
 %% TODO add left-hand fingering with Text-Spanners
+  % contributed by harm6
+  % Code by David Nalesnik and Thomas Morley (v2.16.0)
+  % => http://lists.gnu.org/archive/html/lilypond-user/2011-10/msg00500.html
+  % => http://lists.gnu.org/archive/html/lilypond-user/2012-11/msg00567.html
+  % ==========================
+  % Modified 2013 by Rachael Thomas Carlson
+  % Added a slight bracket at the end of the function
+#(define (text-spanner-start-stop mus)
+    (let ((elts (ly:music-property mus 'elements)))
+    (make-music 'SequentialMusic 'elements 
+       (append  
+          (list (make-music 'TextSpanEvent 'span-direction -1))
+          (reverse (cdr (reverse elts)))
+          (list (make-music 'TextSpanEvent 'span-direction 1))
+          (list (last elts))))))
+
+barre =
+#(define-music-function (parser location strg music)(string? ly:music?)
+   (let ((arg (string-append "B " strg)))
+      #{
+         \override TextSpanner #'(bound-details left text) = $arg
+         #(text-spanner-start-stop music)
+      #}))
+      
+lhSpannerDown =
+#(define-music-function (parser location strg music)
+   (string? ly:music?)
+  #{
+     \once \override Voice.TextSpanner #'style = #'solid
+     \once \override Voice.TextSpanner #'font-size = #-5
+     \once \override TextSpanner #'(bound-details left stencil-align-dir-y) = #CENTER
+     \once \override TextSpanner #'(bound-details right text) = \markup {
+     \draw-line #'(0 . 0.5) }
+     \once \override TextSpanner #'(bound-details left text) = \markup {
+     \circle \pad-markup #0.2 $strg }
+  
+     #(text-spanner-start-stop music)
+  #})
+
+lhSpannerUp =
+#(define-music-function (parser location strg music)
+   (string? ly:music?)
+  #{
+     \once \override Voice.TextSpanner #'style = #'solid
+     \once \override Voice.TextSpanner #'font-size = #-5
+     \once \override TextSpanner #'(bound-details left stencil-align-dir-y) = #CENTER
+     \once \override TextSpanner #'(bound-details right text) = \markup {
+     \draw-line #'(0 . -0.5) }
+     \once \override TextSpanner #'(bound-details left text) = \markup {
+     \circle \pad-markup #0.2 $strg }
+  
+     #(text-spanner-start-stop music)
+  #})
+
 %% Partial barreing
 
   % The below, invented by Mats Bengtsson, creates left and right brackets
@@ -377,4 +431,9 @@ mkMove = #(define-music-function
         (parser location x y)
         ( number? number? )
         #{ \once \override TextScript #'extra-offset = #(cons x y)
+        #})
+tsMove = #(define-music-function
+        (parser location x y)
+        ( number? number? )
+        #{ \once \override TextSpanner #'extra-offset = #(cons x y)
         #})

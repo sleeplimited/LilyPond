@@ -714,13 +714,31 @@ tab = {
   \override Staff.Stem #'stemlet-length = #0.75
   \override BreathingSign #'extra-offset = #'(0.5 . -2.0)
   % Bar 1
-  <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick d16 \grace f8 \glissando fis16 \tick d16
-  d16 \tick a,16 b,16 |
+  <a,, a,>8-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp [ 
+  \leftBracketTwo <b,, b,>-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp ] 
+  \tick <a,, a,>16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
+  \tick <a,, a,>16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi 
+  <a,, a,>8-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp
+  \leftBracketTwo <b,, b,>-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
+  \tick d16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
+  \grace f8-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi 
+  \glissando fis16 \tick d16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
+  d16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi 
+  \tick a,16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
+  b,16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi |
   % Bar 2
-  <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick a,16 \grace c8 \glissando cis16 \tick
-  a,16 a,16 \tick a,16 b,16 |
+  <a,, a,>8-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp [ 
+  \leftBracketTwo <b,, b,>-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi ] 
+  \tick <a,, a,>16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
+  \tick <a,, a,>16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi 
+  <a,, a,>8-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
+  \leftBracketTwo <b,, b,>-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
+  \tick a,16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
+  \grace c8-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi
+  \glissando cis16 \tick a,16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
+  a,16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi 
+  \tick a,16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
+  b,16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi |
   % Bar 3
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
   a,>8 \leftBracketTwo <b,, b,> \tick d16 \grace f8 \glissando fis16 \tick d16
@@ -1154,11 +1172,16 @@ dynamicsthree = {
 }
 %% DynamicsFour
 dynamicsfour = {
-
+  % Bar 1
+  s2 s8 s16 \tsMove #0 #15 \lhSpannerUp "3" { \grace s8 s16 } s4 |
 }
 %% DynamicsFive
 dynamicsfive = {
-
+  % Bar 1
+  s8 s8_\lhone s4 s4_\lhone s8. s16_\lhone |
+  % Bar 2
+  s8 s8_\lhone s4 s8._\lhone \tsMove #0 #15 \lhSpannerUp "3" { \grace s8 s16 }
+  s8. s16_\lhone |
 }
 %% DynamicsSix
 dynamicssix = {
@@ -1434,6 +1457,8 @@ sixstrlhfinger = {
       \new Dynamics = "dynamicsone" \dynamicsone
       \new Dynamics = "dynamicstwo" \dynamicstwo
       \new Dynamics = "dynamicsthree" \dynamicsthree
+      \new Dynamics = "dynamicsfour" \dynamicsfour 
+      \new Dynamics = "dynamicsfive" \dynamicsfive  
       \new Dynamics = "dynamicssix" \dynamicssix
       \new Dynamics = "sixstrlhfinger" \sixstrlhfinger
     >>
