@@ -776,19 +776,24 @@ tab = {
   #'transparent = ##t r16^\rhp[ b,,8.]  b,,4^\rhp \once \override Rest
   #'transparent = ##t r8^\rhp[  b,,8] |
   % Bar 10
-  <b,, e'>4^\rhp \once \override Rest #'transparent = ##t r16^\rhp[ <b,, b\2>~
-  < \fakeSlur b\2  dis'\2> 
-  \once \override TextScript #'extra-offset = #'(-0.4 . -0.6)
-  e'^\rha] b,,^\rhp dis'~ < \fakeSlur dis'\2 b\2>8 <fis b>8\4\3^\rhm b |
+  <b,, e'>4-\mkTweak #-1 #-6.3 ^\rhp -\mkTweak #-0.4 #-0.6 ^\rha \once
+  \override Rest #'transparent = ##t r16^\rhp[ <b,, b\2>-\mkTweak #-0.4 #-1
+  ^\rhm ~ < \fakeSlur b\2  dis'\2> \once \override TextScript #'extra-offset =
+  #'(-0.4 . -0.6) e'^\rha] b,,^\rhp dis'-\mkTweak #-0.4 #-1 ^\rhm ~ < \fakeSlur
+  dis'\2 b\2>8 <fis b>8\4\3^\rhm b8-\mkTweak #-0.4 #-1 ^\rhi |
   
   % Bar 11
   \once \override TextScript #'extra-offset = #'(-1.0 . -6.3) <e a a,
   a,,>4\4\3\5\6^\rhp \once \override Rest #'transparent = ##t r16^\rhp[ a,,8.]
   a,,4^\rhp \once \override Rest #'transparent = ##t r8^\rhp[ a,,8] |
   % Bar 12
-  <a,, b>16^\rhp~ < \fakeSlur b\2 cis'\2>8 b16 \once \override Rest
-  #'transparent = ##t r8^\rhp[ <a,, a>8] <a,, b>16~ < \fakeSlur b\2 cis'\2>8
-  b16 \once \override Rest #'transparent = ##t r8^\rhp[ <a,, a>8] |
+  <a,, b\2 \fakeSlur d'\2>16-\mkTweak #-0.4 #-1 ^\rhp -\mkTweak #-0.4 #-1 ^\rhm ~ 
+  < \fakeSlur d'\2 cis'\2>8~ < \fakeSlur cis'\2 b\2>16 \once \override Rest
+  #'transparent = ##t r8^\rhp[ <a,, a>8^\rhi] <a,, b\2 \fakeSlur
+  d'\2>16-\mkTweak #1 #1 ^\rhm -\mkTweak #0 #0 ^\rhp ~ <
+  \fakeSlur d'\2 cis'\2>8~
+  < \fakeSlur cis'\2 b\2>16 \once \override Rest #'transparent = ##t r8^\rhp[
+  <a,, a>8^\rhi] |
   % Bar 13
   \override BreathingSign #'extra-offset = #'(-0.2 . -2.0)
   \leftBracketTwo <b,, b, fis b b>4\6\5\4\3\2
@@ -803,12 +808,13 @@ tab = {
 
   % Bar 15
   \once \override TextScript #'extra-offset = #'(-1.0 . -6.3) <e a a,
-  a,,>4\4\3\5\6 \once \override Rest #'transparent = ##t r16[ a,,8.] <a,, b>16~
+  a,,>4\4\3\5\6 \once \override Rest #'transparent = ##t r16[ a,,8.] <a,,
+  b>16^\rhm ~
   <\fakeSlur b\2 \dotUp cis'\2>8. \once \override Rest #'transparent = ##t r8[
   a,,8] |
   % Bar 16
-  <a,, b>16~ <\fakeSlur b\2 cis'\2>8 b16 \once \override Rest #'transparent =
-  ##t r8[ <a,, a>8] <a,, b>16~ <\fakeSlur b\2 cis'\2>8 b16 \once \override Rest
+  <a,, b\2 \fakeSlur d'\2>16~ <\fakeSlur d'\2 cis'\2>8~ <\fakeSlur cis'\2 b\2>16 \once \override Rest #'transparent =
+  ##t r8[ <a,, a>8] <a,, b\2 \fakeSlur d'\2>16~ <\fakeSlur d'\2 cis'\2>8~ <\fakeSlur cis'\2 b\2>16 \once \override Rest
   #'transparent = ##t r8[ <a,, a>8] |
   % Bar 17
   \override TextScript #'extra-offset = #'(-1.0 . -6.3)
@@ -827,9 +833,10 @@ tab = {
   \once \override Rest #'transparent = ##t r16[ a,,8.] a,,4 \once \override
   Rest #'transparent = ##t r8[ a,,8] |
   % Bar 20
-  <a,, b>16~ <\fakeSlur b\2 cis'\2>8 b16 \once \override Rest #'transparent =
-  ##t r8[ <a,, a>8] <a,, b>16~ <\fakeSlur b\2 cis'\2>8 e'16 \once \override
-  Rest #'transparent = ##t r8[ e8] | 
+  <a,, b\2 \fakeSlur d'\2>16~ <\fakeSlur d'\2 cis'\2>8~ <\fakeSlur cis'\2 b\2>16 \once \override Rest #'transparent =
+  ##t r8[ <a,, a>8] <a,, b>16~ <\fakeSlur b\2 cis'\2>8 e'16-\mkTweak #-0.4 #-0.6
+  ^\rha \once \override
+  Rest #'transparent = ##t r8[ e8-\mkTweak #-0.4 #-4 ^\rhi ] | 
   %%
   %% Bar 21
   %%
@@ -1200,7 +1207,7 @@ dynamicssix = {
   s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
   s16_\onestrdwnstrm s16_\onestrupstrm 
-  \override TextScript #'extra-offset = #'(-1.0 . 18.5)
+  \override TextScript #'extra-offset = #'(-1.0 . 8.5)
   % Bar 3
   s8_\twostrdwnstrm s8_\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
@@ -1246,7 +1253,7 @@ dynamicssix = {
   % Bar 9
   s1 
   % Bar 10
-  s2. s4_\twostrdwnstrm
+  s2. s8_\twoStrFlick s8
   % Bar 11
   s1
   % Bar 12
