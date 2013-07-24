@@ -88,6 +88,7 @@ sixStrFlick = \markup { \rotate #180
   }
 
 }
+
 %% Down Strums 1 arrow head
 onestrdwnstrm = \markup { \rotate #180 
   \center-column {
@@ -175,19 +176,27 @@ onestrupstrm = \markup {
     \arrow-head #Y #DOWN ##t
     }
   }
+%% String-Dampening
+strDampening = { 
+  \once \override TextSpanner #'style = #'line
+  \once \override TextSpanner #'thickness = #8
+  \once \override TextSpanner #'color = #(x11-color "plum")
+  \once \override TextSpanner #'layer = #-1
+}
+
 % Left Hand Articulations
 %% 1 2 3 4 t
-lhone = \markup { \fontsize #-5 \circle \pad-markup #0.2 "1" }
-lhtwo = \markup { \fontsize #-5 \circle \pad-markup #0.2 "2" }
-lhthree = \markup { \fontsize #-5 \circle \pad-markup #0.2 "3" }
-lhfour = \markup { \fontsize #-5 \circle \pad-markup #0.2 "4" }
-lhthumb = \markup { \fontsize #-5 \circle \pad-markup #0.2 "t" }
+lhone = \markup { \fontsize #-5 \circle \pad-markup #0.1 "1" }
+lhtwo = \markup { \fontsize #-5 \circle \pad-markup #0.1 "2" }
+lhthree = \markup { \fontsize #-5 \circle \pad-markup #0.1 "3" }
+lhfour = \markup { \fontsize #-5 \circle \pad-markup #0.1 "4" }
+lhthumb = \markup { \fontsize #-5 \circle \pad-markup #0.1 "t" }
 %% Guide fingers
-lhguideone = \markup { \fontsize #-5 \circle \pad-markup #0.2 "-1" }
-lhguidetwo = \markup { \fontsize #-5 \circle \pad-markup #0.2 "-2" }
-lhguidethree = \markup { \fontsize #-5 \circle \pad-markup #0.2 "-3" }
-lhguidefour = \markup { \fontsize #-5 \circle \pad-markup #0.2 "-4" }
-lhguidethumb = \markup { \fontsize #-5 \circle \pad-markup #0.2 "-t" }
+lhguideone = \markup { \fontsize #-5 \circle \pad-markup #0.1 "-1" }
+lhguidetwo = \markup { \fontsize #-5 \circle \pad-markup #0.1 "-2" }
+lhguidethree = \markup { \fontsize #-5 \circle \pad-markup #0.1 "-3" }
+lhguidefour = \markup { \fontsize #-5 \circle \pad-markup #0.1 "-4" }
+lhguidethumb = \markup { \fontsize #-5 \circle \pad-markup #0.1 "-t" }
 %% TODO add left-hand fingering with Text-Spanners
   % contributed by harm6
   % Code by David Nalesnik and Thomas Morley (v2.16.0)
@@ -223,7 +232,7 @@ lhSpannerDown =
      \once \override TextSpanner #'(bound-details right text) = \markup {
      \draw-line #'(0 . 0.5) }
      \once \override TextSpanner #'(bound-details left text) = \markup {
-     \circle \pad-markup #0.2 $strg }
+     \circle \pad-markup #0.1 $strg }
   
      #(text-spanner-start-stop music)
   #})
@@ -238,7 +247,7 @@ lhSpannerUp =
      \once \override TextSpanner #'(bound-details right text) = \markup {
      \draw-line #'(0 . -0.5) }
      \once \override TextSpanner #'(bound-details left text) = \markup {
-     \circle \pad-markup #0.2 $strg }
+     \circle \pad-markup #0.1 $strg }
   
      #(text-spanner-start-stop music)
   #})
@@ -383,6 +392,14 @@ dotUp =
    (ly:music?)
    #{
    \tweak Dots #'extra-offset #'(0.0 . 1.0)
+   #note
+   #})
+invTNH = 
+#(define-music-function
+   (parser location note)
+   (ly:music?)
+   #{
+   \tweak TabNoteHead #'transparent ##t
    #note
    #})
 % Changing the TabNoteHead stencil

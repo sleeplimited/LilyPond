@@ -780,7 +780,7 @@ tab = {
   \override Rest #'transparent = ##t r16^\rhp[ <b,, b\2>-\mkTweak #-0.4 #-1
   ^\rhm ~ < \fakeSlur b\2  dis'\2> \once \override TextScript #'extra-offset =
   #'(-0.4 . -0.6) e'^\rha] b,,^\rhp dis'-\mkTweak #-0.4 #-1 ^\rhm ~ < \fakeSlur
-  dis'\2 b\2>8 <fis b>8\4\3^\rhm b8-\mkTweak #-0.4 #-1 ^\rhi |
+  dis'\2 b\2>8 <\invTNH b,,\6 fis\4 b\3>8^\rhm b8-\mkTweak #-0.4 #-1 ^\rhi |
   
   % Bar 11
   \once \override TextScript #'extra-offset = #'(-1.0 . -6.3) <e a a,
@@ -802,9 +802,8 @@ tab = {
   ##t r8[  b,,8] |
   % Bar 14
   <b,, e'>4 \once \override Rest #'transparent = ##t r16[ <b,, b>~ <\fakeSlur
-  b\2 dis'\2> 
-  \once \override TextScript #'extra-offset = #'(-0.4 . -0.6)
-  e'] b,, dis'~ <\fakeSlur dis'\2 b\2>8 <fis b>8\4\3 b8 |
+  b\2 dis'\2> \once \override TextScript #'extra-offset = #'(-0.4 . -0.6) e']
+  b,, dis'~ <\fakeSlur dis'\2 b\2>8 <\invTNH b,,\6 fis\4 b\3>8 b8 |
 
   % Bar 15
   \once \override TextScript #'extra-offset = #'(-1.0 . -6.3) <e a a,
@@ -813,9 +812,10 @@ tab = {
   <\fakeSlur b\2 \dotUp cis'\2>8. \once \override Rest #'transparent = ##t r8[
   a,,8] |
   % Bar 16
-  <a,, b\2 \fakeSlur d'\2>16~ <\fakeSlur d'\2 cis'\2>8~ <\fakeSlur cis'\2 b\2>16 \once \override Rest #'transparent =
-  ##t r8[ <a,, a>8] <a,, b\2 \fakeSlur d'\2>16~ <\fakeSlur d'\2 cis'\2>8~ <\fakeSlur cis'\2 b\2>16 \once \override Rest
-  #'transparent = ##t r8[ <a,, a>8] |
+  <a,, b\2 \fakeSlur d'\2>16~ <\fakeSlur d'\2 cis'\2>8~ <\fakeSlur cis'\2
+  b\2>16 \once \override Rest #'transparent = ##t r8[ <a,, a>8] <a,, b\2
+  \fakeSlur d'\2>16~ <\fakeSlur d'\2 cis'\2>8~ <\fakeSlur cis'\2 b\2>16 \once
+  \override Rest #'transparent = ##t r8[ <a,, a>8] |
   % Bar 17
   \override TextScript #'extra-offset = #'(-1.0 . -6.3)
   \leftBracketTwo <b,, b, fis b b>4\6\5\4\3\2
@@ -826,7 +826,7 @@ tab = {
   <b,, e'>4 \once \override Rest #'transparent = ##t r16[ <b,, b>~ <\fakeSlur
   b\2 dis'\2> 
   \once \override TextScript #'extra-offset = #'(-0.4 . -0.6)
-  e'] b,, dis'~ <\fakeSlur dis'\2 b\2>8 <fis b>8\4\3 b8 |
+  e'] b,, dis'~ <\fakeSlur dis'\2 b\2>8 <\invTNH b,,\6 fis\4 b\3>8 b8 |
   % Bar 19
   \once \override TextScript #'extra-offset = #'(-1.0 . -6.3)
   <e a a, a,,>4\4\3\5\6
@@ -1159,28 +1159,110 @@ dynamicsone = {
 
 %% DynamicsTwo
 dynamicstwo = {
-  \override TextSpanner #'style = #'line
-  \override TextSpanner #'thickness = #8
-  \override TextSpanner #'color = #(x11-color "plum")
-  \override TextSpanner #'layer = #-1
-  \override TextSpanner #'extra-offset = #'(0.0 . 13.85)
-  \override TextScript #'extra-offset = #'(-1.0 . 13.4)
-
+  % Bar 1
+  s1 |
+  % Bar 2
+  s1 |
+  % Bar 3
+  s1 |
+  % Bar 4
+  s1 |
+  % Bar 5
+  s1 |
+  % Bar 6
+  s1 |
+  % Bar 7
+  s1 |
+  % Bar 8
+  s1 |
+  % Bar 9
+  s1 |
+  % Bar 10
+  s4 s8 s8-\mkTweak #0 #0 ^\lhfour s16 s8.-\mkTweak #0 #0 ^\lhfour s4 |
+  % Bar 11
+  s1 |
+  % Bar 12
+  s16 s8.-\mkTweak #0 #0 ^\lhfour s4 s16 s8.-\mkTweak #0 #0 ^\lhfour s4 | 
+  % Bar 13
+  s1 |
+  % Bar 14
+  s1 |
+  % Bar 15
+  s4 s4 s16 \tsMove #0 #0 \lhSpannerDown "4" { s8. s8 s8 } |
 }
 
 %% DynamicsThree
 dynamicsthree = {
-  \override TextScript #'(extra-offset) = #'(-0.5 . 14.0)
-  \override TextSpanner #'style = #'line
-  \override TextSpanner #'thickness = #8
-  \override TextSpanner #'color = #(x11-color "plum")
-  \override TextSpanner #'layer = #-1
-  \override TextSpanner #'extra-offset = #'(0.0 . 13.75)
+  % Bar 1
+  s1 |
+  % Bar 2
+  s1 |
+  % Bar 3
+  s1 |
+  % Bar 4
+  s1 |
+  % Bar 5
+  s1 |
+  % Bar 6
+  s1 |
+  % Bar 7
+  s1 |
+  % Bar 8
+  s2. s16 \mkMove #0 #12 s16^\lhone s8 |
+  % Bar 9
+  \tsMove #0 #0 \lhSpannerDown "4" { s1 
+  % Bar 10
+  s4  s16 } s8. s4 \tsMove #0 #0 \lhSpannerDown "4" {s4
+  % Bar 11
+  s2. s8 s8 }
+  % Bar 12
+  s4 s8 s8-\mkTweak #0 #0 ^\lhfour s4 s8 s8-\mkTweak #0 #0 ^\lhfour  
 }
+
 %% DynamicsFour
 dynamicsfour = {
   % Bar 1
   s2 s8 s16 \tsMove #0 #15 \lhSpannerUp "3" { \grace s8 s16 } s4 |
+  % Bar 2
+  s1 |
+  % Bar 3
+  s1 |
+  % Bar 4
+  s1 |
+  % Bar 5
+  s1 |
+  % Bar 6
+  s1 |
+  % Bar 7
+  s1 |
+  % Bar 8
+  s2 s8 s16 \tsMove #0 #16 \lhSpannerUp "3" { \grace s8 s16 } s4 |
+  % Bar 9
+  \tsMove #0 #0 \lhSpannerDown "3" { s1
+  % Bar 10
+  s2 s4 s4_\twoStrFlick
+  % Bar 11
+  s1 
+  % Bar 12
+  s2. s8 s8 }
+  % Bar 13
+  s1 
+  % Bar 14
+  s1
+  % Bar 15  
+  s1 |
+  % Bar 16
+  s1 |
+  % Bar 17
+  s1 |
+  % Bar 18
+  s1 |
+  % Bar 19
+  s1 |
+  % Bar 20
+  s2. s8 \mkMove #0 #5 s8^\lhthree |
+
+  
 }
 %% DynamicsFive
 dynamicsfive = {
@@ -1189,6 +1271,24 @@ dynamicsfive = {
   % Bar 2
   s8 s8_\lhone s4 s8._\lhone \tsMove #0 #15 \lhSpannerUp "3" { \grace s8 s16 }
   s8. s16_\lhone |
+  % Bar 3
+  s1 |
+  % Bar 4
+  s1 |
+  % Bar 5
+  s1 |
+  % Bar 6
+  s1 |
+  % Bar 7
+  s1 |
+  % Bar 8
+  s1 |
+  % Bar 9
+  \mkMove #-2.0 #20 s4^\fivestrdwnstrm s4 s2 |
+  % Bar 10
+  s2. \strDampening s8-\mkTweak #0 #0 ^\rhp \startTextSpan s8\stopTextSpan |
+  % Bar 11
+  \mkMove #-2.0 #20 s4^\fivestrdwnstrm s4 s2 |
 }
 %% DynamicsSix
 dynamicssix = {
@@ -1251,9 +1351,9 @@ dynamicssix = {
   s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm s8
   % Bar 9
-  s1 
+  \tsMove #0 #7 \lhSpannerDown "1" { s1  
   % Bar 10
-  s2. s8_\twoStrFlick s8
+  s2. s8 s8 }
   % Bar 11
   s1
   % Bar 12
@@ -1261,7 +1361,7 @@ dynamicssix = {
   % Bar 13
   s1
   % Bar 14
-  s2. s4_\twostrdwnstrm
+  s2. s8_\twoStrFlick s8
   % Bar 15
   s1 
   % Bar 16
@@ -1269,11 +1369,11 @@ dynamicssix = {
   % Bar 17
   s1
   % Bar 18
-  s2. s4_\twostrdwnstrm
+  s2. s8_\twoStrFlick s8
 }
 
-%% SixStrLHFinger
-sixstrlhfinger = {
+%% SixStr
+sixstr = {
   s1 |
   s1 |
   s1 |
@@ -1285,29 +1385,41 @@ sixstrlhfinger = {
   % Bar 9
   s4 
   \override TextScript #'extra-offset = #'(-0.1 . 2.0)
-  s4_\snare s4 s4_\snare|
+  \strDampening s16_\snare\startTextSpan s8.\stopTextSpan s4 \strDampening
+  s8_\snare\startTextSpan s8\stopTextSpan |
   % Bar 10
-  s4 s4_\snare s2 |
+  s4 \strDampening s16_\snare\startTextSpan s8.\stopTextSpan s4 \strDampening
+  s8_\snare\startTextSpan s8\stopTextSpan |
   % Bar 11
-  s4 s4_\snare s4 s4_\snare |
+  s4 \strDampening s16_\snare\startTextSpan s8.\stopTextSpan s4 \strDampening
+  s8_\snare\startTextSpan s8\stopTextSpan |
   % Bar 12
-  s4 s4_\snare s4 s4_\snare |
+  s4 \strDampening s8_\snare\startTextSpan s8\stopTextSpan s4 \strDampening
+  s8_\snare\startTextSpan s8\stopTextSpan |
   % Bar 13
-  s4 s4_\snare s4 s4_\snare|
+  s4 \strDampening s16_\snare\startTextSpan s8.\stopTextSpan s4 \strDampening
+  s8_\snare\startTextSpan s8\stopTextSpan |
   % Bar 14
-  s4 s4_\snare s2 |
+  s4 \strDampening s16_\snare\startTextSpan s8.\stopTextSpan s4 \strDampening
+  s8_\snare\startTextSpan s8\stopTextSpan |
   % Bar 15
-  s4 s4_\snare s4 s4_\snare |
+  s4 \strDampening s16_\snare\startTextSpan s8.\stopTextSpan s4 \strDampening
+  s8_\snare\startTextSpan s8\stopTextSpan |
   % Bar 16
-  s4 s4_\snare s4 s4_\snare |
+  s4 \strDampening s8_\snare\startTextSpan s8\stopTextSpan s4 \strDampening
+  s8_\snare\startTextSpan s8\stopTextSpan |
   % Bar 17
-  s4 s4_\snare s4 s4_\snare|
+  s4 \strDampening s16_\snare\startTextSpan s8.\stopTextSpan s4 \strDampening
+  s8_\snare\startTextSpan s8\stopTextSpan |
   % Bar 18
-  s4 s4_\snare s2 |
+  s4 \strDampening s16_\snare\startTextSpan s8.\stopTextSpan s4 \strDampening
+  s8_\snare\startTextSpan s8\stopTextSpan |
   % Bar 19
-  s4 s4_\snare s4 s4_\snare |
+  s4 \strDampening s16_\snare\startTextSpan s8.\stopTextSpan s4 \strDampening
+  s8_\snare\startTextSpan s8\stopTextSpan |
   % Bar 20
-  s4 s4_\snare s4 s4_\snare |
+  s4 \strDampening s8_\snare\startTextSpan s8\stopTextSpan s4 \strDampening
+  s8_\snare\startTextSpan s8\stopTextSpan |
   % Bar 21
   s4 s4_\bassSnare s4 s4_\snare |
   % Bar 22
@@ -1461,13 +1573,13 @@ sixstrlhfinger = {
     \new TabStaff = "guitar tab" <<
       \set Staff.stringTunings = \stringTuning <a,, a, d g b e'>
       \new TabVoice = "tab" \tab
+      \new Dynamics = "sixstr" \sixstr
       \new Dynamics = "dynamicsone" \dynamicsone
       \new Dynamics = "dynamicstwo" \dynamicstwo
       \new Dynamics = "dynamicsthree" \dynamicsthree
       \new Dynamics = "dynamicsfour" \dynamicsfour 
       \new Dynamics = "dynamicsfive" \dynamicsfive  
       \new Dynamics = "dynamicssix" \dynamicssix
-      \new Dynamics = "sixstrlhfinger" \sixstrlhfinger
     >>
   >>
 %% Layout
