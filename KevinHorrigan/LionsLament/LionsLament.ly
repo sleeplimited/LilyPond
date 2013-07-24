@@ -837,9 +837,9 @@ tab = {
   ##t r8[ <a,, a>8] <a,, b>16~ <\fakeSlur b\2 cis'\2>8 e'16-\mkTweak #-0.4 #-0.6
   ^\rha \once \override
   Rest #'transparent = ##t r8[ e8-\mkTweak #-0.4 #-4 ^\rhi ] | 
-  %%
+  %%%%%%%%%
   %% Bar 21
-  %%
+  %%%%%%%%
   a,,16^\rhp~ <\fakeSlur a,,\6 c,\6>16 e16^\rhi e16^\rhm  \once \override Rest
   #'transparent = ##t r16^\rhp[ e^\rhi c,8] d'16~ <\fakeSlur d'\2 b\2> g8~
   <\fakeSlur g\3 a\3 \tweak TabNoteHead #'transparent ##t a,,>^\rhp b |
