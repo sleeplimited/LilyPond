@@ -121,7 +121,7 @@ upper = {
   \stemNeutral
   <a, e a>1\arpeggio  
   % Bar 12
-  b16( cis'8) b16~ b8 a8 b16( cis'8) b16~ b8 a8 |
+  b16( cis'8)( b16)~ b8 a8 b16( cis'8)( b16)~ b8 a8 |
   % Bar 13
   << { <b, fis b>1\arpeggio } \\ { b1 } >>
   % Bar 14
@@ -129,7 +129,7 @@ upper = {
   % Bar 15
   <<  { a2 \slurDown b16( \tieDown cis'8.)~ cis'4 \tieNeutral } \\ { <a, e>1\arpeggio }  >> |
   % Bar 16
-  b16( cis'8) b16~ b8 a8 b16( cis'8) b16~ b8 a8 |
+  b16( cis'8)( b16)~ b8 a8 b16( cis'8)( b16)~ b8 a8 |
   % Bar 17
   << { <b, fis b>1\arpeggio } \\ { b1 } >>
   % Bar 18
@@ -137,7 +137,7 @@ upper = {
   % Bar 19
   <a, e a>1\arpeggio  
   % Bar 20
-  b16( cis'8) b16~ b8 a8 b16( cis'8) e'16~ e'8 e8 |
+  b16( cis'8)( b16)~ b8 a8 b16( cis'8) e'16~ e'8 e8 |
   % Bar 21 
   << { 
     % Bar 21
@@ -780,7 +780,7 @@ tab = {
   \override Rest #'transparent = ##t r16^\rhp[ <b,, b\2>-\mkTweak #-0.4 #-1
   ^\rhm ~ < \fakeSlur b\2  dis'\2> \once \override TextScript #'extra-offset =
   #'(-0.4 . -0.6) e'^\rha] b,,^\rhp dis'-\mkTweak #-0.4 #-1 ^\rhm ~ < \fakeSlur
-  dis'\2 b\2>8 <\invTNH b,,\6 fis\4 b\3>8^\rhm b8-\mkTweak #-0.4 #-1 ^\rhi |
+  dis'\2 b\2>8 <\invTNH b,,\6 fis\4 b\3>8 b8-\mkTweak #-0.4 #-1 ^\rhi |
   
   % Bar 11
   \once \override TextScript #'extra-offset = #'(-1.0 . -6.3) <e a a,
@@ -1222,7 +1222,7 @@ dynamicsthree = {
 %% DynamicsFour
 dynamicsfour = {
   % Bar 1
-  s2 s8 s16 \tsMove #0 #15 \lhSpannerUp "3" { \grace s8 s16 } s4 |
+  s2 s8 s16 \tsMove #0 #15 \lhSpannerDown "3" { \grace s8 s16 } s4 |
   % Bar 2
   s1 |
   % Bar 3
@@ -1240,7 +1240,7 @@ dynamicsfour = {
   % Bar 9
   \tsMove #0 #0 \lhSpannerDown "3" { s1
   % Bar 10
-  s2 s4 s4_\twoStrFlick
+  s2 s4 s4_\twoStrMFlick
   % Bar 11
   s1 
   % Bar 12
@@ -1269,7 +1269,7 @@ dynamicsfive = {
   % Bar 1
   s8 s8_\lhone s4 s4_\lhone s8. s16_\lhone |
   % Bar 2
-  s8 s8_\lhone s4 s8._\lhone \tsMove #0 #15 \lhSpannerUp "3" { \grace s8 s16 }
+  s8 s8_\lhone s4 s8._\lhone \tsMove #0 #15 \lhSpannerDown "3" { \grace s8 s16 }
   s8. s16_\lhone |
   % Bar 3
   s1 |
@@ -1286,9 +1286,27 @@ dynamicsfive = {
   % Bar 9
   \mkMove #-2.0 #20 s4^\fivestrdwnstrm s4 s2 |
   % Bar 10
-  s2. \strDampening s8-\mkTweak #0 #0 ^\rhp \startTextSpan s8\stopTextSpan |
+  s2. \tsMove #0 #0 \twoStrDamp s8-\mkTweak #0 #0 ^\rhp \startTextSpan s8\stopTextSpan |
   % Bar 11
   \mkMove #-2.0 #20 s4^\fivestrdwnstrm s4 s2 |
+  % Bar 12
+  s1 |
+  % Bar 13
+  \mkMove #-2.0 #10 s4^\fivestrdwnstrm s4 s2 |
+  % Bar 14
+  s2. \tsMove #0 #0 \twoStrDamp s8\startTextSpan s8\stopTextSpan |
+  % Bar 15
+  \mkMove #-2.0 #10 s4^\fivestrdwnstrm s4 s2 |
+  % Bar 16
+  s1 |
+  % Bar 17
+  \mkMove #-2.0 #10 s4^\fivestrdwnstrm s4 s2 |
+  % Bar 18
+  s2. \tsMove #0 #0 \twoStrDamp s8\startTextSpan s8\stopTextSpan |
+  % Bar 19
+  \mkMove #-2.0 #10 s4^\fivestrdwnstrm s4 s2 |
+  % Bar 20
+  s2. \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
 }
 %% DynamicsSix
 dynamicssix = {
