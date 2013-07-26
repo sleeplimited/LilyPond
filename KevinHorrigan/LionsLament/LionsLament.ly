@@ -33,7 +33,7 @@ Publications.  07/10/13
   composer = \markup { \smallCaps "Kevin Horrigan" }
   copyright = \markup { \fontsize #-4 { \char ##x00a9 2011 Kevin Horrigan Music
   Publishing } }
-  tagline = \markup { \concat { \fontsize #-2 { Lion's " " Lament " " 07/04/13 " " \fromproperty #'page:page-number-string /15
+  tagline = \markup { \concat { \fontsize #-2 { Lion's " " Lament " " " " \fromproperty #'page:page-number-string /17
 }}  
 }}
 % paper
@@ -68,7 +68,7 @@ oddFooterMarkup =
     \on-the-fly #not-first-page 
     % page-number not on last-page 
     \on-the-fly #not-last-page 
-    \concat { \fontsize #-2 { Lion's " " Lament " " 07/04/13 " " \fromproperty #'page:page-number-string /15
+    \concat { \fontsize #-2 { Lion's " " Lament " " " " \fromproperty #'page:page-number-string /17
   } } 
   % copyright on first page 
   \on-the-fly #first-page \fromproperty #'header:copyright 
@@ -841,21 +841,25 @@ tab = {
   ^\rhm ~ <\fakeSlur d'\2 b\2> g8-\mkTweak #0 #0 ^\rhi 
   <a\3 \tweak TabNoteHead #'transparent ##t a,,>^\rhp b-\mkTweak #0 #0 ^\rha |
   % Bar 22
-  b,,8 d16 d16 <\invTNH a,,\6>16[ d b,,8] fis'16~
-  <\fakeSlur fis'\1 e'\1>16 b8 \grace cis'8 \glissando d'8 e'16 b |
+  b,,8-\mkTweak #0 #0 ^\rhp <\parenthesize a d>16-\mkTweak #0 #0 ^\rhi d16-\mkTweak #0 #0 ^\rhm
+  <\invTNH a,,\6>16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi[ d b,,8-\mkTweak #0 #0 ^\rhp ]
+  fis'16-\mkTweak #0 #0 ^\rhm ~
+  <\fakeSlur fis'\1 e'\1>16 b8-\mkTweak #0 #0 ^\rhm \grace cis'8-\mkTweak #0 #0
+  ^\rhm \glissando d'8 e'16-\mkTweak #0 #0 ^\rha b-\mkTweak #0 #0 ^\rhm |
   % Bar 23
-  c,8 e16 g16  
-  <\invTNH a,,\6>16[ e c,8] d'16~ <\fakeSlur d'\2 b\2> g8~
-  <\fakeSlur g\3 a\3 \tweak TabNoteHead #'transparent ##t a,,> e'^\rha |
+  c,8 e16 g16-\mkTweak #0 #0 ^\rhm  
+  <\invTNH a,,\6>16[ e c,8] d'16~ <\fakeSlur d'\2 b\2> g8
+  <a\3 \invTNH a,,> e'-\mkTweak #0 #0 ^\rha |
   % Bar 24
-  b,,8 d16 d16~ d16[ d b,,8] a16~
-  <\fakeSlur a\3 g\3>16 e8 \grace a8 \glissando b8\3 b16 g |
+  b,,8 <\parenthesize a d>16 d16~ d16[ d b,,8] a16-\mkTweak #0 #0 ^\rhm ~
+  <\fakeSlur a\3 g\3>16 e8-\mkTweak #0 #0 ^\rhi \grace a8-\mkTweak #0 #0 ^\rhm
+  \glissando b8\3 b16-\mkTweak #0 #0 ^\rha g-\mkTweak #0 #0 ^\rhm | 
   % Bar 25
   c,8 e16 e16~ 
-  e16[ e c,8] d'16~ <\fakeSlur d'\2 b\2> g8~
-  <\fakeSlur g\3 a\3 \tweak TabNoteHead #'transparent ##t a,,> <b e'> |
+  e16[ e c,8] d'16~ <\fakeSlur d'\2 b\2> g8
+  <a\3 \invTNH a,,> <b e'>-\mkTweak #0 #0 ^\rha |
   % Bar 26
-  b,,8 d16 d16~ d16[ d b,,8] fis'16~
+  b,,8 <\parenthesize a d>16 d16~ d16[ d b,,8] fis'16~
   <\fakeSlur fis'\1 e'\1>16 b8 \grace cis'8 \glissando d'8 e'16 b^\mark \markup
   { \fontsize #-2 \italic "To Coda"}
   % Bar 27
@@ -1150,12 +1154,50 @@ tab = {
 %% DynamicsOne
 
 dynamicsone = {
-  \override TextSpanner #'style = #'line
-  \override TextSpanner #'thickness = #8
-  \override TextSpanner #'color = #(x11-color "plum")
-  \override TextSpanner #'layer = #-1
-  \override TextSpanner #'extra-offset = #'(0.0 . 13.5)
-  \override TextScript #'extra-offset = #'(-1.0 . 13.0)
+  % Bar 1
+  s1 |
+  % Bar 2
+  s1 |
+  % Bar 3
+  s1 |
+  % Bar 4
+  s1 |
+  % Bar 5
+  s1 |
+  % Bar 6
+  s1 |
+  % Bar 7
+  s1 |
+  % Bar 8
+  s1 |
+  % Bar 9
+  s1 |
+  % Bar 10
+  s1 |
+  % Bar 11
+  s1 |
+  % Bar 12
+  s1 |
+  % Bar 13
+  s1 |
+  % Bar 14
+  s1 |
+  % Bar 15
+  s1 |
+  % Bar 16
+  s1 |
+  % Bar 17
+  s1 |
+  % Bar 18
+  s1 |
+  % Bar 19
+  s1 |
+  % Bar 20
+  s1 |
+  % Bar 21
+  s1 |
+  % Bar 22
+  s2 s4-\mkTweak #0 #0 ^\lhfour s4 |
 
 }
 
@@ -1203,6 +1245,14 @@ dynamicstwo = {
   s1 |
   % Bar 21
   s2 s4-\mkTweak #0 #0 ^\lhfour s4 |
+  % Bar 22
+  s2 s4 \tsMove #0 #0 \lhSpannerDown "4" { \grace s8 s8 } s8 |
+  % Bar 23
+  s1 |
+  % Bar 24
+  s1 |
+  % Bar 25
+  s2 s4 s8 s8-\mkTweak #0 #0 ^\twostrupstrm |
 }
 
 %% DynamicsThree
@@ -1248,9 +1298,20 @@ dynamicsthree = {
   % Bar 20
   s1 |
   % Bar 21
-  s4 \tsMove #0 #0 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 s4
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
   \tsMove #0 #0 \threeStrDamp s8-\mkTweak #0 #0 ^\oneStrMFlick -\mkTweak #0 #0
   ^\lhtwo \startTextSpan s8\stopTextSpan |
+  % Bar 22
+  s8 \tsMove #0 #0 \lhSpannerDown "3" { s8 s4 s8 s8 } s4 |
+  % Bar 23
+  s2 s4 s4-\mkTweak #0 #0 ^\oneStrFlick |
+  % Bar 24
+  s8 \tsMove #0 #0 \lhSpannerDown "3" { s8 s4 s16 } s16 s8-\mkTweak #0 #0
+  ^\lhthree s4-\mkTweak #0 #0 ^\lhthree |
+  % Bar 23
+  s2 s4 s4-\mkTweak #0 #0 ^\oneStrFlick |
+  
+
 }
 
 %% DynamicsFour
@@ -1299,6 +1360,17 @@ dynamicsfour = {
   % Bar 21
   %% Fourth String-Dampening in this measure takes place in dynamicsthree
   s8 \tsMove #0 #0 \lhSpannerDown "2" { s8 s4 s8 s8 } s4 |
+  % Bar 22
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  % Bar 23
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
+  % Bar 24
+  s1 |
+  % Bar 25
+  s2 s4 \tsMove #0 #0 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
+
+  
 
   
 }
@@ -1346,8 +1418,18 @@ dynamicsfive = {
   % Bar 20
   s2. \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 21
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s4
   \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  % Bar 22
+  s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s2 |
+  % Bar 23
+  s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  % Bar 24
+  s1 |
+  % Bar 25
+  s2 s4 \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+
 }
 %% DynamicsSix
 dynamicssix = {
@@ -1436,6 +1518,16 @@ dynamicssix = {
   % Bar 21
   s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
   \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan
+  % Bar 22
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  % Bar 23
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  % Bar 24
+  s1 |
+  % Bar 25
+  s2 s4 \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+
 }
 
 %% SixStr
@@ -1489,9 +1581,9 @@ sixstr = {
   % Bar 21
   s16 \tsMove #0 #0 \lhSpannerDown "3" { s8. s4_\bassSnare s4 s8_\snare } s8 |
   % Bar 22
-  s4 s4_\bassSnare s2 |
+  \tsMove #0 #0 \lhSpannerDown "2" { s4 s4_\bassSnare s8 s8 } s4 |
   % Bar 23
-  s4 s4_\bassSnare s4 s4_\snare |
+  \tsMove #0 #0 \lhSpannerDown "3" { s4 s4_\bassSnare s8 s8 } s4_\snare |
   % Bar 24
   s4 s4_\bass s2 |
   % Bar 25
