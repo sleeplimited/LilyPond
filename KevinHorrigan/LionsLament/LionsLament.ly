@@ -45,7 +45,9 @@ Publications.  07/10/13
   bottom-margin = 0.5\in
   min-systems-per-page = 3
   first-page-number = 4
-  system-system-spacing = #'((basic-distance . 1) (padding . 2))
+  system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
+  ragged-last-bottom = ##f
+  ragged-bottom = ##f
   % see:  http://code.google.com/p/lilypond/issues/detail?id=2576
 
   #(define (not-last-page layout props arg) 
@@ -78,6 +80,21 @@ oddFooterMarkup =
   } 
   evenFooterMarkup = \oddFooterMarkup 
 } 
+
+\layout {
+    \context {
+      \Score
+    \override StaffGrouper #'staff-staff-spacing #'padding = #1
+    \override StaffGrouper #'staff-staff-spacing #'basic-distance = #1
+  }
+  \context {
+    \Dynamics
+    \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing
+    #'basic-distance = #0
+    \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing #'padding = #0
+    % \override TimeSignature #'space-alist #'first-note = #'extra-space . 0.0)
+    }
+  }
 % Includes and functions
 \include "functions.ly"
 % Standard Notation
@@ -714,6 +731,7 @@ tab = {
   \override Staff.Stem #'stemlet-length = #2.75
   \override BreathingSign #'extra-offset = #'(0.5 . -2.0)
   % Bar 1
+
   <a,, a,>8-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp [ 
   \leftBracketTwo <b,, b,>-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp ] 
   \tick <a,, a,>16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
@@ -863,8 +881,10 @@ tab = {
   <\fakeSlur fis'\1 e'\1>16 b8 \grace cis'8 \glissando d'8 e'16 b^\mark \markup
   { \fontsize #-2 \italic "To Coda"}
   % Bar 27
-  c8 e16 g~ g16[ e c8] g16~ <\fakeSlur g\3 a\3> b8
-  <\tweak TabNoteHead #'transparent ##t a,, a>16~ <\fakeSlur a\3 g\3>16 e8 |
+  <c \parenthesize e>8-\mkTweak #0 #0 ^\rhp e16-\mkTweak #0 #0 ^\rhi e-\mkTweak
+  #0 #0 ^\rhm ~ e16[ e-\mkTweak #0 #0 ^\rhi c8-\mkTweak #0 #0 ^\rhp ]
+  g16-\mkTweak #0 #0 ^\rhm ~ <\fakeSlur g\3 a\3> b8-\mkTweak #0 #0 ^\rha
+  <\tweak TabNoteHead #'transparent ##t a,, a>16~ <\fakeSlur a\3 g\3>16 e8-\mkTweak #0 #0 ^\rhi |
   % Bar 28
   \grace { \hideFretNumber c8 \glissando s } d8\5 fis16 g~ g16[ fis16 d8\5]
   g16~ <\fakeSlur g\3 b\3> d'8 < \tweak TabNoteHead #'transparent ##t a,,
@@ -1150,6 +1170,45 @@ tab = {
   ##f r8 \bar "|."
 }
 
+% Breaks Voice
+  breaks = {
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 8)
+    (alignment-distances . (10 15 )))
+    s1*2 \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 50)
+    (alignment-distances . (10 15 )))
+    s1*2 \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 88)
+    (alignment-distances . (10 15 )))
+    s1*2 \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 0)
+    (alignment-distances . (10 15 )))
+    s1*2 \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 42)
+    (alignment-distances . (10 15 )))
+    s1*3 \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 88)
+    (alignment-distances . (10 15 )))
+    s1*3 \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 0)
+    (alignment-distances . (15 15 )))
+    s1*3 \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 42)
+    (alignment-distances . (10 15 )))
+    s1*3 \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 88)
+    (alignment-distances . (10 15 )))
+    s1*2 \break
+  }
 % Dynamics
 %% DynamicsOne
 
@@ -1308,9 +1367,13 @@ dynamicsthree = {
   % Bar 24
   s8 \tsMove #0 #0 \lhSpannerDown "3" { s8 s4 s16 } s16 s8-\mkTweak #0 #0
   ^\lhthree s4-\mkTweak #0 #0 ^\lhthree |
-  % Bar 23
+  % Bar 25
   s2 s4 s4-\mkTweak #0 #0 ^\oneStrFlick |
-  
+  % Bar 26 
+  s1 |
+  % Bar 27
+  s4 s4 s16 s16-\mkTweak #0 #0 ^\lhtwo s8 \tsMove #0 #0 \strDampening s16-\mkTweak #0 #0 ^\oneStrMFlick
+  -\mkTweak #0 #0 ^\lhtwo \startTextSpan s16\stopTextSpan s8 |
 
 }
 
@@ -1369,6 +1432,11 @@ dynamicsfour = {
   s1 |
   % Bar 25
   s2 s4 \tsMove #0 #0 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
+  % Bar 26
+  s1 |
+  % Bar 27
+  s2 s4 \tsMove #0 #0 \threeStrDamp s16\startTextSpan s16\stopTextSpan
+  s8-\mkTweak #0 #0 ^\lhtwo |
 
   
 
@@ -1429,6 +1497,17 @@ dynamicsfive = {
   s1 |
   % Bar 25
   s2 s4 \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  % Bar 26
+  s1 |
+  % Bar 27
+  %% String-Dampening for this String, this measure is located at Dynamicsthree
+  \tsMove #0 #0 \lhSpannerDown "3" {s1
+  % Bar 28
+  s1
+  % Bar 29
+  s1 
+  % Bar 30
+  s4 s8 s8 }
 
 }
 %% DynamicsSix
@@ -1527,6 +1606,11 @@ dynamicssix = {
   s1 |
   % Bar 25
   s2 s4 \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  % Bar 26
+  s1 |
+  % Bar 27
+  s2 s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+
 
 }
 
@@ -1718,6 +1802,8 @@ sixstr = {
   systemStartDelimiter = #'SystemStartBar
   \override SystemStartBar #'thickness = #5
   \override SystemStartBar #'X-offset = #-1
+  \override StaffGrouper #'staffgroup-staff-spacing #'padding = #2
+  \override StaffGrouper #'staffgroup-staff-spacing #'basic-distance = #60
 }  <<
       \new Staff = "guitar traditional" <<
         \clef "treble_8"
@@ -1728,7 +1814,8 @@ sixstr = {
         \context Voice = "lower" \lower
       >>
     >>
-    \new TabStaff = "guitar tab" <<
+    \new TabStaff = "guitar tab" 
+      <<
       \set Staff.stringTunings = \stringTuning <a,, a, d g b e'>
       \new Dynamics = "sixstr" \sixstr
       \new Dynamics = "dynamicsone" \dynamicsone
@@ -1738,16 +1825,15 @@ sixstr = {
       \new Dynamics = "dynamicsfive" \dynamicsfive  
       \new Dynamics = "dynamicssix" \dynamicssix
       \new TabVoice = "tab" \tab
+      \new Voice = "breaks" \breaks
     >>
   >>
 %% Layout
   \layout {
-    indent = 0\mm
+    indent = 0\cm
     \context { 
       \Staff \RemoveEmptyStaves
       \override VerticalAxisGroup #'remove-first = ##t
-        
-      % \override TimeSignature #'space-alist #'first-note = #'extra-space . 0.0)
     }
   }
   \midi {}
