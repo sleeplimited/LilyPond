@@ -489,7 +489,7 @@ newTabNoteHead =
 
 %% TabNoteHead Stencils
 tick = \newTabNoteHead \markup { \musicglyph #"noteheads.s0laThin" }
-newTabHeadInChord = \markup { \musicglyph #"noteheads.s0laThin" }
+tickInChord = \markup { \musicglyph #"noteheads.s0laThin" }
 mutedString = \markup { \musicglyph #"noteheads.s2cross" }
 stringSnare = \newTabNoteHead \markup { \override #'(box-padding . 0)
 \rounded-box {
