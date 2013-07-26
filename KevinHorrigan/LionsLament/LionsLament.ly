@@ -711,7 +711,7 @@ tab = {
   \tabFullNotation
   \stemDown
   \override Staff.TabNoteHead #'font-series = #'narrow
-  \override Staff.Stem #'stemlet-length = #0.75
+  \override Staff.Stem #'stemlet-length = #2.75
   \override BreathingSign #'extra-offset = #'(0.5 . -2.0)
   % Bar 1
   <a,, a,>8-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp [ 
@@ -769,86 +769,83 @@ tab = {
   %% Bar 9
   %%
   \override TextScript #'extra-offset = #'(-1.0 . -6.3) \leftBracketTwo <b,, b,
-  fis b\3 b\2>4^\rhp^\mark \markup {
-    \fontsize #-2 \musicglyph #"scripts.segno"
-  } 
-  \override TextScript #'extra-offset = #'(-0.5 . -6.3) \once \override Rest
-  #'transparent = ##t r16^\rhp[ b,,8.]  b,,4^\rhp \once \override Rest
-  #'transparent = ##t r8^\rhp[  b,,8] |
+  fis b\3 b\2>4^\rhp^\mark \markup { \fontsize #-2 \musicglyph #"scripts.segno"
+  } \override TextScript #'extra-offset = #'(-0.5 . -6.3) <\invTNH b,,\6>16^\rhp[
+  b,,8.]  b,,4^\rhp <\invTNH b,,\6>8^\rhp[  b,,8] |
   % Bar 10
-  <b,, e'>4-\mkTweak #-1 #-6.3 ^\rhp -\mkTweak #-0.4 #-0.6 ^\rha \once
-  \override Rest #'transparent = ##t r16^\rhp[ <b,, b\2>-\mkTweak #-0.4 #-1
+  <b,, e'>4-\mkTweak #-1 #-6.3 ^\rhp -\mkTweak #-0.4 #-0.6 ^\rha 
+  <\invTNH b,,\6>16^\rhp[ <b,, b\2>-\mkTweak #-0.4 #-1
   ^\rhm ~ < \fakeSlur b\2  dis'\2> \once \override TextScript #'extra-offset =
   #'(-0.4 . -0.6) e'^\rha] b,,^\rhp dis'-\mkTweak #-0.4 #-1 ^\rhm ~ < \fakeSlur
   dis'\2 b\2>8 <\invTNH b,,\6 fis\4 b\3>8 b8-\mkTweak #-0.4 #-1 ^\rhi |
   
   % Bar 11
   \once \override TextScript #'extra-offset = #'(-1.0 . -6.3) <e a a,
-  a,,>4\4\3\5\6^\rhp \once \override Rest #'transparent = ##t r16^\rhp[ a,,8.]
-  a,,4^\rhp \once \override Rest #'transparent = ##t r8^\rhp[ a,,8] |
+  a,,>4\4\3\5\6^\rhp <\invTNH a,,\6>16^\rhp[ a,,8.]
+  a,,4^\rhp <\invTNH a,,\6>8^\rhp[ a,,8] |
   % Bar 12
   <a,, b\2 \fakeSlur d'\2>16-\mkTweak #-0.4 #-1 ^\rhp -\mkTweak #-0.4 #-1 ^\rhm ~ 
-  < \fakeSlur d'\2 cis'\2>8~ < \fakeSlur cis'\2 b\2>16 \once \override Rest
-  #'transparent = ##t r8^\rhp[ <a,, a>8^\rhi] <a,, b\2 \fakeSlur
+  < \fakeSlur d'\2 cis'\2>8~ < \fakeSlur cis'\2 b\2>16 
+  <\invTNH a,,\6>8^\rhp[ <a,, a>8^\rhi] <a,, b\2 \fakeSlur
   d'\2>16-\mkTweak #1 #1 ^\rhm -\mkTweak #0 #0 ^\rhp ~ <
   \fakeSlur d'\2 cis'\2>8~
-  < \fakeSlur cis'\2 b\2>16 \once \override Rest #'transparent = ##t r8^\rhp[
+  < \fakeSlur cis'\2 b\2>16 <\invTNH a,,\6>8^\rhp[
   <a,, a>8^\rhi] |
   % Bar 13
   \override BreathingSign #'extra-offset = #'(-0.2 . -2.0)
   \leftBracketTwo <b,, b, fis b b>4\6\5\4\3\2
-  \override TextScript #'extra-offset = #'(-0.5 . -6.3) \once \override Rest
-  #'transparent = ##t r16[ b,,8.]  b,,4 \once \override Rest #'transparent =
-  ##t r8[  b,,8] |
+  \override TextScript #'extra-offset = #'(-0.5 . -6.3) 
+  <\invTNH b,,\6>16[ b,,8.]  b,,4 
+  <\invTNH b,,\6>8[  b,,8] |
   % Bar 14
-  <b,, e'>4 \once \override Rest #'transparent = ##t r16[ <b,, b>~ <\fakeSlur
+  <b,, e'>4 <\invTNH b,,\6>16[ <b,, b>~ <\fakeSlur
   b\2 dis'\2> \once \override TextScript #'extra-offset = #'(-0.4 . -0.6) e']
   b,, dis'~ <\fakeSlur dis'\2 b\2>8 <\invTNH b,,\6 fis\4 b\3>8 b8 |
 
   % Bar 15
   \once \override TextScript #'extra-offset = #'(-1.0 . -6.3) <e a a,
-  a,,>4\4\3\5\6 \once \override Rest #'transparent = ##t r16[ a,,8.] <a,,
+  a,,>4\4\3\5\6 <\invTNH a,,\6>16[ a,,8.] <a,,
   b>16^\rhm ~
-  <\fakeSlur b\2 \dotUp cis'\2>8. \once \override Rest #'transparent = ##t r8[
+  <\fakeSlur b\2 \dotUp cis'\2>8. <\invTNH a,,\6>8[
   a,,8] |
   % Bar 16
   <a,, b\2 \fakeSlur d'\2>16~ <\fakeSlur d'\2 cis'\2>8~ <\fakeSlur cis'\2
-  b\2>16 \once \override Rest #'transparent = ##t r8[ <a,, a>8] <a,, b\2
-  \fakeSlur d'\2>16~ <\fakeSlur d'\2 cis'\2>8~ <\fakeSlur cis'\2 b\2>16 \once
-  \override Rest #'transparent = ##t r8[ <a,, a>8] |
+  b\2>16 <\invTNH a,,\6>8[ <a,, a>8] <a,, b\2
+  \fakeSlur d'\2>16~ <\fakeSlur d'\2 cis'\2>8~ <\fakeSlur cis'\2 b\2>16 
+  <\invTNH a,,\6>8[ <a,, a>8] |
   % Bar 17
   \override TextScript #'extra-offset = #'(-1.0 . -6.3)
   \leftBracketTwo <b,, b, fis b b>4\6\5\4\3\2
   \override TextScript #'extra-offset = #'(-0.5 . -6.3)
-  \once \override Rest #'transparent = ##t r16[ b,,8.]  b,,4 \once \override
-  Rest #'transparent = ##t r8[  b,,8] |
+  <\invTNH b,,\6>16[ b,,8.]  b,,4 
+  <\invTNH b,,\6>8[  b,,8] |
   % Bar 18
-  <b,, e'>4 \once \override Rest #'transparent = ##t r16[ <b,, b>~ <\fakeSlur
+  <b,, e'>4 <\invTNH b,,\6>16[ <b,, b>~ <\fakeSlur
   b\2 dis'\2> 
   \once \override TextScript #'extra-offset = #'(-0.4 . -0.6)
   e'] b,, dis'~ <\fakeSlur dis'\2 b\2>8 <\invTNH b,,\6 fis\4 b\3>8 b8 |
   % Bar 19
-  \once \override TextScript #'extra-offset = #'(-1.0 . -6.3)
-  <e a a, a,,>4\4\3\5\6
-  \once \override Rest #'transparent = ##t r16[ a,,8.] a,,4 \once \override
-  Rest #'transparent = ##t r8[ a,,8] |
+  \once \override TextScript #'extra-offset = #'(-1.0 . -6.3) <e a a,
+  a,,>4\4\3\5\6 <\invTNH a,,\6>16[ a,,8.] a,,4 <\invTNH a,,\6>8[ a,,8] |
   % Bar 20
-  <a,, b\2 \fakeSlur d'\2>16~ <\fakeSlur d'\2 cis'\2>8~ <\fakeSlur cis'\2 b\2>16 \once \override Rest #'transparent =
-  ##t r8[ <a,, a>8] <a,, b>16~ <\fakeSlur b\2 cis'\2>8 e'16-\mkTweak #-0.4 #-0.6
-  ^\rha \once \override
-  Rest #'transparent = ##t r8[ e8-\mkTweak #-0.4 #-4 ^\rhi ] | 
+  <a,, b\2 \fakeSlur d'\2>16~ <\fakeSlur d'\2 cis'\2>8~ <\fakeSlur cis'\2
+  b\2>16 <\invTNH a,,\6>8[ <a,, a>8] <a,, b>16~
+  <\fakeSlur b\2 cis'\2>8 e'16-\mkTweak #-0.4 #-0.6 ^\rha <\invTNH
+  b,,\6>8-\mkTweak #0 #0 ^\rhp [
+  e8-\mkTweak #-0.4 #-4 ^\rhi ] | 
   %%%%%%%%%
   %% Bar 21
   %%%%%%%%
-  a,,16^\rhp~ <\fakeSlur a,,\6 c,\6>16 e16^\rhi e16^\rhm  \once \override Rest
-  #'transparent = ##t r16^\rhp[ e^\rhi c,8] d'16~ <\fakeSlur d'\2 b\2> g8~
-  <\fakeSlur g\3 a\3 \tweak TabNoteHead #'transparent ##t a,,>^\rhp b |
+  a,,16^\rhp~ <\fakeSlur a,,\6 c,\6>16 e16^\rhi e16^\rhm  
+  <\invTNH a,,\6>16^\rhp -\mkTweak #0 #0 ^\rhi [ e c,8^\rhp] d'16-\mkTweak #0 #0
+  ^\rhm ~ <\fakeSlur d'\2 b\2> g8-\mkTweak #0 #0 ^\rhi 
+  <a\3 \tweak TabNoteHead #'transparent ##t a,,>^\rhp b-\mkTweak #0 #0 ^\rha |
   % Bar 22
-  b,,8 d16 d16 \once \override Rest #'transparent = ##t r16[ d b,,8] fis'16~
+  b,,8 d16 d16 <\invTNH a,,\6>16[ d b,,8] fis'16~
   <\fakeSlur fis'\1 e'\1>16 b8 \grace cis'8 \glissando d'8 e'16 b |
   % Bar 23
-  c,8 e16 g16  \once \override Rest #'transparent = ##t
-  r16[ e c,8] d'16~ <\fakeSlur d'\2 b\2> g8~
+  c,8 e16 g16  
+  <\invTNH a,,\6>16[ e c,8] d'16~ <\fakeSlur d'\2 b\2> g8~
   <\fakeSlur g\3 a\3 \tweak TabNoteHead #'transparent ##t a,,> e'^\rha |
   % Bar 24
   b,,8 d16 d16~ d16[ d b,,8] a16~
@@ -870,7 +867,7 @@ tab = {
   b\3>16~ <\fakeSlur b\3 g\3>16 fis8 |
   % Bar 29
   \grace { \hideFretNumber d8\5 \glissando s } e8\5 g16\4 g 
-  \once \override Rest #'transparent = ##t r16[ g\4 e8\5] fis'16\2~ <\fakeSlur
+  <\invTNH e,\6>16[ g\4 e8\5] fis'16\2~ <\fakeSlur
   fis'\2 b\2> g8 <d'\3
   \tweak TabNoteHead #'transparent ##t a,,>8 e' |
   % Bar 30
@@ -880,35 +877,39 @@ tab = {
   <\fakeSlur a,,\6 c,\6>8 e16 g~ g e c,8 \slurNeutral g16~ <\fakeSlur g\3 a\3>
   b8 < \tweak TabNoteHead #'transparent ##t a,, a>16~ <\fakeSlur a\3 g\3> e8 |
   % Bar 32
-  \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g \once \override
-  Rest #'transparent = ##t r16[ fis d,8] g16~ <\fakeSlur g\3 b\3> d'8 < \tweak
+  \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g 
+  <\invTNH a,,\6>16[ fis d,8] g16~ <\fakeSlur g\3 b\3> d'8 < \tweak
   TabNoteHead #'transparent ##t a,, b\3>16~ <\fakeSlur b\3 g\3> fis8 |
   % Bar 33
   \grace { \hideFretNumber d,8 \glissando s } e,8 g16\4 g\3~ g\3 g\4 e,8
   fis'16\2~ <\fakeSlur fis'\2 b\2> g8 < \tweak TabNoteHead #'transparent ##t
   a,, d'\3>8 e' | 
   % Bar 34
-  e,8 g16\4 g\3 \override Rest #'transparent = ##t r16[ g\4 e,8] \grace
+  e,8 g16\4 g\3 <\invTNH a,,\6>16[ g\4 e,8] \grace
   fis'8\2 \glissando g'8\2 a' \slurDown <b'\2\harmonic a,,>4~ |
   % Bar 35
   \slurNeutral
   <\fakeSlur a,,\6 c,\6>8 e16 g~ g e c,8 g16~ <\fakeSlur g\3 a\3> b8 < \tweak
   TabNoteHead #'transparent ##t a,, a>16~ <\fakeSlur a\3 g\3> e8 |
   % Bar 36
-  \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g r16[ fis16 d,8] g16~
-  <\fakeSlur g\3 b\3> d'8 <d'\2 b\3>4 |
+  \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g <\invTNH d,\6>16[ fis16 d,8] g16~
+  <\fakeSlur g\3 b\3> d'8 <d'\2 b\3 \invTNH a,,>8 <\tweakTabNoteHead
+  \mutedString a, d, d>16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0
+  ^\threestrdwnstrm <\tweakTabNoteHead \tickInChord
+  d \tweakTabNoteHead \tickInChord a, d,>16-\mkTweak #0 #0 ^\rhi -\mkTweak #0
+  #0 ^\threestrupstrm  |
   %%
   %% Bar 37
   %%
   \once \override BreathingSign #'extra-offset = #'(2.8 . 0.0) \arpeggioArrowUp
-  \rightBracketThree <e' cis' a e a, a,,>4\arpeggio r16[ a,,8.] a,,4 <e cis'
-  a>8 a,16 a, |
+  \rightBracketThree <e' cis' a e a, a,,>4\arpeggio <\invTNH a,,\6>16[ a,,8.]
+  a,,4 <\invTNH a,, e cis' a>8 a,16 a, |
   % Bar 38
   a,,16~ \once \override TextSpanner #'style = #'line \once \override
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
   } \once \override TextSpanner #'(bound-details left text) =  \markup { \halign
   #CENTER \fontsize #-5 "C IV " } <\fakeSlur a,,\6 cis,\6 \parenthesize gis\4
-  \parenthesize e'\2>\startTextSpan gis\4 <gis'\1 e'\2 b\3>^\rhp r16[ gis\4 \once
+  \parenthesize e'\2>\startTextSpan gis\4 <gis'\1 e'\2 b\3>^\rhp <\invTNH a,,>16[ gis\4 \once
   \override BreathingSign #'extra-offset = #'(3 .  -2.0) \leftBracketTwo
   cis8\stopTextSpan] \once \override BreathingSign #'extra-offset = #'(0.3 . 0)
   \leftBracketThree <b,, b, fis b dis'>4 \once \override BreathingSign
@@ -951,7 +952,7 @@ tab = {
   % Bar 47
   %%
   \mark \markup \musicglyph #"scripts.coda"
-  c8 e16 g \tweak TabNoteHead #'transparent ##t a,,16[ e c8] g16~ <\fakeSlur
+  c8 e16 g <\invTNH a,,\6>16[ e c8] g16~ <\fakeSlur
   g\3 a\3> b8 <\tweak TabNoteHead #'transparent ##t a,, a>16~ <\fakeSlur a\3
   g\3>16 e8 |
   % Bar 48 
@@ -960,10 +961,10 @@ tab = {
   TabNoteHead #'transparent ##t a,, b\3>16~ <\fakeSlur b\3 g\3>16 fis8 |
   % Bar 49
   \grace { \hideFretNumber d8\5 \glissando s } e8\5 g16\4 g 
-  \once \override Rest #'transparent = ##t r16[ g\4 e8\5] fis'16\2~ <\fakeSlur
+  <\invTNH a,,\6>16[ g\4 e8\5] fis'16\2~ <\fakeSlur
   fis'\2 b\2> g8 <d'\3 \tweak TabNoteHead #'transparent ##t a,,>8 e' |
   % Bar 50
-  e8\5 g16\4 g \once \override Rest #'transparent = ##t r16[ g\4 e8\5]
+  e8\5 g16\4 g <\invTNH a,,\6>16[ g\4 e8\5]
   fis'16\2~ <\fakeSlur fis'\2 b\2> g8 <d'\3 \tweak TabNoteHead #'transparent
   ##t a,,>8 e' |
   % Bar 51
@@ -975,106 +976,107 @@ tab = {
   #'transparent ##t a,,16[ fis16 d8\5] g16~ <\fakeSlur g\3 b\3> d'8 < \tweak
   TabNoteHead #'transparent ##t a,, b\3>16~ <\fakeSlur b\3 g\3>16 fis8 |
   % Bar 53
-  \grace { \hideFretNumber d8\5 \glissando s } e8\5 g16\4 g \once \override
-  Rest #'transparent = ##t r16[ g\4 e8\5] fis'16\2~ <\fakeSlur fis'\2 b\2> g8
+  \grace { \hideFretNumber d8\5 \glissando s } e8\5 g16\4 g 
+  <\invTNH a,,>16[ g\4 e8\5] fis'16\2~ <\fakeSlur fis'\2 b\2> g8
   <d'\3 \tweak TabNoteHead #'transparent ##t a,,>8 e' |
   % Bar 54
-  e8\5 g16\4 g\3 \override Rest #'transparent = ##t r16[ g\4 e8\5] \grace
+  e8\5 g16\4 g\3 <\invTNH a,,>16[ g\4 e8\5] \grace
   fis'8\2 \glissando g'8\2 a' \slurDown <b'\2\harmonic a,,>4~ |
   % Bar 55
   <\fakeSlur a,,\6 c,\6>8 e16 g \tweak TabNoteHead #'transparent ##t a,, e c,8
   \slurNeutral g16~ <\fakeSlur g\3 a\3> b8 < \tweak TabNoteHead #'transparent
   ##t a,, a>16~ <\fakeSlur a\3 g\3> e8 |
   % Bar 56
-  \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g \once \override Rest
-  #'transparent = ##t r16[ fis d,8] g16~ <\fakeSlur g\3 b\3> d'8 < \tweak
+  \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g 
+  <\invTNH a,,>16[ fis d,8] g16~ <\fakeSlur g\3 b\3> d'8 < \tweak
   TabNoteHead #'transparent ##t a,, b\3>16~ <\fakeSlur b\3 g\3> fis8 |
   % Bar 57
   \grace { \hideFretNumber d,8 \glissando s } e,8 g16\4 g\3 \tweak TabNoteHead
   #'transparent ##t a,, g\4 e,8 fis'16\2~ <\fakeSlur fis'\2 b\2> g8 < \tweak
   TabNoteHead #'transparent ##t a,, d'\3>8 e' |
   % Bar 58
-  e,8 g16\4 g\3 \override Rest #'transparent = ##t r16[ g\4 e,8] \grace
+  e,8 g16\4 g\3 <\invTNH a,,>16[ g\4 e,8] \grace
   fis'8\2 \glissando g'8\2 a' \slurDown <b'\2\harmonic a,,>4~ |
   % Bar 59
   <\fakeSlur a,,\6 c,\6>8 e16 g \tweak TabNoteHead #'transparent ##t a,, e c,8
   \slurNeutral g16~ <\fakeSlur g\3 a\3> b8 < \tweak TabNoteHead #'transparent
   ##t a,, a>16~ <\fakeSlur a\3 g\3> e8 |
   % Bar 60
-  \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g \once \override Rest
-  #'transparent = ##t r16[ fis d,8] g16~ <\fakeSlur g\3 b\3> d'8 < \tweak
+  \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g 
+  <\invTNH a,,>16[ fis d,8] g16~ <\fakeSlur g\3 b\3> d'8 < \tweak
   TabNoteHead #'transparent ##t a,, b\3>16~ <\fakeSlur b\3 g\3> fis8 |
   % Bar 61
   \grace { \hideFretNumber d,8 \glissando s } e,8 g16\4 g\3 \tweak TabNoteHead
   #'transparent ##t a,, g\4 e,8 fis'16\2~ <\fakeSlur fis'\2 b\2> g8 < \tweak
   TabNoteHead #'transparent ##t a,, d'\3>8 e' |
   % Bar 62
-  e,8 g16\4 g\4 \once \override Rest #'transparent = ##t r16[ g\4 e,8]
+  e,8 g16\4 g\4 <\invTNH a,,>16[ g\4 e,8]
   fis'16\2~ <\fakeSlur fis'\2 b\2> <e, g>8 <b d'\3 \tweak TabNoteHead
   #'transparent ##t a,,>8 <e' b> |
   % Bar 63
-  a,8\6 c'16\4 g r16[ c'\4 <a,\6 g'\3>8]~ <a,\6 g'\3>4 \glissando \grace {
+  a,8\6 c'16\4 g~ g16[ c'\4 <a,\6 g'\3>8]~ <a,\6 g'\3>4 \glissando \grace {
   \hideFretNumber <g,\6 f'\3>8 \hideFretNumber <g\5>8 \glissando s } a8\5 b |
   % Bar 64
-  e,8 g16\4 g\3 r16[ g\4 e,8] d'16\3~ <\fakeSlur d'\3 g\3> g8\4 <\tweak
-  TabNoteHead #'transparent ##t a,, a\4 > b |
+  e,8 g16\4 g\4~ g16\4[ g\4 e,8] d'16\3~ <\fakeSlur d'\3 g\3> g8\4 
+  <\invTNH a,, a\4 > b |
   % Bar 65
-  a,8\6 c'16\4 b r16[ c'\4 <a,\6 g\3>8]~ <a,\6 g\3>8[ <g\3 b'\2>8] \grace {
+  a,8\6 c'16\4 b~ b16[ c'\4 <a,\6 g\3>8]~ <a,\6 g\3>8[ <\invTNH a,, g\3 b'\2>8] \grace {
   \hideFretNumber g8\5 \glissando s } a8\5 b |
   % Bar 66
-  d,8 fis16 g r16[ fis d,8] <\tweakTabNoteHead \mutedString e\5 e,\6 g\4 g\3
-  b\2>4 g4\3 |
+  d,8 fis16 g~ g16[ fis d,8] <\tweakTabNoteHead \mutedString e\5 e,\6 g\4 g\3
+  b\2>4 <\invTNH a,, g\3>4 |
   % Bar 67
-  a,8\6 c'16\4 b r16[ c'\4 <a,\6 g'\3>8]~ <a,\6 g'\3>4 \glissando
-  \grace { \hideFretNumber <g,\6 f'\3>8 } g8\3 b |
+  a,8\6 c'16\4 b~ b16[ c'\4 <a,\6 g'\3>8]~ <a,\6 g'\3>4 \glissando
+  \grace { \hideFretNumber <g,\6 f'\3>8 } <\invTNH a,, g>8 b |
   % Bar 68
-  e,8 g16\4 g\3 r16[ g\4 e,8] d'16\3~ <\fakeSlur d'\3 g\3> g8\4 <g\3 a\4> b |
+  e,8 g16\4 g\3 <\invTNH a,,>16[ g\4 e,8] d'16\3~ <\fakeSlur d'\3 g\3> g8\4
+  <\invTNH a,, g\3 a\4> b |
   % Bar 69
-  c,8 e16 g r16[ e c,8] \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g
-  r16[ fis d,8] |
+  c,8 e16 g <\invTNH a,,>16[ e c,8] \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g
+  <\invTNH a,,>16[ fis d,8] |
   % Bar 70
-  \grace { \hideFretNumber d, \glissando s } e,8 g16\4 g\3 r16[ d <c,
-  \tweakTabNoteHead \mutedString c e g>8]~ <c, e g>4 <g e>4  |
+  \grace { \hideFretNumber d, \glissando s } e,8 g16\4 g\3 <\invTNH a,,>16[ d <c,
+  \tweakTabNoteHead \mutedString c e g>8]~ <c, e g>4 <\invTNH a,, g e>4  |
   % Bar 71
-  c,8 e16 b r16[ e c,8] \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g
-  r16[ fis d,8] |
+  c,8 e16 b <\invTNH a,,>16[ e c,8] \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g
+  <\invTNH a,,>16[ fis d,8] |
   % Bar 72
-  e,8 g16\4 <b e'> r16[ d <c, \tweakTabNoteHead \mutedString a, e g d'>8]~ <c,
-  e g d'>4 < \tweak TabNoteHead #'transparent ##t a,, e g>4  |
+  e,8 g16\4 <b e'> <\invTNH a,,>16[ d <c, \tweakTabNoteHead \mutedString a, e g d'>8]~ <c,
+  e g d'>4 <\invTNH a,, e g>4  |
   % Bar 73
-  c,8 e16 d' r16[ e c,8] \grace { \hideFretNumber c,8 \glissando s } d,8 fis16
-  e'\2 r16[ fis d,8] |
+  c,8 e16 d' <\invTNH a,,>16[ e c,8] \grace { \hideFretNumber c,8 \glissando s } d,8 fis16
+  e'\2 <\invTNH a,,>16[ fis d,8] |
   % Bar 74
-  e,8 g16\4 fis'\2 r16[ d <c, \tweakTabNoteHead \mutedString a, e g d' >8]~ <c,
+  e,8 g16\4 fis'\2~ fis'16\2[ d <c, \tweakTabNoteHead \mutedString a, e g d' >8]~ <c,
   e g d'>4 < \tweak TabNoteHead #'transparent ##t a,, g e>4  |
   % Bar 75
-  a,,16~ <\fakeSlur a,,\6 b,,\6> e g\3 r16[ e <b,, \tweakTabNoteHead
+  a,,16~ <\fakeSlur a,,\6 b,,\6> e g\3~ g16[ e <b,, \tweakTabNoteHead
   \mutedString b, e g cis' e'>8]~ <b,, e g cis' e'>4 <b,, \tweakTabNoteHead
   \mutedString b, e g cis' e'>8 \tick <b,, b,>16 \tick <b,, b,>16 |
   % Bar 76
   \arpeggioArrowUp \once \override BreathingSign #'extra-offset = #'(3 . 0)
-  \rightBracketThree <a,, a, e a cis' e'>4\arpeggio r16[ a,,8.] a,,4 < \tweak
+  \rightBracketThree <a,, a, e a cis' e'>4\arpeggio <\invTNH a,,>16[ a,,8.] a,,4 < \tweak
   TabNoteHead #'transparent ##t a,, a cis' e >8 a,16 a, |
   % Bar 77
   a,,16~ \once \override TextSpanner #'style = #'line \once \override
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
   } \once \override TextSpanner #'(bound-details left text) =  \markup { \halign
   #CENTER \fontsize #-5 "C IV " } <\fakeSlur a,,\6 cis,\6>\startTextSpan fis32~
-  <\fakeSlur fis\4 gis\4 \parenthesize e'\2> e'16\2 r16[ b\3 \once \override
+  <\fakeSlur fis\4 gis\4 \parenthesize e'\2> e'16\2 <\invTNH a,,>16[ b\3 \once \override
   BreathingSign #'extra-offset = #'(3 .  -2.0) \leftBracketTwo <cis
   cis,>8\stopTextSpan] \once \override BreathingSign #'extra-offset = #'(0.5 . 0)
   \leftBracketThree <b,, b, fis b\3 dis'>4 <\tweak TabNoteHead #'transparent ##t
   a,, fis b\3 dis'>16 <b\3 e'\2>8. |
   % Bar 78
   \arpeggioArrowUp \once \override BreathingSign #'extra-offset = #'(3 . 0)
-  \rightBracketThree <a,, a, e a cis' e'>4\arpeggio r16[ a,,8.] a,,4 < \tweak
+  \rightBracketThree <a,, a, e a cis' e'>4\arpeggio <\invTNH a,,>16[ a,,8.] a,,4 < \tweak
   TabNoteHead #'transparent ##t a,, a cis' e>8 a,16 a, |
   % Bar 79
   a,,16~ \once \override TextSpanner #'style = #'line \once \override
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
   } \once \override TextSpanner #'(bound-details left text) =  \markup { \halign
   #CENTER \fontsize #-5 "C IV " } <\fakeSlur a,,\6 cis,\6>\startTextSpan fis32~
-  <\fakeSlur fis\4 gis\4 \parenthesize e'\2> <e'\2 b\3 gis'\1>16 r16[ < b\3 e'\2>
+  <\fakeSlur fis\4 gis\4 \parenthesize e'\2> <e'\2 b\3 gis'\1>16 <\invTNH a,,>16[ < b\3 e'\2>
   \once \override BreathingSign #'extra-offset = #'(3 .  -2.0) \leftBracketTwo
   <cis, cis gis b e'\2>8\stopTextSpan] \once \override BreathingSign
   #'extra-offset = #'(0.5 . 0) \leftBracketThree <b,, b, fis b\3 dis'>4 <\tweak
@@ -1084,28 +1086,28 @@ tab = {
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
   } \once \override TextSpanner #'(bound-details left text) =  \markup { \halign
   #LEFT \fontsize #-5 "4/6 C II " } <a,, a, e a cis' a'>4\arpeggio\startTextSpan
-  r16[ a,,8.] a,,4 < \tweak TabNoteHead #'transparent ##t a,, a cis' a'>8 a,16
-  a\stopTextSpan |
+  <\invTNH a,,>16[ a,,8.] a,,4 < \tweak TabNoteHead #'transparent ##t a,, a cis' a'>8 a,16
+  a,\stopTextSpan |
   % Bar 81
   a,,16~ \once \override TextSpanner #'style = #'line \once \override
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
   } \once \override TextSpanner #'(bound-details left text) =  \markup { \halign
   #CENTER \fontsize #-5 "C IV " } <\fakeSlur a,,\6 cis,\6>\startTextSpan fis32~
-  <\fakeSlur fis\4 gis\4 \parenthesize e'\2 > <e'\2 b\3 gis'\1>16 r16[ < b\3
+  <\fakeSlur fis\4 gis\4 \parenthesize e'\2 > <e'\2 b\3 gis'\1>16 <\invTNH a,,>16[ < b\3
   e'\2> \once \override BreathingSign #'extra-offset = #'(3 .  -2.0)
   \leftBracketTwo <cis, cis gis b e'\2>8\stopTextSpan] \once \override
   BreathingSign #'extra-offset = #'(0.5 . 0) \leftBracketThree <b,, b, fis b\3
   dis'>4 <\tweak TabNoteHead #'transparent ##t a,, fis b\3 dis'>16 <b\3 e'\2>8. |
   % Bar 82
   \arpeggioArrowUp \once \override BreathingSign #'extra-offset = #'(3 . 0)
-  \rightBracketThree <a,, a, e a cis' e'>4\arpeggio r16[ a,,8.] a,,4 < \tweak
+  \rightBracketThree <a,, a, e a cis' e'>4\arpeggio <\invTNH a,,>16[ a,,8.] a,,4 < \tweak
   TabNoteHead #'transparent ##t a,, a cis' e>8 a,16 a, |
   % Bar 83
   a,,16~ \once \override TextSpanner #'style = #'line \once \override
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
   } \once \override TextSpanner #'(bound-details left text) =  \markup { \halign
   #CENTER \fontsize #-5 "C IV " } <\fakeSlur a,,\6 cis,\6>\startTextSpan <gis\4
-  \parenthesize e'\2> e'\2 r16[ <b e'\2> \once \override BreathingSign
+  \parenthesize e'\2> e'\2 <\invTNH a,,>16[ <b e'\2> \once \override BreathingSign
   #'extra-offset = #'(3 .  -2.0) \leftBracketTwo <cis, cis gis b
   e'\2>8\stopTextSpan] \once \override BreathingSign #'extra-offset = #'(0.5 . 0)
   \leftBracketThree <b,, b, fis b dis' >4 \once \override BreathingSign
@@ -1189,6 +1191,18 @@ dynamicstwo = {
   s1 |
   % Bar 15
   s4 s4 s16 \tsMove #0 #0 \lhSpannerDown "4" { s8. s8 s8 } |
+  % Bar 16
+  s1 |
+  % Bar 17
+  s1 |
+  % Bar 18
+  s1 |
+  % Bar 19
+  s1 |
+  % Bar 20
+  s1 |
+  % Bar 21
+  s2 s4-\mkTweak #0 #0 ^\lhfour s4 |
 }
 
 %% DynamicsThree
@@ -1217,6 +1231,26 @@ dynamicsthree = {
   s2. s8 s8 }
   % Bar 12
   s4 s8 s8-\mkTweak #0 #0 ^\lhfour s4 s8 s8-\mkTweak #0 #0 ^\lhfour  
+  % Bar 13
+  s1 |
+  % Bar 14
+  s1 |
+  % Bar 15
+  s1 |
+  % Bar 16
+  s1 |
+  % Bar 17
+  s1 |
+  % Bar 18
+  s1 |
+  % Bar 19
+  s1 |
+  % Bar 20
+  s1 |
+  % Bar 21
+  s4 \tsMove #0 #0 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \threeStrDamp s8-\mkTweak #0 #0 ^\oneStrMFlick -\mkTweak #0 #0
+  ^\lhtwo \startTextSpan s8\stopTextSpan |
 }
 
 %% DynamicsFour
@@ -1260,7 +1294,11 @@ dynamicsfour = {
   % Bar 19
   s1 |
   % Bar 20
-  s2. s8 \mkMove #0 #5 s8^\lhthree |
+  s2. \tsMove #0 #0 \threeStrDamp s16\startTextSpan 
+  s16\stopTextSpan  \mkMove #0 #5 s8^\lhthree |
+  % Bar 21
+  %% Fourth String-Dampening in this measure takes place in dynamicsthree
+  s8 \tsMove #0 #0 \lhSpannerDown "2" { s8 s4 s8 s8 } s4 |
 
   
 }
@@ -1306,7 +1344,10 @@ dynamicsfive = {
   % Bar 19
   \mkMove #-2.0 #10 s4^\fivestrdwnstrm s4 s2 |
   % Bar 20
-  s2. \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s2. \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 21
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
 }
 %% DynamicsSix
 dynamicssix = {
@@ -1388,6 +1429,13 @@ dynamicssix = {
   s1
   % Bar 18
   s2. s8_\twoStrFlick s8
+  % Bar 19
+  s1 
+  % Bar 20
+  s1 
+  % Bar 21
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan
 }
 
 %% SixStr
@@ -1437,9 +1485,9 @@ sixstr = {
   s8_\snare\startTextSpan s8\stopTextSpan |
   % Bar 20
   s4 \strDampening s8_\snare\startTextSpan s8\stopTextSpan s4 \strDampening
-  s8_\snare\startTextSpan s8\stopTextSpan |
+  s16_\snare\startTextSpan s16\stopTextSpan s8 |
   % Bar 21
-  s4 s4_\bassSnare s4 s4_\snare |
+  s16 \tsMove #0 #0 \lhSpannerDown "3" { s8. s4_\bassSnare s4 s8_\snare } s8 |
   % Bar 22
   s4 s4_\bassSnare s2 |
   % Bar 23
@@ -1496,77 +1544,77 @@ sixstr = {
   s1 |
   % Bar 47
   s4 s4_\bassSnare s4 s4_\snare |
-  % Bar 40
-  s4 s4_\bassSnare s4 s4_\snare |
-  % Bar 41
-  s4 s4_\bassSnare s4 s4_\snare |
-  % Bar 42
-  s4 s4_\snare s4 s4_\snare |
-  % Bar 43
-  s4 s4_\snare s4 s4_\snare |
-  % Bar 44
-  s4 s4_\snare s4 s4_\snare |
-  % Bar 45
-  s4 s4_\snare s4 s4_\snare |
-  % Bar 46
-  s4 s4_\snare s4 s4 |
-  % Bar 47
-  s4 s4_\bassSnare s4 s4_\snare |
   % Bar 48
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4_\bassSnare s4 s4_\snare |
   % Bar 49
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4_\bassSnare s4 s4_\snare |
   % Bar 50
-  s4 s4_\snare s4 s4 |
+  s4 s4_\snare s4 s4_\snare |
   % Bar 51
-  s4 s4_\bassSnare s4 s4_\snare |
+  s4 s4_\snare s4 s4_\snare |
   % Bar 52
-  s4 s4_\bassSnare s4 s4_\snare |
+  s4 s4_\snare s4 s4_\snare |
   % Bar 53
-  s4 s4_\bassSnare s4 s4_\snare |
+  s4 s4_\snare s4 s4_\snare |
   % Bar 54
-  s4 s4_\bassSnare s4 s4_\snare |
+  s4 s4_\snare s4 s4 |
   % Bar 55
-  s4 s4_\bass s4 s4 |
+  s4 s4_\bassSnare s4 s4_\snare |
   % Bar 56
-  s4 s4_\bass s4 s4_\snare |
+  s4 s4_\snare s4 s4_\snare |
   % Bar 57
-  s4 s4_\bass s4 s4_\snare |
+  s4 s4_\snare s4 s4_\snare |
   % Bar 58
-  s4 s4_\bass s4 s4_\snare |
+  s4 s4_\snare s4 s4 |
   % Bar 59
-  s4 s4_\bass s4 s4_\snare |
+  s4 s4_\bassSnare s4 s4_\snare |
   % Bar 60
   s4 s4_\bassSnare s4 s4_\snare |
   % Bar 61
   s4 s4_\bassSnare s4 s4_\snare |
   % Bar 62
-  s4 s4_\bass s4 s4_\snare |
-  % Bar 63
-  s4 s4_\snare s4 s4_\snare |
-  % Bar 64
   s4 s4_\bassSnare s4 s4_\snare |
+  % Bar 63
+  s4 s4_\bass s4 s4 |
+  % Bar 64
+  s4 s4_\bass s4 s4_\snare |
   % Bar 65
-  s4 s4_\bassSnare s4 s4_\bassSnare |
+  s4 s4_\bass s4_\snare s4 |
   % Bar 66
-  s4 s4_\bass s4 s4_\bassSnare |
+  s4 s4_\bass s4 s4_\snare |
   % Bar 67
-  s4 s4_\bass s4 s4 | 
+  s4 s4_\bass s4 s4_\snare |
   % Bar 68
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4_\bassSnare s4 s4_\snare |
   % Bar 69
-  s4 s4_\snare s4 s4 |
-  % Bar 70  
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4_\bassSnare s4 s4_\snare |
+  % Bar 70
+  s4 s4_\bass s4 s4_\snare |
   % Bar 71
-  s4 s4_\snare s4 s4 |
+  s4 s4_\snare s4 s4_\snare |
   % Bar 72
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4_\bassSnare s4 s4_\snare |
   % Bar 73
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4_\bassSnare s4 s4_\bassSnare |
   % Bar 74
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4_\bass s4 s4_\bassSnare |
   % Bar 75
+  s4 s4_\bass s4 s4 | 
+  % Bar 76
+  s4 s4_\snare s4 s4_\snare |
+  % Bar 77
+  s4 s4_\snare s4 s4 |
+  % Bar 78  
+  s4 s4_\snare s4 s4_\snare |
+  % Bar 79
+  s4 s4_\snare s4 s4 |
+  % Bar 80
+  s4 s4_\snare s4 s4_\snare |
+  % Bar 81
+  s4 s4_\snare s4 s4_\snare |
+  % Bar 82
+  s4 s4_\snare s4 s4_\snare |
+  % Bar 83
   s4 s4_\snare s4 s4 |
 
 }
@@ -1590,7 +1638,6 @@ sixstr = {
     >>
     \new TabStaff = "guitar tab" <<
       \set Staff.stringTunings = \stringTuning <a,, a, d g b e'>
-      \new TabVoice = "tab" \tab
       \new Dynamics = "sixstr" \sixstr
       \new Dynamics = "dynamicsone" \dynamicsone
       \new Dynamics = "dynamicstwo" \dynamicstwo
@@ -1598,6 +1645,7 @@ sixstr = {
       \new Dynamics = "dynamicsfour" \dynamicsfour 
       \new Dynamics = "dynamicsfive" \dynamicsfive  
       \new Dynamics = "dynamicssix" \dynamicssix
+      \new TabVoice = "tab" \tab
     >>
   >>
 %% Layout
