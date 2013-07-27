@@ -107,28 +107,28 @@ upper = {
   \key g \major
   % Bar 1
   b2\rest
-   b8\rest \deadNote d16 \grace f8 \glissando fis16 \deadNote d16 d16 \deadNote
+   b8\rest \deadNote d16 \slashedGrace f8 \glissando fis16 \deadNote d16 d16 \deadNote
   a,16 b,16 |
   % Bar 2
-  b2\rest b8\rest \deadNote a,16 \grace c8 \glissando cis16 \deadNote a,16 a,16
+  b2\rest b8\rest \deadNote a,16 \slashedGrace c8 \glissando cis16 \deadNote a,16 a,16
   \deadNote a,16 b,16 |
   % Bar 3
-  b2\rest b8\rest \deadNote d16 \grace f8 \glissando fis16 \deadNote d16 d16 \deadNote
+  b2\rest b8\rest \deadNote d16 \slashedGrace f8 \glissando fis16 \deadNote d16 d16 \deadNote
   a,16 b,16 |
   % Bar 4
-  b2\rest b8\rest \deadNote a,16 \grace c8 \glissando cis16 \deadNote a,16 a,16
+  b2\rest b8\rest \deadNote a,16 \slashedGrace c8 \glissando cis16 \deadNote a,16 a,16
   \deadNote a,16 b,16 |
   % Bar 5
-  b2\rest b8\rest \deadNote d16 \grace f8 \glissando fis16 \deadNote d16 d16 \deadNote
+  b2\rest b8\rest \deadNote d16 \slashedGrace f8 \glissando fis16 \deadNote d16 d16 \deadNote
   a,16 b,16 |
   % Bar 6
-  b2\rest b8\rest \deadNote a,16 \grace c8 \glissando cis16 \deadNote a,16 a,16
+  b2\rest b8\rest \deadNote a,16 \slashedGrace c8 \glissando cis16 \deadNote a,16 a,16
   \deadNote a,16 b,16 |
   % Bar 7
-  b2\rest b8\rest \deadNote d16 \grace f8 \glissando fis16 \deadNote d16 d16 \deadNote
+  b2\rest b8\rest \deadNote d16 \slashedGrace f8 \glissando fis16 \deadNote d16 d16 \deadNote
   a,16 b,16 |
   % Bar 8
-  b2\rest b8\rest \deadNote d16 \grace f8 \glissando fis16 \deadNote g16 a16~
+  b2\rest b8\rest \deadNote d16 \slashedGrace f8 \glissando fis16 \deadNote g16 a16~
   a8 |
   % Bar 9
   << { <b, fis b>1\arpeggio } \\ { b1 } >>
@@ -318,15 +318,15 @@ upper = {
         % Bar 21
         \stemUp s2 d'16( b) g8( a8) b~ |
         % Bar 22
-        b2 fis'16( e') b8 \grace cis'8 \glissando d'8 e'16 b~ |
+        b2 fis'16( e') b8 \slashedGrace cis'8 \glissando d'8 e'16 b~ |
         % Bar 23
         b2 d'16( b) g8( a8) e'~ |
         % Bar 24
-        e'2 a16( g) e8 \grace a8 \glissando b8 b16 g~
+        e'2 a16( g) e8 \slashedGrace a8 \glissando b8 b16 g~
         % Bar 25
         g2 d'16( b) g8( a) <b e'>8~
         % Bar 26
-        <b e'>2 fis'16( e') b8 \grace cis'8 \glissando d'8 e'16 b~ |
+        <b e'>2 fis'16( e') b8 \slashedGrace cis'8 \glissando d'8 e'16 b~ |
         % Bar 27
         b2 g16( a) b8 a16( g) e8 |
         % Bar 28
@@ -334,7 +334,7 @@ upper = {
         % Bar 29
         b2\rest fis'16( b) g8 d' e'~ |
         % Bar 30
-        e'2 \grace fis'8 \glissando g'8 a' \once \override Voice.NoteHead
+        e'2 \slashedGrace fis'8 \glissando g'8 a' \once \override Voice.NoteHead
         #'style = #'harmonic-mixed b'4~ |
         % Bar 31
         \once \override Voice.NoteHead #'style = #'harmonic-mixed b'2 g16( a)
@@ -344,7 +344,7 @@ upper = {
         % Bar 33
         b2\rest fis'16( b) g8 d' e'~ |
         % Bar 34
-        e'2 \grace fis'8 \glissando g'8 a' \once \override Voice.NoteHead
+        e'2 \slashedGrace fis'8 \glissando g'8 a' \once \override Voice.NoteHead
         #'style = #'harmonic-mixed b'4~ |
         % Bar 35
         \once \override Voice.NoteHead #'style = #'harmonic-mixed b'2 g16( a)
@@ -358,31 +358,31 @@ upper = {
         Voice.NoteHead #'style = #'harmonic-mixed <fis'' b''>4~ |
         % Bar 39
         \once \override Voice.NoteHead #'style = #'harmonic-mixed  <fis''
-        b''>2 \ottava #0 b8\rest \tieNeutral \deadNote d16 \grace f8 \glissando fis16
+        b''>2 \ottava #0 b8\rest \tieNeutral \deadNote d16 \slashedGrace f8 \glissando fis16
         \deadNote d16 d16 \deadNote a,16 b,16 |
         % Bar 40
-        b2\rest b8\rest \deadNote a,16 \grace c8 \glissando cis16 \deadNote a,16 a,16
+        b2\rest b8\rest \deadNote a,16 \slashedGrace c8 \glissando cis16 \deadNote a,16 a,16
         \deadNote a,16 b,16 |
         % Bar 41        
-        b2\rest b8\rest \tieNeutral \deadNote d16 \grace f8 \glissando fis16
+        b2\rest b8\rest \tieNeutral \deadNote d16 \slashedGrace f8 \glissando fis16
         \deadNote d16 d16 \deadNote a,16 b,16 |
         % Bar 42
-        b2\rest b8\rest \deadNote a,16 \grace c8 \glissando cis16 \deadNote a,16
-        \grace c8 \glissando cis16
-        \deadNote a,16 \grace c8 \glissando cis16 |
+        b2\rest b8\rest \deadNote a,16 \slashedGrace c8 \glissando cis16 \deadNote a,16
+        \slashedGrace c8 \glissando cis16
+        \deadNote a,16 \slashedGrace c8 \glissando cis16 |
         % Bar 43
-        b2\rest b8\rest \deadNote d16 \grace f8 \glissando fis16 \deadNote g16
+        b2\rest b8\rest \deadNote d16 \slashedGrace f8 \glissando fis16 \deadNote g16
         g16 \deadNote
         d16 e16 |
         % Bar 44
-        b2\rest b8\rest \deadNote a,16 \grace c8 \glissando cis16 \deadNote d16
+        b2\rest b8\rest \deadNote a,16 \slashedGrace c8 \glissando cis16 \deadNote d16
         d16
         \deadNote a,16 b,16 |
         % Bar 45
-        b2\rest b8\rest \tieNeutral \deadNote d16 \grace f8 \glissando fis16
+        b2\rest b8\rest \tieNeutral \deadNote d16 \slashedGrace f8 \glissando fis16
         \deadNote d16 d16 \deadNote a,16 b,16 |
         % Bar 46
-        b2\rest b8\rest \deadNote d16 \grace f8 \glissando fis16 \deadNote g16 a16~
+        b2\rest b8\rest \deadNote d16 \slashedGrace f8 \glissando fis16 \deadNote g16 a16~
         a8 |
 
         
@@ -401,7 +401,7 @@ upper = {
         % Bar 53
         b2\rest fis'16( b) g8 d' e'~ |
         % Bar 54
-        e'2 \grace fis'8 \glissando g'8 a' \once \override Voice.NoteHead
+        e'2 \slashedGrace fis'8 \glissando g'8 a' \once \override Voice.NoteHead
         #'style = #'harmonic-mixed b'4~ |
         % Bar 55
         \once \override Voice.NoteHead #'style = #'harmonic-mixed b'2 g16( a) b8 a16( g) e8 |
@@ -410,7 +410,7 @@ upper = {
         % Bar 57
         b2\rest fis'16( b) g8 d' e'~ |
         % Bar 58
-        e'2 \grace fis'8 \glissando g'8 a' \once \override Voice.NoteHead
+        e'2 \slashedGrace fis'8 \glissando g'8 a' \once \override Voice.NoteHead
         #'style = #'harmonic-mixed b'4~ |
         % Bar 59
         \once \override Voice.NoteHead #'style = #'harmonic-mixed b'2 g16( a) b8 a16( g) e8 |
@@ -465,25 +465,25 @@ upper = {
         #'style = #'harmonic-mixed <fis'' b''>4~ |
         % Bar 84
         \once \override Voice.NoteHead #'style = #'harmonic-mixed  <fis''
-        b''>2 \ottava #0 b8\rest \deadNote d16 \grace f8 \glissando fis16
+        b''>2 \ottava #0 b8\rest \deadNote d16 \slashedGrace f8 \glissando fis16
         \deadNote d16 d16 \deadNote a,16 b,16 |
         % Bar 85
-        b2\rest b8\rest \deadNote a,16 \grace c8 \glissando cis16 \deadNote a,16 a,16
+        b2\rest b8\rest \deadNote a,16 \slashedGrace c8 \glissando cis16 \deadNote a,16 a,16
         \deadNote a,16 b,16 |
         % Bar 86
-        b2\rest b8\rest \deadNote d16 \grace f8 \glissando fis16
+        b2\rest b8\rest \deadNote d16 \slashedGrace f8 \glissando fis16
         \deadNote d16 d16 \deadNote a,16 b,16 |
         % Bar 87
-        b2\rest b8\rest \deadNote a,16 \grace c8 \glissando cis16 \deadNote a,16 a,16
+        b2\rest b8\rest \deadNote a,16 \slashedGrace c8 \glissando cis16 \deadNote a,16 a,16
         \deadNote a,16 b,16 |
         % Bar 88
-        b2\rest b8\rest \deadNote d16 \grace f8 \glissando fis16
+        b2\rest b8\rest \deadNote d16 \slashedGrace f8 \glissando fis16
         \deadNote d16 d16 \deadNote a,16 b,16 |
         % Bar 89
-        b2\rest b8\rest \deadNote a,16 \grace c8 \glissando cis16 \deadNote a,16 a,16
+        b2\rest b8\rest \deadNote a,16 \slashedGrace c8 \glissando cis16 \deadNote a,16 a,16
         \deadNote a,16 b,16 |
         % Bar 90
-        b2\rest b8\rest \deadNote d16 \grace f8 \glissando fis16
+        b2\rest b8\rest \deadNote d16 \slashedGrace f8 \glissando fis16
         \deadNote d16 d16 \deadNote a,16 b,16 |
         % Bar 91
         b2\rest b4\rest 
@@ -739,7 +739,7 @@ tab = {
   <a,, a,>8-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp
   \leftBracketTwo <b,, b,>-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
   \tick d16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
-  \grace f8-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi 
+  \slashedGrace f8-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi 
   \glissando fis16 \tick d16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
   d16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi 
   \tick a,16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
@@ -752,34 +752,34 @@ tab = {
   <a,, a,>8-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
   \leftBracketTwo <b,, b,>-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
   \tick a,16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
-  \grace c8-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi
+  \slashedGrace c8-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi
   \glissando cis16 \tick a,16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
   a,16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi 
   \tick a,16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
   b,16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi |
   % Bar 3
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick d16 \grace f8 \glissando fis16 \tick d16
+  a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16
   d16 \tick a,16 b,16 |
   % Bar 4
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,, a,>8
-  \leftBracketTwo <b,, b,> \tick a,16 \grace c8 \glissando cis16 \tick a,16 a,16
+  \leftBracketTwo <b,, b,> \tick a,16 \slashedGrace c8 \glissando cis16 \tick a,16 a,16
   \tick a,16 b,16 |
   % Bar 5
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick d16 \grace f8 \glissando fis16 \tick d16
+  a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16
   d16 \tick a,16 b,16 |
   % Bar 6
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick a,16 \grace c8 \glissando cis16 \tick
+  a,>8 \leftBracketTwo <b,, b,> \tick a,16 \slashedGrace c8 \glissando cis16 \tick
   a,16 a,16 \tick a,16 b,16 |
   % Bar 7
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick d16 \grace f8 \glissando fis16 \tick d16
+  a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16
   d16 \tick a,16 b,16 | 
   % Bar 8
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick d16 \grace f8 \glissando fis16 \tick g16
+  a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick g16
   a16~ a8 | 
 
   
@@ -863,7 +863,7 @@ tab = {
   b,,8-\mkTweak #0 #0 ^\rhp <\parenthesize a d>16-\mkTweak #0 #0 ^\rhi d16-\mkTweak #0 #0 ^\rhm
   <\invTNH a,,\6>16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi[ d b,,8-\mkTweak #0 #0 ^\rhp ]
   fis'16-\mkTweak #0 #0 ^\rhm ~
-  <\fakeSlur fis'\1 e'\1>16 b8-\mkTweak #0 #0 ^\rhm \grace cis'8-\mkTweak #0 #0
+  <\fakeSlur fis'\1 e'\1>16 b8-\mkTweak #0 #0 ^\rhm \slashedGrace cis'8-\mkTweak #0 #0
   ^\rhm \glissando d'8 e'16-\mkTweak #0 #0 ^\rha b-\mkTweak #0 #0 ^\rhm |
   % Bar 23
   c,8 e16 g16-\mkTweak #0 #0 ^\rhm  
@@ -871,7 +871,7 @@ tab = {
   <a\3 \invTNH a,,> e'-\mkTweak #0 #0 ^\rha |
   % Bar 24
   b,,8 <\parenthesize a d>16 d16~ d16[ d b,,8] a16-\mkTweak #0 #0 ^\rhm ~
-  <\fakeSlur a\3 g\3>16 e8-\mkTweak #0 #0 ^\rhi \grace a8-\mkTweak #0 #0 ^\rhm
+  <\fakeSlur a\3 g\3>16 e8-\mkTweak #0 #0 ^\rhi \slashedGrace a8-\mkTweak #0 #0 ^\rhm
   \glissando b8\3 b16-\mkTweak #0 #0 ^\rha g-\mkTweak #0 #0 ^\rhm | 
   % Bar 25
   c,8 e16 e16~ 
@@ -879,7 +879,7 @@ tab = {
   <a\3 \invTNH a,,> <b e'>-\mkTweak #0 #0 ^\rha |
   % Bar 26
   b,,8 <\parenthesize a d>16 d16~ d16[ d b,,8] fis'16~
-  <\fakeSlur fis'\1 e'\1>16 b8 \grace cis'8 \glissando d'8 e'16 b^\mark \markup
+  <\fakeSlur fis'\1 e'\1>16 b8 \slashedGrace cis'8 \glissando d'8 e'16 b^\mark \markup
   { \fontsize #-2 \italic "To Coda"}
   % Bar 27
   <c \parenthesize e>8-\mkTweak #0 #0 ^\rhp e16-\mkTweak #0 #0 ^\rhi e-\mkTweak
@@ -887,37 +887,37 @@ tab = {
   g16-\mkTweak #0 #0 ^\rhm ~ <\fakeSlur g\3 a\3> b8-\mkTweak #0 #0 ^\rha
   <\tweak TabNoteHead #'transparent ##t a,, a>16~ <\fakeSlur a\3 g\3>16 e8-\mkTweak #0 #0 ^\rhi |
   % Bar 28
-  \grace { \hideFretNumber c8 \glissando s } d8\5 fis16 g~ g16[ fis16 d8\5]
+  \slashedGrace { \hideFretNumber c8 \glissando s } d8\5 fis16 g~ g16[ fis16 d8\5]
   g16~ <\fakeSlur g\3 b\3> d'8 < \tweak TabNoteHead #'transparent ##t a,,
   b\3>16~ <\fakeSlur b\3 g\3>16 fis8 |
   % Bar 29
-  \grace { \hideFretNumber d8\5 \glissando s } e8\5 g16\4 g 
+  \slashedGrace { \hideFretNumber d8\5 \glissando s } e8\5 g16\4 g 
   <\invTNH e,\6>16[ g\4 e8\5] fis'16\2~ <\fakeSlur
   fis'\2 b\2> g8 <d'\3
   \tweak TabNoteHead #'transparent ##t a,,>8 e' |
   % Bar 30
-  e8\5 g16\4 g\3~ g\3 g\4 e8\5 \grace fis'8\2 \glissando g'8\2 a'\1
+  e8\5 g16\4 g\3~ g\3 g\4 e8\5 \slashedGrace fis'8\2 \glissando g'8\2 a'\1
   <b'\2\harmonic a,,>4~ 
   % Bar 31
   <\fakeSlur a,,\6 c,\6>8 e16 g~ g e c,8 \slurNeutral g16~ <\fakeSlur g\3 a\3>
   b8 < \tweak TabNoteHead #'transparent ##t a,, a>16~ <\fakeSlur a\3 g\3> e8 |
   % Bar 32
-  \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g 
+  \slashedGrace { \hideFretNumber c,8 \glissando s } d,8 fis16 g 
   <\invTNH a,,\6>16[ fis d,8] g16~ <\fakeSlur g\3 b\3> d'8 < \tweak
   TabNoteHead #'transparent ##t a,, b\3>16~ <\fakeSlur b\3 g\3> fis8 |
   % Bar 33
-  \grace { \hideFretNumber d,8 \glissando s } e,8 g16\4 g\3~ g\3 g\4 e,8
+  \slashedGrace { \hideFretNumber d,8 \glissando s } e,8 g16\4 g\3~ g\3 g\4 e,8
   fis'16\2~ <\fakeSlur fis'\2 b\2> g8 < \tweak TabNoteHead #'transparent ##t
   a,, d'\3>8 e' | 
   % Bar 34
-  e,8 g16\4 g\3 <\invTNH a,,\6>16[ g\4 e,8] \grace
+  e,8 g16\4 g\3 <\invTNH a,,\6>16[ g\4 e,8] \slashedGrace
   fis'8\2 \glissando g'8\2 a' \slurDown <b'\2\harmonic a,,>4~ |
   % Bar 35
   \slurNeutral
   <\fakeSlur a,,\6 c,\6>8 e16 g~ g e c,8 g16~ <\fakeSlur g\3 a\3> b8 < \tweak
   TabNoteHead #'transparent ##t a,, a>16~ <\fakeSlur a\3 g\3> e8 |
   % Bar 36
-  \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g <\invTNH d,\6>16[ fis16 d,8] g16~
+  \slashedGrace { \hideFretNumber c,8 \glissando s } d,8 fis16 g <\invTNH d,\6>16[ fis16 d,8] g16~
   <\fakeSlur g\3 b\3> d'8 <d'\2 b\3 \invTNH a,,>8 <\tweakTabNoteHead
   \mutedString a, d, d>16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0
   ^\threestrdwnstrm <\tweakTabNoteHead \tickInChord
@@ -942,35 +942,35 @@ tab = {
   % Bar 39
   \override BreathingSign #'extra-offset = #'(0.3 . -2) <a,, a,>8[
   \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,, a,>8
-  \leftBracketTwo <b,, b,> \tick d16 \grace f8 \glissando fis16 \tick d16 d16
+  \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16 d16
   \tick a,16 b,16 |
   % Bar 40
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick a,16 \grace c8 \glissando cis16 \tick
+  a,>8 \leftBracketTwo <b,, b,> \tick a,16 \slashedGrace c8 \glissando cis16 \tick
   a,16 a,16 \tick a,16 b,16 |
   % Bar 41
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick d16 \grace f8 \glissando fis16 \tick d16
+  a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16
   d16 \tick a,16 b,16 |
   % Bar 42
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick a,16 \grace c8 \glissando cis16 \tick
-  a,16 \grace c8 \glissando cis16 \tick a,16 \grace c8 \glissando cis16 |
+  a,>8 \leftBracketTwo <b,, b,> \tick a,16 \slashedGrace c8 \glissando cis16 \tick
+  a,16 \slashedGrace c8 \glissando cis16 \tick a,16 \slashedGrace c8 \glissando cis16 |
   % Bar 43
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick d16 \grace f8 \glissando fis16 \tick
+  a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick
   g16 g16 \tick d16 e16 |
   % Bar 44
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,, a,>8
-  \leftBracketTwo <b,, b,> \tick a,16 \grace c8 \glissando cis16 \tick d16 d16
+  \leftBracketTwo <b,, b,> \tick a,16 \slashedGrace c8 \glissando cis16 \tick d16 d16
   \tick a,16 b,16 |
   % Bar 45
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick d16 \grace f8 \glissando fis16 \tick d16
+  a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16
   d16 \tick a,16 b,16 |
   % Bar 46
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick d16 \grace f8 \glissando fis16 \tick e16
+  a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick e16
   a16~ a8^\mark \markup { \fontsize #-2 \italic "D.S. al Coda"} \bar "||"
   \break
   %%
@@ -981,11 +981,11 @@ tab = {
   g\3 a\3> b8 <\tweak TabNoteHead #'transparent ##t a,, a>16~ <\fakeSlur a\3
   g\3>16 e8 |
   % Bar 48 
-  \grace { \hideFretNumber c8 \glissando s } d8\5 fis16 g \tweak TabNoteHead
+  \slashedGrace { \hideFretNumber c8 \glissando s } d8\5 fis16 g \tweak TabNoteHead
   #'transparent ##t a,,16[ fis16 d8\5] g16~ <\fakeSlur g\3 b\3> d'8 < \tweak
   TabNoteHead #'transparent ##t a,, b\3>16~ <\fakeSlur b\3 g\3>16 fis8 |
   % Bar 49
-  \grace { \hideFretNumber d8\5 \glissando s } e8\5 g16\4 g 
+  \slashedGrace { \hideFretNumber d8\5 \glissando s } e8\5 g16\4 g 
   <\invTNH a,,\6>16[ g\4 e8\5] fis'16\2~ <\fakeSlur
   fis'\2 b\2> g8 <d'\3 \tweak TabNoteHead #'transparent ##t a,,>8 e' |
   % Bar 50
@@ -997,41 +997,41 @@ tab = {
   g\3 a\3> b8 <\tweak TabNoteHead #'transparent ##t a,, a>16~ <\fakeSlur a\3
   g\3>16 e8 |
   % Bar 52 
-  \grace { \hideFretNumber c8 \glissando s } d8\5 fis16 g \tweak TabNoteHead
+  \slashedGrace { \hideFretNumber c8 \glissando s } d8\5 fis16 g \tweak TabNoteHead
   #'transparent ##t a,,16[ fis16 d8\5] g16~ <\fakeSlur g\3 b\3> d'8 < \tweak
   TabNoteHead #'transparent ##t a,, b\3>16~ <\fakeSlur b\3 g\3>16 fis8 |
   % Bar 53
-  \grace { \hideFretNumber d8\5 \glissando s } e8\5 g16\4 g 
+  \slashedGrace { \hideFretNumber d8\5 \glissando s } e8\5 g16\4 g 
   <\invTNH a,,>16[ g\4 e8\5] fis'16\2~ <\fakeSlur fis'\2 b\2> g8
   <d'\3 \tweak TabNoteHead #'transparent ##t a,,>8 e' |
   % Bar 54
-  e8\5 g16\4 g\3 <\invTNH a,,>16[ g\4 e8\5] \grace
+  e8\5 g16\4 g\3 <\invTNH a,,>16[ g\4 e8\5] \slashedGrace
   fis'8\2 \glissando g'8\2 a' \slurDown <b'\2\harmonic a,,>4~ |
   % Bar 55
   <\fakeSlur a,,\6 c,\6>8 e16 g \tweak TabNoteHead #'transparent ##t a,, e c,8
   \slurNeutral g16~ <\fakeSlur g\3 a\3> b8 < \tweak TabNoteHead #'transparent
   ##t a,, a>16~ <\fakeSlur a\3 g\3> e8 |
   % Bar 56
-  \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g 
+  \slashedGrace { \hideFretNumber c,8 \glissando s } d,8 fis16 g 
   <\invTNH a,,>16[ fis d,8] g16~ <\fakeSlur g\3 b\3> d'8 < \tweak
   TabNoteHead #'transparent ##t a,, b\3>16~ <\fakeSlur b\3 g\3> fis8 |
   % Bar 57
-  \grace { \hideFretNumber d,8 \glissando s } e,8 g16\4 g\3 \tweak TabNoteHead
+  \slashedGrace { \hideFretNumber d,8 \glissando s } e,8 g16\4 g\3 \tweak TabNoteHead
   #'transparent ##t a,, g\4 e,8 fis'16\2~ <\fakeSlur fis'\2 b\2> g8 < \tweak
   TabNoteHead #'transparent ##t a,, d'\3>8 e' |
   % Bar 58
-  e,8 g16\4 g\3 <\invTNH a,,>16[ g\4 e,8] \grace
+  e,8 g16\4 g\3 <\invTNH a,,>16[ g\4 e,8] \slashedGrace
   fis'8\2 \glissando g'8\2 a' \slurDown <b'\2\harmonic a,,>4~ |
   % Bar 59
   <\fakeSlur a,,\6 c,\6>8 e16 g \tweak TabNoteHead #'transparent ##t a,, e c,8
   \slurNeutral g16~ <\fakeSlur g\3 a\3> b8 < \tweak TabNoteHead #'transparent
   ##t a,, a>16~ <\fakeSlur a\3 g\3> e8 |
   % Bar 60
-  \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g 
+  \slashedGrace { \hideFretNumber c,8 \glissando s } d,8 fis16 g 
   <\invTNH a,,>16[ fis d,8] g16~ <\fakeSlur g\3 b\3> d'8 < \tweak
   TabNoteHead #'transparent ##t a,, b\3>16~ <\fakeSlur b\3 g\3> fis8 |
   % Bar 61
-  \grace { \hideFretNumber d,8 \glissando s } e,8 g16\4 g\3 \tweak TabNoteHead
+  \slashedGrace { \hideFretNumber d,8 \glissando s } e,8 g16\4 g\3 \tweak TabNoteHead
   #'transparent ##t a,, g\4 e,8 fis'16\2~ <\fakeSlur fis'\2 b\2> g8 < \tweak
   TabNoteHead #'transparent ##t a,, d'\3>8 e' |
   % Bar 62
@@ -1039,37 +1039,37 @@ tab = {
   fis'16\2~ <\fakeSlur fis'\2 b\2> <e, g>8 <b d'\3 \tweak TabNoteHead
   #'transparent ##t a,,>8 <e' b> |
   % Bar 63
-  a,8\6 c'16\4 g~ g16[ c'\4 <a,\6 g'\3>8]~ <a,\6 g'\3>4 \glissando \grace {
+  a,8\6 c'16\4 g~ g16[ c'\4 <a,\6 g'\3>8]~ <a,\6 g'\3>4 \glissando \slashedGrace {
   \hideFretNumber <g,\6 f'\3>8 \hideFretNumber <g\5>8 \glissando s } a8\5 b |
   % Bar 64
   e,8 g16\4 g\4~ g16\4[ g\4 e,8] d'16\3~ <\fakeSlur d'\3 g\3> g8\4 
   <\invTNH a,, a\4 > b |
   % Bar 65
-  a,8\6 c'16\4 b~ b16[ c'\4 <a,\6 g\3>8]~ <a,\6 g\3>8[ <\invTNH a,, g\3 b'\2>8] \grace {
+  a,8\6 c'16\4 b~ b16[ c'\4 <a,\6 g\3>8]~ <a,\6 g\3>8[ <\invTNH a,, g\3 b'\2>8] \slashedGrace {
   \hideFretNumber g8\5 \glissando s } a8\5 b |
   % Bar 66
   d,8 fis16 g~ g16[ fis d,8] <\tweakTabNoteHead \mutedString e\5 e,\6 g\4 g\3
   b\2>4 <\invTNH a,, g\3>4 |
   % Bar 67
   a,8\6 c'16\4 b~ b16[ c'\4 <a,\6 g'\3>8]~ <a,\6 g'\3>4 \glissando
-  \grace { \hideFretNumber <g,\6 f'\3>8 } <\invTNH a,, g>8 b |
+  \slashedGrace { \hideFretNumber <g,\6 f'\3>8 } <\invTNH a,, g>8 b |
   % Bar 68
   e,8 g16\4 g\3 <\invTNH a,,>16[ g\4 e,8] d'16\3~ <\fakeSlur d'\3 g\3> g8\4
   <\invTNH a,, g\3 a\4> b |
   % Bar 69
-  c,8 e16 g <\invTNH a,,>16[ e c,8] \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g
+  c,8 e16 g <\invTNH a,,>16[ e c,8] \slashedGrace { \hideFretNumber c,8 \glissando s } d,8 fis16 g
   <\invTNH a,,>16[ fis d,8] |
   % Bar 70
-  \grace { \hideFretNumber d, \glissando s } e,8 g16\4 g\3 <\invTNH a,,>16[ d <c,
+  \slashedGrace { \hideFretNumber d, \glissando s } e,8 g16\4 g\3 <\invTNH a,,>16[ d <c,
   \tweakTabNoteHead \mutedString c e g>8]~ <c, e g>4 <\invTNH a,, g e>4  |
   % Bar 71
-  c,8 e16 b <\invTNH a,,>16[ e c,8] \grace { \hideFretNumber c,8 \glissando s } d,8 fis16 g
+  c,8 e16 b <\invTNH a,,>16[ e c,8] \slashedGrace { \hideFretNumber c,8 \glissando s } d,8 fis16 g
   <\invTNH a,,>16[ fis d,8] |
   % Bar 72
   e,8 g16\4 <b e'> <\invTNH a,,>16[ d <c, \tweakTabNoteHead \mutedString a, e g d'>8]~ <c,
   e g d'>4 <\invTNH a,, e g>4  |
   % Bar 73
-  c,8 e16 d' <\invTNH a,,>16[ e c,8] \grace { \hideFretNumber c,8 \glissando s } d,8 fis16
+  c,8 e16 d' <\invTNH a,,>16[ e c,8] \slashedGrace { \hideFretNumber c,8 \glissando s } d,8 fis16
   e'\2 <\invTNH a,,>16[ fis d,8] |
   % Bar 74
   e,8 g16\4 fis'\2~ fis'16\2[ d <c, \tweakTabNoteHead \mutedString a, e g d' >8]~ <c,
@@ -1139,31 +1139,31 @@ tab = {
   #'extra-offset = #'(0.3 . 2) \leftBracketTwo \harmonicByRatio #1/3 <b' fis'>4
   % Bar 84
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick d16 \grace f8 \glissando fis16 \tick d16
+  a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16
   d16 \tick a,16 b,16 |
   % Bar 85 
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick a,16 \grace c8 \glissando cis16 \tick
+  a,>8 \leftBracketTwo <b,, b,> \tick a,16 \slashedGrace c8 \glissando cis16 \tick
   a,16 a,16 \tick a,16 b,16 |
   % Bar 86
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick d16 \grace f8 \glissando fis16 \tick d16
+  a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16
   d16 \tick a,16 b,16 |
   % Bar 87 
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick a,16 \grace c8 \glissando cis16 \tick
+  a,>8 \leftBracketTwo <b,, b,> \tick a,16 \slashedGrace c8 \glissando cis16 \tick
   a,16 a,16 \tick a,16 b,16 |
   % Bar 88
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick d16 \grace f8 \glissando fis16 \tick d16
+  a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16
   d16 \tick a,16 b,16 |
   % Bar 89 
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick a,16 \grace c8 \glissando cis16 \tick
+  a,>8 \leftBracketTwo <b,, b,> \tick a,16 \slashedGrace c8 \glissando cis16 \tick
   a,16 a,16 \tick a,16 b,16 |
   % Bar 90
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick d16 \grace f8 \glissando fis16 \tick d16
+  a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16
   d16 \tick a,16 b,16 |
   % Bar 91
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
