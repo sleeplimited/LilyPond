@@ -1173,41 +1173,50 @@ tab = {
 
 % Breaks Voice
   breaks = {
+    % Bars 1-2
     \overrideProperty #"Score.NonMusicalPaperColumn"
     #'line-break-system-details #'((Y-offset . 8)
     (alignment-distances . (10 15 )))
     s1*2 \break
+    % Bars 3-4
     \overrideProperty #"Score.NonMusicalPaperColumn"
     #'line-break-system-details #'((Y-offset . 50)
     (alignment-distances . (10 15 )))
     s1*2 \break
+    % Bars 5-6
     \overrideProperty #"Score.NonMusicalPaperColumn"
     #'line-break-system-details #'((Y-offset . 88)
     (alignment-distances . (10 15 )))
     s1*2 \break
+    % Bars 7-8
     \overrideProperty #"Score.NonMusicalPaperColumn"
     #'line-break-system-details #'((Y-offset . 0)
     (alignment-distances . (10 15 )))
     s1*2 \break
+    % Bars 9-11
     \overrideProperty #"Score.NonMusicalPaperColumn"
     #'line-break-system-details #'((Y-offset . 42)
     (alignment-distances . (10 15 )))
     s1*3 \break
+    % Bars 12-14
     \overrideProperty #"Score.NonMusicalPaperColumn"
     #'line-break-system-details #'((Y-offset . 88)
     (alignment-distances . (10 15 )))
     s1*3 \break
+    % Bars 15-17
     \overrideProperty #"Score.NonMusicalPaperColumn"
     #'line-break-system-details #'((Y-offset . 0)
     (alignment-distances . (15 15 )))
     s1*3 \break
+    % Bars 18-20
     \overrideProperty #"Score.NonMusicalPaperColumn"
     #'line-break-system-details #'((Y-offset . 42)
     (alignment-distances . (10 15 )))
     s1*3 \break
+    % Bars 21-23
     \overrideProperty #"Score.NonMusicalPaperColumn"
-    #'line-break-system-details #'((Y-offset . 88)
-    (alignment-distances . (10 15 )))
+    #'line-break-system-details #'((Y-offset . 84)
+    (alignment-distances . (15 15 )))
     s1*2 \break
   }
 % Dynamics
