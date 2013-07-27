@@ -45,9 +45,6 @@ Publications.  07/10/13
   bottom-margin = 0.5\in
   min-systems-per-page = 3
   first-page-number = 4
-  system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
-  ragged-last-bottom = ##f
-  ragged-bottom = ##f
   % see:  http://code.google.com/p/lilypond/issues/detail?id=2576
 
   #(define (not-last-page layout props arg) 
@@ -1173,7 +1170,12 @@ tab = {
 
 % Breaks Voice
   breaks = {
-    % Bars 1-2
+    s1*8 \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 38)
+    (alignment-distances . (10 10 )))
+    s1
+    %{ Bars 1-2
     \overrideProperty #"Score.NonMusicalPaperColumn"
     #'line-break-system-details #'((Y-offset . 8)
     (alignment-distances . (15 15 )))
@@ -1218,11 +1220,12 @@ tab = {
     #'line-break-system-details #'((Y-offset . 84)
     (alignment-distances . (15 15 )))
     s1*2 \break
-  }
+    %} }
 % Dynamics
 %% DynamicsOne
 
 dynamicsone = {
+  \tabFullNotation
   % Bar 1
   s1 |
   % Bar 2
@@ -1272,6 +1275,7 @@ dynamicsone = {
 
 %% DynamicsTwo
 dynamicstwo = {
+  \tabFullNotation
   % Bar 1
   s1 |
   % Bar 2
@@ -1326,6 +1330,7 @@ dynamicstwo = {
 
 %% DynamicsThree
 dynamicsthree = {
+  \tabFullNotation
   % Bar 1
   s1 |
   % Bar 2
@@ -1389,6 +1394,7 @@ dynamicsthree = {
 
 %% DynamicsFour
 dynamicsfour = {
+  \tabFullNotation
   % Bar 1
   s2 s8 s16 \tsMove #0 #15 \lhSpannerDown "3" { \grace s8 s16 } s4 |
   % Bar 2
@@ -1454,6 +1460,7 @@ dynamicsfour = {
 }
 %% DynamicsFive
 dynamicsfive = {
+  \tabFullNotation
   % Bar 1
   s8 s8_\lhone s4 s4_\lhone s8. s16_\lhone |
   % Bar 2
@@ -1472,11 +1479,11 @@ dynamicsfive = {
   % Bar 8
   s1 |
   % Bar 9
-  \mkMove #-2.0 #20 s4^\fivestrdwnstrm s4 s2 |
+  \mkMove #-2.0 #0 s4-\fivestrdwnstrm s4 s2 |
   % Bar 10
   s2. \tsMove #0 #0 \twoStrDamp s8-\mkTweak #0 #0 ^\rhp \startTextSpan s8\stopTextSpan |
   % Bar 11
-  \mkMove #-2.0 #20 s4^\fivestrdwnstrm s4 s2 |
+  \mkMove #-2.0 #0 s4-\fivestrdwnstrm s4 s2 |
   % Bar 12
   s1 |
   % Bar 13
@@ -1522,6 +1529,7 @@ dynamicsfive = {
 }
 %% DynamicsSix
 dynamicssix = {
+  \tabFullNotation
   \override TextScript #'extra-offset = #'(-1.0 . 8.5)
   % Bar 1
   s8_\twostrdwnstrm s8_\twostrdwnstrm
@@ -1581,7 +1589,7 @@ dynamicssix = {
   s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm s8
   % Bar 9
-  \tsMove #0 #7 \lhSpannerDown "1" { s1  
+  \tsMove #0 #0 \lhSpannerDown "1" { s1  
   % Bar 10
   s2. s8 s8 }
   % Bar 11
@@ -1626,6 +1634,7 @@ dynamicssix = {
 
 %% SixStr
 sixstr = {
+  \tabFullNotation
   s1 |
   s1 |
   s1 |
@@ -1828,15 +1837,14 @@ sixstr = {
     \new TabStaff = "guitar tab" 
       <<
       \set Staff.stringTunings = \stringTuning <a,, a, d g b e'>
-      \new Dynamics = "sixstr" \sixstr
-      \new Dynamics = "dynamicsone" \dynamicsone
-      \new Dynamics = "dynamicstwo" \dynamicstwo
-      \new Dynamics = "dynamicsthree" \dynamicsthree
-      \new Dynamics = "dynamicsfour" \dynamicsfour 
-      \new Dynamics = "dynamicsfive" \dynamicsfive  
-      \new Dynamics = "dynamicssix" \dynamicssix
+      \new TabVoice = "sixstr" \sixstr
+      \new TabVoice = "dynamicsone" \dynamicsone
+      \new TabVoice = "dynamicstwo" \dynamicstwo
+      \new TabVoice = "dynamicsthree" \dynamicsthree
+      \new TabVoice = "dynamicsfour" \dynamicsfour 
+      \new TabVoice = "dynamicsfive" \dynamicsfive  
+      \new TabVoice = "dynamicssix" \dynamicssix
       \new TabVoice = "tab" \tab
-      \new Voice = "breaks" \breaks
     >>
   >>
 %% Layout
