@@ -884,17 +884,19 @@ tab = {
   g16-\mkTweak #0 #0 ^\rhm ~ <\fakeSlur g\3 a\3> b8-\mkTweak #0 #0 ^\rha
   <\tweak TabNoteHead #'transparent ##t a,, a>16~ <\fakeSlur a\3 g\3>16 e8-\mkTweak #0 #0 ^\rhi |
   % Bar 28
-  \slashedGrace { \hideFretNumber c8 \glissando s } d8\5 fis16 g~ g16[ fis16 d8\5]
-  g16~ <\fakeSlur g\3 b\3> d'8 < \tweak TabNoteHead #'transparent ##t a,,
-  b\3>16~ <\fakeSlur b\3 g\3>16 fis8 |
+  \slashedGrace { \hideFretNumber c8 \glissando s } < d\5 \parenthesize fis
+  >8^\rhp fis16^\rhi g^\rhm ~ g16[ fis16^\rhi d8\5^\rhp ]
+  g16^\rhm ~ <\fakeSlur g\3 b\3> d'8^\rha < \invTNH a,,
+  b\3>16~ <\fakeSlur b\3 g\3>16 fis8^\rhi |
   % Bar 29
-  \slashedGrace { \hideFretNumber d8\5 \glissando s } e8\5 g16\4 g 
-  <\invTNH e,\6>16[ g\4 e8\5] fis'16\2~ <\fakeSlur
-  fis'\2 b\2> g8 <d'\3
-  \tweak TabNoteHead #'transparent ##t a,,>8 e' |
+  \slashedGrace { \hideFretNumber d8\5 \glissando s } e8\5^\rhp g16\4^\rhi
+  g^\rhm 
+  <\invTNH e,\6>16[ g\4^\rhi e8\5^\rhp ] fis'16\2^\rhm ~ <\fakeSlur
+  fis'\2 b\2> g8^\rhi <d'\3
+  \invTNH a,,>8 e'^\rha |
   % Bar 30
-  e8\5 g16\4 g\3~ g\3 g\4 e8\5 \slashedGrace fis'8\2 \glissando g'8\2 a'\1
-  <b'\2\harmonic a,,>4~ 
+  e8\5^\rhp g16\4^\rhi g\3^\rhm ~ g\3 g\4^\rhi e8\5^\rhp \slashedGrace
+  fis'8\2^\rhm \glissando g'8\2 a'\1^\rha <b'\2\harmonic a,,>4^\rhp -\mkTweak #0 #0 ^\rhm ~ 
   % Bar 31
   <\fakeSlur a,,\6 c,\6>8 e16 g~ g e c,8 \slurNeutral g16~ <\fakeSlur g\3 a\3>
   b8 < \tweak TabNoteHead #'transparent ##t a,, a>16~ <\fakeSlur a\3 g\3> e8 |
@@ -1270,6 +1272,23 @@ dynamicsone = {
   s1 |
   % Bar 22
   s2 s4-\mkTweak #0 #0 ^\lhfour s4 |
+  % Bar 23
+  s1 |
+  % Bar 24
+  s1 |
+  % Bar 25
+  s1 |
+  % Bar 26
+  s1 |
+  % Bar 27
+  s1 |
+  % Bar 28
+  s2. \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 29
+  s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  % Bar 30
+  s2 s8 s8^\lhone s4 |
 
 }
 
@@ -1326,6 +1345,17 @@ dynamicstwo = {
   s1 |
   % Bar 25
   s2 s4 s8 s8-\mkTweak #0 #0 ^\twostrupstrm |
+  % Bar 26
+  s1 |
+  % Bar 27
+  s1 |
+  % Bar 28
+  s2 s8 \tsMove #0 #0 \textSpannerUp \lhSpannerUp "1" { s8 s8 s8 } |
+  % Bar 29
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8
+  s8^\lhfour s8 \tsMove #0 #0 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
+  % Bar 30
+  s2 \lhSpannerUp "4" { \grace s8 s8 } s8 s4^\lhfour |
 }
 
 %% DynamicsThree
@@ -1372,9 +1402,9 @@ dynamicsthree = {
   % Bar 20
   s1 |
   % Bar 21
-  s4 \tsMove #0 #21.85 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #-0.12 #18.86 \threeStrDamp s8-\mkTweak #-1.5 #16.1 ^\oneStrMFlick -\mkTweak
-  #0 #6 ^\lhtwo \startTextSpan s8\stopTextSpan |
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \threeStrDamp s8-\mkTweak #-1.5 #0 -\oneStrMFlick -\mkTweak
+  #0 #0 _\lhtwo \startTextSpan s8\stopTextSpan |
   % Bar 22
   s8 \tsMove #0 #0 \lhSpannerDown "3" { s8 s4 s8 s8 } s4 |
   % Bar 23
@@ -1389,6 +1419,27 @@ dynamicsthree = {
   % Bar 27
   s4 s4 s16 s16-\mkTweak #0 #0 ^\lhtwo s8 \tsMove #0 #0 \strDampening s16-\mkTweak #0 #0 ^\oneStrMFlick
   -\mkTweak #0 #0 ^\lhtwo \startTextSpan s16\stopTextSpan s8 |
+  % Bar 28
+  s4 s4 s16 \textSpannerUp \tsMove #0 #0 \lhSpannerUp "2" {s16 s8 s16-\mkTweak
+  #0 #0 ^\oneStrMFlick } s16 s8 |
+  % Bar 29 
+  s2 s4 s8-\mkTweak #0 #0 ^\lhfour -\mkTweak #0 #0 ^\oneStrMFlick s8 |
+  % Bar 30
+  s1 |
+  % Bar 31
+  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  % Bar 32
+  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  % Bar 33
+  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  % Bar 34
+  s1 |
+  % Bar 35
+  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  % Bar 36
+
+
+
 
 }
 
@@ -1438,7 +1489,7 @@ dynamicsfour = {
   s16\stopTextSpan  \mkMove #0 #5 s8^\lhthree |
   % Bar 21
   %% Fourth String-Dampening in this measure takes place in dynamicsthree
-  s8 \tsMove #0 #11 \lhSpannerDown "2" { s8 s4 s8 s8 } s4 |
+  s8 \tsMove #0 #0 \lhSpannerDown "2" { s8 s4 s8 s8 } s4 |
   % Bar 22
   s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 23
@@ -1451,8 +1502,32 @@ dynamicsfour = {
   % Bar 26
   s1 |
   % Bar 27
-  s2 s4 \tsMove #0 #0 \threeStrDamp s16\startTextSpan s16\stopTextSpan
+  \textSpannerDown \tsMove #0 #0 \lhSpannerDown "2" { s8 s8 s8 s8 } s4
+  \textSpannerNeutral \tsMove #0 #0 \threeStrDamp s16\startTextSpan s16\stopTextSpan
   s8-\mkTweak #0 #0 ^\lhtwo |
+  % Bar 28
+  \textSpannerDown \tsMove #0 #0 \lhSpannerDown "2" { s8 s8 s8 s8 } s4
+  \textSpannerNeutral \tsMove #0 #0 \threeStrDamp s16\startTextSpan s16\stopTextSpan
+  s8-\mkTweak #0 #0 ^\lhtwo |
+  % Bar 29
+  %% String-dampening for this string, this measure is located at DynamicsTwo
+  s8 \textSpannerDown \tsMove #0 #0 \lhSpannerDown "2" { s8 s4 s4 s4 s4 s8 s8 }
+  s2 |
+  % Bar 31
+  s2 s4 \textSpannerUp \tsMove #0 #0 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 32
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 33
+  s2 s4 \textSpannerUp \tsMove #0 #0 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
+  % Bar 34
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  % Bar 35
+  s2 s4 \textSpannerUp \tsMove #0 #0 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 36
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 |
+
 
   
 
@@ -1503,8 +1578,8 @@ dynamicsfive = {
   % Bar 20
   s2. \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 21
-  s4 \tsMove #-0.12 #22.72 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #-0.1 #24.25 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 22
   s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 23
@@ -1518,13 +1593,31 @@ dynamicsfive = {
   s1 |
   % Bar 27
   %% String-Dampening for this String, this measure is located at Dynamicsthree
-  \tsMove #0 #0 \lhSpannerDown "3" {s1
+  \textSpannerDown \tsMove #0 #0 \lhSpannerDown "3" {s1
   % Bar 28
+  %% String-Dampening for this String, This measure is Located at DynamicsOne
   s1
   % Bar 29
+  %% String-Dampening for this String, This measure is Located at DynamicsOne
   s1 
   % Bar 30
-  s4 s8 s8 }
+  s4 s8 s8 } s2 |
+  % Bar 31
+  s2 s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 32
+  s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 33
+  s2 s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 34
+  s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s2 |
+  % Bar 35
+  s2 s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 36
+  s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  
+
 
 }
 %% DynamicsSix
@@ -1613,8 +1706,8 @@ dynamicssix = {
   % Bar 20
   s1 
   % Bar 21
-  s4 \tsMove #-0.1 #23.44 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #-0.1 #23.43 \strDampening s8\startTextSpan s8\stopTextSpan
+  s4 \tsMove #-0.1 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #0 \strDampening s8\startTextSpan s8\stopTextSpan
   % Bar 22
   s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 23
@@ -1628,6 +1721,28 @@ dynamicssix = {
   s1 |
   % Bar 27
   s2 s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 28
+  s2 s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 29
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  % Bar 30
+  s1 |
+  % Bar 31
+  s2 s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 32
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 33
+  s2 s4 \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  % Bar 34
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  % Bar 35
+  s2 s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 36
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+
 
 
 }
@@ -1682,8 +1797,8 @@ sixstr = {
   s4 \strDampening s8_\snare\startTextSpan s8\stopTextSpan s4 \strDampening
   s16_\snare\startTextSpan s16\stopTextSpan s8 |
   % Bar 21
-  s16 \tsMove #0 #-4 \lhSpannerDown "3" { s8. s4\mkTweak #-0.05 #3.2
-  _\bassSnare s4 s8\mkTweak #-0.05 #3.8 _\snare } s8 |
+  s16 \tsMove #0 #0 \lhSpannerDown "3" { s8. s4\mkTweak #-0.05 #3.2
+  _\bassSnare s4 s8\mkTweak #-0.05 #0 _\snare } s8 |
   % Bar 22
   \tsMove #0 #0 \lhSpannerDown "2" { s4 s4_\bassSnare s8 s8 } s4 |
   % Bar 23
@@ -1705,13 +1820,13 @@ sixstr = {
   % Bar 30
   s4 s4_\bass s4 s4 |
   % Bar 31
-  s4 s4_\bass s4 s4_\snare |
+  \textSpannerDown \tsMove #0 #0 \lhSpannerDown "3" { s4 s4_\bass s4 s4_\snare |
   % Bar 32
   s4 s4_\bassSnare s4 s4_\snare |
   % Bar 33
   s4 s4_\bass s4 s4_\snare |
   % Bar 34
-  s4 s4_\snare s2 |
+  s4 s8_\snare s8 } s2 |
   % Bar 35
   s4 s4_\bass s4 s4_\snare |
   % Bar 36
@@ -1837,6 +1952,7 @@ sixstr = {
     \new TabStaff = "guitar tab" 
       <<
       \set Staff.stringTunings = \stringTuning <a,, a, d g b e'>
+      \new TabVoice = "tab" \tab
       \new TabVoice = "sixstr" \sixstr
       \new TabVoice = "dynamicsone" \dynamicsone
       \new TabVoice = "dynamicstwo" \dynamicstwo
@@ -1844,7 +1960,6 @@ sixstr = {
       \new TabVoice = "dynamicsfour" \dynamicsfour 
       \new TabVoice = "dynamicsfive" \dynamicsfive  
       \new TabVoice = "dynamicssix" \dynamicssix
-      \new TabVoice = "tab" \tab
     >>
   >>
 %% Layout
