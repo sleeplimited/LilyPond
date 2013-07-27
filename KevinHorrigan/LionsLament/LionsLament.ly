@@ -1038,9 +1038,9 @@ tab = {
   #'transparent ##t a,, g\4 e,8 fis'16\2~ <\fakeSlur fis'\2 b\2> g8 < \tweak
   TabNoteHead #'transparent ##t a,, d'\3>8 e' |
   % Bar 62
-  e,8 g16\4 g\4 <\invTNH a,,>16[ g\4 e,8]
-  fis'16\2~ <\fakeSlur fis'\2 b\2> <e, g>8 <b d'\3 \tweak TabNoteHead
-  #'transparent ##t a,,>8 <e' b> |
+  e,8^\rhp g16\4^\rhi g\4^\rhm <\invTNH a,,>16^\rhp ^\rhi [ g\4 e,8^\rhp ]
+  <\tweakTabNoteHead \tickInChord e'\1 fis'\2>16^\rhm ~ <\fakeSlur fis'\2 b\2>
+  <e, g>8^\rhp ^\rhm <b d'\3 \invTNH a,,>8^\rhp <e' b>^\rha |
   % Bar 63
   a,8\6 c'16\4 g~ g16[ c'\4 <a,\6 g'\3>8]~ <a,\6 g'\3>4 \glissando \slashedGrace {
   \hideFretNumber <g,\6 f'\3>8 \hideFretNumber <g\5>8 \glissando s } a8\5 b |
@@ -1394,6 +1394,10 @@ dynamicstwo = {
   % Bar 38
   s8 \tsMove #0 #0 \lhSpannerUp "2" { s8 s8 s8 } s8^\lhthree \tsMove #0 #0
   \strDampening s8\startTextSpan s4\stopTextSpan ^\lhthree |
+  % Bar 39 - 61
+  s1*23 |
+  % Bar 62
+  s2 s8-\mkTweak #0 #0 ^\twostrdwnstrm s8 s8 s8-\mkTweak #0 #0 ^\twostrupstrm |
 }
 
 %% DynamicsThree
@@ -1527,6 +1531,7 @@ dynamicsthree = {
   % Bar 61
   s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
   % Bar 62
+  s2 s8 s8-\mkTweak #0 #0 ^\onestrdwnstrm s4-\mkTweak #0 #0 ^\oneStrMFlick |
 
 }
 
@@ -1679,6 +1684,8 @@ dynamicsfour = {
   s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
   \tsMove #0 #0 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
   % Bar 62
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
 
 
 
@@ -1833,6 +1840,8 @@ dynamicsfive = {
   s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s4
   \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 62
+  s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
 
 
 }
@@ -2060,6 +2069,9 @@ dynamicssix = {
   s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
   \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 61
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  % Bar 62
   s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
   \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
 
