@@ -225,7 +225,7 @@ twoStrDamp = {
   \once \override TextSpanner #'(bound-details left text) = \markup {
     \lower #0.76
     \halign #CENTER
-     \beam #0.6 #0 #2.25 }
+     \beam #0.6 #0 #2.2 }
    }
 threeStrDamp = {
   \once \override TextSpanner #'style = #'line
@@ -235,7 +235,7 @@ threeStrDamp = {
   \once \override TextSpanner #'(bound-details left text) = \markup {
     \lower #1.52
     \halign #CENTER
-     \beam #0.6 #0 #3.75 }
+     \beam #0.6 #0 #3.7 }
 
 }
 % Left Hand Articulations

@@ -854,10 +854,11 @@ tab = {
   %%%%%%%%%
   %% Bar 21
   %%%%%%%%
-  a,,16^\rhp~ <\fakeSlur a,,\6 c,\6>16 e16^\rhi e16^\rhm  
-  <\invTNH a,,\6>16^\rhp -\mkTweak #0 #0 ^\rhi [ e c,8^\rhp] d'16-\mkTweak #0 #0
-  ^\rhm ~ <\fakeSlur d'\2 b\2> g8-\mkTweak #0 #0 ^\rhi 
-  <a\3 \tweak TabNoteHead #'transparent ##t a,,>^\rhp b-\mkTweak #0 #0 ^\rha |
+  a,,16^\rhp~ <\fakeSlur a,,\6 c,\6>16 e16-\mkTweak #-0.5 #-3.3 ^\rhi
+  e16-\mkTweak #-0.8 #-3.3 ^\rhm  <\invTNH a,,\6>16-\mkTweak #-0.6 #-5.3 ^\rhp
+  -\mkTweak #-0.5 #-4.2 ^\rhi [ e c,8^\rhp] d'16-\mkTweak #-0.8 #-1.3 ^\rhm ~
+  <\fakeSlur d'\2 b\2> g8-\mkTweak #-0.5 #-2.3 ^\rhi <a\3 \invTNH a,,>-\mkTweak
+  #-0.8 #-4.3 ^\rhp b-\mkTweak #-0.5 #-1.3 ^\rha |
   % Bar 22
   b,,8-\mkTweak #0 #0 ^\rhp <\parenthesize a d>16-\mkTweak #0 #0 ^\rhi d16-\mkTweak #0 #0 ^\rhm
   <\invTNH a,,\6>16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi[ d b,,8-\mkTweak #0 #0 ^\rhp ]
@@ -1357,9 +1358,9 @@ dynamicsthree = {
   % Bar 20
   s1 |
   % Bar 21
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \threeStrDamp s8-\mkTweak #0 #0 ^\oneStrMFlick -\mkTweak #0 #0
-  ^\lhtwo \startTextSpan s8\stopTextSpan |
+  s4 \tsMove #0 #21.85 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.12 #18.86 \threeStrDamp s8-\mkTweak #-1.5 #16.1 ^\oneStrMFlick -\mkTweak
+  #0 #6 ^\lhtwo \startTextSpan s8\stopTextSpan |
   % Bar 22
   s8 \tsMove #0 #0 \lhSpannerDown "3" { s8 s4 s8 s8 } s4 |
   % Bar 23
@@ -1422,7 +1423,7 @@ dynamicsfour = {
   s16\stopTextSpan  \mkMove #0 #5 s8^\lhthree |
   % Bar 21
   %% Fourth String-Dampening in this measure takes place in dynamicsthree
-  s8 \tsMove #0 #0 \lhSpannerDown "2" { s8 s4 s8 s8 } s4 |
+  s8 \tsMove #0 #11 \lhSpannerDown "2" { s8 s4 s8 s8 } s4 |
   % Bar 22
   s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 23
@@ -1486,8 +1487,8 @@ dynamicsfive = {
   % Bar 20
   s2. \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 21
-  s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #-0.12 #22.72 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #24.25 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 22
   s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 23
@@ -1595,8 +1596,8 @@ dynamicssix = {
   % Bar 20
   s1 
   % Bar 21
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan
+  s4 \tsMove #-0.1 #23.44 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #23.43 \strDampening s8\startTextSpan s8\stopTextSpan
   % Bar 22
   s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 23
@@ -1663,7 +1664,8 @@ sixstr = {
   s4 \strDampening s8_\snare\startTextSpan s8\stopTextSpan s4 \strDampening
   s16_\snare\startTextSpan s16\stopTextSpan s8 |
   % Bar 21
-  s16 \tsMove #0 #0 \lhSpannerDown "3" { s8. s4_\bassSnare s4 s8_\snare } s8 |
+  s16 \tsMove #0 #-4 \lhSpannerDown "3" { s8. s4\mkTweak #-0.05 #3.2
+  _\bassSnare s4 s8\mkTweak #-0.05 #3.8 _\snare } s8 |
   % Bar 22
   \tsMove #0 #0 \lhSpannerDown "2" { s4 s4_\bassSnare s8 s8 } s4 |
   % Bar 23
