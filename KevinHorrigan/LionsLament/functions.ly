@@ -80,6 +80,23 @@ threeStrFlick = \markup { \rotate #180
   }
 
 }
+threeStrMFlick = \markup {   
+  \center-column {
+   \rotate #180 {
+   \combine
+    \draw-line #'(0 . 4.1)
+    \combine
+    \fontsize #-3 
+    \arrow-head #Y #DOWN ##f
+    \raise #0.4
+    \fontsize #-3 
+    \arrow-head #Y #DOWN ##f
+  }
+  \raise #2.2
+   \fontsize #-5 \italic "m" 
+  }
+
+}
 fourStrFlick = \markup { \rotate #180
   \center-column {
     \combine
