@@ -1042,14 +1042,17 @@ tab = {
   <\tweakTabNoteHead \tickInChord e'\1 fis'\2>16^\rhm ~ <\fakeSlur fis'\2 b\2>
   <e, g>8^\rhp ^\rhm <b d'\3 \invTNH a,,>8^\rhp <e' b>^\rha |
   % Bar 63
-  a,8\6 c'16\4 g~ g16[ c'\4 <a,\6 g'\3>8]~ <a,\6 g'\3>4 \glissando \slashedGrace {
-  \hideFretNumber <g,\6 f'\3>8 \hideFretNumber <g\5>8 \glissando s } a8\5 b |
+  <a,\6 \parenthesize c'\4>8^\rhp c'16\4^\rhp g^\rhi ~ g16[ c'\4^\rhi <a,\6 g'\3>8^\rhp ^\rhm ]~
+  <a,\6 g'\3>4 \glissando \slashedGrace { \hideFretNumber <g,\6 f'\3>8
+  \hideFretNumber <g\5>8 \glissando s } a8\5 b^\rha |
   % Bar 64
-  e,8 g16\4 g\4~ g16\4[ g\4 e,8] d'16\3~ <\fakeSlur d'\3 g\3> g8\4 
-  <\invTNH a,, a\4 > b |
+  e,8^\rhp g16\4^\rhp g\3^\rhi ~ g16\3[ g\4^\rhi e,8^\rhp ] d'16\3^\rhm ~
+  <\fakeSlur d'\3 g\3> g8\4^\rhi 
+  <\invTNH a,, a\4 >^\rhp b^\rha |
   % Bar 65
-  a,8\6 c'16\4 b~ b16[ c'\4 <a,\6 g\3>8]~ <a,\6 g\3>8[ <\invTNH a,, g\3 b'\2>8] \slashedGrace {
-  \hideFretNumber g8\5 \glissando s } a8\5 b |
+  <a,\6 \parenthesize c'\4>8^\rhp c'16\4^\rhp b^\rha ~ b16[ c'\4^\rhi <a,\6 g\3>8^\rhp ^\rhm ]~
+  <a,\6 g\3>8[ <\invTNH a,, g\3 b'\2>8^\rhp ] \slashedGrace {
+  \hideFretNumber g8\5 \glissando s } a8\5^\rhp b^\rha |
   % Bar 66
   d,8 fis16 g~ g16[ fis d,8] <\tweakTabNoteHead \mutedString e\5 e,\6 g\4 g\3
   b\2>4 <\invTNH a,, g\3>4 |
@@ -1060,22 +1063,25 @@ tab = {
   e,8 g16\4 g\3 <\invTNH a,,>16[ g\4 e,8] d'16\3~ <\fakeSlur d'\3 g\3> g8\4
   <\invTNH a,, g\3 a\4> b |
   % Bar 69
-  c,8 e16 g <\invTNH a,,>16[ e c,8] \slashedGrace { \hideFretNumber c,8 \glissando s } d,8 fis16 g
-  <\invTNH a,,>16[ fis d,8] |
+  a,,16~ <\fakeSlur a,,\6 c,\6>16 e16 g <\invTNH a,,>16[ e c,8] a,,16~ <\fakeSlur
+  a,,\6 d,\6>16 fis16 g <\invTNH a,,>16[ fis d,8] | 
   % Bar 70
-  \slashedGrace { \hideFretNumber d, \glissando s } e,8 g16\4 g\3 <\invTNH a,,>16[ d <c,
+  a,,16~ <\fakeSlur a,,\6 e,\6>16 g16\4 g\3 <\invTNH a,,>16[ d <c,
   \tweakTabNoteHead \mutedString c e g>8]~ <c, e g>4 <\invTNH a,, g e>4  |
   % Bar 71
-  c,8 e16 b <\invTNH a,,>16[ e c,8] \slashedGrace { \hideFretNumber c,8 \glissando s } d,8 fis16 g
-  <\invTNH a,,>16[ fis d,8] |
+  a,,16~ <\fakeSlur a,,\6 c,\6>16 e16 b <\invTNH a,,>16[ e c,8] a,,16~
+  <\fakeSlur a,,\6 d,\6>16 fis16 g <\invTNH a,,>16[ fis d,8] |
   % Bar 72
-  e,8 g16\4 <b e'> <\invTNH a,,>16[ d <c, \tweakTabNoteHead \mutedString a, e g d'>8]~ <c,
+  a,,16~ <\fakeSlur a,,\6 e,\6>16 g16\4 <b e'> <\invTNH a,,>16[ d <c,
+  \tweakTabNoteHead \mutedString a, e g d'>8]~ <c,
   e g d'>4 <\invTNH a,, e g>4  |
   % Bar 73
-  c,8 e16 d' <\invTNH a,,>16[ e c,8] \slashedGrace { \hideFretNumber c,8 \glissando s } d,8 fis16
+  a,,16~ <\fakeSlur a,,\6 c,\6>16 e16 d' <\invTNH a,,>16[ e c,8] a,,16~
+  <\fakeSlur a,,\6 d,\6>16 fis16
   e'\2 <\invTNH a,,>16[ fis d,8] |
   % Bar 74
-  e,8 g16\4 fis'\2~ fis'16\2[ d <c, \tweakTabNoteHead \mutedString a, e g d' >8]~ <c,
+  a,,16~ <\fakeSlur a,,\6 e,\6>16 g16\4 fis'\2~ fis'16\2[ d <c,
+  \tweakTabNoteHead \mutedString a, e g d' >8]~ <c,
   e g d'>4 < \tweak TabNoteHead #'transparent ##t a,, g e>4  |
   % Bar 75
   a,,16~ <\fakeSlur a,,\6 b,,\6> e g\3~ g16[ e <b,, \tweakTabNoteHead
@@ -1176,11 +1182,90 @@ tab = {
 
 % Breaks Voice
   breaks = {
-    s1*8 \break
-    \overrideProperty #"Score.NonMusicalPaperColumn"
-    #'line-break-system-details #'((Y-offset . 38)
-    (alignment-distances . (10 10 )))
-    s1
+    % Bar 1
+    s1*2 \break
+    % Bar 3
+    s1*2 \break
+    % Bar 5
+    s1*2 \break
+    % Bar 7
+    s1*2 \break
+    % Bar 9
+    s1*3 \break
+    % Bar 12
+    s1*3 \break
+    % Bar 15
+    s1*3 \break
+    % Bar 18
+    s1*3 \break
+    % Bar 21
+    s1*2 \break
+    % Bar 23
+    s1*2 \break
+    % Bar 25
+    s1*2 \break
+    % Bar 27
+    s1*2 \break
+    % Bar 29
+    s1*2 \break
+    % Bar 31
+    s1*2 \break
+    % Bar 33
+    s1*2 \break
+    % Bar 35
+    s1*2 \break
+    % Bar 37
+    s1*2 \break
+    % Bar 39
+    s1*2 \break
+    % Bar 41
+    s1*2 \break
+    % Bar 43
+    s1*2 \break
+    % Bar 45
+    s1*2 \break
+    % Bar 47
+    s1*2 \break
+    % Bar 49
+    s1*2 \break
+    % Bar 51
+    s1*2 \break
+    % Bar 53
+    s1*2 \break
+    % Bar 55
+    s1*2 \break
+    % Bar 57
+    s1*2 \break
+    % Bar 59
+    s1*2 \break
+    % Bar 61
+    s1*2 \break
+    % Bar 63
+    s1*2 \break
+    % Bar 65
+    s1*2 \break
+    % Bar 67
+    s1*2 \break
+    % Bar 69
+    s1*2 \break
+    % Bar 71
+    s1*2 \break
+    % Bar 73
+    s1*2 \break
+    % Bar 75
+    s1*3 \break
+    % Bar 78
+    s1*3 \break
+    % Bar 81
+    s1*3 \break
+    % Bar 84
+    s1*2 \break
+    % Bar 86
+    s1*2 \break
+    % Bar 88
+    s1*2 \break
+    % Bar 91
+    s1 s2 s4 \break
     %{ Bars 1-2
     \overrideProperty #"Score.NonMusicalPaperColumn"
     #'line-break-system-details #'((Y-offset . 8)
@@ -1398,6 +1483,12 @@ dynamicstwo = {
   s1*23 |
   % Bar 62
   s2 s8-\mkTweak #0 #0 ^\twostrdwnstrm s8 s8 s8-\mkTweak #0 #0 ^\twostrupstrm |
+  % Bar 63
+  s1 |
+  % Bar 64
+  s1 |
+  % Bar 65
+  s4 s4 s8 s8-\mkTweak #0 #0 ^\lhfour s4 |
 }
 
 %% DynamicsThree
@@ -1426,7 +1517,8 @@ dynamicsthree = {
   % Bar 11
   s2. s8 s8 }
   % Bar 12
-  s4 s8 s8-\mkTweak #0 #0 ^\lhfour s4 s8 s8-\mkTweak #0 #0 ^\lhfour  
+  s4 s8 s8-\mkTweak #0 #0 ^\lhfour s4 s8 s8-\mkTweak #0 #0 ^\lhfour -\mkTweak
+  #1.1 #-7.8 ^\markup { \draw-line #'(4 . 1) }  
   % Bar 13
   s1 |
   % Bar 14
@@ -1434,7 +1526,7 @@ dynamicsthree = {
   % Bar 15
   s1 |
   % Bar 16
-  s1 |
+  s2 s4 s8 s8-\mkTweak #1.1 #-7.8 ^\markup { \draw-line #'(4 . 1) } |
   % Bar 17
   s1 |
   % Bar 18
@@ -1531,7 +1623,14 @@ dynamicsthree = {
   % Bar 61
   s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
   % Bar 62
-  s2 s8 s8-\mkTweak #0 #0 ^\onestrdwnstrm s4-\mkTweak #0 #0 ^\oneStrMFlick |
+  s2 s8 s8-\mkTweak #0 #0 ^\onestrdwnstrm s4-\mkTweak #0 #0 ^\twoStrMFlick |
+  % Bar 63
+  s4 s8 \textSpannerUp \tsMove #0 #0 \lhSpannerUp "4" {s8 s4 s8 } s8 |
+  % Bar 64
+  s4 s4 s16-\mkTweak #0 #0 ^\lhfour s8. s4 |
+  % Bar 65
+  s4 s4 s8 \tsMove #0 #0 \threeStrDamp s16\startTextSpan -\mkTweak #0 #0
+  ^\twoStrMFlick s16\stopTextSpan s4 |
 
 }
 
@@ -1686,7 +1785,15 @@ dynamicsfour = {
   % Bar 62
   s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
   \tsMove #0 #0 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
-
+  % Bar 63
+  \textSpannerDown \tsMove #0 #0 \lhSpannerDown "1" {s8 s8 s8 s8 } s4 s4 |
+  % Bar 64
+  s8 \tsMove #0 #0 \lhSpannerDown "1" { s8 s4 s4 s8-\mkTweak #0 #0
+  ^\oneStrMFlick -\mkTweak #0 #0 _\lhfour }
+  s8 |
+  % Bar 65
+  %% String-damping is located at DynamicsThree for this measure
+  \tsMove #0 #0 \lhSpannerDown "1" {s4 s4 s4 s8} s8 |
 
 
   
@@ -1842,6 +1949,13 @@ dynamicsfive = {
   % Bar 62
   s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s4
   \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  % Bar 63
+  s2 s4 s8-\mkTweak #0 #0 _\lhthree -\mkTweak #0 #0 ^\oneStrMFlick s8 |
+  % Bar 64
+  s4 s4 s4 \tsMove #0 #0 \twoStrDamp s8\startTextSpan s8\stopTextSpan |
+  % Bar 65
+  s4 s4 s8 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan
+  s4-\mkTweak #0 #0 _\lhthree |
 
 
 }
@@ -2074,6 +2188,14 @@ dynamicssix = {
   % Bar 62
   s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
   \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  % Bar 63
+  \textSpannerDown \tsMove #0 #0 \lhSpannerDown "3" { s4 s4 s8 s16 s16 s16 }
+  s8. |
+  % Bar 64
+  \tsMove #0 #0 \lhSpannerDown "3" { s4 s4 s4 s8 s8 } |
+  % Bar 65
+  \textSpannerDown \tsMove #0 #0 \lhSpannerDown "3" { s4 s4 s8 s16 s16 s16 }
+  s8. |
 
 
 
@@ -2221,9 +2343,11 @@ sixstr = {
   % Bar 63
   s4 s4_\bass s4 s4 |
   % Bar 64
-  s4 s4_\bass s4 s4_\snare |
+  s4 s4_\bass s4 \tsMove #0 #0 \strDampening s8\startTextSpan_\snare
+  s8\stopTextSpan |
   % Bar 65
-  s4 s4_\bass s4_\snare s4 |
+  s4 s4_\bass s8 \tsMove #0 #0 \strDampening s16\startTextSpan_\snare
+  s16\stopTextSpan s4 |
   % Bar 66
   s4 s4_\bass s4 s4_\snare |
   % Bar 67
@@ -2285,14 +2409,15 @@ sixstr = {
     \new TabStaff = "guitar tab" 
       <<
       \set Staff.stringTunings = \stringTuning <a,, a, d g b e'>
-      \new TabVoice = "tab" \tab
-      \new TabVoice = "sixstr" \sixstr
       \new TabVoice = "dynamicsone" \dynamicsone
       \new TabVoice = "dynamicstwo" \dynamicstwo
       \new TabVoice = "dynamicsthree" \dynamicsthree
+      \new TabVoice = "tab" \tab
       \new TabVoice = "dynamicsfour" \dynamicsfour 
       \new TabVoice = "dynamicsfive" \dynamicsfive  
       \new TabVoice = "dynamicssix" \dynamicssix
+      \new TabVoice = "sixstr" \sixstr
+      \new Voice = "breaks" \breaks
     >>
   >>
 %% Layout
