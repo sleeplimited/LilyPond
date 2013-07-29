@@ -1089,23 +1089,28 @@ tab = {
   \tweakTabNoteHead \mutedString a, e g b g' >8^\rhp ]~ <c,
   e g b g'>4 < \tweak TabNoteHead #'transparent ##t a,, g e>4  |
   % Bar 75
-  a,,16~ <\fakeSlur a,,\6 b,,\6> e g\3~ g16[ e <b,, \tweakTabNoteHead
-  \mutedString b, e g cis' e'>8]~ <b,, e g cis' e'>4 <b,, \tweakTabNoteHead
-  \mutedString b, e g cis' e'>8 \tick <b,, b,>16 \tick <b,, b,>16 |
+  a,,16^\rhp ~ <\fakeSlur a,,\6 b,,\6> e^\rhi g\3^\rhm <\invTNH b,, >16^\rhp
+  ^\rhi [ e <b,, \tweakTabNoteHead
+  \mutedString b, e g cis' e'>8^\rhp ^\rhi ]~ <b,, e g cis' e'>4 <b,, \tweakTabNoteHead
+  \mutedString b, e g cis' e'>8^\rhm ^\rha \tick <b,, b,>16^\rhp \tick <b,,
+  b,>16^\rhi |
   % Bar 76
   \arpeggioArrowUp \once \override BreathingSign #'extra-offset = #'(3 . 0)
-  \rightBracketThree <a,, a, e a cis' e'>4\arpeggio <\invTNH a,,>16[ a,,8.] a,,4 < \tweak
-  TabNoteHead #'transparent ##t a,, a cis' e >8 a,16 a, |
+  \rightBracketThree <a,, a, e a cis' e'>4^\rhp ^\rhi ^\rhm ^\rha \arpeggio
+  <\invTNH a,,>16^\rhp [ a,,8.] a,,4^\rhp < \invTNH a,, a cis' e >8^\rhp a,16
+  a,^\rhi |
   % Bar 77
-  a,,16~ \once \override TextSpanner #'style = #'line \once \override
+  a,,16^\rhp ~ \once \override TextSpanner #'style = #'line \once \override
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
   } \once \override TextSpanner #'(bound-details left text) =  \markup { \halign
-  #CENTER \fontsize #-5 "C IV " } <\fakeSlur a,,\6 cis,\6>\startTextSpan fis32~
-  <\fakeSlur fis\4 gis\4 \parenthesize e'\2> e'16\2 <\invTNH a,,>16[ b\3 \once \override
+  #CENTER \fontsize #-5 "C IV " } <\fakeSlur a,,\6 cis,\6>\startTextSpan
+  fis32^\rhp ~
+  <\fakeSlur fis\4 gis\4 \parenthesize e'\2> e'16\2^\rhi <\invTNH a,,>16^\rhp
+  ^\rhi [ gis\4 \once \override
   BreathingSign #'extra-offset = #'(3 .  -2.0) \leftBracketTwo <cis
-  cis,>8\stopTextSpan] \once \override BreathingSign #'extra-offset = #'(0.5 . 0)
-  \leftBracketThree <b,, b, fis b\3 dis'>4 <\tweak TabNoteHead #'transparent ##t
-  a,, fis b\3 dis'>16 <b\3 e'\2>8. |
+  cis,>8\stopTextSpan ^\rhp ] \once \override BreathingSign #'extra-offset = #'(0.5 . 0)
+  \leftBracketThree <b,, b, fis b\3 dis'>4^\rhp ^\rhi <\invTNH a,, fis b\3
+  dis'>16^\rhp <b\3 e'\2>8.^\rhi |
   % Bar 78
   \arpeggioArrowUp \once \override BreathingSign #'extra-offset = #'(3 . 0)
   \rightBracketThree <a,, a, e a cis' e'>4\arpeggio <\invTNH a,,>16[ a,,8.] a,,4 < \tweak
@@ -1115,9 +1120,10 @@ tab = {
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
   } \once \override TextSpanner #'(bound-details left text) =  \markup { \halign
   #CENTER \fontsize #-5 "C IV " } <\fakeSlur a,,\6 cis,\6>\startTextSpan fis32~
-  <\fakeSlur fis\4 gis\4 \parenthesize e'\2> <e'\2 b\3 gis'\1>16 <\invTNH a,,>16[ < b\3 e'\2>
+  <\fakeSlur fis\4 gis\4 \parenthesize e'\2> <e'\2 b\3 gis'\1>16^\rhi <\invTNH
+  a,,>16^\rhp [ < b\3 e'\2>^\rhi
   \once \override BreathingSign #'extra-offset = #'(3 .  -2.0) \leftBracketTwo
-  <cis, cis gis b e'\2>8\stopTextSpan] \once \override BreathingSign
+  <cis, cis gis b e'\2>8\stopTextSpan^\rhp ] \once \override BreathingSign
   #'extra-offset = #'(0.5 . 0) \leftBracketThree <b,, b, fis b\3 dis'>4 <\tweak
   TabNoteHead #'transparent ##t a,, fis b\3 dis'>16 <b\3 e'\2>8. |
   % Bar 80
@@ -1125,7 +1131,7 @@ tab = {
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
   } \once \override TextSpanner #'(bound-details left text) =  \markup { \halign
   #LEFT \fontsize #-5 "4/6 C II " } <a,, a, e a cis' a'>4\arpeggio\startTextSpan
-  <\invTNH a,,>16[ a,,8.] a,,4 < \tweak TabNoteHead #'transparent ##t a,, a cis' a'>8 a,16
+  <\invTNH a,,>16[ a,,8.] a,,4 < \tweak TabNoteHead #'transparent ##t a,, a e cis' a'>8 a,16
   a,\stopTextSpan |
   % Bar 81
   a,,16~ \once \override TextSpanner #'style = #'line \once \override
@@ -1149,7 +1155,7 @@ tab = {
   \parenthesize e'\2> e'\2 <\invTNH a,,>16[ <b e'\2> \once \override BreathingSign
   #'extra-offset = #'(3 .  -2.0) \leftBracketTwo <cis, cis gis b
   e'\2>8\stopTextSpan] \once \override BreathingSign #'extra-offset = #'(0.5 . 0)
-  \leftBracketThree <b,, b, fis b dis' >4 \once \override BreathingSign
+  \leftBracketThree <b,, b, fis b dis' >8 [ r8 ] \once \override BreathingSign
   #'extra-offset = #'(0.3 . 2) \leftBracketTwo \harmonicByRatio #1/3 <b' fis'>4
   % Bar 84
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
@@ -1258,9 +1264,11 @@ tab = {
     % Bar 73
     s1*2 \break
     % Bar 75
-    s1*3 \break
-    % Bar 78
-    s1*3 \break
+    s1*2 \break
+    % Bar 77
+    s1*2 \break
+    % Bar 79
+    s1*2 \break
     % Bar 81
     s1*3 \break
     % Bar 84
@@ -1407,6 +1415,18 @@ dynamicsone = {
   % Bar 73
   s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8
   s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 74-78
+  s1*5 
+  % Bar 79
+  s8 s16 s16-\mkTweak #0 #0 ^\threestrupstrm s4 s4 s4 |
+  % Bar 80
+  \tsMove #0 #0 \lhSpannerUp "4" { s4 s4 s4 s8 s16 s16 } |
+  % Bar 81
+  s8 s16 s16-\mkTweak #0 #0 ^\threestrupstrm s4 s4 s4 |
+  % Bar 82
+  s1 |
+  % Bar 83
+  s4 s4 s8 \tsMove #0 #0 \strDampening s8\startTextSpan s4\stopTextSpan |
 
   
 
@@ -1513,8 +1533,27 @@ dynamicstwo = {
   s16 }  \tsMove #0 #0 \lhSpannerUp "4" { s16 s8 s16 s16 } \tsMove #0 #0
   \lhSpannerUp "4" { s8 s4 s4
   % Bar 75
-  s16 }
-
+  s16 } s16 s8 s8 \tsMove #0 #0 \lhSpannerUp "4" {s8 s4 s8 s16 s16 }
+  % Bar 76
+  s1 |
+  % Bar 77
+  s8 s32 \tsMove #0 #0 \lhSpannerUp "2" {s32 s16 s8 s8 } s4 s16 s8.-\mkTweak #0
+  #0 ^\lhfour |
+  % Bar 78
+  s1 |
+  % Bar 79
+  s4 s16 s16-\mkTweak #0 #0 ^\twostrupstrm s8 s4 s16 s8.-\mkTweak #0 #0
+  ^\twostrupstrm |
+  % Bar 80
+  s1 |
+  % Bar 81
+  s4 s16 s16-\mkTweak #0 #0 ^\twostrupstrm s8 s4 s16 s8.-\mkTweak #0 #0
+  ^\twostrupstrm |
+  % Bar 82
+  s1 |
+  % Bar 83
+  s4 s16 s16-\mkTweak #0 #0 ^\twostrupstrm s8 s8 \tsMove #0 #0
+  \strDampening s8\startTextSpan s4\stopTextSpan |
 }
 
 %% DynamicsThree
@@ -1678,7 +1717,24 @@ dynamicsthree = {
   s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
   \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 74
-
+  s1 |
+  % Bar 75
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  % Bar 76
+  \textSpannerUp \tsMove #0 #0 \lhSpannerUp "1" {s4 s4 s4 s8 s16 s16 } |
+  % Bar 77
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 \tsMove
+  #0 #0 \lhSpannerUp "3" {s4 s16 s8.-\mkTweak #0 #0 ^\twostrupstrm } |
+  % Bar 78
+  s2. s4-\mkTweak #0 #0 ^\threeStrFlick |
+  % Bar 79
+  s4 s4 s4 s4-\mkTweak #0 #0 ^\threeStrFlick |
+  % Bar 80
+  s4 s4 s4 s4-\mkTweak #0 #0 ^\fourStrFlick |
+  % Bar 81
+  s4 s4 s4 s4-\mkTweak #0 #0 ^\threeStrFlick |
+  % Bar 82 
+  s2. s4-\mkTweak #0 #0 ^\threeStrFlick |
 }
 
 %% DynamicsFour
@@ -1869,7 +1925,24 @@ dynamicsfour = {
   s16 } \tsMove #0 #0 \lhSpannerDown "1" { s16 s8 s16 s16 } \tsMove #0 #0
   \lhSpannerDown "2" {s8 s4 s4-\mkTweak #0 #0 ^\twoStrFlick
   % Bar 75
-  s16 }
+  s16 } s16 \tsMove #0 #0 \lhSpannerDown "3" {s8 s8 s8 s4 s8 s16 s16 }
+  % Bar 76
+  s4 s4 s4 s8-\mkTweak #0 #0 ^\threeStrMFlick s8 |
+  % Bar 77
+  \textSpannerDown s8 s32 \tsMove #0 #0 \lhSpannerDown "3" {s32 s16 s8 s8 } s4
+  s16-\mkTweak #0 #0 ^\threeStrMFlick s8. |
+  % Bar 78
+  s1 |
+  % Bar 79
+  s4 \tsMove #0 #0 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 s4 s4 |
+  % Bar 80
+  s4 s4 s4 s4 |
+  % Bar 81
+  s4 \tsMove #0 #0 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 s4 s4 |
+  % Bar 82  
+  s1 |
+  % Bar 83
+  s4 \tsMove #0 #0 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 s4 s4 |
 
 
   
@@ -2055,8 +2128,33 @@ dynamicsfive = {
   s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s4 \tsMove
   #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 74
-  s4 s4 s4 \tsMove
-  #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 |
+  s4 s4 s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 75
+  s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8-\mkTweak
+  #0 #0 ^\sixstrdwnstrm s4 s8-\mkTweak #0 #0 ^\sixstrdwnstrm s16-\mkTweak #0 #0
+  ^\twostrdwnstrm s16-\mkTweak #0 #0 ^\twostrupstrm |
+  % Bar 76
+  s4 s4 s4 \tsMove #0 #3 \twoStrDamp s8\startTextSpan s16\stopTextSpan s16 |
+  % Bar 77
+  s4 \tsMove #0 #0 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s4 \tsMove
+  #0 #0 \twoStrDamp s16\startTextSpan s8.\stopTextSpan |
+  % Bar 78
+  s2 s4 \tsMove #0 #0 \twoStrDamp s8\startTextSpan s8\stopTextSpan |
+  % Bar 79
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8-\mkTweak
+  #0 #0 ^\fivestrdwnstrm s4-\mkTweak #0 #0 ^\fivestrdwnstrm \tsMove #0 #0
+  \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 80
+  s4 s4 s4 \tsMove #0 #0 \twoStrDamp s8\startTextSpan s8\stopTextSpan |
+  % Bar 81
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8-\mkTweak
+  #0 #0 ^\fivestrdwnstrm s4-\mkTweak #0 #0 ^\fivestrdwnstrm \tsMove #0 #0
+  \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 |
+  % Bar 82
+  s2 s4 \tsMove #0 #0 \twoStrDamp s8\startTextSpan s8\stopTextSpan |
+  % Bar 83
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8-\mkTweak
+  #0 #0 ^\fivestrdwnstrm s4-\mkTweak #0 #0 ^\fivestrdwnstrm s4 |
 
 }
 %% DynamicsSix
@@ -2324,9 +2422,84 @@ dynamicssix = {
   s16} \tsMove #0 #0 \lhSpannerDown "3" { s16 s8 s16 s16 } \tsMove #0 #0
   \lhSpannerDown "3" {s8-\mkTweak #0 #0 ^\sixstrdwnstrm s4 s4 
   % Bar 75
-  s16 }
+  s16 } \tsMove #0 #0 \lhSpannerDown "2" { s16 s8 s4 s4 s8 s16 s16 }
+  % Bar 76
+  s1 |
+  % Bar 77
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8-\mkTweak
+  #0 #0 ^\twostrdwnstrm s4-\mkTweak #0 #0 ^\fivestrdwnstrm \tsMove #0 #0
+  \strDampening s16\startTextSpan s8.\stopTextSpan |
+  % Bar 78
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4 \tsMove #0 #0
+  \strDampening s8\startTextSpan s8\stopTextSpan |
+  % Bar 79
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4 \tsMove #0 #0
+  \strDampening s16\startTextSpan s8.\stopTextSpan |
+  % Bar 80
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4 \tsMove #0 #0
+  \strDampening s8\startTextSpan s8\stopTextSpan |
+  % Bar 81
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4 \tsMove #0 #0
+  \strDampening s16\startTextSpan s8.\stopTextSpan |
+  % Bar 82
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4 \tsMove #0 #0
+  \strDampening s8\startTextSpan s8\stopTextSpan |
+  % Bar 83
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
 
-
+  % Bar 84
+  s8_\twostrdwnstrm s8_\twostrdwnstrm
+  s16_\twostrdwnstrm s16_\twostrupstrm
+  s8_\twostrdwnstrm s8_\twostrdwnstrm
+  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s16_\onestrdwnstrm s16_\onestrupstrm 
+  s16_\onestrdwnstrm s16_\onestrupstrm 
+  % Bar 85
+  s8_\twostrdwnstrm s8_\twostrupstrm
+  s16_\twostrdwnstrm s16_\twostrupstrm
+  s8_\twostrdwnstrm s8_\twostrdwnstrm
+  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s16_\onestrdwnstrm s16_\onestrupstrm 
+  s16_\onestrdwnstrm s16_\onestrupstrm 
+  % Bar 86
+  s8_\twostrdwnstrm s8_\twostrupstrm
+  s16_\twostrdwnstrm s16_\twostrupstrm
+  s8_\twostrdwnstrm s8_\twostrdwnstrm
+  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s16_\onestrdwnstrm s16_\onestrupstrm 
+  s16_\onestrdwnstrm s16_\onestrupstrm 
+  % Bar 87
+  s8_\twostrdwnstrm s8_\twostrupstrm
+  s16_\twostrdwnstrm s16_\twostrupstrm
+  s8_\twostrdwnstrm s8_\twostrdwnstrm
+  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s16_\onestrdwnstrm s16_\onestrupstrm 
+  s16_\onestrdwnstrm s16_\onestrupstrm 
+  % Bar 88
+  s8_\twostrdwnstrm s8_\twostrupstrm
+  s16_\twostrdwnstrm s16_\twostrupstrm
+  s8_\twostrdwnstrm s8_\twostrdwnstrm
+  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s16_\onestrdwnstrm s16_\onestrupstrm 
+  s16_\onestrdwnstrm s16_\onestrupstrm 
+  % Bar 89
+  s8_\twostrdwnstrm s8_\twostrupstrm
+  s16_\twostrdwnstrm s16_\twostrupstrm
+  s8_\twostrdwnstrm s8_\twostrdwnstrm
+  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s16_\onestrdwnstrm s16_\onestrupstrm 
+  s16_\onestrdwnstrm s16_\onestrupstrm 
+  % Bar 90
+  s8_\twostrdwnstrm s8_\twostrupstrm
+  s16_\twostrdwnstrm s16_\twostrupstrm
+  s8_\twostrdwnstrm s8_\twostrdwnstrm
+  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s16_\onestrdwnstrm s16_\onestrupstrm 
+  s16_\onestrdwnstrm s16_\onestrupstrm 
+  % Bar 91
+  s8_\twostrdwnstrm s8_\twostrupstrm
+  s16_\twostrdwnstrm s16_\twostrupstrm
+  s8_\twostrdwnstrm s8_\twostrdwnstrm
 
 
 }
@@ -2508,9 +2681,10 @@ sixstr = {
   s4 s4_\bass s4 \tsMove #0 #0 \strDampening s16\startTextSpan _\snare s16\stopTextSpan
   s8 |
   % Bar 75
-  s4 s4_\bass s4 s4 | 
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan _\bassSnare s16\stopTextSpan s8 s4 s4 | 
   % Bar 76
-  s4 s4_\snare s4 s4_\snare |
+  s4 \tsMove #0 #0 \strDampening s16\startTextSpan _\snare s16\stopTextSpan s8
+  s4 \tsMove #0 #0 \strDampening s8\startTextSpan _\snare s8\stopTextSpan |
   % Bar 77
   s4 s4_\snare s4 s4 |
   % Bar 78  
