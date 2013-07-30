@@ -1584,7 +1584,7 @@ dynamicstwo = {
   s8^\lhfour s8 \tsMove #0 #0 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
   % Bar 30
   \textSpannerUp
-  s2 \lhSpannerUp "4" { \grace s8 s8 } s8 s4^\lhfour |
+  s2 \lhSpannerUp "4" { \grace s8 s16 s16 } s8 s4^\lhfour |
   % Bar 31
   s1 |
   % Bar 32
@@ -1900,8 +1900,9 @@ dynamicsfour = {
   s8-\mkTweak #0 #0 ^\lhtwo |
   % Bar 29
   %% String-dampening for this string, this measure is located at DynamicsTwo
-  s8 \textSpannerDown \tsMove #0 #0 \lhSpannerDown "2" { s8 s4 s4 s4 s4 s8 s8 }
-  s2 |
+  s8 \textSpannerDown \tsMove #0 #0 \lhSpannerDown "1" { s8 s4 s4 s4 
+  % Bar 30
+  s4 s4 s4 } s4 |
   % Bar 31
   s2 s4 \textSpannerUp \tsMove #0 #0 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 32
@@ -2116,7 +2117,7 @@ dynamicsfive = {
   %% String-Dampening for this String, This measure is Located at DynamicsOne
   s1 
   % Bar 30
-  s4 s8 s8 } s2 |
+  s4 s8 s8 s4 } s4 |
   % Bar 31
   s2 s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 32
@@ -2619,90 +2620,96 @@ sixstr = {
   s1 |
   s1 |
   % Bar 9
-  s4 \tsMove #0 #-10.9 \strDampening s16-\mkTweak #-0.03 #-2.3
-  _\snare\startTextSpan s8.\stopTextSpan s4 \tsMove #0 #-10.9 \strDampening
-  s8-\mkTweak #-0.03 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #0 #-7.49 \strDampening s16-\mkTweak #-0.04 #-2.3
+  _\snare\startTextSpan s8.\stopTextSpan s4 \tsMove #0 #-7.49 \strDampening
+  s8-\mkTweak #-0.04 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
   % Bar 10
-  s4 \tsMove #0 #-10.9 \strDampening s16-\mkTweak #-0.03 #-2.3
-  _\snare\startTextSpan s8.\stopTextSpan s4 \tsMove #-0.1 #-10.9 \strDampening
-  s8-\mkTweak #-0.03 #-2 _\snare\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #0 #-7.49 \strDampening s16-\mkTweak #-0.04 #-2.3
+  _\snare\startTextSpan s8.\stopTextSpan s4 \tsMove #-0.1 #-8.08 \strDampening
+  s8-\mkTweak #-0.04 #-2 _\snare\startTextSpan s8\stopTextSpan |
   % Bar 11
-  s4  \tsMove #0 #-9.5 \strDampening s16-\mkTweak #-0.03 #-2.3
-  _\snare\startTextSpan s8.\stopTextSpan s4  \tsMove #0 #-9.5 \strDampening
-  s8-\mkTweak #-0.03 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #0 #-8.08 \strDampening s16-\mkTweak #-0.04 #-2.3
+  _\snare\startTextSpan s8.\stopTextSpan s4  \tsMove #0 #-8.08 \strDampening
+  s8-\mkTweak #-0.04 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
   % Bar 12
-  s4 \tsMove #0 #-9.8 \strDampening s8-\mkTweak #-0.03 #-1.9
-  _\snare\startTextSpan s8\stopTextSpan s4  \tsMove #0 #-9.8 \strDampening
-  s8-\mkTweak #-0.03 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #0 #-7.17 \strDampening s8-\mkTweak #-0.04 #-1.9
+  _\snare\startTextSpan s8\stopTextSpan s4  \tsMove #0 #-8.4 \strDampening
+  s8-\mkTweak #-0.04 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
   % Bar 13
-  s4 \tsMove #0 #-6.08 \strDampening s16-\mkTweak #-0.03 #-2.3
+  s4 \tsMove #0 #-6.08 \strDampening s16-\mkTweak #-0.04 #-2.3
   _\snare\startTextSpan s8.\stopTextSpan s4 \tsMove #0 #-6.08 \strDampening
-  s8-\mkTweak #-0.03 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
+  s8-\mkTweak #-0.04 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
   % Bar 14
-  s4 \tsMove #0 #-6.08 \strDampening s16-\mkTweak #-0.03 #-2.3
+  s4 \tsMove #0 #-6.08 \strDampening s16-\mkTweak #-0.04 #-2.3
   _\snare\startTextSpan s8.\stopTextSpan s4 \tsMove #-0.1 #-6.08 \strDampening
-  s8-\mkTweak #-0.03 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
+  s8-\mkTweak #-0.04 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
   % Bar 15
-  s4 \tsMove #0 #-6.08 \strDampening s16-\mkTweak #-0.03 #-2.3
-  _\snare\startTextSpan s8.\stopTextSpan s4 \tsMove #0 #-7.4 \strDampening
-  s8-\mkTweak #-0.03 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #0 #-6.08 \strDampening s16-\mkTweak #-0.04 #-2.3
+  _\snare\startTextSpan s8.\stopTextSpan s4 \tsMove #0 #-7.49 \strDampening
+  s8-\mkTweak #-0.04 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
   % Bar 16
-  s4 \tsMove #0 #-6.08 \strDampening s8-\mkTweak #-0.03 #-1.9 _\snare\startTextSpan s8\stopTextSpan s4 \strDampening
-  s8-\mkTweak #-0.03 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #0 #-6.08 \strDampening s8-\mkTweak #-0.04 #-1.9
+  _\snare\startTextSpan s8\stopTextSpan s4 \tsMove #0 #-6.85 \strDampening
+  s8-\mkTweak #-0.04 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
   % Bar 17
-  s4 \strDampening s16_\snare\startTextSpan s8.\stopTextSpan s4 \strDampening
-  s8_\snare\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #0 #-6.08 \strDampening s16-\mkTweak #-0.04 #-1.9
+  _\snare\startTextSpan s8.\stopTextSpan s4 \tsMove #0 #-6.08 \strDampening
+  s8-\mkTweak #-0.04 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
   % Bar 18
-  s4 \strDampening s16_\snare\startTextSpan s8.\stopTextSpan s4 \strDampening
-  s8_\snare\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #0 #-6.08 \strDampening s16-\mkTweak #-0.04 #-2.3
+  _\snare\startTextSpan s8.\stopTextSpan s4 \tsMove #-0.1 #-6.08 \strDampening
+  s8-\mkTweak #-0.04 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
   % Bar 19
-  s4 \strDampening s16_\snare\startTextSpan s8.\stopTextSpan s4 \strDampening
-  s8_\snare\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #0 #-6.08 \strDampening s16-\mkTweak #-0.04 #-1.9
+  _\snare\startTextSpan s8.\stopTextSpan s4 \tsMove #0 #-6.08 \strDampening
+  s8-\mkTweak #-0.04 #-1.9 _\snare\startTextSpan s8\stopTextSpan |
   % Bar 20
-  s4 \strDampening s8_\snare\startTextSpan s8\stopTextSpan s4 \strDampening
-  s16_\snare\startTextSpan s16\stopTextSpan s8 |
+  s4 \tsMove #0 #-6.08 \strDampening s8-\mkTweak #-0.04 #-1.9 _\snare\startTextSpan s8\stopTextSpan s4 \tsMove #0 #-6.08 \strDampening
+  s16-\mkTweak #-0.04 #-1.9 _\snare\startTextSpan s16\stopTextSpan s8 |
   % Bar 21
-  s16 \textSpannerDown \tsMove #0 #0 \lhSpannerDown "3" { s8. s4\mkTweak #-0.05 #3.2
-  _\bassSnare s4 s8\mkTweak #-0.05 #0 _\snare } s8 |
+  s16 \textSpannerDown \tsMove #0 #-2.5 \lhSpannerDown "3" { s8. s4-\mkTweak
+  #-0.04 #-2.3 _\bassSnare s4 s8-\mkTweak #-0.04 #-1.9 _\snare } s8 |
   % Bar 22
-  \tsMove #0 #0 \lhSpannerDown "2" { s4 s4_\bassSnare s8 s8 s4 } |
+  \tsMove #0 #-2.5 \lhSpannerDown "2" { s4 s4-\mkTweak #-0.04 #-2.3 _\bassSnare s8
+  s8 s4 } |
   % Bar 23
-  \tsMove #0 #0 \lhSpannerDown "3" { s4 s4_\bassSnare s8 s8 s4_\snare } |
+  \tsMove #0 #-2.5 \lhSpannerDown "3" { s4 s4-\mkTweak #-0.04 #-2.3 _\bassSnare s8 s8 s4-\mkTweak #-0.04 #-1.9 _\snare } |
   \textSpannerNeutral
   % Bar 24
-  s4 s4_\bass s2 |
+  s4 s4-\mkTweak #0.15 #-1.9 _\bass s2 |
   % Bar 25
-  s4 s4_\bass s4 s4_\bassSnare |
+  s4 s4-\mkTweak #0.15 #-1.9 _\bass s4 s4-\mkTweak #-0.04 #-1.9 _\bassSnare |
   % Bar 26
-  s4 s4_\bass s2 |
+  s4 s4-\mkTweak #0.15 #-1.9 _\bass s2 |
   %%
   %% Bar 27
   %%
-  s4 s4_\bass s4 s4_\snare |
+  s4 s4-\mkTweak #0.15 #-0.9 _\bass s4 s4-\mkTweak #-0.04 #-2.3 _\snare |
   % Bar 28
-  s4 s4_\bass s4 s4_\snare |
+  s4 s4-\mkTweak #0.15 #-0.9 _\bass s4 s4-\mkTweak #-0.04 #-2.3 _\snare |
   % Bar 29
-  s4 s4_\bassSnare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.8 _\bassSnare s4 s4-\mkTweak #-0.04 #-1.9 _\snare |
   % Bar 30
-  s4 s4_\bass s4 s4 |
+  s4 s4-\mkTweak #0.15 #-0.9 _\bass s4 s4 |
   % Bar 31
-  \textSpannerDown \tsMove #0 #0 \lhSpannerDown "3" { s4 s4_\bass s4 s4_\snare |
+  \textSpannerDown \tsMove #0 #-1.5 \lhSpannerDown "3" { s4 s4-\mkTweak #0.15 #-1.9 _\bass s4 s4-\mkTweak #-0.04 #-2.3 _\snare |
   % Bar 32
-  s4 s4_\bassSnare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.3 _\bassSnare s4 s4-\mkTweak #-0.04 #-2.3 _\snare |
   % Bar 33
-  s4 s4_\bass s4 s4_\snare |
+  s4 s4-\mkTweak #0.15 #-1.3 _\bass s4 s4-\mkTweak #-0.04 #-1.9 _\snare |
   % Bar 34
-  s4 s8_\snare s8 } s2 |
+  s4 s8-\mkTweak #-0.04 #-2.3 _\snare s8 s4 } s4 |
   % Bar 35
-  s4 s4_\bass s4 s4_\snare |
+  s4 s4-\mkTweak #0.15 #-1.3 _\bass s4 s4-\mkTweak #-0.04 #-2.3 _\snare |
   % Bar 36
-  s4 s4_\bassSnare s4 s4_\bassSnare |
+  s4 s4-\mkTweak #-0.04 #-2.3 _\bassSnare s4 s4-\mkTweak #-0.04 #-2.3 _\bassSnare |
   %% 
   %% Bar 37
   %%
-  s4 s4_\snare s4 s4_\bassSnare |
+  s4 s4-\mkTweak #-0.04 #-2.3 _\snare s4 s4-\mkTweak #-0.04 #-1.9 _\bassSnare |
   % Bar 38
-  s4 s8_\snare s8-\mkTweak #0 #0 _\twostrdwnstrm s2-\mkTweak #0 #0 _\fivestrdwnstrm |
+  s4 s8-\mkTweak #-0.04 #-1.9 _\snare s8-\mkTweak #-0.8 #2 _\twostrdwnstrm
+  s2-\mkTweak #-1.5 #5 _\fivestrdwnstrm |
   % Bar 39
   s1|
   % Bar 40
@@ -2720,94 +2727,95 @@ sixstr = {
   % Bar 46
   s1 |
   % Bar 47
-  s4 s4_\bassSnare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.5 _\bassSnare s4 s4-\mkTweak #-0.04 #-2.5 _\snare |
   % Bar 48
-  s4 s4_\bassSnare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.5 _\bassSnare s4 s4-\mkTweak #-0.04 #-2.5 _\snare |
   % Bar 49
-  s4 s4_\bassSnare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.5 _\bassSnare s4 s4-\mkTweak #-0.04 #-1.9 _\snare |
   % Bar 50
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.5 _\snare s4 s4-\mkTweak #-0.04 #-1.9 _\snare |
   % Bar 51
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.5 _\snare s4 s4-\mkTweak #-0.04 #-2.5 _\snare |
   % Bar 52
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.5 _\snare s4 s4-\mkTweak #-0.04 #-2.5 _\snare |
   % Bar 53
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.5 _\snare s4 s4-\mkTweak #-0.04 #-1.9 _\snare |
   % Bar 54
-  s4 s4_\snare s4 s4 |
+  s4 s4-\mkTweak #-0.04 #-2.5 _\snare s4 s4 |
   % Bar 55
-  s4 s4_\bassSnare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.5 _\bassSnare s4 s4-\mkTweak #-0.04 #-2.5 _\snare |
   % Bar 56
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.5 _\snare s4 s4-\mkTweak #-0.04 #-2.5 _\snare |
   % Bar 57
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.5 _\snare s4 s4-\mkTweak #-0.04 #-1.9 _\snare |
   % Bar 58
-  s4 s4_\snare s4 s4 |
+  s4 s4-\mkTweak #-0.04 #-2.5 _\snare s4 s4 |
   % Bar 59
-  s4 s4_\bassSnare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.5 _\bassSnare s4 s4-\mkTweak #-0.04 #-2.5 _\snare |
   % Bar 60
-  s4 s4_\bassSnare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.5 _\bassSnare s4 s4-\mkTweak #-0.04 #-2.5 _\snare |
   % Bar 61
-  s4 s4_\bassSnare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.5 _\bassSnare s4 s4-\mkTweak #-0.04 #-1.9 _\snare |
   % Bar 62
-  s4 s4_\bassSnare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.5 _\bassSnare s4 s4-\mkTweak #-0.04 #-1.9 _\snare |
   % Bar 63
-  s4 s4_\bass s4 s4 |
+  s4 s4-\mkTweak #0.15 #-1.3 _\bass s4 s4 |
   % Bar 64
-  s4 s4_\bass s4 \tsMove #0 #0 \strDampening s8\startTextSpan _\snare
+  s4 s4-\mkTweak #0.15 #-1.3 _\bass s4 \tsMove #-0.1 #6.05 \strDampening s8\startTextSpan -\mkTweak #-0.04 #-1.9 _\snare
   s8\stopTextSpan |
   % Bar 65
-  s4 s4_\bass s8 \tsMove #0 #0 \strDampening s16\startTextSpan _\snare
+  s4 s4-\mkTweak #0.15 #-1.3 _\bass s8 \tsMove #0.3 #6.87 \strDampening s16\startTextSpan -\mkTweak #-0.04 #-1.9 _\snare
   s16\stopTextSpan s4 |
   % Bar 66
-  s4 s4_\bass s4 \tsMove #0 #0 \strDampening s8\startTextSpan _\snare
+  s4 s4-\mkTweak #0.15 #-1.3 _\bass s4 \tsMove #0 #4.65 \strDampening s8\startTextSpan -\mkTweak #-0.04 #-1.9 _\snare
   s8\stopTextSpan |
   % Bar 67
-  s4 s4_\bass s4 s4_\snare |
+  s4 s4-\mkTweak #0.15 #-1.3 _\bass s4 s4-\mkTweak #-0.04 #-1.9 _\snare |
   % Bar 68
-  s4 s4_\bassSnare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-2.3 _\bassSnare s4 s4-\mkTweak #-0.04 #-1.9 _\snare |
   % Bar 69
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan _\bassSnare s16\stopTextSpan
-  s8 s4 \tsMove #0 #0 \strDampening s16\startTextSpan _\snare s16\stopTextSpan
+  s4 \tsMove #-0.1 #7.06 \strDampening s16\startTextSpan -\mkTweak #-0.04 #-2.3 _\bassSnare s16\stopTextSpan
+  s8 s4 \tsMove #-0.1 #7.06 \strDampening s16\startTextSpan -\mkTweak #-0.04 #-2.3 _\snare s16\stopTextSpan
   s8 |
   % Bar 70
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan _\bassSnare s16\stopTextSpan
-  s8 s4 \tsMove #0 #0 \strDampening s16\startTextSpan _\snare s16\stopTextSpan
+  s4 \tsMove #-0.1 #7.06 \strDampening s16\startTextSpan -\mkTweak #-0.04 #-2.3 _\bassSnare s16\stopTextSpan
+  s8 s4 \tsMove #0 #7.06 \strDampening s16\startTextSpan -\mkTweak #-0.04 #-1.9 _\snare s16\stopTextSpan
   s8 |
   % Bar 71
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan _\bassSnare s16\stopTextSpan
-  s8 s4 \tsMove #0 #0 \strDampening s16\startTextSpan _\snare s16\stopTextSpan
+  s4 \tsMove #-0.1 #7.89 \strDampening s16\startTextSpan -\mkTweak #-0.04 #-2.3 _\bassSnare s16\stopTextSpan
+  s8 s4 \tsMove #-0.1 #7.89 \strDampening s16\startTextSpan -\mkTweak #-0.04 #-1.9 _\snare s16\stopTextSpan
   s8 |
   % Bar 72
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan _\bassSnare s16\stopTextSpan
-  s8 s4 \tsMove #0 #0 \strDampening s16\startTextSpan _\snare s16\stopTextSpan
+  s4 \tsMove #-0.1 #7.87 \strDampening s16\startTextSpan -\mkTweak #-0.04 #-2.3 _\bassSnare s16\stopTextSpan
+  s8 s4 \tsMove #0 #7.06 \strDampening s16\startTextSpan -\mkTweak #-0.04 #-1.9 _\snare s16\stopTextSpan
   s8 |
   % Bar 73
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan _\bassSnare s16\stopTextSpan
-  s8 s4 \tsMove #0 #0 \strDampening s16\startTextSpan _\snare s16\stopTextSpan
+  s4 \tsMove #-0.1 #7.89 \strDampening s16\startTextSpan -\mkTweak #-0.04 #-2.3 _\bassSnare s16\stopTextSpan
+  s8 s4 \tsMove #-0.1 #7.89 \strDampening s16\startTextSpan -\mkTweak #-0.04 #-2.3 _\snare s16\stopTextSpan
   s8 |
   % Bar 74
-  s4 s4_\bass s4 \tsMove #0 #0 \strDampening s16\startTextSpan _\snare s16\stopTextSpan
+  s4 s4-\mkTweak #0.15 #-1.3 _\bass s4 \tsMove #0 #7.06 \strDampening s16\startTextSpan -\mkTweak #-0.04 #-1.9 _\snare s16\stopTextSpan
   s8 |
   % Bar 75
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan _\bassSnare s16\stopTextSpan s8 s4 s4 | 
+  s4 \tsMove #-0.1 #7.06 \strDampening s16\startTextSpan -\mkTweak #-0.04 #-2.3 _\bassSnare s16\stopTextSpan s8 s4 s4 | 
   % Bar 76
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan _\snare s16\stopTextSpan s8
-  s4 \tsMove #0 #0 \strDampening s8\startTextSpan _\snare s8\stopTextSpan |
+  s4 \tsMove #0 #3.73 \strDampening s16\startTextSpan -\mkTweak #-0.04 #-2.3 _\snare s16\stopTextSpan s8
+  s4 \tsMove #-0.1 #3.24 \strDampening s8\startTextSpan -\mkTweak #-0.04 #-1.9 _\snare s8\stopTextSpan |
   % Bar 77
-  s4 s4_\snare s4 s4 |
+  s4 s4-\mkTweak #-0.04 #-1.9 _\snare s4 s4-\mkTweak #-0.04 #-2.3 _\snare |
   % Bar 78  
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-1.9 _\snare s4 s4-\mkTweak #-0.04 #-1.9 _\snare |
   % Bar 79
-  s4 s4_\snare s4 s4 |
+  s4 s4-\mkTweak #-0.04 #-1.9 _\snare s4 s4-\mkTweak #-0.04 #-2.3 _\snare |
   % Bar 80
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-1.9 _\snare s4 s4-\mkTweak #-0.04 #-1.9 _\snare |
+
   % Bar 81
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-1.9 _\snare s4 s4-\mkTweak #-0.04 #-2.3 _\snare |
   % Bar 82
-  s4 s4_\snare s4 s4_\snare |
+  s4 s4-\mkTweak #-0.04 #-1.9 _\snare s4 s4-\mkTweak #-0.04 #-1.9 _\snare |
   % Bar 83
-  s4 s4_\snare s4 s4 |
+  s4 s4-\mkTweak #-0.04 #-1.9 _\snare s4 s4 |
 
 }
 
