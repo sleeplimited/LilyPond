@@ -43,7 +43,7 @@ Publications.  07/10/13
   right-margin = 0.75\in
   top-margin = 0.5\in
   bottom-margin = 0.5\in
-  min-systems-per-page = 3
+  max-systems-per-page = 3
   first-page-number = 4
   % see:  http://code.google.com/p/lilypond/issues/detail?id=2576
 
@@ -77,21 +77,12 @@ oddFooterMarkup =
   } 
   evenFooterMarkup = \oddFooterMarkup 
 } 
-
 \layout {
-    \context {
-      \Score
-    \override StaffGrouper #'staff-staff-spacing #'padding = #1
-    \override StaffGrouper #'staff-staff-spacing #'basic-distance = #1
-  }
   \context {
-    \Dynamics
-    \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing
-    #'basic-distance = #0
-    \override VerticalAxisGroup #'nonstaff-relatedstaff-spacing #'padding = #0
-    % \override TimeSignature #'space-alist #'first-note = #'extra-space . 0.0)
-    }
+    \TabVoice 
+    \override TextScript #'padding = #0
   }
+}
 % Includes and functions
 \include "functions.ly"
 % Standard Notation
@@ -870,6 +861,7 @@ tab = {
   b,,8 <\parenthesize a d>16 d16~ d16[ d b,,8] a16-\mkTweak #0 #0 ^\rhm ~
   <\fakeSlur a\3 g\3>16 e8-\mkTweak #0 #0 ^\rhi \slashedGrace a8-\mkTweak #0 #0 ^\rhm
   \glissando b8\3 b16-\mkTweak #0 #0 ^\rha g-\mkTweak #0 #0 ^\rhm | 
+  \break
   % Bar 25
   c,8 e16 e16~ 
   e16[ e c,8] d'16~ <\fakeSlur d'\2 b\2> g8
@@ -878,6 +870,7 @@ tab = {
   b,,8 <\parenthesize a d>16 d16~ d16[ d b,,8] fis'16~
   <\fakeSlur fis'\1 e'\1>16 b8 \slashedGrace cis'8 \glissando d'8 e'16 b^\mark \markup
   { \fontsize #-2 \italic "To Coda"}
+  \break
   % Bar 27
   <c \parenthesize e>8-\mkTweak #0 #0 ^\rhp e16-\mkTweak #0 #0 ^\rhi e-\mkTweak
   #0 #0 ^\rhm ~ e16[ e-\mkTweak #0 #0 ^\rhi c8-\mkTweak #0 #0 ^\rhp ]
@@ -888,6 +881,7 @@ tab = {
   >8^\rhp fis16^\rhi g^\rhm ~ g16[ fis16^\rhi d8\5^\rhp ]
   g16^\rhm ~ <\fakeSlur g\3 b\3> d'8^\rha < \invTNH a,,
   b\3>16~ <\fakeSlur b\3 g\3>16 fis8^\rhi |
+  \pageBreak
   % Bar 29
   \slashedGrace { \hideFretNumber d8\5 \glissando s } e8\5^\rhp g16\4^\rhi
   g^\rhm 
@@ -897,6 +891,7 @@ tab = {
   % Bar 30
   e8\5^\rhp g16\4^\rhi g\3^\rhm ~ g\3 g\4^\rhi e8\5^\rhp \slashedGrace
   fis'8\2^\rhm \glissando g'8\2 a'\1^\rha <b'\2\harmonic a,,>4^\rhp -\mkTweak #0 #0 ^\rhm ~ 
+  \break
   % Bar 31
   <\fakeSlur a,,\6 c,\6>8 e16 g~ g e c,8 \slurNeutral g16~ <\fakeSlur g\3 a\3>
   b8 < \tweak TabNoteHead #'transparent ##t a,, a>16~ <\fakeSlur a\3 g\3> e8 |
@@ -942,6 +937,7 @@ tab = {
   #'extra-offset = #'(0.3 . 0) \leftBracketThree <b,, b, fis b dis'>8^\rhp [
   r8-\mkTweak #0 #0 ^\rhi -\mkTweak #0 #0 ^\rhm ] \once \override BreathingSign
   #'extra-offset = #'(0.3 . 2) \leftBracketTwo \harmonicByRatio #1/3 <b' fis'>4
+  \pageBreak
   % Bar 39
   \override BreathingSign #'extra-offset = #'(0.3 . -2) <a,, a,>8[
   \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,, a,>8
@@ -975,7 +971,6 @@ tab = {
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
   a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick e16
   a16~ a8^\mark \markup { \fontsize #-2 \italic "D.S. al Coda"} \bar "||"
-  \break
   %%
   % Bar 47
   %%
@@ -1049,6 +1044,7 @@ tab = {
   e,8^\rhp g16\4^\rhp g\3^\rhi ~ g16\3[ g\4^\rhi e,8^\rhp ] d'16\3^\rhm ~
   <\fakeSlur d'\3 g\3> g8\4^\rhi 
   <\invTNH a,, a\4 >^\rhp b^\rha |
+  \pageBreak
   % Bar 65
   <a,\6 \parenthesize c'\4>8^\rhp c'16\4^\rhp b^\rha ~ b16[ c'\4^\rhi <a,\6 g\3>8^\rhp ^\rhm ]~
   <a,\6 g\3>8[ <\invTNH a,, g\3 b'\2>8^\rhp -\mkTweak #0 #0 ^\markup {
@@ -1057,12 +1053,14 @@ tab = {
   % Bar 66
   d,8^\rhp fis16^\rhp g^\rhi ~ g16[ fis^\rhi d,8^\rhp ] <\tweakTabNoteHead \mutedString e\5 e,\6 g\4 g\3
   b\2>4^\rhp <\invTNH a,, g\3>4 |
+  \break
   % Bar 67
   a,8\6 c'16\4 b~ b16[ c'\4 <a,\6 g'\3>8]~ <a,\6 g'\3>4 \glissando
   \slashedGrace { \hideFretNumber <g,\6 f'\3>8 } <\invTNH a,, g>8 b^\rha |
   % Bar 68
   e,8 g16\4 g\3 <\invTNH a,,>16[ g\4 e,8] d'16\3~ <\fakeSlur d'\3 g\3> g8\4
   <\invTNH a,, g\3 a\4> b |
+  \pageBreak
   % Bar 69
   a,,16^\rhp ~ <\fakeSlur a,,\6 c,\6>16 e16^\rhp g^\rhi <\invTNH a,,>16^\rhi
   ^\rhp [ e c,8^\rhp ] a,,16^\rhp ~ <\fakeSlur
@@ -1077,8 +1075,9 @@ tab = {
   <\fakeSlur a,,\6 d,\6 \parenthesize fis\4>16 fis16 g <\invTNH a,,>16[ fis d,8] |
   % Bar 72
   a,,16~ <\fakeSlur a,,\6 e,\6 \parenthesize g\4>16 g16\4 <b e'>^\rhm ^\rha <\invTNH a,,>16[ d <c,
-  \tweakTabNoteHead \mutedString a, e g d'>8^\rhp ]~ <c,
+  \tweakTabNoteHead \mutedString a, e g d'>8-\mkTweak #0 #-4 ^\fivestrdwnstrm ^\rhp ]~ <c,
   e g d'>4 <\invTNH a,, e g>4  |
+  \pageBreak
   % Bar 73
   a,,16~ <\fakeSlur a,,\6 c,\6>16 e16 d'^\rha <\invTNH a,,>16^\rhp ^\rhi ^\rhm
   ^\rha [ e c,8] a,,16~
@@ -1086,8 +1085,9 @@ tab = {
   e'\2^\rha <\invTNH a,,>16^\rhp ^\rhi ^\rhm ^\rha [ fis d,8] |
   % Bar 74
   a,,16~ <\fakeSlur a,,\6 e,\6 \parenthesize g\4 \parenthesize fis'\2>16 g16\4 fis'\2~ fis'16\2[ d <c,
-  \tweakTabNoteHead \mutedString a, e g b g' >8^\rhp ]~ <c,
+  \tweakTabNoteHead \mutedString a, e g b g' >8-\mkTweak #0 #0 ^\sixstrdwnstrm ^\rhp ]~ <c,
   e g b g'>4 < \tweak TabNoteHead #'transparent ##t a,, g e>4  |
+  \break
   % Bar 75
   a,,16^\rhp ~ <\fakeSlur a,,\6 b,,\6> e^\rhi g\3^\rhm <\invTNH b,, >16^\rhp
   ^\rhi [ e <b,, \tweakTabNoteHead
@@ -1099,6 +1099,7 @@ tab = {
   \rightBracketThree <a,, a, e a cis' e'>4^\rhp ^\rhi ^\rhm ^\rha \arpeggio
   <\invTNH a,,>16^\rhp [ a,,8.] a,,4^\rhp < \invTNH a,, a cis' e >8^\rhp a,16
   a,^\rhi |
+  \pageBreak
   % Bar 77
   a,,16^\rhp ~ \once \override TextSpanner #'style = #'line \once \override
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
@@ -1133,6 +1134,7 @@ tab = {
   #LEFT \fontsize #-5 "4/6 C II " } <a,, a, e a cis' a'>4\arpeggio\startTextSpan
   <\invTNH a,,>16[ a,,8.] a,,4 < \tweak TabNoteHead #'transparent ##t a,, a e cis' a'>8 a,16
   a,\stopTextSpan |
+  \pageBreak
   % Bar 81
   a,,16~ \once \override TextSpanner #'style = #'line \once \override
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
@@ -1194,90 +1196,180 @@ tab = {
 % Breaks Voice
   breaks = {
     % Bar 1
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'(
+    (alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 3
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 65)
+    (alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 5
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'(
+    (alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 7
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 9
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*3 \break
     % Bar 12
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*3 \break
     % Bar 15
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*3 \break
     % Bar 18
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*3 \break
     % Bar 21
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 23
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 25
-    s1*2 \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
+    s1*2 \pageBreak
     % Bar 27
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 29
-    s1*2 \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'(
+    (alignment-distances . (15)))
+    s1*2 \pageBreak
     % Bar 31
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 13 )))
     s1*2 \break
     % Bar 33
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 35
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 37
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 39
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 41
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 43
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 45
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 47
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (12 15 )))
     s1*2 \break
     % Bar 49
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 51
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 53
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 55
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 57
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 59
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 61
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 63
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 65
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 67
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 69
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 71
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 73
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 75
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 77
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 79
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 81
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*3 \break
     % Bar 84
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 86
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 88
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1*2 \break
     % Bar 91
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((alignment-distances . (10 15 )))
     s1 s2 s4 \break
     %{ Bars 1-2
     \overrideProperty #"Score.NonMusicalPaperColumn"
@@ -1329,6 +1421,8 @@ tab = {
 %% DynamicsOne
 
 dynamicsone = {
+  \textLengthOff
+\override TextScript #'outside-staff-priority = ##f
   \tabFullNotation
   % Bar 1
   s1 |
@@ -1434,6 +1528,8 @@ dynamicsone = {
 
 %% DynamicsTwo
 dynamicstwo = {
+  \textLengthOff
+\override TextScript #'outside-staff-priority = ##f
   \tabFullNotation
   % Bar 1
   s1 |
@@ -1492,9 +1588,10 @@ dynamicstwo = {
   % Bar 28
   s2 s8 \tsMove #0 #0 \textSpannerUp \lhSpannerUp "1" { s8 s8 s8 } |
   % Bar 29
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8
+  s4 \textSpannerDown \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8
   s8^\lhfour s8 \tsMove #0 #0 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
   % Bar 30
+  \textSpannerUp
   s2 \lhSpannerUp "4" { \grace s8 s8 } s8 s4^\lhfour |
   % Bar 31
   s1 |
@@ -1558,6 +1655,8 @@ dynamicstwo = {
 
 %% DynamicsThree
 dynamicsthree = {
+  \textLengthOff
+\override TextScript #'outside-staff-priority = ##f
   \tabFullNotation
   % Bar 1
   s1 |
@@ -1739,6 +1838,8 @@ dynamicsthree = {
 
 %% DynamicsFour
 dynamicsfour = {
+  \textLengthOff
+\override TextScript #'outside-staff-priority = ##f
   \tabFullNotation
   % Bar 1
   s2 s8 s16 \tsMove #0 #15 \lhSpannerDown "3" { \grace s8 s16 } s4 |
@@ -1797,7 +1898,7 @@ dynamicsfour = {
   s1 |
   % Bar 27
   \textSpannerDown \tsMove #0 #0 \lhSpannerDown "2" { s8 s8 s8 s8 } s4
-  \textSpannerNeutral \tsMove #0 #0 \threeStrDamp s16\startTextSpan s16\stopTextSpan
+  \textSpannerDown \tsMove #0 #0 \threeStrDamp s16\startTextSpan s16\stopTextSpan
   s8-\mkTweak #0 #0 ^\lhtwo |
   % Bar 28
   \textSpannerDown \tsMove #0 #0 \lhSpannerDown "2" { s8 s8 s8 s8 } s4
@@ -1951,6 +2052,8 @@ dynamicsfour = {
 }
 %% DynamicsFive
 dynamicsfive = {
+  \textLengthOff
+\override TextScript #'outside-staff-priority = ##f
   \tabFullNotation
   % Bar 1
   s8 s8_\lhone s4 s4_\lhone s8. s16_\lhone |
@@ -2159,6 +2262,8 @@ dynamicsfive = {
 }
 %% DynamicsSix
 dynamicssix = {
+  \textLengthOff
+\override TextScript #'outside-staff-priority = ##f
   \tabFullNotation
   \override TextScript #'extra-offset = #'(-1.0 . 8.5)
   % Bar 1
@@ -2414,13 +2519,13 @@ dynamicssix = {
   \lhSpannerDown "3" { s16 s8 s8 s8 
   % Bar 72
   s16} \tsMove #0 #0 \lhSpannerDown "3" { s16 s8 s16 s16 } \tsMove #0 #0
-  \lhSpannerDown "3" {s8-\mkTweak #0 #0 ^\fivestrdwnstrm s4 s4 
+  \lhSpannerDown "3" {s8 s4 s4 
   % Bar 73
   s16 } \tsMove #0 #0 \lhSpannerDown "3" { s16 s8 s8 s8 s16 } \tsMove #0 #0
   \lhSpannerDown "3" { s16 s8 s8 s8 
   % Bar 74
   s16} \tsMove #0 #0 \lhSpannerDown "3" { s16 s8 s16 s16 } \tsMove #0 #0
-  \lhSpannerDown "3" {s8-\mkTweak #0 #0 ^\sixstrdwnstrm s4 s4 
+  \lhSpannerDown "3" {s8 s4 s4 
   % Bar 75
   s16 } \tsMove #0 #0 \lhSpannerDown "2" { s16 s8 s4 s4 s8 s16 s16 }
   % Bar 76
@@ -2506,6 +2611,8 @@ dynamicssix = {
 
 %% SixStr
 sixstr = {
+  \textLengthOff
+\override TextScript #'outside-staff-priority = ##f
   \tabFullNotation
   s1 |
   s1 |
@@ -2704,6 +2811,8 @@ sixstr = {
 
 % StrDamping
 strdamping = {
+  \textLengthOff
+\override TextScript #'outside-staff-priority = ##f
   \tabFullNotation
   % Bar 1-72
   s1*72
@@ -2718,8 +2827,6 @@ strdamping = {
   systemStartDelimiter = #'SystemStartBar
   \override SystemStartBar #'thickness = #5
   \override SystemStartBar #'X-offset = #-1
-  \override StaffGrouper #'staffgroup-staff-spacing #'padding = #2
-  \override StaffGrouper #'staffgroup-staff-spacing #'basic-distance = #60
 }  <<
       \new Staff = "guitar traditional" <<
         \clef "treble_8"
@@ -2742,7 +2849,6 @@ strdamping = {
       \new TabVoice = "dynamicssix" \dynamicssix
       \new TabVoice = "sixstr" \sixstr
       \new TabVoice = "strdamping" \strdamping
-      \new Voice = "breaks" \breaks
     >>
   >>
 %% Layout
