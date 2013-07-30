@@ -78,11 +78,15 @@ oddFooterMarkup =
   evenFooterMarkup = \oddFooterMarkup 
 } 
 \layout {
-  \context {
-    \TabVoice 
-    \override TextScript #'padding = #0
-  }
+     \context {
+     \Score
+       \override StaffGrouper #'staffgroup-staff-spacing =
+       #'((basic-distance . 11)
+          (padding . -10)
+          (stretchability . 0))
+   }
 }
+
 % Includes and functions
 \include "functions.ly"
 % Standard Notation
@@ -119,36 +123,36 @@ upper = {
   b2\rest b8\rest \deadNote d16 \slashedGrace f8 \glissando fis16 \deadNote g16 a16~
   a8 |
   % Bar 9
-  << { <b, fis b>1\arpeggio } \\ { b1 } >>
+  << { <b, fis b>1 } \\ { b1 } >>
   % Bar 10
   e'4~ e'16 b( dis') e'~ e' << { \slurDown dis'( b8)~ b b } \\ { s16 s8 <b fis>4 } >>
   % Bar 11
   \stemNeutral
-  <a, e a>1\arpeggio  
+  <a, e a>1
   % Bar 12
   b16( cis'8)( b16)~ b8 a8 b16( cis'8)( b16)~ b8 a8 |
   % Bar 13
-  << { <b, fis b>1\arpeggio } \\ { b1 } >>
+  << { <b, fis b>1 } \\ { b1 } >>
   % Bar 14
   e'4~ e'16 b( dis') e'~ e' << { \slurDown dis'( b8)~ b8 b8 } \\ { s16 s8 <b fis>4 } >>
   % Bar 15
-  <<  { a2 \slurDown b16( \tieDown cis'8.)~ cis'4 \tieNeutral } \\ { <a, e>1\arpeggio }  >> |
+  <<  { a2 \slurDown b16( \tieDown cis'8.)~ cis'4 \tieNeutral } \\ { <a, e>1 }  >> |
   % Bar 16
   b16( cis'8)( b16)~ b8 a8 b16( cis'8)( b16)~ b8 a8 |
   % Bar 17
-  << { <b, fis b>1\arpeggio } \\ { b1 } >>
+  << { <b, fis b>1 } \\ { b1 } >>
   % Bar 18
   e'4~ e'16 b( dis') e'~ e' << { \slurDown dis'( b8)~ b8 b8 } \\ { s16 s8 <b fis>4 } >>
   % Bar 19
-  <a, e a>1\arpeggio  
+  <a, e a>1
   % Bar 20
   b16( cis'8)( b16)~ b8 a8 b16( cis'8) e'16~ e'8 e8 |
   % Bar 21 
   << { 
     % Bar 21
-    b8\rest e16 e16~ e16 e8.~ \stemDown e8 g a4 |
+    b8\rest e16 e16 b16\rest e8.~ \stemDown e8 g a4 |
     % Bar 22
-    e8\rest d16 d16~ d16 d8.~ d2 |
+    e8\rest d16 d16 e16\rest d8.~ d2 |
     % Bar 23
     e8\rest e16 g~ g e8.~ e8 g a4 |
     % Bar 24
@@ -180,7 +184,8 @@ upper = {
     % Bar 37
     <a, e>2. b,8\rest a,16 a,16 |
     % Bar 38
-    r8 gis16~ \tieDown <gis b e'>~ <gis b e'> \tieNeutral gis16 cis8 <b fis>4 s4 | 
+    e8\rest gis16~ \tieDown <gis b e'>~ <b e'> \tieNeutral gis16 cis8 <b, b fis>8
+    s8 s4 | 
     % Bar 39
     s1|
     % Bar 40
@@ -235,7 +240,7 @@ upper = {
     % Bar 61
     e8\rest g16 g~ g g8. e2\rest |
     % Bar 62
-    e8\rest g16 g~ g g8. e2\rest |
+    e8\rest g16 g e16\rest g8. e2\rest |
     % Bar 63
     e8\rest c'16 g16~ g16 c'16 e8\rest e2\rest |
     % Bar 64
@@ -253,35 +258,34 @@ upper = {
     % Bar 70
     b8\rest g16 g16~ g16 d16 <e g>8~ <e g>4 <e g>4 |
     % Bar 71
-    e8\rest \tieDown e8~ e16 e8. e8\rest fis8~ fis16 fis8. |
+    c8\rest \tieDown e8 c16\rest e8. c8\rest fis8 c16\rest fis8. |
     % Bar 72
-    e8\rest g8~ g16 d16 \tieNeutral <e g>8~ <e g>4 <e g>4 | 
+    e8\rest g8 e16\rest d16 \tieNeutral <e g>8~ <e g>4 <e g>4 | 
     % Bar 73
-    e8\rest e8~ e16 e8. e8\rest fis8~ fis16 fis8. |
+    e8\rest e8 e16\rest e8. e8\rest fis8 e16\rest fis8. |
     % Bar 74
     e8\rest g8~ g16 d16 \tieNeutral <e g>8~ <e g>4 <e g>4 | 
     % Bar 75
-    b8\rest e16 g16~ g16 e16 <e g cis' e'>8~ <e g cis' e'>4 <e g cis' e'>8
-    b8\rest |
+    b8\rest e16 g16~ g16 e16 <e g cis' e'>8~ <e g cis' e'>4 <e g cis' e'>4 |
     % Bar 76
     <e a a,>2. <e a>8 a,16 a, |
     % Bar 77
-    e8\rest fis32( \tieDown gis16.)~ \tieUp gis16~ <gis b>~ <gis b cis>8
+    e8\rest fis32( \tieDown gis16.) \tieUp e16\rest gis~ <gis cis>8
     \tieNeutral <b, fis b>4 <b fis>16 b8. |
     % Bar 78
     <e a a,>2. <e a>8 a,16 a, |
     % Bar 79
-    e8\rest fis32( gis32)~ \tieDown <gis b e'>16~ <gis b e'>16 <b e'> <cis gis b e'>8
+    e8\rest fis32( gis32)~ \tieDown <gis b e'>16~ <b e'>16 <b e'> <cis gis b e'>8
     <b, fis b>4 \tieNeutral <b fis>16 b8. |
     % Bar 80
-    <e a a,>2. a8 a,16~ <a, a>16 |
+    <e a a,>2. a8 a,16 a,16 |
     % Bar 81
-    e8\rest fis32( gis32)~ \tieDown <gis b e'>16~ <gis b e'>16 <b e'> <cis gis b e'>8
+    e8\rest fis32( gis32)~ \tieDown <gis b e'>16~ < b e'>16 <b e'> <cis gis b e'>8
     <b, fis b>4 \tieNeutral <b fis>16 b8. |
     % Bar 82
     <e a a,>2. <e a>8 a,16 a, |
     % Bar 83
-    e8\rest gis8~ gis16 b~ <b gis cis>8 <b, fis b>4 e4\rest |
+    e8\rest gis8 e16\rest b <b gis cis>8 <b, fis b>4 e4\rest |
     % Bar 84
     s1 |
     % Bar 85
@@ -304,15 +308,15 @@ upper = {
 
       } \\ { 
         % Bar 21
-        \stemUp s2 d'16( b) g8( a8) b~ |
+        \stemUp s2 d'16( b) g8 a8 b~ |
         % Bar 22
         b2 fis'16( e') b8 \slashedGrace cis'8 \glissando d'8 e'16 b~ |
         % Bar 23
-        b2 d'16( b) g8( a8) e'~ |
+        b2 d'16( b) g8 a8 e'~ |
         % Bar 24
         e'2 a16( g) e8 \slashedGrace a8 \glissando b8 b16 g~
         % Bar 25
-        g2 d'16( b) g8( a) <b e'>8~
+        g2 d'16( b) g8 a <b e'>8~
         % Bar 26
         <b e'>2 fis'16( e') b8 \slashedGrace cis'8 \glissando d'8 e'16 b~ |
         % Bar 27
@@ -342,7 +346,7 @@ upper = {
         % Bar 37
         <a cis' e'>2. <e a cis'>4 |
         % Bar 38
-        r8. \tieUp gis'16~ gis'4 \tieNeutral <b dis' fis'>4 \ottava #1 \once \override
+        a'8.\rest \tieUp gis'16~ gis'4 \tieNeutral <b dis' fis'>8 b8\rest \ottava #1 \once \override
         Voice.NoteHead #'style = #'harmonic-mixed <fis'' b''>4~ |
         % Bar 39
         \once \override Voice.NoteHead #'style = #'harmonic-mixed  <fis''
@@ -407,7 +411,7 @@ upper = {
         % Bar 61
         b2\rest fis'16( b) g8 d' e'~ |
         % Bar 62
-        e'2 fis'16( b) g8 <b d'> <b e'>~ |
+        e'2 <\deadNote e' fis'>16( b) g8 <b d'> <b e'>~ |
         % Bar 63
         <b e'>4. g'8~ g'4 a8 b~ |
         % Bar 64
@@ -425,13 +429,13 @@ upper = {
         % Bar 70
         s1 |
         % Bar 71
-        f'8.\rest b16~ b4~ b8. g16~ g4 |
+        f'8.\rest b16~ \tieUp b4~ b8. g16~ g4 \tieNeutral |
         % Bar 72
         f'8.\rest <b e'>16~ <b e'>8 d'8~ d'4 f'4\rest |
         % Bar 73
-        f'8.\rest d'16~ d'4 f'8.\rest e'16~ e'4 |
+        f'8.\rest d'16 f'4\rest f'8.\rest e'16 f'4\rest |
         % Bar 74
-        f'8.\rest fis'16 f'8\rest d'8~ d'4 f'4\rest |
+        f'8.\rest fis'16~ fis'16 f'16\rest <b d'>8~ <b d'>2 | 
         % Bar 75
         s1 |
         % Bar 76
@@ -521,7 +525,7 @@ lower = {
   % Bar 11
   a,,4 d,16\rest a,,8. a,,4 d,8\rest a,,8 |
   % Bar 12
-  a,,4 d,16\rest a,,8. a,,4 d,8\rest a,,8 |
+  a,,4 d,8\rest a,,8 a,,4 d,8\rest a,,8 |
   % Bar 13
   b,,4 d,16\rest b,,8. b,,4 d,8\rest b,,8 |
   % Bar 14
@@ -529,7 +533,7 @@ lower = {
   % Bar 15
   a,,4 d,16\rest a,,8. a,,4 d,8\rest a,,8 |
   % Bar 16
-  a,,4 d,16\rest a,,8. a,,4 d,8\rest a,,8 |
+  a,,4 d,8\rest a,,8 a,,4 d,8\rest a,,8 |
   % Bar 17
   b,,4 d,16\rest b,,8. b,,4 d,8\rest b,,8 |
   % Bar 18
@@ -537,7 +541,7 @@ lower = {
   % Bar 19
   a,,4 d,16\rest a,,8. a,,4 d,8\rest a,,8 |
   % Bar 20
-  a,,4 d,16\rest a,,8. a,,4 d,8\rest a,,8 |
+  a,,4 d,8\rest a,,8 a,,4 d,4\rest |
   %%
   %% Bar 21
   %%
@@ -553,13 +557,13 @@ lower = {
   % Bar 26
   b,,4 r8 b,,8~ b,,2 |
   % Bar 27
-  c4. c8~ c2 |
+  c4. c8~ c4 r4 |
   % Bar 28
   d4. d8~ d2 |
   % Bar 29
   e4 r8 e8~ e4 r4 |
   % Bar 30
-  e4. e8~ e4 a,,4( |
+  e4. e8 r4 a,,4( |
   % Bar 31
   c,4.) c,8~ c,4 r4 |
   % Bar 32
@@ -567,15 +571,15 @@ lower = {
   % Bar 33
   e,4. e,8~ e,4 r4 |
   % Bar 34
-  e,4 r8 e,8~ e,4 a,,4( |
+  e,4 r8 e,8 r4 a,,4( |
   % Bar 35
   c,4.) c,8~ c,4 r4 |
   % Bar 36
-  d,4 r8 d,8~ d,4 r4 |
+  d,4 r8 d,8~ d,4 r8 <d, d>16 <d, \deadNote a, \deadNote d> |
   % Bar 37
   a,,4 r16 a,,8. a,,4 r4 |
   % Bar 38
-  a,,16( cis,8.) r4 b,,4 r4 |
+  a,,16( cis,8.) r8 cis,8 b,,8 r8 r4 |
   %%
   %% Bar 39
   %%
@@ -641,7 +645,7 @@ lower = {
   % Bar 64
   e,4 r8 e,8~ e,4 r4 |
   % Bar 65
-  a,4 r8 a,8~ a,4 r4 |
+  a,4 r8 a,8~ a,8 r8 r4 |
   % Bar 66
   d,4 r8 d,8 e,4 r4 |
   % Bar 67
@@ -649,17 +653,17 @@ lower = {
   % Bar 68
   e,4 r8 e,8~ e,4 r4 |
   % Bar 69
-  c,4 r8 c,8 d,4 r8 d,8 |
+  a,,16( c,8.) r8 c,8 a,,16( d,8.) r8 d,8 |
   % Bar 70
-  e,4 r8 c,8~ c,4 r4 |
+  a,,16( e,8.) r8 c,8~ c,4 r4 |
   % Bar 71
-  c,4 r8 c,8 d,4 r8 d,8 |
+  a,,16( c,8.) r8 c,8 a,,16( d,8.) r8 d,8 |
   % Bar 72
-  e,4 r8 c,8~ c,4 r4 |
+  a,,16( e,8.) r8 c,8~ c,4 r4 |
   % Bar 73
-  c,4 r8 c,8 d,4 r8 d,8 |
+  a,,16( c,8.) r8 c,8 a,,16( d,8.) r8 d,8 |
   % Bar 74
-  e,4 r8 c,8~ c,4 r4 |
+  a,,16( e,8.) r8 c,8~ c,4 r4 |
   % Bar 75
   a,,16( b,,8.) r8 b,,8~ b,,4 b,,8 \once \override NoteHead #'style = #'cross
   <b,, b,>16 \once \override NoteHead #'style = #'cross <b,, b,>16 |
@@ -861,7 +865,6 @@ tab = {
   b,,8 <\parenthesize a d>16 d16~ d16[ d b,,8] a16-\mkTweak #0 #0 ^\rhm ~
   <\fakeSlur a\3 g\3>16 e8-\mkTweak #0 #0 ^\rhi \slashedGrace a8-\mkTweak #0 #0 ^\rhm
   \glissando b8\3 b16-\mkTweak #0 #0 ^\rha g-\mkTweak #0 #0 ^\rhm | 
-  \break
   % Bar 25
   c,8 e16 e16~ 
   e16[ e c,8] d'16~ <\fakeSlur d'\2 b\2> g8
@@ -870,7 +873,6 @@ tab = {
   b,,8 <\parenthesize a d>16 d16~ d16[ d b,,8] fis'16~
   <\fakeSlur fis'\1 e'\1>16 b8 \slashedGrace cis'8 \glissando d'8 e'16 b^\mark \markup
   { \fontsize #-2 \italic "To Coda"}
-  \break
   % Bar 27
   <c \parenthesize e>8-\mkTweak #0 #0 ^\rhp e16-\mkTweak #0 #0 ^\rhi e-\mkTweak
   #0 #0 ^\rhm ~ e16[ e-\mkTweak #0 #0 ^\rhi c8-\mkTweak #0 #0 ^\rhp ]
@@ -881,7 +883,6 @@ tab = {
   >8^\rhp fis16^\rhi g^\rhm ~ g16[ fis16^\rhi d8\5^\rhp ]
   g16^\rhm ~ <\fakeSlur g\3 b\3> d'8^\rha < \invTNH a,,
   b\3>16~ <\fakeSlur b\3 g\3>16 fis8^\rhi |
-  \pageBreak
   % Bar 29
   \slashedGrace { \hideFretNumber d8\5 \glissando s } e8\5^\rhp g16\4^\rhi
   g^\rhm 
@@ -891,7 +892,6 @@ tab = {
   % Bar 30
   e8\5^\rhp g16\4^\rhi g\3^\rhm ~ g\3 g\4^\rhi e8\5^\rhp \slashedGrace
   fis'8\2^\rhm \glissando g'8\2 a'\1^\rha <b'\2\harmonic a,,>4^\rhp -\mkTweak #0 #0 ^\rhm ~ 
-  \break
   % Bar 31
   <\fakeSlur a,,\6 c,\6>8 e16 g~ g e c,8 \slurNeutral g16~ <\fakeSlur g\3 a\3>
   b8 < \tweak TabNoteHead #'transparent ##t a,, a>16~ <\fakeSlur a\3 g\3> e8 |
@@ -937,7 +937,6 @@ tab = {
   #'extra-offset = #'(0.3 . 0) \leftBracketThree <b,, b, fis b dis'>8^\rhp [
   r8-\mkTweak #0 #0 ^\rhi -\mkTweak #0 #0 ^\rhm ] \once \override BreathingSign
   #'extra-offset = #'(0.3 . 2) \leftBracketTwo \harmonicByRatio #1/3 <b' fis'>4
-  \pageBreak
   % Bar 39
   \override BreathingSign #'extra-offset = #'(0.3 . -2) <a,, a,>8[
   \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,, a,>8
@@ -1044,7 +1043,6 @@ tab = {
   e,8^\rhp g16\4^\rhp g\3^\rhi ~ g16\3[ g\4^\rhi e,8^\rhp ] d'16\3^\rhm ~
   <\fakeSlur d'\3 g\3> g8\4^\rhi 
   <\invTNH a,, a\4 >^\rhp b^\rha |
-  \pageBreak
   % Bar 65
   <a,\6 \parenthesize c'\4>8^\rhp c'16\4^\rhp b^\rha ~ b16[ c'\4^\rhi <a,\6 g\3>8^\rhp ^\rhm ]~
   <a,\6 g\3>8[ <\invTNH a,, g\3 b'\2>8^\rhp -\mkTweak #0 #0 ^\markup {
@@ -1053,14 +1051,12 @@ tab = {
   % Bar 66
   d,8^\rhp fis16^\rhp g^\rhi ~ g16[ fis^\rhi d,8^\rhp ] <\tweakTabNoteHead \mutedString e\5 e,\6 g\4 g\3
   b\2>4^\rhp <\invTNH a,, g\3>4 |
-  \break
   % Bar 67
   a,8\6 c'16\4 b~ b16[ c'\4 <a,\6 g'\3>8]~ <a,\6 g'\3>4 \glissando
   \slashedGrace { \hideFretNumber <g,\6 f'\3>8 } <\invTNH a,, g>8 b^\rha |
   % Bar 68
   e,8 g16\4 g\3 <\invTNH a,,>16[ g\4 e,8] d'16\3~ <\fakeSlur d'\3 g\3> g8\4
   <\invTNH a,, g\3 a\4> b |
-  \pageBreak
   % Bar 69
   a,,16^\rhp ~ <\fakeSlur a,,\6 c,\6>16 e16^\rhp g^\rhi <\invTNH a,,>16^\rhi
   ^\rhp [ e c,8^\rhp ] a,,16^\rhp ~ <\fakeSlur
@@ -1077,7 +1073,6 @@ tab = {
   a,,16~ <\fakeSlur a,,\6 e,\6 \parenthesize g\4>16 g16\4 <b e'>^\rhm ^\rha <\invTNH a,,>16[ d <c,
   \tweakTabNoteHead \mutedString a, e g d'>8-\mkTweak #0 #-4 ^\fivestrdwnstrm ^\rhp ]~ <c,
   e g d'>4 <\invTNH a,, e g>4  |
-  \pageBreak
   % Bar 73
   a,,16~ <\fakeSlur a,,\6 c,\6>16 e16 d'^\rha <\invTNH a,,>16^\rhp ^\rhi ^\rhm
   ^\rha [ e c,8] a,,16~
@@ -1087,7 +1082,6 @@ tab = {
   a,,16~ <\fakeSlur a,,\6 e,\6 \parenthesize g\4 \parenthesize fis'\2>16 g16\4 fis'\2~ fis'16\2[ d <c,
   \tweakTabNoteHead \mutedString a, e g b g' >8-\mkTweak #0 #0 ^\sixstrdwnstrm ^\rhp ]~ <c,
   e g b g'>4 < \tweak TabNoteHead #'transparent ##t a,, g e>4  |
-  \break
   % Bar 75
   a,,16^\rhp ~ <\fakeSlur a,,\6 b,,\6> e^\rhi g\3^\rhm <\invTNH b,, >16^\rhp
   ^\rhi [ e <b,, \tweakTabNoteHead
@@ -1099,7 +1093,6 @@ tab = {
   \rightBracketThree <a,, a, e a cis' e'>4^\rhp ^\rhi ^\rhm ^\rha \arpeggio
   <\invTNH a,,>16^\rhp [ a,,8.] a,,4^\rhp < \invTNH a,, a cis' e >8^\rhp a,16
   a,^\rhi |
-  \pageBreak
   % Bar 77
   a,,16^\rhp ~ \once \override TextSpanner #'style = #'line \once \override
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
@@ -1134,7 +1127,6 @@ tab = {
   #LEFT \fontsize #-5 "4/6 C II " } <a,, a, e a cis' a'>4\arpeggio\startTextSpan
   <\invTNH a,,>16[ a,,8.] a,,4 < \tweak TabNoteHead #'transparent ##t a,, a e cis' a'>8 a,16
   a,\stopTextSpan |
-  \pageBreak
   % Bar 81
   a,,16~ \once \override TextSpanner #'style = #'line \once \override
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
