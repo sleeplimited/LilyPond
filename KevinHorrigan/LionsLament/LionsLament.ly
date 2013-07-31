@@ -968,7 +968,7 @@ tab = {
   d16 \tick a,16 b,16 |
   % Bar 46
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
-  a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick e16
+  a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick g16
   a16~ a8^\mark \markup { \fontsize #-2 \italic "D.S. al Coda"} \bar "||"
   %%
   % Bar 47
@@ -2262,66 +2262,78 @@ dynamicssix = {
   \textLengthOff
 \override TextScript #'outside-staff-priority = ##f
   \tabFullNotation
-  \override TextScript #'extra-offset = #'(-1.0 . 8.5)
   % Bar 1
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
+  s8-\mkTweak #-0.8 #2 _\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  \revert TextScript #'extra-offset
+  s16-\mkTweak #-0.8 #3 _\onestrdwnstrm \grace s16-\mkTweak #-1.9 #3 _\onestrupstrm s16
+  \override TextScript #'extra-offset = #'(-0.8 . 3)
   s16_\onestrdwnstrm s16_\onestrupstrm 
+  \revert TextScript #'extra-offset
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
   s16_\onestrdwnstrm s16_\onestrupstrm 
   % Bar 2
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.8 #2 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
   s16_\onestrdwnstrm s16_\onestrupstrm 
-  \override TextScript #'extra-offset = #'(-1.0 . 8.5)
   % Bar 3
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 3)
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.9 #3 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
   s16_\onestrdwnstrm s16_\onestrupstrm 
   % Bar 4
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8-\mkTweak #-0.7 #2 _\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.85 #2 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
   s16_\onestrdwnstrm s16_\onestrupstrm 
   % Bar 5
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 3)
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.9 #3 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
   s16_\onestrdwnstrm s16_\onestrupstrm 
   % Bar 6
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8-\mkTweak #-0.7 #2 _\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.85 #2 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
   s16_\onestrdwnstrm s16_\onestrupstrm 
-  \override TextScript #'extra-offset = #'(-1.0 . 8.5)
   % Bar 7
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 3)
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.9 #3 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
   s16_\onestrdwnstrm s16_\onestrupstrm 
   % Bar 8
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8-\mkTweak #-0.7 #2 _\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
-  s16_\onestrdwnstrm s16_\onestrupstrm s8
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 3)
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.9 #3 _\onestrupstrm s16
+  s16-\mkTweak #-0.8 #4 _\onestrdwnstrm s16-\mkTweak #-0.8 #4 _\onestrupstrm s8
   % Bar 9
-  \textSpannerDown \tsMove #0 #0 \lhSpannerDown "1" { s1  
+  \revert TextScript #'extra-offset
+  \textSpannerDown \tsMove #0 #0.3 \lhSpannerDown "1" { s1  
   % Bar 10
   s2. s8 s8 
   % Bar 11
@@ -2331,7 +2343,7 @@ dynamicssix = {
   % Bar 13
   s1
   % Bar 14
-  s2. s8_\twoStrFlick s8
+  s2. s8-\mkTweak #-0.6 #4.07 _\twoStrFlick s8
   % Bar 15
   s1 
   % Bar 16
@@ -2339,269 +2351,295 @@ dynamicssix = {
   % Bar 17
   s1
   % Bar 18
-  s2. s8_\twoStrFlick s8
+  s2. s8-\mkTweak #-0.6 #4.07 _\twoStrFlick s8
   % Bar 19
   s1 
   % Bar 20
   s1 
   % Bar 21
-  s4 \tsMove #-0.1 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #-0.1 #0 \strDampening s8\startTextSpan s8\stopTextSpan
+  %% Six string damping
+  s4 \tsMove #-0.1 #7.06 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #5.65 \strDampening s8\startTextSpan s8\stopTextSpan
   % Bar 22
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  s4 \tsMove #-0.1 #5.15 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 23
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #-0.1 #5.98 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #5.15 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 24
   s1 |
   % Bar 25
-  s2 s4 \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s2 s4 \tsMove #-0.1 #3.33 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 26
   s1 |
   % Bar 27
-  s2 s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  s2 s4 \tsMove #-0.1 #4.24 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 28
-  s2 s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  s2 s4 \tsMove #-0.1 #4.24 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 29
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #-0.1 #7.87 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #7.05 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 30
   s1 |
   % Bar 31
-  s2 s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  s2 s4 \tsMove #-0.1 #6.47 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 32
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  s4 \tsMove #-0.1 #5.65 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #5.65 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 33
-  s2 s4 \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s2 s4 \tsMove #-0.1 #5.15 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 34
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  s4 \tsMove #-0.1 #5.15 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 35
-  s2 s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  s2 s4 \tsMove #-0.1 #4.24 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 36
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  s4 \tsMove #-0.1 #3.74 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #0 #3.74 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 37
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s8.\stopTextSpan s4 \tsMove
-  #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #0 #3.74 \strDampening s16\startTextSpan s8.\stopTextSpan s4 \tsMove
+  #-0.1 #3.33 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 38
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4-\mkTweak #0 #0 _\lhone s4 |
+  s4 \tsMove #-0.1 #5.65 \strDampening s16\startTextSpan s16\stopTextSpan s8
+  s4-\mkTweak #0 #-2.5 _\lhone s4 |
   % Bar 39
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 3)
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.9 #3 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
   s16_\onestrdwnstrm s16_\onestrupstrm 
   % Bar 40
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8-\mkTweak #-0.7 #2 _\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.8 #2 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
   s16_\onestrdwnstrm s16_\onestrupstrm 
-  \override TextScript #'extra-offset = #'(-1.0 . 8.5)
   % Bar 41
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 3)
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.9 #3 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
   s16_\onestrdwnstrm s16_\onestrupstrm 
   % Bar 42
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8-\mkTweak #-0.7 #2 _\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.7 #2 _\onestrupstrm s16
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.9 #2 _\onestrupstrm s16
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.9 #2 _\onestrupstrm s16
   % Bar 43
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8-\mkTweak #-0.7 #2 _\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
-  s16_\onestrdwnstrm s16_\onestrupstrm 
-  s16_\onestrdwnstrm s16_\onestrupstrm 
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  s16-\mkTweak #-0.8 #3 _\onestrdwnstrm \grace s16-\mkTweak #-1.9 #3 _\onestrupstrm s16
+  s16-\mkTweak #-0.8 #4 _\onestrdwnstrm s16-\mkTweak #-0.8 #4 _\onestrupstrm 
+  s16-\mkTweak #-0.8 #3 _\onestrdwnstrm s16-\mkTweak #-0.8 #3 _\onestrupstrm 
   % Bar 44
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8-\mkTweak #-0.7 #2 _\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.9 #2 _\onestrupstrm s16
+  \override TextScript #'extra-offset = #'(-0.8 . 3)
   s16_\onestrdwnstrm s16_\onestrupstrm 
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
   s16_\onestrdwnstrm s16_\onestrupstrm 
   % Bar 45
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 3)
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.9 #3 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
   s16_\onestrdwnstrm s16_\onestrupstrm 
   % Bar 46
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8-\mkTweak #-0.7 #2 _\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 3)
   s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  \override TextScript #'extra-offset = #'(-0.8 . 4)
   s16_\onestrdwnstrm s16_\onestrupstrm s8
   % Bar 47
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  \revert TextScript #'extra-offset
+  s4 \tsMove #-0.1 #5.07 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #4.24 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 48
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  s4 \tsMove #-0.1 #5.07 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #4.24 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 49
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #-0.1 #4.24 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #3.24 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 50
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #-0.1 #5.07 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #3.24 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 51
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  s4 \tsMove #-0.1 #5.07 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #4.24 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 52
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  s4 \tsMove #-0.1 #5.07 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #4.24 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 53
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #-0.1 #4.24 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #4.07 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 54
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  s4 \tsMove #-0.1 #4.24 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 55
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  s4 \tsMove #-0.1 #3.75 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #4.24 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 56
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  s4 \tsMove #-0.1 #3.75 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #4.24 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 57
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #-0.1 #3.75 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #4.07 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 58
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  s4 \tsMove #-0.1 #3.75 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 59
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  s4 \tsMove #-0.1 #3.75 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #4.24 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 60
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  s4 \tsMove #-0.1 #3.75 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #4.24 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 61
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #-0.1 #4.57 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #4.07 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 62
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #-0.1 #3.75 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #4.07 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 63
-  \textSpannerDown \tsMove #0 #0 \lhSpannerDown "3" { s4 s4 s8 s16 s16 s16 }
+  \textSpannerDown \tsMove #0 #-2.5 \lhSpannerDown "3" { s4 s4 s8 s16 s16 s16 }
   s8. |
   % Bar 64
-  \tsMove #0 #0 \lhSpannerDown "3" { s4 s4 s4 s8 s8 } |
+  \tsMove #0 #-2.5 \lhSpannerDown "3" { s4 s4 s4 s8 s8 } |
   % Bar 65
-  \textSpannerDown \tsMove #0 #0 \lhSpannerDown "3" { s4 s4 s8 s16 s16 s16 }
+  \textSpannerDown \tsMove #0 #-2.5 \lhSpannerDown "3" { s4 s4 s8 s16 s16 s16 }
   s8. |
   % Bar 66
   %% String-Damping occurs at SixStr for this measure
-  \textSpannerDown \tsMove #0 #0 \lhSpannerDown "3" { s4 s4 s4-\mkTweak #0 #0
-  ^\fivestrdwnstrm s8 s8 } |
+  \textSpannerDown \tsMove #0 #-4 \lhSpannerDown "3" { s4 s4 s4-\mkTweak
+  #-0.8 #-6 ^\fivestrdwnstrm s8 s8 } |
   % Bar 67
-  s4 s4 s4 \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s4 s4 s4 \tsMove #-0.1 #3.24 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 68
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #-0.1 #4.56 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #4.07 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 69
-  s16 \tsMove #0 #0 \lhSpannerDown "3" { s16 s8 s8 s8 s16 } \tsMove #0 #0
+  s16 \tsMove #0 #-2.5 \lhSpannerDown "3" { s16 s8 s8 s8 s16 } \tsMove #0 #-2.5
   \lhSpannerDown "3" { s16 s8 s8 s8 
   % Bar 70
-  s16 } \tsMove #0 #0 \lhSpannerDown "3" { s16 s8 s16 s16 } \tsMove #0 #0
-  \lhSpannerDown "3" {s8-\mkTweak #0 #0 ^\fourstrdwnstrm s4 s4 
+  s16 } \tsMove #0 #-2.5 \lhSpannerDown "3" { s16 s8 s16 s16 } \tsMove #0 #-1
+  \lhSpannerDown "3" {s8-\mkTweak #-0.8 #-6 ^\fourstrdwnstrm s4 s4 
   % Bar 71
-  s16 } \tsMove #0 #0 \lhSpannerDown "3" { s16 s8 s8 s8 s16 } \tsMove #0 #0
+  s16 } \tsMove #0 #-2.5 \lhSpannerDown "3" { s16 s8 s8 s8 s16 } \tsMove #0 #-1
   \lhSpannerDown "3" { s16 s8 s8 s8 
   % Bar 72
-  s16} \tsMove #0 #0 \lhSpannerDown "3" { s16 s8 s16 s16 } \tsMove #0 #0
+  s16} \tsMove #0 #-2.5 \lhSpannerDown "3" { s16 s8 s16 s16 } \tsMove #0 #-1
   \lhSpannerDown "3" {s8 s4 s4 
   % Bar 73
-  s16 } \tsMove #0 #0 \lhSpannerDown "3" { s16 s8 s8 s8 s16 } \tsMove #0 #0
-  \lhSpannerDown "3" { s16 s8 s8 s8 
+  s16 } \tsMove #0 #-2.5 \lhSpannerDown "3" { s16 s8 s8 s8 s16 } \tsMove #0
+  #-2.5 \lhSpannerDown "3" { s16 s8 s8 s8 
   % Bar 74
-  s16} \tsMove #0 #0 \lhSpannerDown "3" { s16 s8 s16 s16 } \tsMove #0 #0
+  s16} \tsMove #0 #-2.5 \lhSpannerDown "3" { s16 s8 s16 s16 } \tsMove #0 #-1
   \lhSpannerDown "3" {s8 s4 s4 
   % Bar 75
-  s16 } \tsMove #0 #0 \lhSpannerDown "2" { s16 s8 s4 s4 s8 s16 s16 }
+  s16 } \tsMove #0 #-2.5 \lhSpannerDown "2" { s16 s8 s4 s4 s8 s16 s16 }
   % Bar 76
   s1 |
   % Bar 77
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8-\mkTweak
-  #0 #0 ^\twostrdwnstrm s4-\mkTweak #0 #0 ^\fivestrdwnstrm \tsMove #0 #0
-  \strDampening s16\startTextSpan s8.\stopTextSpan |
+  s4 \tsMove #-0.1 #5.65 \strDampening s16\startTextSpan s16\stopTextSpan s8-\mkTweak
+  #-0.8 #2 _\twostrdwnstrm s4-\mkTweak #-1.2 #5 _\fivestrdwnstrm \tsMove #-0.1
+  #4.24 \strDampening s16\startTextSpan s8.\stopTextSpan |
   % Bar 78
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4 \tsMove #0 #0
-  \strDampening s8\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #0 #3.74 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #3.24 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 79
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4 \tsMove #0 #0
-  \strDampening s16\startTextSpan s8.\stopTextSpan |
+  s4 \tsMove #-0.1 #4.56 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #4.24 \strDampening s16\startTextSpan s8.\stopTextSpan |
   % Bar 80
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4 \tsMove #0 #0
+  s4 \tsMove #0 #3.74 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #3.24
   \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 81
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4 \tsMove #0 #0
+  s4 \tsMove #-0.1 #4.56 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #4.24
   \strDampening s16\startTextSpan s8.\stopTextSpan |
   % Bar 82
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4 \tsMove #0 #0
-  \strDampening s8\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #0 #3.74 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #3.24 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 83
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  s4 \tsMove #-0.1 #4.56 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
 
   % Bar 84
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 3)
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.8 #3 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
   s16_\onestrdwnstrm s16_\onestrupstrm 
   % Bar 85
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8-\mkTweak #-0.7 #2 _\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.8 #2 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
   s16_\onestrdwnstrm s16_\onestrupstrm 
   % Bar 86
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 3)
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.8 #3 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
   s16_\onestrdwnstrm s16_\onestrupstrm 
   % Bar 87
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8-\mkTweak #-0.7 #2 _\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.8 #2 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
   s16_\onestrdwnstrm s16_\onestrupstrm 
   % Bar 88
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 3)
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.9 #3 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
   s16_\onestrdwnstrm s16_\onestrupstrm 
   % Bar 89
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8-\mkTweak #-0.7 #2 _\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-1.8 #2 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
   s16_\onestrdwnstrm s16_\onestrupstrm 
   % Bar 90
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
-  s16_\onestrdwnstrm \grace s16_\onestrupstrm s16
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
+  \override TextScript #'extra-offset = #'(-0.8 . 3)
+  s16_\onestrdwnstrm \grace s16-\mkTweak #-2.2 #3 _\onestrupstrm s16
   s16_\onestrdwnstrm s16_\onestrupstrm 
+  \override TextScript #'extra-offset = #'(-0.8 . 2)
   s16_\onestrdwnstrm s16_\onestrupstrm 
   % Bar 91
-  s8_\twostrdwnstrm s8_\twostrupstrm
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrupstrm
   s16_\twostrdwnstrm s16_\twostrupstrm
-  s8_\twostrdwnstrm s8_\twostrdwnstrm
+  s8_\twostrdwnstrm s8-\mkTweak #-1.2 #2 _\twostrdwnstrm
 
 
 }
