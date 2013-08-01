@@ -778,8 +778,9 @@ tab = {
   %%
   %% Bar 9
   %%
-  \override TextScript #'extra-offset = #'(-1.0 . -6.3) \leftBracketTwo <b,, b,
-  fis b\3 b\2>4^\rhp^\mark \markup { \fontsize #-2 \musicglyph #"scripts.segno"
+  \override BreathingSign #'extra-offset = #'(1.25 . -2.0)
+  \override TextScript #'extra-offset = #'(-1.0 . -6.3) \arpeggioArrowUp \leftBracketTwo <b,, b,
+  fis b\3 b\2>4^\rhp\arpeggio^\mark \markup { \fontsize #-2 \musicglyph #"scripts.segno"
   } \override TextScript #'extra-offset = #'(-0.5 . -6.3) <\invTNH b,,\6>16^\rhp[
   b,,8.]  b,,4^\rhp <\invTNH b,,\6>8^\rhp[  b,,8] |
   % Bar 10
@@ -790,8 +791,8 @@ tab = {
   dis'\2 b\2>8 <\invTNH b,,\6 fis\4 b\3>8 b8-\mkTweak #-0.4 #-1 ^\rhi |
   
   % Bar 11
-  \once \override TextScript #'extra-offset = #'(-1.0 . -6.3) <e a a,
-  a,,>4\4\3\5\6^\rhp <\invTNH a,,\6>16^\rhp[ a,,8.]
+  \once \override TextScript #'extra-offset = #'(-1.0 . -6.3) \arpeggioArrowUp <e a a,
+  a,,>4\4\3\5\6^\rhp\arpeggio <\invTNH a,,\6>16^\rhp[ a,,8.]
   a,,4^\rhp <\invTNH a,,\6>8^\rhp[ a,,8] |
   % Bar 12
   <a,, b\2 \fakeSlur d'\2>16-\mkTweak #-0.4 #-1 ^\rhp -\mkTweak #-0.4 #-1 ^\rhm ~ 
@@ -802,8 +803,8 @@ tab = {
   < \fakeSlur cis'\2 b\2>16 <\invTNH a,,\6>8^\rhp[
   <a,, a>8^\rhi] |
   % Bar 13
-  \override BreathingSign #'extra-offset = #'(-0.2 . -2.0)
-  \leftBracketTwo <b,, b, fis b b>4\6\5\4\3\2
+  \override BreathingSign #'extra-offset = #'(1.25 . -2.0) \arpeggioArrowUp
+  \leftBracketTwo <b,, b, fis b b>4\6\5\4\3\2\arpeggio
   \override TextScript #'extra-offset = #'(-0.5 . -6.3) 
   <\invTNH b,,\6>16[ b,,8.]  b,,4 
   <\invTNH b,,\6>8[  b,,8] |
@@ -813,8 +814,9 @@ tab = {
   b,, dis'~ <\fakeSlur dis'\2 b\2>8 <\invTNH b,,\6 fis\4 b\3>8 b8 |
 
   % Bar 15
+  \arpeggioArrowUp
   \once \override TextScript #'extra-offset = #'(-1.0 . -6.3) <e a a,
-  a,,>4\4\3\5\6 <\invTNH a,,\6>16[ a,,8.] <a,,
+  a,,>4\4\3\5\6\arpeggio <\invTNH a,,\6>16[ a,,8.] <a,,
   b>16^\rhm ~
   <\fakeSlur b\2 \dotUp cis'\2>8. <\invTNH a,,\6>8[
   a,,8] |
@@ -825,7 +827,8 @@ tab = {
   <\invTNH a,,\6>8[ <a,, a>8] |
   % Bar 17
   \override TextScript #'extra-offset = #'(-1.0 . -6.3)
-  \leftBracketTwo <b,, b, fis b b>4\6\5\4\3\2
+  \override BreathingSign #'extra-offset = #'(1.25 . -2.0) \arpeggioArrowUp
+  \leftBracketTwo <b,, b, fis b b>4\6\5\4\3\2\arpeggio
   \override TextScript #'extra-offset = #'(-0.5 . -6.3)
   <\invTNH b,,\6>16[ b,,8.]  b,,4 
   <\invTNH b,,\6>8[  b,,8] |
@@ -835,8 +838,9 @@ tab = {
   \once \override TextScript #'extra-offset = #'(-0.4 . -0.6)
   e'] b,, dis'~ <\fakeSlur dis'\2 b\2>8 <\invTNH b,,\6 fis\4 b\3>8 b8 |
   % Bar 19
+  \arpeggioArrowUp
   \once \override TextScript #'extra-offset = #'(-1.0 . -6.3) <e a a,
-  a,,>4\4\3\5\6 <\invTNH a,,\6>16[ a,,8.] a,,4 <\invTNH a,,\6>8[ a,,8] |
+  a,,>4\4\3\5\6\arpeggio <\invTNH a,,\6>16[ a,,8.] a,,4 <\invTNH a,,\6>8[ a,,8] |
   % Bar 20
   <a,, b\2 \fakeSlur d'\2>16~ <\fakeSlur d'\2 cis'\2>8~ <\fakeSlur cis'\2
   b\2>16 <\invTNH a,,\6>8[ <a,, a>8] <a,, b>16~
@@ -1671,16 +1675,16 @@ dynamicsthree = {
   % Bar 7
   s1 |
   % Bar 8
-  s2. s16 \mkMove #0 #12 s16^\lhone s8 |
+  s2. s16 \mkMove #0 #0 s16^\lhone s8 |
   % Bar 9
-  \tsMove #0 #0 \lhSpannerUp "4" { s1 
+  \tsMove #0 #0.5 \lhSpannerUp "4" { s1 
   % Bar 10
   s4  s16 s16 } s8 s4 \tsMove #0 #0 \lhSpannerUp "4" {s4
   % Bar 11
   s2. s8 s8 
   % Bar 12
-  s16 } s8. s8 s8-\mkTweak #0 #0 ^\lhfour s4 s8 s8-\mkTweak #0 #0 ^\lhfour -\mkTweak
-  #1.1 #-7.8 ^\markup { \draw-line #'(4 . 1) }  
+  s16 } s8. s8 s8-\mkTweak #0 #0.3 ^\lhfour s4 s8 s8-\mkTweak #0 #0.3 ^\lhfour -\mkTweak
+  #0.9 #-4.5 ^\markup { \draw-line #'(4 . 1) }  
   % Bar 13
   s1 |
   % Bar 14
@@ -1688,7 +1692,7 @@ dynamicsthree = {
   % Bar 15
   s1 |
   % Bar 16
-  s2 s4 s8 s8-\mkTweak #1.1 #-7.8 ^\markup { \draw-line #'(4 . 1) } |
+  s2 s4 s8 s8-\mkTweak #1 #-2.9 ^\markup { \draw-line #'(4 . 1) } |
   % Bar 17
   s1 |
   % Bar 18
@@ -1698,47 +1702,48 @@ dynamicsthree = {
   % Bar 20
   s1 |
   % Bar 21
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \textSpannerDown \tsMove #0 #0 \threeStrDamp s8-\mkTweak #-1.5 #0 -\oneStrMFlick -\mkTweak
-  #0 #0 _\lhtwo \startTextSpan s8\stopTextSpan |
+  s4 \tsMove #-0.1 #-4.08 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \textSpannerDown \tsMove #-0.12 #8.5 \threeStrDamp s8-\mkTweak #-1 #4.1 -\oneStrMFlick -\mkTweak
+  #0 #9 _\lhtwo \startTextSpan s8\stopTextSpan |
   \textSpannerUp
   % Bar 22
   s8 \tsMove #0 #0 \lhSpannerUp "3" { s8 s4 s8 s8 } s4 |
   % Bar 23
-  s2 s4 s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2 s4 s4-\mkTweak #-0.5 #-2.98 ^\oneStrFlick |
   % Bar 24
-  s8 \tsMove #0 #0 \lhSpannerUp "3" { s8 s4 s16 s16 } s8-\mkTweak #0 #0
+  s8 \tsMove #0 #0.2 \lhSpannerUp "3" { s8 s4 s16 s16 } s8-\mkTweak #0 #0.5
   ^\lhthree \lhSpannerUp "3" { \grace s8 s8 s16 } s16 |
   % Bar 25
-  s2 s4 s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2 s4 s4-\mkTweak #-0.5 #-2.98 ^\oneStrFlick |
   % Bar 26 
   s1 |
   % Bar 27
-  s4 s4 s16 s16-\mkTweak #0 #0 ^\lhtwo s8 \tsMove #0 #0 \strDampening s16-\mkTweak #0 #0 ^\oneStrMFlick
-  -\mkTweak #0 #0 ^\lhtwo \startTextSpan s16\stopTextSpan s8 |
+  s4 s4 s16 s16-\mkTweak #0 #0 ^\lhtwo s8 \tsMove #-0.1 #-8.07 \strDampening
+  s16-\mkTweak #-1 #-3.36 ^\oneStrMFlick
+  -\mkTweak #0 #-1.9 ^\lhtwo \startTextSpan s16\stopTextSpan s8 |
   % Bar 28
-  s4 s4 s16 \textSpannerUp \tsMove #0 #0 \lhSpannerUp "2" {s16 s8 s16-\mkTweak
-  #0 #0 ^\oneStrMFlick s16 } s8 |
+  s4 s4 s16 \textSpannerUp \tsMove #0 #-1.8 \lhSpannerUp "2" {s16 s8 s16-\mkTweak
+  #-1 #-3.36 ^\oneStrMFlick s16 } s8 |
   % Bar 29 
-  s2 s4 s8-\mkTweak #0 #0 ^\lhfour -\mkTweak #0 #0 ^\oneStrMFlick s8 |
+  s2 s4 s8-\mkTweak #0 #0 ^\lhfour -\mkTweak #-1 #-4.92 ^\oneStrMFlick s8 |
   % Bar 30
   s1 |
   % Bar 31
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 32
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 33
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 34
   s1 |
   % Bar 35
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 36
-  s2. s4-\mkTweak #0 #0 ^\twoStrMFlick |
+  s2. s4-\mkTweak #-1 #-3.38 ^\twoStrMFlick |
   % Bar 37
-  s2. s4-\mkTweak #-1 #-6.35 ^\threeStrMFlick |
+  s2. s4-\mkTweak #-1 #-4.32 ^\threeStrMFlick |
   % Bar 38
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  s4 \tsMove #-0.1 #-9.55 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 39 
   s1 |
   % Bar 40 
@@ -1756,81 +1761,81 @@ dynamicsthree = {
   % Bar 46 
   s1 |
   % Bar 47
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 48
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 49
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 50
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 51
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 52
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 53
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 54
   s1 |
   % Bar 55
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 56
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 57
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 58
   s1 |
   % Bar 59
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 60
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 61
-  s2. s4-\mkTweak #0 #0 ^\oneStrFlick |
+  s2. s4-\mkTweak #-0.7 #-3 ^\oneStrFlick |
   % Bar 62
-  s2 s8 s8-\mkTweak #0 #0 ^\onestrdwnstrm s4-\mkTweak #0 #0 ^\twoStrMFlick |
+  s2 s8 s8-\mkTweak #-0.7 #-3.1 ^\onestrdwnstrm s4-\mkTweak #-1 #-3.38 ^\twoStrMFlick |
   % Bar 63
-  s4 s8 \textSpannerUp \tsMove #0 #0 \lhSpannerUp "4" {s8 s4 s8 } s8 |
+  s4 s8 \textSpannerUp \tsMove #0 #-1.8 \lhSpannerUp "4" {s8 s4 s8 } s8 |
   % Bar 64
   s4 s4 s16-\mkTweak #0 #0 ^\lhfour s8. s4 |
   % Bar 65
-  s4 s4 s8 \tsMove #0 #0 \threeStrDamp s16\startTextSpan -\mkTweak #0 #0
-  ^\twoStrMFlick s16\stopTextSpan s4 |
+  s4 s4 s8 \tsMove #0.04 #-8.48 \threeStrDamp s16\startTextSpan -\mkTweak #-1
+  #-3.38 ^\twoStrMFlick s16\stopTextSpan s4 |
   % Bar 66
-  s4 s4 \textSpannerDown \tsMove #0 #0 \lhSpannerDown "1" { s4 s8-\mkTweak #0
-  #0 ^\oneStrMFlick s8 } |
+  s4 s4 \textSpannerDown \tsMove #0 #0.5 \lhSpannerDown "1" { s4 s8-\mkTweak
+  #-0.8 #-3.38 ^\oneStrMFlick s8 } |
   % Bar 67
   s1 |
   % Bar 68
-  s4 s4 s4 s4-\mkTweak #0 #0 ^\twoStrMFlick |
+  s4 s4 s4 s4-\mkTweak #-1 #-4.38 ^\twoStrMFlick |
   % Bar 69 
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  s4 \tsMove #-0.1 #9.89 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #9.89 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 70
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  s4 \tsMove #-0.1 #9.88 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 71
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  s4 \tsMove #-0.1 #9.07 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #9.07 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 72
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  s4 \tsMove #-0.1 #9.04 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 73
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
+  s4 \tsMove #-0.1 #9.06 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \tsMove #-0.1 #9.06 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 74
   s1 |
   % Bar 75
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  s4 \tsMove #-0.1 #9.89 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 76
-  \textSpannerUp \tsMove #0 #0 \lhSpannerUp "1" {s4 s4 s4 s8 s16 s16 } |
+  \textSpannerUp \tsMove #0 #-3.5 \lhSpannerUp "1" {s4 s4 s4 s8 s16 s16 } |
   % Bar 77
-  s4 \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan s8 \tsMove
-  #0 #0 \lhSpannerUp "3" {s4 s16 s8.-\mkTweak #0 #0 ^\twostrupstrm } |
+  s4 \tsMove #-0.1 #-6.8 \strDampening s16\startTextSpan s16\stopTextSpan s8 \tsMove
+  #0 #-4 \lhSpannerUp "3" {s4 s16 s8.-\mkTweak #-0.8 #-3 ^\twostrupstrm } |
   % Bar 78
-  s2. s4-\mkTweak #0 #0 ^\threeStrFlick |
+  s2. s4-\mkTweak #-0.8 #-3.73 ^\threeStrFlick |
   % Bar 79
-  s4 s4 s4 s4-\mkTweak #0 #0 ^\threeStrFlick |
+  s4 s4 s4 s4-\mkTweak #-0.7 #-3.73 ^\threeStrFlick |
   % Bar 80
-  s4 s4 s4 s4-\mkTweak #0 #0 ^\fourStrFlick |
+  s4 s4 s4 s4-\mkTweak #-0.7 #-3.84 ^\fourStrFlick |
   % Bar 81
-  s4 s4 s4 s4-\mkTweak #0 #0 ^\threeStrFlick |
+  s4 s4 s4 s4-\mkTweak #-0.7 #-3.73 ^\threeStrFlick |
   % Bar 82 
   s2. s4-\mkTweak #0 #0 ^\threeStrFlick |
 }
@@ -2075,28 +2080,28 @@ dynamicsfive = {
   % Bar 8
   s1 |
   % Bar 9
-  \mkMove #-1.2 #5 s4-\fivestrdwnstrm s4 s2 |
+  s4 s4 s2 |
   % Bar 10
   s2. \tsMove #-0.12 #9.79 \twoStrDamp s8-\mkTweak #-0.8 #-5.3 ^\rhp \startTextSpan s8\stopTextSpan |
   % Bar 11
-  \mkMove #-0.6 #4 s4-\fourstrdwnstrm s4 s2 |
+  s1 |
   % Bar 12
   s1 |
   % Bar 13
-  \mkMove #-0.8 #-6 s4^\fivestrdwnstrm s4 s2 |
+  s1 |
   % Bar 14
   s2. \textSpannerDown \tsMove #-0.12 #4.25 \twoStrDamp s8\startTextSpan s8\stopTextSpan |
   % Bar 15
   \textSpannerNeutral
-  \mkMove #-0.8 #-6 s4^\fourstrdwnstrm s4 s2 |
+  s1 |
   % Bar 16
   s1 |
   % Bar 17
-  \mkMove #-1.0 #-6 s4^\fivestrdwnstrm s4 s2 |
+  s1 |
   % Bar 18
   s2. \tsMove #-0.12 #-6.9 \twoStrDamp s8\startTextSpan s8\stopTextSpan |
   % Bar 19
-  \mkMove #-0.6 #-6 s4^\fourstrdwnstrm s4 s2 |
+  s1 |
   % Bar 20
   s2. \tsMove #0 #-5.9 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 21

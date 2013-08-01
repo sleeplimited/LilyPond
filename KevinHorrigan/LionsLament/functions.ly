@@ -257,11 +257,11 @@ threeStrDamp = {
 }
 % Left Hand Articulations
 %% 1 2 3 4 t
-lhone = \markup { \fontsize #-5 \circle \pad-markup #0.1 "1" }
-lhtwo = \markup { \fontsize #-5 \circle \pad-markup #0.1 "2" }
-lhthree = \markup { \fontsize #-5 \circle \pad-markup #0.1 "3" }
-lhfour = \markup { \fontsize #-5 \circle \pad-markup #0.1 "4" }
-lhthumb = \markup { \fontsize #-5 \circle \pad-markup #0.1 "t" }
+lhone = \markup { \fontsize #-5 \circle \italic \pad-markup #0.1 "1" }
+lhtwo = \markup { \fontsize #-5 \circle \italic \pad-markup #0.1 "2" }
+lhthree = \markup { \fontsize #-5 \circle \italic \pad-markup #0.1 "3" }
+lhfour = \markup { \fontsize #-5 \circle \italic \pad-markup #0.1 "4" }
+lhthumb = \markup { \fontsize #-5 \circle \italic \pad-markup #0.1 "t" }
 %% Guide fingers
 lhguideone = \markup { \fontsize #-5 \circle \pad-markup #0.1 "-1" }
 lhguidetwo = \markup { \fontsize #-5 \circle \pad-markup #0.1 "-2" }
