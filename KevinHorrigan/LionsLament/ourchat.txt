@@ -9,31 +9,71 @@ This is the same for m. 10, 11, Continues through to the rest of that section.
 Also m. 37 and subsequent measures like that one.
 
 m. 76 through to the end.
-
+DONE
 ========
+DONE
 
 m.21, 23, 25  all the same and all like it:
 Take a look at the piece of paper in front of you.  Except for the ascending
 slur between a,, and c, in the first two 16th notes.
 
+DONE
 ========
+DONE
+
 m. 24 on the paper
 
+
+DONE
 ========
+DONE 
 
 m.27 - 36 Rhythm is:
+This rhythm is same for the later section as well.
+
+This is a large amount of work.
+
+    Question:  What measures are involved?
+        m. 27-36 and m. 47-62
+
+Break it up:
+    First: Get all the percussion in order. [X] 
+    Second: change the tab to reflect percussion change.  [X] 
+    Third: Change six string damping [X] 
+    Fourth: change five string damping [X] 
+    Fifth: change four string damping [X]
+    six: change lower standard notation [X] 
+    seven: change upper standard notation [X]
+    eight: double-check that everything is in order [X]
+    nine: Triple-check that everything is in order [X]
+
 
 s4 s4_\bass s4 s4_\snare
 
+DONE
 ========
 
 m27 - 28 on the paper
+
+This is another big one. 
+
+Break it up:
+    First: Get all the string-damping in order. [ ] 
+    Second: change the tab to reflect string-damping change.  [ ] 
+    Third: Change six string damping [ ] 
+    Fourth: change five string damping [ ] 
+    Fifth: change four string damping [ ]
+    six: change lower standard notation [ ] 
+    seven: change upper standard notation [ ]
+    eight: double-check that everything is in order [ ]
+    nine: Triple-check that everything is in order [ ]
 
 ========
 
 beat 3 of m. 29 rha plucks down beat of beat 3. and of beat 3 is a rhm 
 
 fis'16^\rha( b16) g8^\rhm( a)
+All changes will need to be made to reflect this in other like measures.
 
 ========
 
@@ -73,6 +113,7 @@ m. 70
 
 and of beat 2
 rha strDamp on str two releasing on beat 3
+Fix the text spanners "3" and "2" need to be switched
 
 ========
 
@@ -125,7 +166,8 @@ beat 2 second sixteenth not is e'
 
 
 
-========
+====================================================================
+COMMENTARY THAT CAN BE DEALT WITH LATER
 
 
 What do you think about when you play this piece?
