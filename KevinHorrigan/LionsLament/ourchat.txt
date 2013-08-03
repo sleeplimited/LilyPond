@@ -52,30 +52,31 @@ s4 s4_\bass s4 s4_\snare
 
 DONE
 ========
+DONE
 
 m27 - 28 on the paper
 
 This is another big one. 
 
 Break it up:
-    First: Get all the string-damping in order. [ ] 
-    Second: change the tab to reflect string-damping change.  [ ] 
-    Third: Change six string damping [ ] 
-    Fourth: change five string damping [ ] 
-    Fifth: change four string damping [ ]
-    six: change lower standard notation [ ] 
-    seven: change upper standard notation [ ]
-    eight: double-check that everything is in order [ ]
-    nine: Triple-check that everything is in order [ ]
+    First: Get all the string-damping in order. [X] 
+        Sub: Dynamicsthree [X] 
+        Sub: DynamicsTwo [X]
+    Second: change the tab to reflect string-damping change.  [X] 
+        Sub: This means that you are to focus on the RH fingering
 
+DONE
 ========
+DONE
 
 beat 3 of m. 29 rha plucks down beat of beat 3. and of beat 3 is a rhm 
 
 fis'16^\rha( b16) g8^\rhm( a)
 All changes will need to be made to reflect this in other like measures.
 
+DONE
 ========
+DONE
 
 m. 38  final fourth 16th of beat 1 is: <gis' e'>^\rha ^\rhm 
 
@@ -88,26 +89,51 @@ and of beat 2:
 beat 4:
 <fis'' b''>^\rhm ^\rha
 
+Fix: Upper notation [X]
+    Lower Notation [X] 
+
+DONE
 ========
+DONE
 
 m.62
 
 beat 3
 fis'16( b) g8^\rhm ( d') e'^\rha |
 
+Standard Notation: [X]
+    Upper: [X] 
+    Lower: [X] 
+
+DONE
 ========
+DONE
 
 m. 63
 
 beat 1 last sixteenth b16\2 
 
+    Tab: [X]
+    Standard Notation: [X] 
+        Upper: [X]
+        lower: [X] 
 
+DONE
 ========
+DONE
+
 m. 65 67
 
 beat 2 on the 'and' g'\3  same as m. 63
 
+    Tab: [X] 
+    Standard Notation: [X] 
+        Upper: [X] 
+        Lower: [X] 
+
+DONE
 ========
+DONE
 
 m. 70
 
@@ -115,40 +141,67 @@ and of beat 2
 rha strDamp on str two releasing on beat 3
 Fix the text spanners "3" and "2" need to be switched
 
+DONE
 ========
+DONE
 
 m. 71  
 last sixteenth of beat one is a g16
 last sixteenth of beat three is a b16\2
 
+DONE
 ========
+DONE
 
 m. 72
 last sixteen of beat one is a b16\2
 
+DONE
 ========
+DONE
 
 m. 73
  no string stopping with the rhm or rha
+ LH spanner to indicate the left release
 
+DONE
 ========
+DONE
 
 m. 75
 
 a,,16( b,,16) b\3 d'\2 <\invTNH b,,> b\3 <b,, b d' fis'>8^\rhp ^\rhi ^\rhm
 ^\rha ~ <b,, b d' fis'>4 b,,8 <b d' fis'>8 | 
 
+This is a full measure change,  It is a different chord.
+
+    Tab: [X]
+    Standard Notation: [X]
+        Upper: [X]
+        lower: [X] 
+    String stopping?    yes    
+
+DONE
 ========
+DONE
 
 m. 76
 
 last two sixteenth notes are a,, a,
 
+DONE
 ========
+DONE
 
 m. 77
 
 remove the slur from fis( gis) 
+ 77 [X]
+ 79 [X]
+ 81 [X]
+ 83 [X]
+ Standard Notation [X]
+ Spanners [X]
 
 Beat 2.
 second sixteenth note b\3^\rhi cis8
@@ -156,7 +209,9 @@ second sixteenth note b\3^\rhi cis8
 Beat 3
 string damping with rha release on the and of beat three
 
+DONE
 ========
+DONE
 
 m. 79 is the same as m. 81 and as 83 except of obvios differences.
 
@@ -164,8 +219,7 @@ and of beat 2 cis8
 last sixteenth note is gis' 
 beat 2 second sixteenth not is e'
 
-
-
+DONE
 ====================================================================
 COMMENTARY THAT CAN BE DEALT WITH LATER
 
