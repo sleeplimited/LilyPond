@@ -1553,11 +1553,11 @@ dynamicstwo = {
   % Bar 9
   s1 |
   % Bar 10
-  s4 s8 s8-\mkTweak #0 #0 ^\lhfour s16 s8.-\mkTweak #0 #0 ^\lhfour s4 |
+  s4 s8 s8-\mkTweak #0 #0.2 ^\lhfour s16 s8.-\mkTweak #0 #0.2 ^\lhfour s4 |
   % Bar 11
   s1 |
   % Bar 12
-  s16 s8.-\mkTweak #0 #0 ^\lhfour s4 s16 s8.-\mkTweak #0 #0 ^\lhfour s4 | 
+  s16 s8.-\mkTweak #0 #0.3 ^\lhfour s4 s16 s8.-\mkTweak #0 #0.3 ^\lhfour s4 | 
   % Bar 13
   s1 |
   % Bar 14
@@ -1575,76 +1575,84 @@ dynamicstwo = {
   % Bar 20
   s1 |
   % Bar 21
-  s2 s4-\mkTweak #0 #0 ^\lhfour \tsMove #0 #0 \strDampening s8\startTextSpan
+  s2 s4-\mkTweak #0 #0 ^\lhfour \tsMove #0 #-2.08 \strDampening s8\startTextSpan
   s8\stopTextSpan |
   % Bar 22
-  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan s4 s4 \tsMove #0 #0 \lhSpannerUp "4" { \grace s8 s8 s16 } s16 |
+  \tsMove #0 #-2.08 \strDampening s8\startTextSpan s8\stopTextSpan s4 s4 \tsMove #0 #0 \lhSpannerUp "4" { \grace s8 s8 s16 } s16 |
   % Bar 23
-  s2. \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s2. \tsMove #0 #-2.91 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 24
-  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan s2. |
+  \tsMove #0 #-2.08 \strDampening s8\startTextSpan s8\stopTextSpan s2. |
   % Bar 25
-  s2. \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  s2. \tsMove #0 #-2.91 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 26
-  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan s2. |
+  \tsMove #0 #-2.08 \strDampening s8\startTextSpan s8\stopTextSpan s2. |
   % Bar 27
-  s2. s8 \tsMove #0 #0 \strDampening s8\startTextSpan |
+  s2. s8 \tsMove #0 #-3.16 \strDampening s8\startTextSpan |
   % Bar 28
   %% String-damping for this string is located at dynamicsOne
-  s8 s8\stopTextSpan s4 s8 \tsMove #0 #0 \textSpannerUp \lhSpannerUp "1" { s8 s8 s16 s16 } |
+  s8 s8\stopTextSpan s4 s8 \tsMove #0 #-2 \textSpannerUp \lhSpannerUp "1" { s8 s8 s16 s16 } |
   % Bar 29
   s4 \textSpannerDown s16 s16 s8
-  s8^\lhfour s8 \tsMove #0 #0 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
+  s8^\lhfour s8 \tsMove #-0.12 #8.89 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
   % Bar 30
   \textSpannerUp
-  s2 \lhSpannerUp "4" { \grace s8 s16 s16 } s8 s4^\lhfour |
+  s2 \lhSpannerUp "4" { \grace s8 s16 s16 } s8 s4-\mkTweak #0 #0.2 ^\lhfour |
   % Bar 31
-  s2. s8 \tsMove #0 #0 \strDampening s8\startTextSpan  |
+  s2. s8 \tsMove #0 #-2.08 \strDampening \override TextSpanner #'after-line-breaking =
+  #ly:spanner::kill-zero-spanned-time \endSpanners s8\startTextSpan  |
   % Bar 32
-  s8 s8\stopTextSpan s2 s8 \tsMove #0 #0 \strDampening s8\startTextSpan |
+  \tsMove #0 #-2.91 \strDampening s8\startTextSpan s8\stopTextSpan s2 s8
+  \tsMove #0 #-2.08 \strDampening s8\startTextSpan |
   % Bar 33
   s8 s8\stopTextSpan s2. |
   % Bar 34
   s1 |
   % Bar 35
-  s2. s8 \tsMove #0 #0 \strDampening s8\startTextSpan  |
+  s2. s8 \tsMove #0 #-2.08 \strDampening s8\startTextSpan  |
   % Bar 36
   s8 s8\stopTextSpan s2. |
   % Bar 37
-  \textSpannerUp \tsMove #0 #0 \lhSpannerUp "1" { s4 s4 s4 s8 s16 s16 } |
+  \textSpannerUp \tsMove #0 #-3 \lhSpannerUp "1" { s4 s4 s4 s8 s16 s16 } |
   % Bar 38
-  s8 \tsMove #0 #0 \lhSpannerUp "2" { s8 s8 s8 } s8^\lhthree \tsMove #0 #0
-  \strDampening s8\startTextSpan s4\stopTextSpan ^\lhthree |
+  s8 \tsMove #0 #-0.5 \lhSpannerUp "2" { s8 s8 s8 } s8-\mkTweak #0 #0.3
+  ^\lhthree \tsMove #0 #-3.18 \strDampening s8\startTextSpan s4\stopTextSpan
+  -\mkTweak #0 #0.3 ^\lhthree |
   % Bar 39 - 46
   s1*8 
   % Bar 47
-  s2. s8 \tsMove #0 #0 \strDampening s8\startTextSpan  |
+  s2. s8 \tsMove #0 #-2.08 \strDampening \override TextSpanner #'after-line-breaking =
+  #ly:spanner::kill-zero-spanned-time \endSpanners s8\startTextSpan  |
   % Bar 48
-  s8 s8\stopTextSpan s2 s8 \tsMove #0 #0 \strDampening s8\startTextSpan |
+  \tsMove #0 #-2.91 \strDampening s8\startTextSpan s8\stopTextSpan s2 s8
+  \tsMove #0 #-2.08 \strDampening s8\startTextSpan |
   % Bar 49
   s8 s8\stopTextSpan s2. |
   % Bar 50
   s1 |
   % Bar 51
-  s2. s8 \tsMove #0 #0 \strDampening s8\startTextSpan  |
+  s2. s8 \tsMove #0 #-2.08 \strDampening s8\startTextSpan  |
   % Bar 52
-  s8 s8\stopTextSpan s2 s8 \tsMove #0 #0 \strDampening s8\startTextSpan |
+  s8 s8\stopTextSpan s2 s8 \tsMove #0 #-2.91 \strDampening s8\startTextSpan |
   % Bar 53
   s8 s8\stopTextSpan s2. |
   % Bar 54 
   s1 |
-  % BAr 55
-  s2. s8 \tsMove #0 #0 \strDampening s8\startTextSpan  |
+  % Bar 55
+  s2. s8 \tsMove #0 #-2.91 \strDampening s8\startTextSpan  |
   % Bar 56
-  s8 s8\stopTextSpan s2 s8 \tsMove #0 #0 \strDampening s8\startTextSpan |
+  s8 s8\stopTextSpan s2 s8 \tsMove #0 #-2.91 \strDampening \override TextSpanner #'after-line-breaking =
+  #ly:spanner::kill-zero-spanned-time \endSpanners s8\startTextSpan |
   % Bar 57
-  s8 s8\stopTextSpan s2. |
+  \tsMove #0 #-2.91 \strDampening s8\startTextSpan s8\stopTextSpan s2. |
   % Bar 58
   s1 |
   % Bar 59
-  s2. s8 \tsMove #0 #0 \strDampening s8\startTextSpan  |
+  s2. s8 \tsMove #0 #-2.91 \strDampening \override TextSpanner #'after-line-breaking =
+  #ly:spanner::kill-zero-spanned-time \endSpanners s8\startTextSpan  |
   % Bar 60
-  s8 s8\stopTextSpan s2 s8 \tsMove #0 #0 \strDampening s8\startTextSpan |
+  \tsMove #0 #-2.91 \strDampening s8\startTextSpan s8\stopTextSpan s2 s8
+  \tsMove #0 #-2.08 \strDampening s8\startTextSpan |
   % Bar 61
   s8 s8\stopTextSpan s2. |
   % Bar 62
@@ -1658,37 +1666,37 @@ dynamicstwo = {
   % Bar 66 - 69
   s1*4 
   % Bar 70
-  s4 s8 \tsMove #0 #0 \strDampening s8\startTextSpan s4\stopTextSpan s4 | 
+  s4 s8 \tsMove #0 #-6.04 \strDampening s8\startTextSpan s4\stopTextSpan s4 | 
   % Bar 71
   s1 | 
   % Bar 72
-  s4 s8 \textSpannerUp \tsMove #0 #0 \lhSpannerUp "4" {s8 s4 s4
+  s4 s8 \textSpannerUp \tsMove #0 #-0.5 \lhSpannerUp "4" {s8 s4 s4
   % Bar 73
   s4 s16 } s4 \tsMove #0 #0 \lhSpannerUp "4" {s16 s8 s16 } s8. 
   % Bar 74
-  s16 \tsMove #0 #0 \lhSpannerUp "4" { s16 s8 s16 s16 } \tsMove #0 #0
+  s16 \tsMove #0 #0 \lhSpannerUp "4" { s16 s8 s16 s16 } \tsMove #0 #-1.8
   \lhSpannerUp "4" { s8 s4 s4
   % Bar 75
-  s16 } s16 s16 \tsMove #0 #0 \lhSpannerUp "2" { s16 s8 s8 s4 s8 s8 }
+  s16 } s16 s16 \tsMove #0 #-1.8 \lhSpannerUp "2" { s16 s8 s8 s4 s8 s8 }
   % Bar 76
   s1 |
   % Bar 77
-  s8 \tsMove #0 #0 \lhSpannerUp "2" {s16 s16 s8 s8 } s4 s16 s8.-\mkTweak #0
-  #0 ^\lhfour |
+  s8 \tsMove #0 #-0.2 \lhSpannerUp "2" {s16 s16 s8 s8 } s4 s16 s8.-\mkTweak #0
+  #1 ^\lhfour |
   % Bar 78
   s1 |
   % Bar 79
-  s4 s16 s16 s8 s4 s16 s8.-\mkTweak #0 #0
+  s4 s16 s16 s8 s4 s16 s8.-\mkTweak #-0.7 #-3
   ^\twostrupstrm |
   % Bar 80
   s1 |
   % Bar 81
-  s4 s16 s16 s8 s4 s16 s8.-\mkTweak #0 #0
+  s4 s16 s16 s8 s4 s16 s8.-\mkTweak #-0.65 #-3
   ^\twostrupstrm |
   % Bar 82
   s1 |
   % Bar 83
-  s4 s16 s16 s8 s8 \tsMove #0 #0
+  s4 s16 s16 s8 s8 \tsMove #0 #-7.81
   \strDampening s8\startTextSpan s4\stopTextSpan |
 }
 
@@ -1716,7 +1724,7 @@ dynamicsthree = {
   % Bar 9
   \tsMove #0 #0 \lhSpannerUp "4" { s1 
   % Bar 10
-  s4  s16 s16 } s8 s4 \tsMove #0 #0 \lhSpannerUp "4" {s4
+  s4  s16 s16 } s8 s4 \tsMove #0 #-0.7 \lhSpannerUp "4" {s4
   % Bar 11
   s2. s8 s8 
   % Bar 12
@@ -1773,7 +1781,7 @@ dynamicsthree = {
   \override TextSpanner #'after-line-breaking =
   #ly:spanner::kill-zero-spanned-time \endSpanners s8\startTextSpan |
   % Bar 32
-  \tsMove #0 #-3.9 \strDampening s8\startTextSpan s16 s16\stopTextSpan s2
+  \tsMove #0 #-3.08 \strDampening s8\startTextSpan s16 s16\stopTextSpan s2
   s8-\mkTweak #-0.7 #-2.99 ^\oneStrFlick \tsMove #0 #-3.9 \strDampening
   s8\startTextSpan |
   % Bar 33
@@ -1810,7 +1818,7 @@ dynamicsthree = {
   \override TextSpanner #'after-line-breaking =
   #ly:spanner::kill-zero-spanned-time \endSpanners s8\startTextSpan |
   % Bar 48
-  \tsMove #0 #-3.9 \strDampening s8\startTextSpan s16 s16\stopTextSpan s2
+  \tsMove #0 #-3.08 \strDampening s8\startTextSpan s16 s16\stopTextSpan s2
   s8-\mkTweak #-0.7 #-2.99 ^\oneStrFlick \tsMove #0 #-3.9
   \strDampening s8\startTextSpan |
   % Bar 49
@@ -1835,7 +1843,7 @@ dynamicsthree = {
   #-3.07 \strDampening \override TextSpanner #'after-line-breaking =
   #ly:spanner::kill-zero-spanned-time \endSpanners s8\startTextSpan |
   % Bar 57
-  \tsMove #0 #-3.9 \strDampening s8\startTextSpan s16 s16\stopTextSpan s2
+  \tsMove #0 #-3.08 \strDampening s8\startTextSpan s16 s16\stopTextSpan s2
   s4-\mkTweak #-0.7 #-2.99 ^\oneStrFlick |
   % Bar 58
   s1 |
