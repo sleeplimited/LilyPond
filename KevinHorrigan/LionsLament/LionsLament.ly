@@ -941,8 +941,8 @@ tab = {
   <\parenthesize e'\2 gis\4>^\rhp <gis'\1 e'\2 >^\rhm ^\rha <\invTNH a,,>16^\rhp
   [ b\3^\rhi \once \override BreathingSign #'extra-offset = #'(3 .  -2.0)
   \leftBracketTwo cis8\stopTextSpan ^\rhp ] \once \override BreathingSign
-  #'extra-offset = #'(0.3 . 0) \leftBracketThree <b,, b, fis b dis'>8^\rhp [
-  r8-\mkTweak #0 #0 ^\rhm -\mkTweak #0 #0 ^\rha ] \once \override BreathingSign
+  #'extra-offset = #'(0.3 . 0) \leftBracketThree <b,, b, fis b dis'>8^\rhp -\mkTweak #0 #0 ^\rha [
+  r8-\mkTweak #0 #0 ^\rhm  ] \once \override BreathingSign
   #'extra-offset = #'(0.3 . 2) \leftBracketTwo \harmonicByRatio #1/3 <b' fis'>4
   % Bar 39
   \override BreathingSign #'extra-offset = #'(0.3 . -2) <a,, a,>8[
@@ -1464,7 +1464,7 @@ dynamicsone = {
   % Bar 21
   s1 |
   % Bar 22
-  s2 s4-\mkTweak #0 #0 ^\lhfour s4 |
+  s2 s4-\mkTweak #0 #1 ^\lhfour s4 |
   % Bar 23
   s1 |
   % Bar 24
@@ -1476,13 +1476,14 @@ dynamicsone = {
   % Bar 27
   s1 |
   % Bar 28
-  s2. \tsMove #0 #0 \strDampening s16\startTextSpan s16\stopTextSpan \tsMove #0
-  #0 \strDampening s8\startTextSpan  |
+  s2. \tsMove #-0.1 #-9.26 \strDampening s16\startTextSpan s16\stopTextSpan \tsMove #0
+  #-3.16 \strDampening \override TextSpanner #'after-line-breaking =
+  #ly:spanner::kill-zero-spanned-time \endSpanners s8\startTextSpan  |
   % Bar 29
-  s8 s8\stopTextSpan s16 s16 s8 s4
-  \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan |
+  \tsMove #0 #-2.08 \strDampening s8\startTextSpan s8\stopTextSpan s16 s16 s8 s4
+  \tsMove #-0.1 #-8.06 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 30
-  s2 s8 s8^\lhone s4 |
+  s2 s8 s8-\mkTweak #0 #0.2 ^\lhone s4 |
   % Bar 31
   s1 |
   % Bar 32
@@ -1498,32 +1499,32 @@ dynamicsone = {
   % Bar 37
   s1 |
   % Bar 38
-  s8 s16 s16 s4 s8 \tsMove #0 #0 \strDampening s8\startTextSpan
+  s8 s16 s16 s4 \tsMove #0 #-2.18 \strDampening s8\startTextSpan s8
   s4\stopTextSpan |
   % Bar 39-63
   s1*25
   % Bar 64-71
   s1*8
   % Bar 72
-  s4 s8 \tsMove #0 #0 \strDampening s8\startTextSpan s4\stopTextSpan s4 |
+  s4 s8 \tsMove #0 #-4.24 \strDampening s8\startTextSpan s4\stopTextSpan s4 |
   % Bar 73
   s1 |
   % Bar 74-76
   s1*3 
   % Bar 77
-  s4 s4 \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan s4 |
+  s4 s4 \tsMove #0 #-5.84 \strDampening s8\startTextSpan s8\stopTextSpan s4 |
   % Bar 78
   s1 |
   % Bar 79
-  s8 s16 s16 s4 \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan s4 |
+  s8 s16 s16 s4 \tsMove #0 #-5.97 \strDampening s8\startTextSpan s8\stopTextSpan s4 |
   % Bar 80
-  \tsMove #0 #0 \lhSpannerUp "4" { s4 s4 s4 s8 s16 s16 } |
+  \tsMove #0 #-4 \lhSpannerUp "4" { s4 s4 s4 s8 s16 s16 } |
   % Bar 81
-  s8 s16 s16 s4 \tsMove #0 #0 \strDampening s8\startTextSpan s8\stopTextSpan s4 |
+  s8 s16 s16 s4 \tsMove #0 #-5.97 \strDampening s8\startTextSpan s8\stopTextSpan s4 |
   % Bar 82
   s1 |
   % Bar 83
-  s4 s4 \tsMove #0 #0 \strDampening s4\startTextSpan s4\stopTextSpan |
+  s4 s4 \tsMove #0 #-5.97 \strDampening s4\startTextSpan s4\stopTextSpan |
 
   
 
@@ -1616,7 +1617,7 @@ dynamicstwo = {
   \textSpannerUp \tsMove #0 #-3 \lhSpannerUp "1" { s4 s4 s4 s8 s16 s16 } |
   % Bar 38
   s8 \tsMove #0 #-0.5 \lhSpannerUp "2" { s8 s8 s8 } s8-\mkTweak #0 #0.3
-  ^\lhthree \tsMove #0 #-3.18 \strDampening s8\startTextSpan s4\stopTextSpan
+  ^\lhthree \tsMove #0 #-4.02 \strDampening s8\startTextSpan s4\stopTextSpan
   -\mkTweak #0 #0.3 ^\lhthree |
   % Bar 39 - 46
   s1*8 
