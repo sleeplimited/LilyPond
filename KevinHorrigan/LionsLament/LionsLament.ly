@@ -1072,7 +1072,8 @@ tab = {
   <\fakeSlur a,,\6 d,\6 \parenthesize fis\4>16 fis16 b^\rhm <\invTNH a,,>16[ fis d,8] |
   % Bar 72
   a,,16~ <\fakeSlur a,,\6 e,\6 \parenthesize g\4>16 g16\4 b^\rhm <\invTNH a,,>16[ d <c,
-  \tweakTabNoteHead \mutedString a, e g d'>8-\mkTweak #0 #-4 ^\fivestrdwnstrm ^\rhp ]~ <c,
+  \tweakTabNoteHead \mutedString a, e g d'>8-\mkTweak #0 #-4 ^\fivestrdwnstrm
+  ^\rhp ^\rha ]~ <c,
   e g d'>4 <\invTNH a,, e g>4  |
   % Bar 73
   a,,16^\rhp ~ <\fakeSlur a,,\6 c,\6>16 e16^\rhi d'^\rha <\invTNH a,,>16^\rhp ^\rhi [
@@ -1912,7 +1913,7 @@ dynamicsfour = {
   \tsMove #0 #-1 \lhSpannerDown "3" { s1
   % Bar 10
   \textSpannerNeutral
-  s2 s4 s4-\mkTweak #-1.0 #4.1 _\twoStrMFlick
+  s2 s4 s4-\mkTweak #-1.0 #4.08 _\twoStrMFlick
   % Bar 11
   s1 
   % Bar 12
@@ -1933,29 +1934,29 @@ dynamicsfour = {
   s1 |
   % Bar 20
   s2. \tsMove #-0.12 #-7.72 \threeStrDamp s16\startTextSpan 
-  s16\stopTextSpan  \mkMove #0 #-11 s8^\lhthree |
+  s16\stopTextSpan  \mkMove #0 #-11.5 s8^\lhthree |
   % Bar 21
   %% Fourth String-Dampening in this measure takes place in dynamicsthree
   s8 \textSpannerDown \tsMove #0 #0 \lhSpannerDown "2" { s8 s4 s8 s8 } s4 |
   % Bar 22
-  s4 \tsMove #-0.1 #7.98 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  s4 \tsMove #-0.1 #7.96 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 23
   s4 \tsMove #-0.1 #7.15 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \textSpannerUp  \tsMove #-0.12 #-7.94 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
+  \textSpannerUp  \tsMove #-0.12 #-7.71 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
   % Bar 24
-  s4 \tsMove #-0.1 #7.98 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  s4 \tsMove #-0.1 #-4.09 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 25
-  s4 \tsMove #-0.1 #7.15 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
-  \textSpannerUp  \tsMove #-0.12 #-7.94 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
+  s4 \tsMove #-0.1 #-4.08 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
+  \textSpannerUp  \tsMove #-0.12 #-7.71 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
   % Bar 26
-  s4 \tsMove #-0.1 #7.98 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  s4 \tsMove #-0.1 #-4.08 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 27
-  \textSpannerDown \tsMove #0 #-2 \lhSpannerDown "2" { s8 s8 s8 s8 s16 } s8.
+  \textSpannerDown \tsMove #0 #0 \lhSpannerDown "2" { s8 s8 s8 s8 s16 } s8.
   \textSpannerDown \tsMove #-0.12 #8.5 \threeStrDamp s16\startTextSpan s16\stopTextSpan
   s8-\mkTweak #0 #-11 ^\lhtwo |
   % Bar 28
-  \textSpannerDown \tsMove #0 #-2 \lhSpannerDown "2" { s8 s8 s8 s8 s16 } s8.
-  \textSpannerNeutral \tsMove #-0.12 #-11.12 \threeStrDamp s16\startTextSpan s16\stopTextSpan
+  \textSpannerDown \tsMove #0 #0 \lhSpannerDown "2" { s8 s8 s8 s8 s16 } s8.
+  \textSpannerNeutral \tsMove #-0.12 #-11.09 \threeStrDamp s16\startTextSpan s16\stopTextSpan
   s8-\mkTweak #0 #-11 ^\lhtwo |
   % Bar 29
   %% String-dampening for this string, this measure is located at DynamicsTwo
@@ -1999,10 +2000,10 @@ dynamicsfour = {
   s1 |
   % Bar 47
   s4 s16 s16 s8 s4
-  \tsMove #-0.12 #7.9 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 |
+  \tsMove #-0.12 #7.92 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 48
   s4 s16 s16 s8 s4
-  \tsMove #-0.12 #7.9 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 |
+  \tsMove #-0.12 #7.92 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 49
   s4 s16 s16 s8 s4
   \tsMove #-0.12 #6.91 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
@@ -2022,10 +2023,10 @@ dynamicsfour = {
   s4 s16 s16 s8 s2 |
   % Bar 55
   s4 s16 s16 s8 s4
-  \tsMove #-0.12 #7.91 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 |
+  \tsMove #-0.12 #7.92 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 56
   s4 s16 s16 s8 s4
-  \tsMove #-0.12 #7.91 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 |
+  \tsMove #-0.12 #7.92 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 57
   s4 s16 s16 s8 s4
   \tsMove #-0.12 #6.91 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
@@ -2065,22 +2066,22 @@ dynamicsfour = {
   s8 \tsMove #0 #0 \lhSpannerDown "2" {s8 s4 s16 } \tsMove #0 #0 \lhSpannerDown
   "2" { s16 s8 s4 
   % Bar 70
-  s16 } \tsMove #0 #0 \lhSpannerDown "1" { s16 s8 s16 s16 } \tsMove #0 #0
+  s16 } \tsMove #0 #0 \lhSpannerDown "1" { s16 s8 s16 s16 } \tsMove #0 #-0.5
   \lhSpannerDown "2" {s8 s4 s4-\mkTweak #-1 #-4.37 ^\twoStrMFlick
   % Bar 71
-  s16 } s16 \tsMove #0 #0 \lhSpannerDown "2" { s8 s8 s8 s16 } \tsMove #0 #-1.29
-  \lhSpannerDown "2" { s16 s8 s8 s8
+  s16 } s16 \tsMove #0 #-0.5 \lhSpannerDown "2" { s8 s8 s8 s16 } \tsMove #0
+  #-0.5 \lhSpannerDown "2" { s16 s8 s8 s8
   % Bar 72
-  s16 } \tsMove #0 #0 \lhSpannerDown "1" { s16 s8 s16 s16 } \tsMove #0 #-1.29
+  s16 } \tsMove #0 #-0.5 \lhSpannerDown "1" { s16 s8 s16 s16 } \tsMove #0 #-1
   \lhSpannerDown "2" {s8 s4 s4-\mkTweak #-0.5 #-3.72 ^\twoStrFlick
   % Bar 73
   s16 } s16 \tsMove #0 #0 \lhSpannerDown "2" { s8 s8 s8 s16 } \tsMove #0 #0
   \lhSpannerDown "2" { s16 s8 s8 s8
   % Bar 74
-  s16 } \tsMove #0 #0 \lhSpannerDown "1" { s16 s8 s16 s16 } \tsMove #0 #-1.29
+  s16 } \tsMove #0 #0 \lhSpannerDown "1" { s16 s8 s16 s16 } \tsMove #0 #0
   \lhSpannerDown "2" {s8 s4 s4-\mkTweak #-0.5 #-3.72 ^\twoStrFlick
   % Bar 75
-  s16 } s16 \textSpannerUp \tsMove #0 #0 \lhSpannerUp "3" {s8 s8 s8 s4 s8 s8 }
+  s16 } s16 \textSpannerUp \tsMove #0 #-1 \lhSpannerUp "3" {s8 s8 s8 s4 s8 s8 }
   % Bar 76
   s4 s4 s4 s8-\mkTweak #-1 #-4.3 ^\threeStrMFlick s8 |
   % Bar 77
@@ -2089,15 +2090,15 @@ dynamicsfour = {
   % Bar 78
   s1 |
   % Bar 79
-  s4 \tsMove #-0.12 #7.4 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 s4 s4 |
+  s4 \tsMove #-0.12 #7.91 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 s4 s4 |
   % Bar 80
   s4 s4 s4 s4 |
   % Bar 81
-  s4 \tsMove #-0.12 #7.4 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 s4 s4 |
+  s4 \tsMove #-0.12 #7.91 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 s4 s4 |
   % Bar 82  
   s1 |
   % Bar 83
-  s4 \tsMove #-0.12 #7.4 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 s4 s4 |
+  s4 \tsMove #-0.12 #7.91 \threeStrDamp s16\startTextSpan s16\stopTextSpan s8 s4 s4 |
 
 
   
