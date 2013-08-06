@@ -1042,9 +1042,11 @@ tab = {
   g16~ <\fakeSlur g\3 b\3> d'8 < \invTNH a,, b\3>16~ <\fakeSlur b\3 g\3> fis8 |
   % Bar 61
   \slashedGrace { \hideFretNumber d,8 \glissando s } e,8 g16\4 g\3~ g g\4 e,8
-  \once \override Tie #'extra-offset = #'(0 . -0.5) fis'16\2~ <\fakeSlur fis'\2 b\2> g8 < \invTNH a,, d'\3>8 e' |
+  \once \override Tie #'extra-offset = #'(0 . -0.5) fis'16\2~ <\fakeSlur fis'\2
+  b\2> g8 < \invTNH a,, d'\3>8 e' |
   % Bar 62
-  e,8 g16\4 g\3 ~ g16  g\4 e,8 \once \override Tie #'extra-offset = #'(0 . -0.5) fis'16\2 ~ <\fakeSlur fis'\2 b\2> g8 < d'\3 \invTNH a,,>8 e' |
+  e,8 g16\4 g\3 ~ g16  g\4 e,8 \once \override Tie #'extra-offset = #'(0 .
+  -0.5) fis'16\2 ~ <\fakeSlur fis'\2 b\2> g8 < d'\3 \invTNH a,,>8 e' |
   \break
   % Bar 63
   <a,\6 \parenthesize c'\4>8-\mkTweak #-0.7 #-6.3 ^\rhp c'16\4-\mkTweak #-0.7
@@ -1064,8 +1066,10 @@ tab = {
   \glissando \slashedGrace { \hideFretNumber <g,\6 f'\3>8 \hideFretNumber g8\5
   \glissando s } a8\5 b |
   % Bar 66
-  d,8^\rhp fis16^\rhp g^\rhi ~ g16[ fis^\rhi d,8^\rhp ] <\tweakTabNoteHead \mutedString e\5 e,\6 g\4 g\3
-  b\2>4^\rhp <\invTNH a,, g\3>4 |
+  d,8-\mkTweak #-0.5 #-6.3 ^\rhp fis16-\mkTweak #-0.5 #-4.3 ^\rhp g-\mkTweak
+  #-0.3 #-2.3 ^\rhi ~ g16[ fis-\mkTweak #-0.3 #-3.3 ^\rhi d,8-\mkTweak #-0.5
+  #-6.3 ^\rhp ] <\tweakTabNoteHead \mutedString e\5 e,\6 g\4 g\3 b\2>4-\mkTweak
+  #-0.7 #-12 ^\rhp <\invTNH a,, g\3>4-\mkTweak #-0.8 #-6 ^\rhp  |
   \break
   % Bar 67
   <a,\6 \parenthesize c'\4>8 c'16\4 b ~ b16 c'\4 <a,\6 g'\3>8 ~ <a,\6 g'\3>4
@@ -1076,57 +1080,79 @@ tab = {
   <\invTNH a,, g\3 a\4> b |
   \break
   % Bar 69
-  a,,16^\rhp ~ <\fakeSlur a,,\6 c,\6>16 e16^\rhp g^\rhi <\invTNH a,,>16^\rhi
-  ^\rhp [ e c,8^\rhp ] a,,16^\rhp ~ <\fakeSlur
-  a,,\6 d,\6 \parenthesize fis\4>16 fis16^\rhp g^\rhi <\invTNH a,,>16^\rhi ^\rhp [ fis
-  d,8^\rhp ] | 
+  a,,16-\mkTweak #-0.5 #-6.3 ^\rhp ~ <\fakeSlur a,,\6 c,\6>16 e16-\mkTweak
+  #-0.5 #-4.3 ^\rhp g-\mkTweak #-0.3 #-2.3 ^\rhi <\invTNH a,,>16-\mkTweak #-0.5
+  #-3.3 ^\rhi -\mkTweak #-0.8 #-6.3 ^\rhp [ e c,8-\mkTweak #-0.5 #-6.3 ^\rhp ]
+  a,,16-\mkTweak #-0.5 #-6.3 ^\rhp ~ <\fakeSlur a,,\6 d,\6 \parenthesize
+  fis\4>16 fis16-\mkTweak #-0.5 #-4.3 ^\rhp g-\mkTweak #-0.3 #-2.3 ^\rhi
+  <\invTNH a,,>16-\mkTweak #-0.5 #-3.3 ^\rhi -\mkTweak #-0.8 #-6.3 ^\rhp [ fis
+  d,8-\mkTweak #-0.5 #-6.3 ^\rhp ] | 
   % Bar 70
-  a,,16^\rhp ~ <\fakeSlur a,,\6 e,\6 \parenthesize g\4>16 g16\4^\rhp g\3^\rhi
-  <\invTNH a,,>16^\rhp ^\rhi [ d <c,
-  \tweakTabNoteHead \mutedString c e g>8^\rhp ^\rha ]~ <c, e g>4 <\invTNH a,, g e>4  |
+  a,,16-\mkTweak #-0.5 #-6.3 ^\rhp ~ <\fakeSlur a,,\6 e,\6 \parenthesize g\4>16
+  g16\4-\mkTweak #-0.5 #-4.3 ^\rhp g\3-\mkTweak #-0.3 #-2.3 ^\rhi <\invTNH
+  a,,>16-\mkTweak #-0.8 #-5.3 ^\rhp -\mkTweak #-0.5 #-4.3 ^\rhi [ d <c,
+  \tweakTabNoteHead \mutedString c e g>8-\mkTweak #-0.7 #-12 ^\rhp -\mkTweak
+  #-0.5 #-7.3 ^\rha ]~ <c, e g>4 <\invTNH a,, g e>4  |
   % Bar 71
   a,,16~ <\fakeSlur a,,\6 c,\6>16 e16 g <\invTNH a,,>16[ e c,8] a,,16~
-  <\fakeSlur a,,\6 d,\6 \parenthesize fis\4>16 fis16 b^\rhm <\invTNH a,,>16[ fis d,8] |
+  <\fakeSlur a,,\6 d,\6 \parenthesize fis\4>16 fis16 b-\mkTweak #-0.7 #-1.3
+  ^\rhm <\invTNH a,,>16[ fis d,8] |
   % Bar 72
-  a,,16~ <\fakeSlur a,,\6 e,\6 \parenthesize g\4>16 g16\4 b^\rhm <\invTNH a,,>16[ d <c,
-  \tweakTabNoteHead \mutedString a, e g d'>8-\mkTweak #0 #-4 ^\fivestrdwnstrm
-  ^\rhp ^\rha ]~ <c,
-  e g d'>4 <\invTNH a,, e g>4  |
+  a,,16~ <\fakeSlur a,,\6 e,\6 \parenthesize g\4>16 g16\4 b-\mkTweak #-0.7
+  #-1.3 ^\rhm <\invTNH a,,>16[ d <c, \tweakTabNoteHead \mutedString a, e g
+  d'>8-\mkTweak #-0.8 #-10.3 ^\fivestrdwnstrm -\mkTweak #-0.7 #-16.3 ^\rhp
+  -\mkTweak #-0.5 #-10.7 ^\rha ]~ <c, e g d'>4 <\invTNH
+  a,, e g>4  |
   % Bar 73
-  a,,16^\rhp ~ <\fakeSlur a,,\6 c,\6>16 e16^\rhi d'^\rha <\invTNH a,,>16^\rhp ^\rhi [
-  e c,8^\rhp ] a,,16^\rhp ~ <\fakeSlur a,,\6 d,\6 \parenthesize fis\4 \parenthesize e'\2>16
-  fis16^\rhi e'\2^\rha <\invTNH a,,>16^\rhp ^\rhi  [ fis d,8^\rhp ] |
+  a,,16-\mkTweak #-0.5 #-8 ^\rhp ~ <\fakeSlur a,,\6 c,\6>16 e16-\mkTweak #-0.3
+  #-5 ^\rhi d'-\mkTweak #-0.5 #-3 ^\rha <\invTNH a,,>16-\mkTweak #-0.8 #-7
+  ^\rhp -\mkTweak #-0.5 #-5.9 ^\rhi [ e c,8-\mkTweak #-0.5 #-6.3 ^\rhp ]
+  a,,16-\mkTweak #-0.5 #-6.3 ^\rhp ~ <\fakeSlur a,,\6 d,\6 \parenthesize fis\4
+  \parenthesize e'\2>16 fis16-\mkTweak #-0.3 #-5 ^\rhi e'\2-\mkTweak #-0.5 #-3
+  ^\rha <\invTNH a,,>16-\mkTweak #-0.8 #-7 ^\rhp -\mkTweak #-0.5 #-5.9 ^\rhi  [
+  fis d,8-\mkTweak #-0.5 #-6.3 ^\rhp ] |
   % Bar 74
-  a,,16~ <\fakeSlur a,,\6 e,\6 \parenthesize g\4 \parenthesize fis'\2>16 g16\4 fis'\2~ fis'16\2[ d <c,
-  \tweakTabNoteHead \mutedString a, e g b g' >8-\mkTweak #0 #0 ^\sixstrdwnstrm ^\rhp ]~ <c,
-  e g b g'>4 < \tweak TabNoteHead #'transparent ##t a,, g e>4  |
+  a,,16~ <\fakeSlur a,,\6 e,\6 \parenthesize g\4 \parenthesize fis'\2>16 g16\4
+  fis'\2~ fis'16\2[ d <c, \tweakTabNoteHead \mutedString a, e g b g'
+  >8-\mkTweak #-0.8 #-9.4 ^\sixstrdwnstrm -\mkTweak #-0.7 #-16.4 ^\rhp ]~ <c, e
+  g b g'>4 < \invTNH a,, g e>4  |
   \break
   % Bar 75
-  a,,16^\rhp ~ \once \override TextSpanner #'style = #'line \once \override
-  TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
-  } \once \override TextSpanner #'(bound-details left text) =  \markup { \halign
-  #CENTER \fontsize #-5 "C II " }
-   <\fakeSlur a,,\6 b,,\6 >16\startTextSpan b\3^\rhi d'\2^\rhm <\invTNH b,,> b\3^\rhi < b,, b d' fis'>8^\rhp ^\rhi ^\rhm
-  ^\rha ~ <b,, b d' fis'>4 b,,8^\rhp < b d' fis'>8\stopTextSpan ^\rhi ^\rhm ^\rha | 
+  a,,16-\mkTweak #-0.5 #-6.3 ^\rhp ~ \tsMove #0.15 #-0.3 \once \override
+  TextSpanner #'style = #'line \once \override TextSpanner #'(bound-details
+  right text) = \markup { \draw-line #'(0 . -0.5) } \once \override TextSpanner
+  #'(bound-details left text) =  \markup { \halign #CENTER \fontsize #-5 "C II
+  " } <\fakeSlur a,,\6 b,,\6 >16\startTextSpan b\3-\mkTweak #-0.3 #-5.9 ^\rhi
+  d'\2-\mkTweak #-0.8 #-6.3 ^\rhm <\invTNH b,,> b\3-\mkTweak #-0.3 #-7.3 ^\rhi
+  < b,, b d' fis'>8-\mkTweak #-0.5 #-11.3 ^\rhp -\mkTweak #-0.3 #-8.2 ^\rhi
+  -\mkTweak #-0.7 #-8.1 ^\rhm -\mkTweak #-0.5 #-7.9 ^\rha ~ <b,, b d' fis'>4
+  b,,8-\mkTweak #-0.5 #-11.3 ^\rhp < b d' fis'>8\stopTextSpan -\mkTweak #-0.3
+  #-7.35 ^\rhi -\mkTweak #-0.7 #-7.25 ^\rhm -\mkTweak #-0.5 #-7 ^\rha | 
   % Bar 76
-  \arpeggioArrowUp \once \override BreathingSign #'extra-offset = #'(3 . 0)
-  \rightBracketThree <a,, a, e a cis' e'>4^\rhp ^\rhi ^\rhm ^\rha ^\rhc \arpeggio
-  <\invTNH a,,>16^\rhp  a,,16 <\invTNH a,,>8^\rhp a,,4 < \invTNH a,, a cis' e
-  >8^\rhp a,,16
-  a,^\rhi |
+  \arpeggioArrowUp \once \override BreathingSign #'extra-offset = #'(2.8 . 0)
+  \rightBracketThree <a,, a, e a cis' e'>4-\mkTweak #-0.8 #-14.5 ^\rhp
+  -\mkTweak #-0.8 #-14.5 ^\rhi -\mkTweak #-0.8 #-14.5 ^\rhm -\mkTweak #-0.8
+  #-14.5 ^\rha -\mkTweak #-0.8 #-14.5 ^\rhc \arpeggio <\invTNH a,,>16-\mkTweak
+  #-0.5 #-11.3 ^\rhp  a,,16 <\invTNH a,,>8-\mkTweak #-0.5 #-11.3 ^\rhp a,,4 <
+  \invTNH a,, a cis' e >8-\mkTweak #-0.8 #-10.3 ^\rhp a,,16 a,-\mkTweak #-0.3
+  #-9.3 ^\rhi |
   \break
   % Bar 77
-  a,,16^\rhp ~ \once \override TextSpanner #'style = #'line \once \override
-  TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
-  } \once \override TextSpanner #'(bound-details left text) =  \markup { \halign
-  #CENTER \fontsize #-5 "C IV " } <\fakeSlur a,,\6 cis,\6>\startTextSpan
-  < gis\4 \parenthesize e'\2>^\rhp e'16\2^\rhi <\invTNH a,,>16^\rhp
-  [ b\3^\rhi \once \override BreathingSign #'extra-offset = #'(3 .  -2.0)
-  \leftBracketTwo cis8\stopTextSpan ^\rhp ] \once \override
-  BreathingSign #'extra-offset = #'(0.5 . 0) \leftBracketThree <b,, b, fis b\3
-  dis'>4^\rhp ^\rha <\invTNH a,, fis b\3 dis'>16^\rhp <b\3 e'\2>8.^\rhi |
+  a,,16-\mkTweak #-0.5 #-6.3 ^\rhp ~ \once \override TextSpanner #'style =
+  #'line \once \override TextSpanner #'(bound-details right text) = \markup {
+  \draw-line #'(0 . -0.5) } \once \override TextSpanner #'(bound-details left
+  text) =  \markup { \halign #CENTER \fontsize #-5 "C IV " } <\fakeSlur a,,\6
+  cis,\6>\startTextSpan < gis\4 \parenthesize e'\2>-\mkTweak #-0.5 #-7.3
+  ^\rhp e'16\2-\mkTweak #-0.3 #-4.3 ^\rhi <\invTNH a,,>16-\mkTweak #-0.8
+  #-10.15 ^\rhp [ b\3-\mkTweak #-0.3 #-8.15 ^\rhi \once \override
+  BreathingSign #'extra-offset = #'(4.35 .  -2.0) \leftBracketTwo
+  cis8\stopTextSpan -\mkTweak #-0.5 #-8.3 ^\rhp ] \once \override
+  BreathingSign #'extra-offset = #'(0.5 . 0) \leftBracketThree <b,, b, fis
+  b\3 dis'>4-\mkTweak #-1.1 #-12.65 ^\rhp -\mkTweak #-0.5 #-7.15 ^\rha
+  <\invTNH a,, fis b\3 dis'>16-\mkTweak #-0.8 #-10.3 ^\rhp <b\3
+  e'\2>8.-\mkTweak #-0.6 #-5.5 ^\rhi |
   % Bar 78
-  \arpeggioArrowUp \once \override BreathingSign #'extra-offset = #'(3 . 0)
+  \arpeggioArrowUp \once \override BreathingSign #'extra-offset = #'(2.8 . 0)
   \rightBracketThree <a,, a, e a cis' e'>4\arpeggio <\invTNH a,,>16 a,,16
   <\invTNH a,,>8 a,,4 < \tweak
   TabNoteHead #'transparent ##t a,, a cis' e>8 a,,16 a, |
@@ -1136,18 +1162,19 @@ tab = {
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
   } \once \override TextSpanner #'(bound-details left text) =  \markup { \halign
   #CENTER \fontsize #-5 "C IV " } <\fakeSlur a,,\6 cis,\6>\startTextSpan < gis\4
-  \parenthesize e'\2> < gis'\1>16^\rha <\invTNH a,,>16 [ < e'\2>^\rhm \once
-  \override BreathingSign #'extra-offset = #'(3 .  -2.0) \leftBracketTwo
-  cis8\stopTextSpan ] \once \override BreathingSign #'extra-offset = #'(0.5 .
-  0) \leftBracketThree <b,, b, fis b\3 dis'>4 <\tweak TabNoteHead #'transparent
-  ##t a,, fis b\3 dis'>16 <b\3 e'\2>8. |
+  \parenthesize e'\2> < gis'\1>16-\mkTweak #-0.4 #-1.9 ^\rha <\invTNH a,,>16 [ <
+  e'\2>-\mkTweak #-0.7 #-2.9 ^\rhm \once \override BreathingSign #'extra-offset =
+  #'(4.43 .  -2.0) \leftBracketTwo cis8\stopTextSpan ] \once \override
+  BreathingSign #'extra-offset = #'(0.5 .  0) \leftBracketThree <b,, b, fis b\3
+  dis'>4 <\tweak TabNoteHead #'transparent ##t a,, fis b\3 dis'>16 <b\3 e'\2>8. |
   % Bar 80
-  \arpeggioArrowUp \once \override TextSpanner #'style = #'line \once \override
-  TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
-  } \once \override TextSpanner #'(bound-details left text) =  \markup { \halign
-  #LEFT \fontsize #-5 "4/6 C II " } <a,, a, e a cis' a'>4\arpeggio\startTextSpan
-  <\invTNH a,,>16 a,,16 <\invTNH a,,>8 a,,4 < \tweak TabNoteHead #'transparent
-  ##t a,, a e cis' a'>8 a,,16 a,\stopTextSpan |
+  \arpeggioArrowUp \tsMove #0 #-4 \once \override TextSpanner #'style = #'line
+  \once \override TextSpanner #'(bound-details right text) = \markup {
+  \draw-line #'(0 . -0.5) } \once \override TextSpanner #'(bound-details left
+  text) =  \markup { \halign #LEFT \fontsize #-5 "4/6 C II " } <a,, a, e a
+  cis' a'>4\arpeggio\startTextSpan <\invTNH a,,>16 a,,16 <\invTNH a,,>8 a,,4
+  < \tweak TabNoteHead #'transparent ##t a,, a e cis' a'>8 a,,16
+  a,\stopTextSpan |
   \break
   % Bar 81
   a,,16~ \once \override TextSpanner #'style = #'line \once \override
@@ -1160,7 +1187,7 @@ tab = {
   #'extra-offset = #'(0.5 . 0) \leftBracketThree <b,, b, fis b\3 dis'>4 <\tweak
   TabNoteHead #'transparent ##t a,, fis b\3 dis'>16 <b\3 e'\2>8. |
   % Bar 82
-  \arpeggioArrowUp \once \override BreathingSign #'extra-offset = #'(3 . 0)
+  \arpeggioArrowUp \once \override BreathingSign #'extra-offset = #'(2.8 . 0)
   \rightBracketThree <a,, a, e a cis' e'>4\arpeggio <\invTNH a,,>16 a,,16
   <\invTNH a,,>8 a,,4 < \tweak
   TabNoteHead #'transparent ##t a,, a cis' e>8 a,,16 a, |
