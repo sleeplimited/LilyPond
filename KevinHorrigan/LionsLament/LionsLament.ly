@@ -776,30 +776,29 @@ tab = {
   %%
   %% Bar 9
   %%
-  \override BreathingSign #'extra-offset = #'(1.25 . -2.0)
-  \override TextScript #'extra-offset = #'(-1.0 . -6.3) \arpeggioArrowUp \leftBracketTwo <b,, b,
-  fis b\3 b\2>4^\rhp\arpeggio^\mark \markup { \fontsize #-2 \musicglyph #"scripts.segno"
-  } \override TextScript #'extra-offset = #'(-0.5 . -6.3) <\invTNH b,,\6>16^\rhp
-  b,,16 <\invTNH b,,\6>8^\rhp  b,,4 <\invTNH b,,\6>8^\rhp[  b,,8] |
+  \override BreathingSign #'extra-offset = #'(1.25 . -2.0) \arpeggioArrowUp
+  \leftBracketTwo <b,, b, fis b\3 b\2>4-\mkTweak #-1 #-8 ^\rhp\arpeggio^\mark
+  \markup { \fontsize #-2 \musicglyph #"scripts.segno" }  <\invTNH
+  b,,\6>16-\mkTweak #-0.5 #-8.8 ^\rhp b,,16 <\invTNH b,,\6>8-\mkTweak #-0.5
+  #-8.8 ^\rhp  b,,4 <\invTNH b,,\6>8-\mkTweak #-0.5 #-8.8 ^\rhp[  b,,8] |
   % Bar 10
-  <b,, e'>4-\mkTweak #-1 #-6.3 ^\rhp -\mkTweak #-0.4 #-0.6 ^\rha 
-  <\invTNH b,,\6>16^\rhp[ <b,, b\2>-\mkTweak #-0.4 #-1
-  ^\rhm ~ < \fakeSlur b\2  dis'\2> \once \override TextScript #'extra-offset =
-  #'(-0.4 . -0.6) e'^\rha] b,,^\rhp dis'-\mkTweak #-0.4 #-1 ^\rhm ~ < \fakeSlur
-  dis'\2 b\2>8 <\invTNH b,,\6 fis\4 b\3>8 b8-\mkTweak #-0.4 #-1 ^\rhi |
+  <b,, e'>4-\mkTweak #-0.5 #-8 ^\rhp -\mkTweak #-0.5 #-2.9 ^\rha <\invTNH
+  b,,\6>16-\mkTweak #-0.5 #-8.8 ^\rhp[ <b,, b\2>-\mkTweak #-0.7 #-3.9 ^\rhm ~ <
+  \fakeSlur b\2  dis'\2>-\mkTweak #-0.5 #-8.5 ^\rhp e'-\mkTweak #-0.5 #-2.6
+  ^\rha] b,, dis'-\mkTweak #-0.7 #-2.75 ^\rhm ~ < \fakeSlur dis'\2 b\2>8
+  <\invTNH b,,\6 fis\4 b\3>8 b8-\mkTweak #-0.4 #-4.45 ^\rhi |
   
   % Bar 11
-  \once \override TextScript #'extra-offset = #'(-1.0 . -6.3) \arpeggioArrowUp <e a a,
-  a,,>4\4\3\5\6^\rhp\arpeggio <\invTNH a,,\6>16^\rhp a,,16 <\invTNH a,,>8^\rhp
-  a,,4 <\invTNH a,,\6>8^\rhp[ a,,8] |
+  \arpeggioArrowUp <e a a, a,,>4\4\3\5\6-\mkTweak #-1 #-8.6 ^\rhp\arpeggio
+  <\invTNH a,,\6>16-\mkTweak #-0.5 #-9.4 ^\rhp a,,16 <\invTNH a,,>8-\mkTweak
+  #-0.5 #-9.4 ^\rhp a,,4 <\invTNH a,,\6>8-\mkTweak #-0.5 #-9.4 ^\rhp[ a,,8] |
   % Bar 12
-  <a,, b\2 \fakeSlur d'\2>16-\mkTweak #-0.4 #-1 ^\rhp -\mkTweak #-0.4 #-1 ^\rhm ~ 
-  < \fakeSlur d'\2 cis'\2>8~ < \fakeSlur cis'\2 b\2>16 
-  <\invTNH a,,\6>8^\rhp[ <a,, a>8^\rhi] <a,, b\2 \fakeSlur
-  d'\2>16-\mkTweak #1 #1 ^\rhm -\mkTweak #0 #0 ^\rhp ~ <
-  \fakeSlur d'\2 cis'\2>8~
-  < \fakeSlur cis'\2 b\2>16 <\invTNH a,,\6>8^\rhp[
-  <a,, a>8^\rhi] |
+  <a,, b\2 \fakeSlur d'\2>16-\mkTweak #-0.5 #-8 ^\rhp -\mkTweak #-0.7 #-3.9
+  ^\rhm ~ < \fakeSlur d'\2 cis'\2>8~ < \fakeSlur cis'\2 b\2>16 <\invTNH
+  a,,\6>8-\mkTweak #-0.5 #-8.5 ^\rhp[ <a,, a>8-\mkTweak #-0.4 #-4.5 ^\rhi] <a,,
+  b\2 \fakeSlur d'\2>16-\mkTweak #-0.7 #-1.35 ^\rhm -\mkTweak #-0.5 #-7.05
+  ^\rhp ~ < \fakeSlur d'\2 cis'\2>8~ < \fakeSlur cis'\2 b\2>16 <\invTNH
+  a,,\6>8-\mkTweak #-0.6 #-9.75 ^\rhp[ <a,, a>8-\mkTweak #-0.4 #-5.75 ^\rhi] |
   % Bar 13
   \override BreathingSign #'extra-offset = #'(1.25 . -2.0) \arpeggioArrowUp
   \leftBracketTwo <b,, b, fis b b>4\6\5\4\3\2\arpeggio
@@ -812,12 +811,10 @@ tab = {
   b,, dis'~ <\fakeSlur dis'\2 b\2>8 <\invTNH b,,\6 fis\4 b\3>8 b8 |
 
   % Bar 15
-  \arpeggioArrowUp
-  \once \override TextScript #'extra-offset = #'(-1.0 . -6.3) <e a a,
-  a,,>4\4\3\5\6\arpeggio <\invTNH a,,\6>16 a,,16 <\invTNH a,,>8 <a,,
-  b>16^\rhm ~
-  <\fakeSlur b\2 \dotUp cis'\2>8. <\invTNH a,,\6>8[
-  a,,8] |
+  \arpeggioArrowUp \once \override TextScript #'extra-offset = #'(-1.0 . -6.3)
+  <e a a, a,,>4\4\3\5\6\arpeggio <\invTNH a,,\6>16 a,,16 <\invTNH a,,>8 <a,,
+  b>16-\mkTweak #-0.7 #-2.45 ^\rhm ~ <\fakeSlur b\2 \dotUp cis'\2>8. <\invTNH
+  a,,\6>8[ a,,8] |
   % Bar 16
   <a,, b\2 \fakeSlur d'\2>16~ <\fakeSlur d'\2 cis'\2>8~ <\fakeSlur cis'\2
   b\2>16 <\invTNH a,,\6>8[ <a,, a>8] <a,, b\2
@@ -841,24 +838,28 @@ tab = {
   a,,>4\4\3\5\6\arpeggio <\invTNH a,,\6>16 a,,16 <\invTNH a,,>8 a,,4 <\invTNH a,,\6>8[ a,,8] |
   % Bar 20
   <a,, b\2 \fakeSlur d'\2>16~ <\fakeSlur d'\2 cis'\2>8~ <\fakeSlur cis'\2
-  b\2>16 <\invTNH a,,\6>8[ <a,, a>8] <a,, b>16~
-  <\fakeSlur b\2 cis'\2>8 e'16-\mkTweak #-0.4 #-0.6 ^\rha <\invTNH
-  b,,\6>8-\mkTweak #0 #0 ^\rhp [
-  e8-\mkTweak #-0.4 #-4 ^\rhi ] | 
+  b\2>16 <\invTNH a,,\6>8[ <a,, a>8] <a,, b>16~ <\fakeSlur b\2 cis'\2>8
+  e'16-\mkTweak #-0.5 #-0.55 ^\rha <\invTNH b,,\6>8-\mkTweak #-0.7 #-9 ^\rhp [
+  e8-\mkTweak #-0.4 #-4.7 ^\rhi ] | 
   %%%%%%%%%
   %% Bar 21
   %%%%%%%%
-  a,,16^\rhp~ <\fakeSlur a,,\6 c,\6>16 e16-\mkTweak #-0.5 #-3.3 ^\rhi
-  e16-\mkTweak #-0.8 #-3.3 ^\rhm  <\invTNH a,,\6>16-\mkTweak #-0.6 #-5.3 ^\rhp
-  -\mkTweak #-0.5 #-4.2 ^\rhi [ e c,8^\rhp] d'16-\mkTweak #-0.8 #-1.3 ^\rha ~
-  <\fakeSlur d'\2 b\2> <\fakeSlur a\3 g\3>8-\mkTweak #-0.5 #-2.3 ^\rhm ~ <a\3 \invTNH a,,>-\mkTweak
-  #-0.8 #-4.3 ^\rhp ^\rha b |
+  \revert TextScript #'extra-offset
+  a,,16-\mkTweak #-0.5 #-6.3 ^\rhp~ <\fakeSlur a,,\6 c,\6>16 e16-\mkTweak #-0.4
+  #-3.3 ^\rhi e16-\mkTweak #-0.8 #-3.3 ^\rhm  <\invTNH a,,\6>16-\mkTweak #-0.7
+  #-8.2 ^\rhp -\mkTweak #-0.4 #-7.1 ^\rhi [ e c,8-\mkTweak #-0.5 #-6.3 ^\rhp]
+  d'16-\mkTweak #-0.5 #-2.7 ^\rha ~ <\fakeSlur d'\2 b\2> <\fakeSlur a\3
+  g\3>8-\mkTweak #-0.7 #-2.3 ^\rhm ~ <a\3 \invTNH a,,>-\mkTweak #-0.7 #-6.25
+  ^\rhp -\mkTweak #-0.5 #-4.15 ^\rha b |
   % Bar 22
-  b,,8-\mkTweak #0 #0 ^\rhp ^\rha <\parenthesize a d>16-\mkTweak #0 #0 ^\rhi d16-\mkTweak #0 #0 ^\rhm
-  <\invTNH a,,\6>16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi[ d b,,8-\mkTweak #0 #0 ^\rhp ]
-  fis'16-\mkTweak #0 #0 ^\rha ~ <\fakeSlur fis'\1 e'\1>16 b8-\mkTweak #0 #0
-  ^\rhm \slashedGrace cis'8 \glissando d'8 e'16-\mkTweak #0 #0 ^\rha b-\mkTweak
-  #0 #0 ^\rhm |
+  b,,8-\mkTweak #-0.5 #-7.45 ^\rhp -\mkTweak #-0.5 #-3.35 ^\rha <\parenthesize
+  a d>16-\mkTweak #-0.5 #-6.8 ^\rhi d16-\mkTweak #-0.7 #-6.8 ^\rhm
+  <\invTNH a,,\6>16-\mkTweak #-0.7 #-8.8 ^\rhp -\mkTweak #-0.4 #-7.7 ^\rhi[ d
+  b,,8-\mkTweak #-0.6 #-9.8 ^\rhp ] fis'16-\mkTweak #-0.5 #-3.8 ^\rha ~
+  <\fakeSlur fis'\1 e'\1>16 b8-\mkTweak #-0.7 #-4.8
+  ^\rhm \slashedGrace cis'8-\mkTweak #-0.7 #-5.08 ^\oneStrMFlick \glissando d'8
+  e'16-\mkTweak #-0.5 #-3 ^\rha b-\mkTweak
+  #-0.7 #-1.3 ^\rhm |
   % Bar 23
   c,8 e16 e16 <\invTNH a,,\6>16[ e c,8] d'16~ <\fakeSlur d'\2 b\2> <\fakeSlur
   a\3 g\3>8 ~ <a\3 \invTNH a,,> b |
@@ -1576,7 +1577,7 @@ dynamicstwo = {
   % Bar 20
   s1 |
   % Bar 21
-  s2 s4-\mkTweak #0 #0 ^\lhfour \tsMove #0 #-2.08 \strDampening s8\startTextSpan
+  s2 s4-\mkTweak #0 #0 ^\lhfour \tsMove #0 #-2.9 \strDampening s8\startTextSpan
   s8\stopTextSpan |
   % Bar 22
   \tsMove #0 #-2.08 \strDampening s8\startTextSpan s8\stopTextSpan s4 s4 \tsMove #0 #0 \lhSpannerUp "4" { \grace s8 s8 s16 } s16 |
@@ -1958,7 +1959,7 @@ dynamicsfour = {
   %% Fourth String-Dampening in this measure takes place in dynamicsthree
   s8 \textSpannerDown \tsMove #0 #0 \lhSpannerDown "2" { s8 s4 s8 s8 } s4 |
   % Bar 22
-  s4 \tsMove #-0.1 #7.96 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  s4 \tsMove #-0.1 #7.13 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 23
   s4 \tsMove #-0.1 #7.15 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
   \textSpannerUp  \tsMove #-0.12 #-7.71 \threeStrDamp s8\startTextSpan s8\stopTextSpan |
@@ -2174,7 +2175,7 @@ dynamicsfive = {
   s2. \tsMove #0 #-5.9 \strDampening s16\startTextSpan s16\stopTextSpan s8 |
   % Bar 21
   s4 \tsMove #-0.12 #-6.89 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s4
-  \tsMove #-0.1 #-5.89 \strDampening s8\startTextSpan s8\stopTextSpan |
+  \tsMove #-0.1 #-5.07 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 22
   s4 \tsMove #-0.12 #-6.05 \twoStrDamp s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 23
@@ -2437,7 +2438,7 @@ dynamicssix = {
   s4 \tsMove #-0.1 #7.04 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
   \tsMove #-0.1 #5.65 \strDampening s8\startTextSpan s8\stopTextSpan |
   % Bar 22
-  s4 \tsMove #-0.1 #5.13 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
+  s4 \tsMove #-0.1 #5.96 \strDampening s16\startTextSpan s16\stopTextSpan s8 s2 |
   % Bar 23
   s4 \tsMove #-0.1 #5.98 \strDampening s16\startTextSpan s16\stopTextSpan s8 s4
   \tsMove #-0.1 #5.16 \strDampening s8\startTextSpan s8\stopTextSpan |
