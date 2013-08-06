@@ -722,31 +722,31 @@ tab = {
   \override BreathingSign #'extra-offset = #'(0.5 . -2.0)
   % Bar 1
 
-  <a,, a,>8-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp [ 
-  \leftBracketTwo <b,, b,>-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp ] 
-  \tick <a,, a,>16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
-  \tick <a,, a,>16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi 
-  <a,, a,>8-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp
-  \leftBracketTwo <b,, b,>-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
-  \tick d16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
-  \slashedGrace f8-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi 
-  \glissando fis16 \tick d16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
-  d16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi 
-  \tick a,16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
-  b,16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi |
+  <a,, a,>8-\mkTweak #-0.7 #2.3 _\rhi -\mkTweak #-0.7 #2.3 _\rhp [ 
+  \leftBracketTwo <b,, b,>-\mkTweak #-1.1 #2.3 _\rhi -\mkTweak #-1.1 #2.3 _\rhp ] 
+  \tick <a,, a,>16-\mkTweak #-0.7 #2.9 _\rhi -\mkTweak #-0.7 #2.9 _\rhp 
+  \tick <a,, a,>16-\mkTweak #-0.6 #-3.4 ^\rhi 
+  <a,, a,>8-\mkTweak #-0.7 #2.9 _\rhi -\mkTweak #-0.7 #2.9 _\rhp
+  \leftBracketTwo <b,, b,>-\mkTweak #-1.1 #2.3 _\rhi -\mkTweak #-1.1 #2.3 _\rhp 
+  \tick d16-\mkTweak #-0.7 #3.9 _\rhi -\mkTweak #-0.7 #3.8 _\rhp 
+  \slashedGrace f8-\mkTweak #-0.6 #-2.4 ^\rhi 
+  \glissando fis16 \tick d16-\mkTweak #-0.7 #5.3 _\rhi -\mkTweak #-0.7 #5.2 _\rhp 
+  d16-\mkTweak #-0.6 #-2.4 ^\rhi 
+  \tick a,16-\mkTweak #-1 #2.9 _\rhi -\mkTweak #-1 #2.8 _\rhp 
+  b,16-\mkTweak #-0.6 #-3.4 ^\rhi |
   % Bar 2
-  <a,, a,>8-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp [ 
-  \leftBracketTwo <b,, b,>-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi ] 
-  \tick <a,, a,>16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
-  \tick <a,, a,>16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi 
-  <a,, a,>8-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
-  \leftBracketTwo <b,, b,>-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
-  \tick a,16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
-  \slashedGrace c8-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi
-  \glissando cis16 \tick a,16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
-  a,16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi 
-  \tick a,16-\mkTweak #0 #0 _\rhi -\mkTweak #0 #0 _\rhp 
-  b,16-\mkTweak #0 #0 ^\rhp -\mkTweak #0 #0 ^\rhi |
+  <a,, a,>8-\mkTweak #-0.6 #2.3 _\rhi -\mkTweak #-0.6 #2.3 _\rhp [ 
+  \leftBracketTwo <b,, b,>-\mkTweak #-1 #-3.4 ^\rhi ] 
+  \tick <a,, a,>16-\mkTweak #-0.7 #2.9 _\rhi -\mkTweak #-0.7 #2.9 _\rhp 
+  \tick <a,, a,>16-\mkTweak #-0.6 #-3.4 ^\rhi 
+  <a,, a,>8-\mkTweak #-0.7 #2.9 _\rhi -\mkTweak #-0.7 #2.9 _\rhp 
+  \leftBracketTwo <b,, b,>-\mkTweak #-1 #2.4 _\rhi -\mkTweak #-1 #2.4 _\rhp 
+  \tick a,16-\mkTweak #-0.7 #2.9 _\rhi -\mkTweak #-0.7 #2.9 _\rhp 
+  \slashedGrace c8-\mkTweak #-0.5 #-3.4 ^\rhi
+  \glissando cis16 \tick a,16-\mkTweak #-0.7 #4.3 _\rhi -\mkTweak #-0.7 #4.3 _\rhp 
+  a,16-\mkTweak #-0.6 #-3.4 ^\rhi 
+  \tick a,16-\mkTweak #-1 #2.4 _\rhi -\mkTweak #-1 #2.7 _\rhp 
+  b,16-\mkTweak #-0.6 #-3.4 ^\rhi |
   % Bar 3
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
   a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16
