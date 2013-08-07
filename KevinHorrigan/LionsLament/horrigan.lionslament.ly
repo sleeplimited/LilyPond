@@ -31,11 +31,15 @@ Publications.  07/10/13
 \header {
   title = \markup { \smallCaps "Lion's Lament" }
   composer = \markup { \smallCaps "Kevin Horrigan" }
-  copyright = \markup { \concat { \fontsize #-2 { Lion's " " Lament " " " " \fromproperty #'page:page-number-string /18
-}}}  
-  tagline = \markup { \concat { \fontsize #-2 { Lion's " " Lament " " " " \fromproperty #'page:page-number-string /18
-}}  
-}}
+  poet = \markup { \concat { \fontsize #-2 {
+    A\sub{1}A\sub{2}D\sub{3}G\sub{3}B\sub{3}E\sub{4} }}}
+  copyright = \markup { \center-column { \line { \concat { \fontsize #-2 { \char ##x00a9 " 2011 Kevin Horrigan" } } } \line { \concat { \fontsize #-2 { Transcription " " \char
+  ##x00a9 " 2013 Sleep Limited Publications" }}}
+} } 
+  tagline = \markup { \center-column { \line { \concat { \fontsize #-2 { Lion's " " Lament " " " " \fromproperty #'page:page-number-string /16
+}}}
+\line { \concat { \fontsize #-2 { "Transcribed and Edited by Rachael Thomas Carlson for Sleep Limited Publications.  rtc [at] sleeplimited [dot] org" }}} }}
+}
 % paper
 \paper { 
   #(set-paper-size "letter")
@@ -67,7 +71,7 @@ oddFooterMarkup =
     \on-the-fly #not-first-page 
     % page-number not on last-page 
     \on-the-fly #not-last-page 
-    \concat { \fontsize #-2 { Lion's " " Lament " " " " \fromproperty #'page:page-number-string /18
+    \concat { \fontsize #-2 { Lion's " " Lament " " " " \fromproperty #'page:page-number-string /16
   } } 
   % copyright on first page 
   \on-the-fly #first-page \fromproperty #'header:copyright 
