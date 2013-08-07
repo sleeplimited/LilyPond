@@ -1,4 +1,4 @@
-\version "2.16.2"
+\version "2.16.1"
 %{ Declaration
 ========================================================================
 "Title", by Composer
@@ -23,8 +23,8 @@ Publications.  DATE
 \header {
   title = "Title"
   composer = "Composer"
-  poet = \markup \concat { \fontsize #-2 { B\sub{1} F\sharp\sub{2} D\sub{3} G\sub{3} B\sub{3}
-  D\sharp\sub{4} } }
+  %{poet = \markup \concat { \fontsize #-2 { B\sub{1} F\sharp\sub{2} D\sub{3} G\sub{3} B\sub{3}
+  D\sharp\sub{4} } } %}
   copyright = \markup { \fontsize #-4 { \char ##x00a9 2011 Who's Music
   Publishing } }
   tagline = \markup { \fontsize #-4 \with-url #"http://www.sleeplimited.org"
