@@ -1,4 +1,4 @@
-\version "2.16.2"
+\version "2.16.1"
 %{ Declaration
 =============================================================================
 "Lion's Lament", by Kevin Horrigan
@@ -36,7 +36,7 @@ Publications.  07/10/13
   copyright = \markup { \center-column { \line { \concat { \fontsize #-2 { \char ##x00a9 " 2011 Kevin Horrigan" } } } \line { \concat { \fontsize #-2 { Transcription " " \char
   ##x00a9 " 2013 Sleep Limited Publications" }}}
 } } 
-  tagline = \markup { \center-column { \line { \concat { \fontsize #-2 { Lion's " " Lament " " " " \fromproperty #'page:page-number-string /16
+  tagline = \markup { \center-column { \line { \concat { \fontsize #-2 { Lion's " " Lament " " " " \fromproperty #'page:page-number-string /13
 }}}
 \line { \concat { \fontsize #-2 { "Transcribed and Edited by Rachael Thomas Carlson for Sleep Limited Publications.  rtc [at] sleeplimited [dot] org" }}} }}
 }
@@ -48,7 +48,6 @@ Publications.  07/10/13
   top-margin = 0.5\in
   bottom-margin = 0.5\in
   max-systems-per-page = 3
-  first-page-number = 4
   % see:  http://code.google.com/p/lilypond/issues/detail?id=2576
 
   #(define (not-last-page layout props arg) 
@@ -71,7 +70,7 @@ oddFooterMarkup =
     \on-the-fly #not-first-page 
     % page-number not on last-page 
     \on-the-fly #not-last-page 
-    \concat { \fontsize #-2 { Lion's " " Lament " " " " \fromproperty #'page:page-number-string /16
+    \concat { \fontsize #-2 { Lion's " " Lament " " " " \fromproperty #'page:page-number-string /13
   } } 
   % copyright on first page 
   \on-the-fly #first-page \fromproperty #'header:copyright 
