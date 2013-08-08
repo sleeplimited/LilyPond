@@ -1,4 +1,4 @@
-\version "2.16.2"
+\version "2.16.1"
 %{ Declaration
 =====================================================================
 "White One-Fifty", by Tom Kraemer
@@ -25,12 +25,14 @@ Publications.  07/15/13
 #(set-global-staff-size 24)
 % Header
 \header {
-  title = "White One Fifty"
-  composer = "Tom Kraemer"
+  title = \markup { \smallCaps "White One Fifty" }
+  composer = \markup { \smallCaps "Tom Kraemer" }
   poet = \markup \concat { \fontsize #-2 { C\sub{1} A\sub{2} C\sub{3} G\sub{3} C\sub{4} E\sub{4} } }
-  tagline =  \markup { \with-url #"http://www.sleeplimited.org"
-		      \line { Engraved with Lilypond by Rachael Thomas Carlson for Sleep Limited Publications <rtc@sleeplimited.org>. } }
-}
+  copyright = \markup { \concat { \fontsize #-2 { "White One Fifty  " \fromproperty #'page:page-number-string /18
+}}}  
+  tagline = \markup { \concat { \fontsize #-2 { "White One Fifty  " \fromproperty #'page:page-number-string /18
+}}  
+}}
 % Paper
 \paper {
   #(set-paper-size "letter")
@@ -57,7 +59,7 @@ oddFooterMarkup =
     \on-the-fly #not-first-page 
     % page-number not on last-page 
     \on-the-fly #not-last-page 
-    \concat { Lion's " " Lament " " 07/04/13 " " \fromproperty #'page:page-number-string /12
+    \concat { "White One Fifty " 07/04/13 " " \fromproperty #'page:page-number-string /12
   } 
   % copyright on first page 
   \on-the-fly #first-page \fromproperty #'header:copyright 
