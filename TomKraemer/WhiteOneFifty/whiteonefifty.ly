@@ -40,7 +40,6 @@ Publications.  07/15/13
   right-margin = 0.75\in
   top-margin = 0.5\in
   bottom-margin = 0.5\in
-  max-systems-per-page = 3
   first-page-number = 4
 
  % see:  http://code.google.com/p/lilypond/issues/detail?id=2576
@@ -163,8 +162,26 @@ oddFooterMarkup =
   c16 f\4 g b c'8 e16\5 d16\5~ d\5[ e'~ e'16 g] b\4 d'\3 c'16 c, | 
   % Bar 19
   c16 f g b c'8 e16\5 d16\5~ d\5[ e' c' g] b\4 d'\3 c' c, | 
-
-
+  % Bar 20
+  \times 2/3 { a,8 < d\5 f\4 c'\3> < d\5 f\4 c'\3> } < d\5 f\4 c'\3 f'\2 a'\1>8
+  f\5 < e\5 g\4 d'\3>4 aes,\6 |
+  % Bar 21
+  < f\4 c'\3 e'\2>16 \arpeggioArrowUp < c g c' e'>\arpeggio < c g c' e'> < e g
+  d' g' b'> < e g d' g' b'>8 f16\5 a,\6 < g,\6 f\4>16 g c' g'\2 b g < a, f c'\3
+  e'\2 >8 |
+  % Bar 22
+  < f\4 c'\3 e'\2>16 \arpeggioArrowUp < c g c' e'>\arpeggio < c g c' e'> < e g
+  d' g' b'> < e g d' g' b'>8 f16\5 a,\6 < g,\6 f\4>16 g c' g'\2 b g < a, f c'\3
+  e'\2 >8 |
+  % Bar 23
+  < f\4 c'\3 e'\2>16 \arpeggioArrowUp < c g c' e'>\arpeggio < c g c' e'> < e g
+  d' g' b'> < e g d' g' b'>8 f16\5 a,\6 < g,\6 f\4>16 g c' g'\2 b g < a, f c'\3
+  e'\2 >8~ |
+  % Bar 24
+  < a, f c'\3 e'\2 >8 < e b>~ < b e> \glissando a~ a g~ g \slashedGrace d
+  \glissando e |
+  % Bar 25
+  c,8 e16 c'\3 a, c\5 c\4 d 
 }
   
 % Dynamics
