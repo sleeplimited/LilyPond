@@ -56,34 +56,16 @@ upperone = {
   % Bar 1
   \override NoteColumn #'ignore-collision = ##t
   \partial 8 cis'16. d'32
-  << { 
     % Bar 1
-    e'8 cis' a' |
+    e'8 < cis' a> a' |
     % Bar 2
-    a' gis' e'16. e'32 |
+    < a' b> gis' e'16. e'32 |
     % Bar 3
-    e'8 d' b'~ |
-    b' a' a'16. b'32 |
-    cis''8 cis'' cis'' |
-    } \\ { 
-      \override NoteHead #'font-size = #-4
-      \override Accidental #'font-size = #-4
-      \override Rest #'font-size = #-4
-  % Bar 1
-   g8\rest a g8\rest |
-  % Bar 2 
-  b8 g8\rest g8\rest |
-  % Bar 3
-  g8\rest gis4 |
-  % Bar 4
-  < a cis'>4 g8\rest |
-  % Bar 5 
-  f'8\rest 
-  \autoBeamOff
-  g'8 g' |
-
-
-} >> |
+    << { e'8 d' b'~ } \\ { g8\rest gis4 }>>
+    % Bar 4
+    << { b'8 a' a'16. b'32 } \\ { < a cis'>4 g8\rest }>>
+    % Bar 5
+    cis''8 < cis'' g'> < cis'' g'> |
   }
 %% Lower
 lowerone = {
