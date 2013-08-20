@@ -171,6 +171,29 @@ uppertwo = {
 
   
 }
+%% Upper Three
+  upperthree = {
+  \override Staff.InstrumentName #'self-alignment-X = #CENTER
+  \set Staff.instrumentName = \markup \center-column {
+    \smallCaps Tempo
+    \smallCaps "Di Valz"
+  }
+  \time 3/8
+  \key a \major
+  \clef "treble_8"
+  \slurDown
+  \stemUp
+  % Bar 1
+  \grace b'8( a'16.) gis'32 a'8 cis''8 |
+  % Bar 2
+  e'8 cis' d' |
+  % Bar 3
+  e'4 a'8 |
+  % Bar 4
+  a'4 gis'8 |
+
+
+  }
 %% MiddleOne
 middleone = {
   \key a \major
@@ -310,6 +333,16 @@ middleone = {
 
 
   }
+%% MiddleThree
+  middlethree = { 
+  \override NoteHead #'font-size = #-4
+  \override Accidental #'font-size = #-4
+  \override Rest #'font-size = #-4
+  \override Stem #'font-size = #-4
+  % Bar 1
+  s4. |
+
+  }
 %% LowerOne
 lowerone = {
   \key a \major
@@ -420,6 +453,11 @@ lowertwo = {
   % Bar 24
   a,4 c8\rest |
 }
+%% Lower Three
+  lowerthree = {
+  % Bar 1
+  R4. |
+  }
 % Score
 \book {
   \paper {
@@ -451,7 +489,16 @@ lowertwo = {
     } 
     \layout {
     }
-    \midi {}
+
+  }
+  \pageBreak
+  \score {
+    <<
+      \new Staff << \upperthree \middlethree \lowerthree >>
+    >>
+    \header {
+      piece = \markup { \concat { \smallCaps N \super{o} " 3" }}
+    } 
 
   }
 }
