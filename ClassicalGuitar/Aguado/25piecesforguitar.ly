@@ -20,7 +20,7 @@ __..           .           ,      .
 \pointAndClickOff
 % Header
 \header {
-  title = \markup { \concat { "25 Pi" \char ##x00E8"ces for Guitar"  } }
+  title = \markup { \concat { "25 Pi" \char ##x00E8"ces pour Guitare"  } }
   composer = \markup { \smallCaps "D. Aguado" }
   %{poet = \markup \concat { \fontsize #-2 { B\sub{1} F\sharp\sub{2} D\sub{3} G\sub{3} B\sub{3}
   D\sharp\sub{4} } } %}
@@ -47,7 +47,6 @@ upperone = {
     \smallCaps Tempo
     \smallCaps "Di Valz"
   }
-  \set Staff.shortInstrumentName = #"Centered" 
   \override Score.MetronomeMark #'padding = #3
   \time 3/8
   \key a \major
@@ -65,9 +64,9 @@ upperone = {
     b'8 a' a'16. b'32 |
     % Bar 5
     cis''8 cis'' cis'' |
+    \break
     % Bar 6
     d''8 r16 cis''16 b' a' |
-    \break
     % Bar 7
     gis'8 e' gis' |
     % Bar 8
@@ -88,9 +87,25 @@ upperone = {
     % Bar 15
     gis'8 e' gis' |
     % Bar 16 
-    a'4 r8 |
-
-
+    a'4 r8 \bar "|:"
+    % Bar 17
+    gis'16. b'32 e'8 d' |
+    % Bar 18
+    cis'8 e' a' |
+    % Bar 19
+    gis'16. b'32 e'8 d' |
+    % Bar 20
+    d'8 cis' cis''16. d''32 |
+    % Bar 21
+    e''8 b'8\rest ais'8 |
+    % Bar 22
+    b'8. cis''16 d''8 |
+    % Bar 23
+    \mergeDifferentlyHeadedOn
+    \mergeDifferentlyDottedOn
+    e8 d'8 gis' |
+    % Bar 24
+    a'4 b'8\rest \bar ":|"
   }
 %% Middle
 middleone = {
@@ -140,6 +155,30 @@ middleone = {
   b8\rest b8\rest d'8 |
   % Bar 16
   cis'4 b8\rest |
+  % Bar 17 
+  g8\rest g8\rest gis8 |
+  % Bar 18
+  a4. |
+  % Bar 19
+  g8\rest g8\rest gis8 |
+  % Bar 20
+  a4 g8\rest |
+  % Bar 21
+  d'8\rest d'8\rest e' |
+  % Bar 22
+  d'8 d'8\rest d'8\rest |
+  % Bar 23
+  \revert NoteHead #'font-size
+  \revert Accidental #'font-size
+  \revert Rest #'font-size
+  \revert Stem #'font-size
+  s8 d'4 |
+  % Bar 24
+  \override NoteHead #'font-size = #-4
+  \override Accidental #'font-size = #-4
+  \override Rest #'font-size = #-4
+  \override Stem #'font-size = #-4
+  cis'4 b8\rest |
 
 }
 %% Lower
@@ -180,6 +219,22 @@ lowerone = {
   e4 e8 |
   % Bar 16
   a,4 r8 |
+  % Bar 17
+  e,4. |
+  % Bar 18
+  a,4. |
+  % Bar 19
+  e,4. |
+  % Bar 20
+  a,4. |
+  % Bar 21
+  r8 fis4 |
+  % Bar 22
+  d4. |
+  % Bar 23
+  e4. |
+  % Bar 24
+  a,4 b,8\rest |
 
 }
 % Score
