@@ -9,8 +9,8 @@
 }
 \paper { 
   #(set-paper-size "letter")
-  left-margin = 0.75\in
-  right-margin = 0.75\in
+  left-margin = 0.5\in
+  right-margin = 0.5\in
   top-margin = 0.5\in
   bottom-margin = 0.5\in
     scoreTitleMarkup = \markup {
@@ -46,7 +46,10 @@
   \score {
     \include "numbersix.ly"
     \header { piece = "No 6" }
-    \midi {}
-    \layout {}
+  }
+  \pageBreak
+  \score {
+    \include "numberseven.ly"
+    \header { piece = "No 7" }
   }
   \pageBreak
