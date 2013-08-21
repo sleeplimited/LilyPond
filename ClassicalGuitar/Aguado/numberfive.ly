@@ -4,6 +4,8 @@
   \set Staff.instrumentName = \markup \center-column {
     \smallCaps Allegretto
   }
+  \set Score.tempoHideNote = ##t
+  \tempo 8 = 98
   \time 3/8
   \key a \major
   \voiceOne

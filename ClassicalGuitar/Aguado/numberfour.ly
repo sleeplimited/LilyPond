@@ -4,6 +4,8 @@
   \set Staff.instrumentName = \markup \center-column {
     \smallCaps Andante
   }
+  \set Score.tempoHideNote = ##t
+  \tempo 4 = 73
   \time 3/4
   \key e \minor
   \voiceOne

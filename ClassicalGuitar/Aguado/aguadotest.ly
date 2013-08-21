@@ -43,3 +43,10 @@
     \include "numberfive.ly"
     \header { piece = "No 5" }
   }
+  \score {
+    \include "numbersix.ly"
+    \header { piece = "No 6" }
+    \midi {}
+    \layout {}
+  }
+  \pageBreak

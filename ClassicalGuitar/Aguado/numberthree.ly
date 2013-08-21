@@ -6,6 +6,8 @@
     \smallCaps Tempo
     \smallCaps "Di Valz"
   }
+  \set Score.tempoHideNote = ##t
+  \tempo 8 = 123
   \time 3/8
   \key a \major
   \clef "treble_8"
