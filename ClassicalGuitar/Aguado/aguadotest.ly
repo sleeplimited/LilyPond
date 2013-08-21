@@ -24,14 +24,22 @@
   \score {
     \include "numberone.ly"
     \header { piece = "No 1" }
-}
+  }
   \score {
     \include "numbertwo.ly"
-  \header { piece = "No 2" }
+    \header { piece = "No 2" }
   }
+  \pageBreak
   \score {
     \include "numberthree.ly"
     \header { piece = "No 3" }
-    \layout {}
-    \midi {}
+  }
+  \score {
+    \include "numberfour.ly"
+    \header { piece = "No 4" }
+  }
+  \pageBreak
+  \score {
+    \include "numberfive.ly"
+    \header { piece = "No 5" }
   }
