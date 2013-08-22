@@ -53,3 +53,10 @@
     \header { piece = "No 7" }
   }
   \pageBreak
+  \score {
+    \include "numbereight.ly"
+    \header { piece = "No 8" }
+    \midi {}
+    \layout {}
+  }
+  \pageBreak

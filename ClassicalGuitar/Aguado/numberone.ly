@@ -1,4 +1,5 @@
     << {
+    \set Staff.midiInstrument = #"vibraphone"
   \override Staff.InstrumentName #'self-alignment-X = #CENTER
   \set Staff.instrumentName = \markup \center-column {
     \smallCaps Tempo
@@ -63,6 +64,7 @@
     % Bar 24
     a'4 b'8\rest \bar ":|"
   } \\ {
+    \set Staff.midiInstrument = #"vibraphone"
   \key a \major
   \voiceThree
   \clef "treble_8"
@@ -134,6 +136,7 @@
   \override Stem #'font-size = #-4
   cis'4 b8\rest |
 } \\ {
+    \set Staff.midiInstrument = #"vibraphone"
   \key a \major
   \voiceTwo
   \clef "treble_8"

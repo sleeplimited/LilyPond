@@ -5,7 +5,7 @@
     \smallCaps Moderato
   }
   \set Score.tempoHideNote = ##t
-  \tempo 4. = 86
+  \tempo 8 = 86
   \time 3/8
   \key a \major
   \voiceOne
