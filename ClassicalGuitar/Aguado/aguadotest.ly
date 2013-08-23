@@ -1,4 +1,5 @@
-\version "2.16.1" 
+\version "2.16.2" 
+% Header
 \header {
   title = \markup { \concat { "25 PI" \char ##x00C8"CES POUR GUITARE"  } }
   composer = \markup { \smallCaps "D. Aguado" }
@@ -7,6 +8,7 @@
   tagline = \markup { \fontsize #-4 \with-url #"http://www.sleeplimited.org"
   \line { Engraved by Rachael Thomas Carlson for Sleep Limited Publications <rtc@sleeplimited.org>. } }
 }
+% Paper
 \paper { 
   #(set-paper-size "letter")
   left-margin = 0.5\in
@@ -21,6 +23,8 @@
       }
     }
 }
+% Scores
+
   \score {
     \include "numberone.ly"
     \header { piece = "No 1" }
@@ -56,7 +60,11 @@
   \score {
     \include "numbereight.ly"
     \header { piece = "No 8" }
+  }
+  \pageBreak
+  \score {
+    \include "numbernine.ly"
+    \header { piece = "No 9" }
     \midi {}
     \layout {}
   }
-  \pageBreak
