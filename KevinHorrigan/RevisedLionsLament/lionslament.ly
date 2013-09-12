@@ -69,6 +69,7 @@ __..           .           ,      .
   top-margin = 0.5\in
   bottom-margin = 0.5\in
   max-systems-per-page = 3
+  footnote-separator-markup = \markup \fill-line {  \override #'(span-factor . 1/2) \override #'(thickness . 0.01) \draw-hline }
   myStaffSize = #20
   #(define fonts
   (make-pango-font-tree "FreeSerif"
@@ -887,6 +888,8 @@ evenFooterMarkup = \oddFooterMarkup
   b\2 dis'\2> \once \override TextScript #'extra-offset = #'(-0.4 . -0.6) e']
   b,, dis'~ <\fakeSlur dis'\2 b\2>8 <\invTNH b,,\6 fis\4 b\3>8 b8 |
   \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 8))
   % Bar 15
   \arpeggioArrowUp \once \override TextScript #'extra-offset = #'(-1.0 . -6.3)
   <e a a, a,,>4\4\3\5\6\arpeggio <\invTNH a,,\6>16 a,,16 <\invTNH a,,>8 <a,,
@@ -920,6 +923,8 @@ evenFooterMarkup = \oddFooterMarkup
   e'16-\mkTweak #-0.5 #-0.55 ^\rha <\invTNH b,,\6>8-\mkTweak #-0.7 #-9 ^\rhp [
   e8-\mkTweak #-0.4 #-4.7 ^\rhi ] | 
   \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 98))
   %%%%%%%%%
   %% Bar 21
   %%%%%%%%
@@ -942,6 +947,9 @@ evenFooterMarkup = \oddFooterMarkup
   % Bar 23
   c,8 e16 e16 <\invTNH a,,\6>16[ e c,8] d'16~ <\fakeSlur d'\2 b\2> <\fakeSlur
   a\3 g\3>8 ~ <a\3 \invTNH a,,> b |
+  \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 8))
   % Bar 24
   b,,8 <\parenthesize a d>16 d16 <\invTNH b,,>16 d b,,8] a16-\mkTweak #-0.8
   #-4.9 ^\rhm ~ <\fakeSlur a\3 g\3>16 e16-\mkTweak #-0.4 #-4.8 ^\rhi ~
@@ -950,11 +958,12 @@ evenFooterMarkup = \oddFooterMarkup
   % Bar 25
   c,8 e16 e16 <\invTNH c,> e c,8 d'16~ <\fakeSlur d'\2 b\2> <\fakeSlur a\3 g\3>8 ~
   <a\3 \invTNH a,,> b |
-  \break
   % Bar 26
   b,,8 <\parenthesize a d>16 d16 <\invTNH b,,>16 d b,,8] fis'16~
   <\fakeSlur fis'\1 e'\1>16 b8 \slashedGrace cis'8 \glissando d'8 e'16 b^\mark \markup
   { \fontsize #-2 \italic "To Coda"}
+  \bar "||"
+  \break
   % Bar 27
   <c \parenthesize e>8-\mkTweak #-0.5 #-5.3 ^\rhp e16-\mkTweak #-0.3 #-3.3
   ^\rhi g-\mkTweak #-0.7 #-2.35 ^\rhm ~ g16 e-\mkTweak #-0.3 #-3.3 ^\rhi
@@ -970,7 +979,6 @@ evenFooterMarkup = \oddFooterMarkup
   #-5.85 ^\rha < \invTNH a,, b\3>16-\mkTweak #-0.8 #-12.45 ^\rhp ~ <\fakeSlur
   b\3 g\3>16 fis8-\mkTweak #-0.3 #-8.65 ^\rhi -\mkTweak #-0.8 #-8.6 ^\rhm
   -\mkTweak #-0.5 #-8.35 ^\rha |
-  \break
   % Bar 29
   \slashedGrace { \hideFretNumber d8\5 \glissando s } e8\5-\mkTweak #-0.5 #-7.3
   ^\rhp g16\4-\mkTweak #-0.3 #-5.3 ^\rhi 
@@ -978,6 +986,9 @@ evenFooterMarkup = \oddFooterMarkup
   fis'16\2-\mkTweak #-0.4 #-2.7 ^\rha ~ <\fakeSlur
   fis'\2 b\2> g8-\mkTweak #-0.6 #-2.3 ^\rhm <d'\3
   \invTNH a,,>8-\mkTweak #-0.8 #-8.4 ^\rhp e'-\mkTweak #-0.4 #-4.45 ^\rha |
+  \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 98))
   % Bar 30
   e8\5-\mkTweak #-0.4 #-5.3 ^\rhp g16\4-\mkTweak #-0.3 #-3.35 ^\rhi
   g\3-\mkTweak #-0.7 #-2.35 ^\rhm ~ g\3 g\4-\mkTweak #-0.3 #-3.35 ^\rhi e8\5-\mkTweak #-0.4 #-5.3 ^\rhp \slashedGrace
@@ -990,6 +1001,9 @@ evenFooterMarkup = \oddFooterMarkup
   \slashedGrace { \hideFretNumber c,8 \glissando s } <d, \parenthesize fis>8
   fis16 g~ g16 fis d,8 g16~ <\fakeSlur g\3 b\3> d'8 < \tweak
   TabNoteHead #'transparent ##t a,, b\3>16~ <\fakeSlur b\3 g\3> fis8 |
+  \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 8))
   % Bar 33
   \slashedGrace { \hideFretNumber d,8 \glissando s } e,8 g16\4 g\3~ g\3 g\4 e,8
   fis'16\2~ <\fakeSlur fis'\2 b\2> g8 < \tweak TabNoteHead #'transparent ##t
@@ -997,11 +1011,11 @@ evenFooterMarkup = \oddFooterMarkup
   % Bar 34
   e,8 g16\4 g\3~ g16 g\4 e,8 \slashedGrace
   fis'8\2 \glissando g'8\2 a' \slurDown <b'\2\harmonic a,,>4~ |
-  \break
   % Bar 35
   \slurNeutral
   <\fakeSlur a,,\6 c,\6>8 e16 g~ g e c,8 g16~ <\fakeSlur g\3 a\3> b8 < \tweak
   TabNoteHead #'transparent ##t a,, a>16~ <\fakeSlur a\3 g\3> e8 |
+  \break
   % Bar 36
   \slashedGrace { \hideFretNumber c,8 \glissando s } <d, \parenthesize fis>8
   fis16 g~ g16 fis16 d,8 g16~ <\fakeSlur g\3 b\3> d'8 <d'\2 b\3 \invTNH a,,>8
@@ -1025,7 +1039,6 @@ evenFooterMarkup = \oddFooterMarkup
     #-11.3 ^\rhp  a,,16 <\invTNH a,,>8-\mkTweak #-0.7 #-11.3 ^\rhp a,,4
     <\invTNH a,, e cis' a>8-\mkTweak #-0.7 #-10.3 ^\rhp a,16 a,-\mkTweak #-0.3
     #-9.4 ^\rhi |
-  \break
   % Bar 38
   a,,16-\mkTweak #-0.6 #-6.3 ^\rhp ~ \once \override TextSpanner #'style = #'line \once \override
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
@@ -1041,6 +1054,9 @@ evenFooterMarkup = \oddFooterMarkup
   #-1.5 #-8.9 ^\rhp -\mkTweak #-0.5 #-3.5 ^\rha [
   r8-\mkTweak #-0.8 #-4.4 ^\rhm  ] \once \override BreathingSign
   #'extra-offset = #'(0.3 . 2) \leftBracketTwo \harmonicByRatio #1/3 <b' fis'>4
+  \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 98))
   % Bar 39
   \override BreathingSign #'extra-offset = #'(0.5 . -2) <a,, a,>8[
   \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,, a,>8
@@ -1050,6 +1066,9 @@ evenFooterMarkup = \oddFooterMarkup
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
   a,>8 \leftBracketTwo <b,, b,> \tick a,16 \slashedGrace c8 \glissando cis16 \tick
   a,16 a,16 \tick a,16 b,16 |
+  \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 8))
   % Bar 41
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
   a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16
@@ -1058,6 +1077,7 @@ evenFooterMarkup = \oddFooterMarkup
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
   a,>8 \leftBracketTwo <b,, b,> \tick a,16 \slashedGrace c8 \glissando cis16 \tick
   a,16 \slashedGrace c8 \glissando cis16 \tick a,16 \slashedGrace c8 \glissando cis16 |
+  \break
   % Bar 43
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
   a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick
@@ -1066,6 +1086,9 @@ evenFooterMarkup = \oddFooterMarkup
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,, a,>8
   \leftBracketTwo <b,, b,> \tick a,16 \slashedGrace c8 \glissando cis16 \tick d16 d16
   \tick a,16 b,16 |
+  \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 98))
   % Bar 45
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
   a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16
@@ -1074,6 +1097,9 @@ evenFooterMarkup = \oddFooterMarkup
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
   a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick g16
   a16~ a8^\mark \markup { \fontsize #-2 \italic "D.S. al Coda"} \bar "||"
+  \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 8))
   %%
   % Bar 47
   %%
@@ -1089,6 +1115,7 @@ evenFooterMarkup = \oddFooterMarkup
   \slashedGrace { \hideFretNumber d8\5 \glissando s } e8\5 g16\4 g~
   g16 g\4 e8\5 \once \override Tie #'extra-offset = #'(0 . -0.5) fis'16\2~ <\fakeSlur
   fis'\2 b\2> g8 <d'\3 \invTNH a,,>8 e' |
+  \break
   % Bar 50
   e8\5 g16\4 g~ g16 g\4 e8\5 \once \override Tie #'extra-offset = #'(0 . -0.5)
   fis'16\2~ <\fakeSlur fis'\2 b\2> g8 <d'\3 \invTNH a,,>8 e' |
@@ -1099,6 +1126,10 @@ evenFooterMarkup = \oddFooterMarkup
   \slashedGrace { \hideFretNumber c8 \glissando s } d8\5 fis16 g~ g16 fis16
   d8\5 g16~ <\fakeSlur g\3 b\3> d'8 < \invTNH a,, b\3>16~ <\fakeSlur b\3 g\3>16
   fis8 |
+  \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 98))
+
   % Bar 53
   \slashedGrace { \hideFretNumber d8\5 \glissando s } e8\5 g16\4 g~ g16 g\4
   e8\5 \once \override Tie #'extra-offset = #'(0 . -0.5) fis'16\2~ <\fakeSlur fis'\2 b\2> g8 <d'\3 \invTNH a,,>8 e' |
@@ -1108,6 +1139,9 @@ evenFooterMarkup = \oddFooterMarkup
   % Bar 55
   <\fakeSlur a,,\6 c,\6>8 e16 g~ g16 e c,8 \slurNeutral g16~ <\fakeSlur g\3
   a\3> b8 < \invTNH a,, a>16~ <\fakeSlur a\3 g\3> e8 |
+  \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 8))
   % Bar 56
   \slashedGrace { \hideFretNumber c,8 \glissando s } d,8 fis16 g~ g16 fis d,8
   g16~ <\fakeSlur g\3 b\3> d'8 < \invTNH a,, b\3>16~ <\fakeSlur b\3 g\3> fis8 |
@@ -1117,10 +1151,10 @@ evenFooterMarkup = \oddFooterMarkup
   % Bar 58
   e,8 g16\4 g\3~ g16 g\4 e,8 \slashedGrace fis'8\2 \glissando g'8\2 a'
   \slurDown <b'\2\harmonic a,,>4~ |
+  \break
   % Bar 59
   <\fakeSlur a,,\6 c,\6>8 e16 g~ g e c,8 \slurNeutral g16~ <\fakeSlur g\3 a\3>
   b8 < \invTNH a,, a>16~ <\fakeSlur a\3 g\3> e8 |
-  \break
   % Bar 60
   \slashedGrace { \hideFretNumber c,8 \glissando s } d,8 fis16 g~ g16 fis d,8
   g16~ <\fakeSlur g\3 b\3> d'8 < \invTNH a,, b\3>16~ <\fakeSlur b\3 g\3> fis8 |
@@ -1128,10 +1162,12 @@ evenFooterMarkup = \oddFooterMarkup
   \slashedGrace { \hideFretNumber d,8 \glissando s } e,8 g16\4 g\3~ g g\4 e,8
   \once \override Tie #'extra-offset = #'(0 . -0.5) fis'16\2~ <\fakeSlur fis'\2
   b\2> g8 < \invTNH a,, d'\3>8 e' |
+  \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 98))
   % Bar 62
   e,8 g16\4 g\3 ~ g16  g\4 e,8 \once \override Tie #'extra-offset = #'(0 .
   -0.5) fis'16\2 ~ <\fakeSlur fis'\2 b\2> g8 < d'\3 \invTNH a,,>8 e' |
-  \break
   % Bar 63
   <a,\6 \parenthesize c'\4>8-\mkTweak #-0.7 #-6.3 ^\rhp c'16\4-\mkTweak #-0.7
   #-4.3 ^\rhp b-\mkTweak #-0.4 #-1.3 ^\rha ~ b16[ c'\4-\mkTweak #-0.5 #-3.3
@@ -1145,6 +1181,8 @@ evenFooterMarkup = \oddFooterMarkup
   <\fakeSlur d'\3 g\3> g8\4-\mkTweak #-0.3 #-3.3 ^\rhi 
   <\invTNH a,, a\4 >-\mkTweak #-0.7 #-7 ^\rhp b-\mkTweak #-0.4 #-1.3 ^\rha |
   \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 8))
   % Bar 65
   <a,\6 \parenthesize c'\4>8 c'16\4 b ~ b16 c'\4 < a,\6 g'\3>8~  < a,\6 g'\3>4
   \glissando \slashedGrace { \hideFretNumber <g,\6 f'\3>8 \hideFretNumber g8\5
@@ -1154,15 +1192,14 @@ evenFooterMarkup = \oddFooterMarkup
   #-0.3 #-2.3 ^\rhi ~ g16[ fis-\mkTweak #-0.3 #-3.3 ^\rhi d,8-\mkTweak #-0.5
   #-6.3 ^\rhp ] <\tweakTabNoteHead \mutedString e\5 e,\6 g\4 g\3 b\2>4-\mkTweak
   #-0.7 #-12 ^\rhp <\invTNH a,, g\3>4-\mkTweak #-0.8 #-6 ^\rhp  |
-  \break
   % Bar 67
   <a,\6 \parenthesize c'\4>8 c'16\4 b ~ b16 c'\4 <a,\6 g'\3>8 ~ <a,\6 g'\3>4
   \glissando \slashedGrace { \hideFretNumber <g,\6 f'\3>8 \hideFretNumber g8\5
   \glissando s } a8\5 b |
+  \break
   % Bar 68
   e,8 g16\4 g\3 <\invTNH a,,>16[ g\4 e,8] d'16\3~ <\fakeSlur d'\3 g\3> g8\4
   <\invTNH a,, g\3 a\4> b |
-  \break
   % Bar 69
   a,,16-\mkTweak #-0.5 #-6.3 ^\rhp ~ <\fakeSlur a,,\6 c,\6>16 e16-\mkTweak
   #-0.5 #-4.3 ^\rhp g-\mkTweak #-0.3 #-2.3 ^\rhi <\invTNH a,,>16-\mkTweak #-0.5
@@ -1171,6 +1208,9 @@ evenFooterMarkup = \oddFooterMarkup
   fis\4>16 fis16-\mkTweak #-0.5 #-4.3 ^\rhp g-\mkTweak #-0.3 #-2.3 ^\rhi
   <\invTNH a,,>16-\mkTweak #-0.5 #-3.3 ^\rhi -\mkTweak #-0.8 #-6.3 ^\rhp [ fis
   d,8-\mkTweak #-0.5 #-6.3 ^\rhp ] | 
+  \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 98))
   % Bar 70
   a,,16-\mkTweak #-0.5 #-6.3 ^\rhp ~ <\fakeSlur a,,\6 e,\6 \parenthesize g\4>16
   g16\4-\mkTweak #-0.5 #-4.3 ^\rhp g\3-\mkTweak #-0.3 #-2.3 ^\rhi <\invTNH
@@ -1182,6 +1222,8 @@ evenFooterMarkup = \oddFooterMarkup
   <\fakeSlur a,,\6 d,\6 \parenthesize fis\4>16 fis16 b-\mkTweak #-0.7 #-1.3
   ^\rhm <\invTNH a,,>16[ fis d,8] |
   \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 8))
   % Bar 72
   a,,16~ <\fakeSlur a,,\6 e,\6 \parenthesize g\4>16 g16\4 b-\mkTweak #-0.7
   #-1.3 ^\rhm <\invTNH a,,>16[ d <c, \tweakTabNoteHead \mutedString a, e g
@@ -1196,12 +1238,12 @@ evenFooterMarkup = \oddFooterMarkup
   \parenthesize e'\2>16 fis16-\mkTweak #-0.3 #-5 ^\rhi e'\2-\mkTweak #-0.5 #-3
   ^\rha <\invTNH a,,>16-\mkTweak #-0.8 #-7 ^\rhp -\mkTweak #-0.5 #-5.9 ^\rhi  [
   fis d,8-\mkTweak #-0.5 #-6.3 ^\rhp ] |
+  \break
   % Bar 74
   a,,16~ <\fakeSlur a,,\6 e,\6 \parenthesize g\4 \parenthesize fis'\2>16 g16\4
   fis'\2~ fis'16\2[ d <c, \tweakTabNoteHead \mutedString a, e g b g'
   >8-\mkTweak #-0.8 #-9.4 ^\sixstrdwnstrm -\mkTweak #-0.7 #-16.4 ^\rhp ]~ <c, e
   g b g'>4 < \invTNH a,, g e>4  |
-  \break
   % Bar 75
   a,,16-\mkTweak #-0.5 #-6.3 ^\rhp ~ \tsMove #0.15 #-0.3 \once \override
   TextSpanner #'style = #'line \once \override TextSpanner #'(bound-details
@@ -1213,6 +1255,9 @@ evenFooterMarkup = \oddFooterMarkup
   -\mkTweak #-0.7 #-8.1 ^\rhm -\mkTweak #-0.5 #-7.9 ^\rha ~ <b,, b d' fis'>4
   b,,8-\mkTweak #-0.5 #-11.3 ^\rhp < b d' fis'>8\stopTextSpan -\mkTweak #-0.3
   #-7.35 ^\rhi -\mkTweak #-0.7 #-7.25 ^\rhm -\mkTweak #-0.5 #-7 ^\rha | 
+  \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 98))
   % Bar 76
   \arpeggioArrowUp \once \override BreathingSign #'extra-offset = #'(2.8 . 0)
   \rightBracketThree <a,, a, e a cis' e'>4-\mkTweak #-0.8 #-14.5 ^\rhp
@@ -1221,7 +1266,6 @@ evenFooterMarkup = \oddFooterMarkup
   #-0.5 #-11.3 ^\rhp  a,,16 <\invTNH a,,>8-\mkTweak #-0.5 #-11.3 ^\rhp a,,4 <
   \invTNH a,, a cis' e >8-\mkTweak #-0.8 #-10.3 ^\rhp a,,16 a,-\mkTweak #-0.3
   #-9.3 ^\rhi |
-  \break
   % Bar 77
   a,,16-\mkTweak #-0.5 #-6.3 ^\rhp ~ \once \override TextSpanner #'style =
   #'line \once \override TextSpanner #'(bound-details right text) = \markup {
@@ -1242,6 +1286,8 @@ evenFooterMarkup = \oddFooterMarkup
   <\invTNH a,,>8 a,,4 < \tweak
   TabNoteHead #'transparent ##t a,, a cis' e>8 a,,16 a, |
   \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 8))
   % Bar 79
   a,,16~ \once \override TextSpanner #'style = #'line \once \override
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
@@ -1260,7 +1306,6 @@ evenFooterMarkup = \oddFooterMarkup
   cis' a'>4\arpeggio\startTextSpan <\invTNH a,,>16 a,,16 <\invTNH a,,>8 a,,4
   < \tweak TabNoteHead #'transparent ##t a,, a e cis' a'>8 a,,16
   a,\stopTextSpan |
-  \break
   % Bar 81
   a,,16~ \once \override TextSpanner #'style = #'line \once \override
   TextSpanner #'(bound-details right text) = \markup { \draw-line #'(0 . -0.5)
@@ -1271,6 +1316,7 @@ evenFooterMarkup = \oddFooterMarkup
   cis8\stopTextSpan] \once \override BreathingSign
   #'extra-offset = #'(0.5 . 0) \leftBracketThree <b,, b, fis b\3 dis'>4 <\tweak
   TabNoteHead #'transparent ##t a,, fis b\3 dis'>16 <b\3 e'\2>8. |
+  \break
   % Bar 82
   \arpeggioArrowUp \once \override BreathingSign #'extra-offset = #'(2.8 . 0)
   \rightBracketThree <a,, a, e a cis' e'>4\arpeggio <\invTNH a,,>16 a,,16
@@ -1285,6 +1331,9 @@ evenFooterMarkup = \oddFooterMarkup
   #'extra-offset = #'(3 .  -2.0) \leftBracketTwo cis8\stopTextSpan] \once \override BreathingSign #'extra-offset = #'(0.5 . 0)
   \leftBracketThree <b,, b, fis b dis' >8 [ r8 ] \once \override BreathingSign
   #'extra-offset = #'(0.3 . 2) \leftBracketTwo \harmonicByRatio #1/3 <b' fis'>4
+  \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 98))
   % Bar 84
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
   a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16
@@ -1293,6 +1342,9 @@ evenFooterMarkup = \oddFooterMarkup
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
   a,>8 \leftBracketTwo <b,, b,> \tick a,16 \slashedGrace c8 \glissando cis16 \tick
   a,16 a,16 \tick a,16 b,16 |
+  \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 8))
   % Bar 86
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
   a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16
@@ -1301,6 +1353,7 @@ evenFooterMarkup = \oddFooterMarkup
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
   a,>8 \leftBracketTwo <b,, b,> \tick a,16 \slashedGrace c8 \glissando cis16 \tick
   a,16 a,16 \tick a,16 b,16 |
+  \break
   % Bar 88
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
   a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16
@@ -1309,6 +1362,9 @@ evenFooterMarkup = \oddFooterMarkup
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
   a,>8 \leftBracketTwo <b,, b,> \tick a,16 \slashedGrace c8 \glissando cis16 \tick
   a,16 a,16 \tick a,16 b,16 |
+  \break
+  \overrideProperty #"Score.NonMusicalPaperColumn"
+            #'line-break-system-details #'((Y-offset . 98))
   % Bar 90
   <a,, a,>8[ \leftBracketTwo <b,, b,>] \tick <a,, a,>16 \tick <a,, a,>16 <a,,
   a,>8 \leftBracketTwo <b,, b,> \tick d16 \slashedGrace f8 \glissando fis16 \tick d16
