@@ -1,5 +1,19 @@
 \version "2.16.2"
 % Creating my own thing
+% DONE Slurs in the standard notation
+% DONE Stem Thickness of arrows
+% TODO Spanner cessation
+% TODO Spanner thickness (barreing inside tabstaff)
+% TODO Manual Slide Thickness
+% TODO Size of bass drum notation in bassSnare
+% TODO Footnote Spanner to emulate LibreOffice
+% TODO Get rid of the custos error
+% TODO Slurs in mm.49,50,53,61,62 need to be fixed
+% TODO TieUp in mm.63,65,67
+% TODO fix ties in mm.72 in both staff and tabstaff
+% TODO fix ties in m.74
+% TODO fix all ties in TabStaff (TieUp everywhere)
+% TODO Partial Barreing in mm.76,78,82
 %{ Declaration
 =============================================================================
 "Lion's Lament", by Kevin Horrigan
@@ -82,7 +96,7 @@ __..           .           ,      .
   #(define fonts
   (make-pango-font-tree "FreeSerif"
                         "FreeSans"
-                        "typewriter"
+                        "monospace"
                         (/ myStaffSize 20)))
   % see:  http://code.google.com/p/lilypond/issues/detail?id=2576
 
@@ -183,7 +197,7 @@ evenFooterMarkup = \oddFooterMarkup
   \stemNeutral
   <a, e a>1
   % Bar 12
-  b16( cis'8)( b16)~ b8 a8 b16( cis'8)( b16)~ b8 a8 |
+  b16( cis'8 b16)~ b8 a8 b16( cis'8 b16)~ b8 a8 |
   % Bar 13
   << { <b, fis b>1 } \\ { b1 } >>
   % Bar 14
@@ -191,7 +205,7 @@ evenFooterMarkup = \oddFooterMarkup
   % Bar 15
   <<  { a2 \slurDown b16( \tieDown cis'8.)~ cis'4 \tieNeutral } \\ { <a, e>1 }  >> |
   % Bar 16
-  b16( cis'8)( b16)~ b8 a8 b16( cis'8)( b16)~ b8 a8 |
+  b16( cis'8 b16)~ b8 a8 b16( cis'8 b16)~ b8 a8 |
   % Bar 17
   << { <b, fis b>1 } \\ { b1 } >>
   % Bar 18
@@ -199,7 +213,7 @@ evenFooterMarkup = \oddFooterMarkup
   % Bar 19
   <a, e a>1
   % Bar 20
-  b16( cis'8)( b16)~ b8 a8 b16( cis'8) e'16~ e'8 e8 |
+  b16( cis'8 b16)~ b8 a8 b16( cis'8) e'16~ e'8 e8 |
   % Bar 21 
   << { 
     % Bar 21
@@ -780,6 +794,7 @@ evenFooterMarkup = \oddFooterMarkup
     \override TabStaff.TimeSignature #'X-offset = #-1
     \override TabStaff.TimeSignature #'font-size = #5
     \override TabStaff.TabNoteHead #'font-name = #"FreeSans"
+    \override TabStaff.Glissando #'thickness = #0.5
     \override Staff.Stem #'stemlet-length = #2.75
     \override BreathingSign #'extra-offset = #'(0.5 . -2.0)
     \override TupletBracket #'thickness = #'1

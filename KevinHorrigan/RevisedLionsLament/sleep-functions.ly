@@ -9,7 +9,7 @@ rhp = \markup { \halign #CENTER \sans \fontsize #-5 "p" }
 oneStrFlick = \markup { \rotate #180
   \center-column {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 1.3)
     \combine
     \fontsize #-1 
@@ -23,7 +23,7 @@ oneStrMFlick = \markup {
     \center-column {
       \rotate #180 {
         \combine
-          \override #'(thickness . 0.08)
+          \override #'(thickness . 0.5)
           \draw-line #'(0 . 1.2)
           \combine
             \fontsize #-1 
@@ -40,7 +40,7 @@ oneStrMFlick = \markup {
 twoStrFlick = \markup { \rotate #180
   \center-column {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 2.5)
     \combine
     \fontsize #-1
@@ -56,7 +56,7 @@ twoStrMFlick = \markup {
   \center-column {
    \rotate #180 {
    \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 2.7)
     \combine
     \fontsize #-1 
@@ -73,7 +73,7 @@ twoStrMFlick = \markup {
 threeStrFlick = \markup { \rotate #180
   \center-column {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 4.0)
     \combine
     \fontsize #-1 
@@ -89,7 +89,7 @@ threeStrMFlick = \markup {
   \center-column {
    \rotate #180 {
    \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 4.1)
     \combine
     \fontsize #-1 
@@ -106,7 +106,7 @@ threeStrMFlick = \markup {
 fourStrFlick = \markup { \rotate #180
   \center-column {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 5.7)
     \combine
     \fontsize #-1 
@@ -121,7 +121,7 @@ fourStrFlick = \markup { \rotate #180
 fiveStrFlick = \markup { \rotate #180
   \center-column {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 7.2)
     \combine
     \fontsize #-1 
@@ -136,7 +136,7 @@ fiveStrFlick = \markup { \rotate #180
 sixStrFlick = \markup { \rotate #180
   \center-column {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 8.8)
     \combine
     \fontsize #-1 
@@ -153,7 +153,7 @@ sixStrFlick = \markup { \rotate #180
 onestrdwnstrm = \markup { \rotate #180 
   \center-column {
     \combine
-    \override #'(thickness . 0.1)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 1.5)
     \fontsize #0.5
     \arrow-head #Y #DOWN ##t
@@ -162,7 +162,7 @@ onestrdwnstrm = \markup { \rotate #180
 twostrdwnstrm = \markup { \rotate #180 
   \center-column {
     \combine
-    \override #'(thickness . 0.1)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 2.5)
     \fontsize #0.5
     \arrow-head #Y #DOWN ##t
@@ -171,7 +171,7 @@ twostrdwnstrm = \markup { \rotate #180
 threestrdwnstrm = \markup { \rotate #180 
   \center-column {
     \combine
-    \override #'(thickness . 0.1)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 4)
     \fontsize #0.5
     \arrow-head #Y #DOWN ##t
@@ -180,7 +180,7 @@ threestrdwnstrm = \markup { \rotate #180
 fourstrdwnstrm = \markup { \rotate #180 
   \center-column {
     \combine 
-    \override #'(thickness . 0.1)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 5.8)
     \fontsize #0.5
     \arrow-head #Y #DOWN ##t
@@ -189,7 +189,7 @@ fourstrdwnstrm = \markup { \rotate #180
 fivestrdwnstrm = \markup { \rotate #180 
   \center-column {
     \combine
-    \override #'(thickness . 0.1)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 7.2)
     \fontsize #0.5
     \arrow-head #Y #DOWN ##t
@@ -199,7 +199,7 @@ sixstrdwnstrm = \markup {
   \center-column {
   \rotate #180 {
     \combine
-    \override #'(thickness . 0.1)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 8.8)
     \fontsize #0.5
     \arrow-head #Y #DOWN ##t
@@ -209,7 +209,7 @@ sixstrdwnstrm = \markup {
 sixstrupstrm = \markup {
   \center-column {
     \combine
-    \override #'(thickness . 0.1)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 8.8)
     \fontsize #0.5
     \arrow-head #Y #DOWN ##t
@@ -218,7 +218,7 @@ sixstrupstrm = \markup {
 fivestrupstrm = \markup {  
   \center-column {
     \combine
-    \override #'(thickness . 0.1)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 7.2)
     \fontsize #0.5
     \arrow-head #Y #DOWN ##t
@@ -227,7 +227,7 @@ fivestrupstrm = \markup {
 fourstrupstrm = \markup {  
   \center-column {
     \combine
-    \override #'(thickness . 0.1)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 5.8)
     \fontsize #0.5
     \arrow-head #Y #DOWN ##t
@@ -236,7 +236,7 @@ fourstrupstrm = \markup {
 threestrupstrm = \markup {
   \center-column {
     \combine
-    \override #'(thickness . 0.1)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 4)
     \fontsize #0.5
     \arrow-head #Y #DOWN ##t
@@ -245,7 +245,7 @@ threestrupstrm = \markup {
 twostrupstrm = \markup {  
   \center-column {
     \combine
-    \override #'(thickness . 0.1)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 2.5)
     \fontsize #0.5
     \arrow-head #Y #DOWN ##t
@@ -254,7 +254,7 @@ twostrupstrm = \markup {
 onestrupstrm = \markup {  
   \center-column {
     \combine
-    \override #'(thickness . 0.1)
+    \override #'(thickness . 0.5)
     \draw-line #'(0 . 1.5)
     \fontsize #0.5
     \arrow-head #Y #DOWN ##t
