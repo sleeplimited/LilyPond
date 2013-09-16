@@ -23,12 +23,13 @@ oneStrMFlick = \markup {
     \center-column {
       \rotate #180 {
         \combine
+          \override #'(thickness . 0.08)
           \draw-line #'(0 . 1.2)
           \combine
-            \fontsize #-3 
+            \fontsize #-1 
             \arrow-head #Y #DOWN ##f
             \raise #0.4
-            \fontsize #-3 
+            \fontsize #-1 
             \arrow-head #Y #DOWN ##f
       }
   \raise #2.2
@@ -39,12 +40,13 @@ oneStrMFlick = \markup {
 twoStrFlick = \markup { \rotate #180
   \center-column {
     \combine
+    \override #'(thickness . 0.08)
     \draw-line #'(0 . 2.5)
     \combine
-    \fontsize #-3 
+    \fontsize #-1
     \arrow-head #Y #DOWN ##f
     \raise #0.4
-    \fontsize #-3 
+    \fontsize #-1 
     \arrow-head #Y #DOWN ##f
   
   }
@@ -54,12 +56,13 @@ twoStrMFlick = \markup {
   \center-column {
    \rotate #180 {
    \combine
+    \override #'(thickness . 0.08)
     \draw-line #'(0 . 2.7)
     \combine
-    \fontsize #-3 
+    \fontsize #-1 
     \arrow-head #Y #DOWN ##f
     \raise #0.4
-    \fontsize #-3 
+    \fontsize #-1 
     \arrow-head #Y #DOWN ##f
   }
   \raise #2.2
@@ -70,12 +73,13 @@ twoStrMFlick = \markup {
 threeStrFlick = \markup { \rotate #180
   \center-column {
     \combine
+    \override #'(thickness . 0.08)
     \draw-line #'(0 . 4.0)
     \combine
-    \fontsize #-3 
+    \fontsize #-1 
     \arrow-head #Y #DOWN ##f
     \raise #0.4
-    \fontsize #-3 
+    \fontsize #-1 
     \arrow-head #Y #DOWN ##f
   
   }
@@ -85,12 +89,13 @@ threeStrMFlick = \markup {
   \center-column {
    \rotate #180 {
    \combine
+    \override #'(thickness . 0.08)
     \draw-line #'(0 . 4.1)
     \combine
-    \fontsize #-3 
+    \fontsize #-1 
     \arrow-head #Y #DOWN ##f
     \raise #0.4
-    \fontsize #-3 
+    \fontsize #-1 
     \arrow-head #Y #DOWN ##f
   }
   \raise #2.2
@@ -101,12 +106,13 @@ threeStrMFlick = \markup {
 fourStrFlick = \markup { \rotate #180
   \center-column {
     \combine
+    \override #'(thickness . 0.08)
     \draw-line #'(0 . 5.7)
     \combine
-    \fontsize #-3 
+    \fontsize #-1 
     \arrow-head #Y #DOWN ##f
     \raise #0.4
-    \fontsize #-3 
+    \fontsize #-1 
     \arrow-head #Y #DOWN ##f
   
   }
@@ -115,12 +121,13 @@ fourStrFlick = \markup { \rotate #180
 fiveStrFlick = \markup { \rotate #180
   \center-column {
     \combine
+    \override #'(thickness . 0.08)
     \draw-line #'(0 . 7.2)
     \combine
-    \fontsize #-3 
+    \fontsize #-1 
     \arrow-head #Y #DOWN ##f
     \raise #0.4
-    \fontsize #-3 
+    \fontsize #-1 
     \arrow-head #Y #DOWN ##f
   
   }
@@ -129,12 +136,13 @@ fiveStrFlick = \markup { \rotate #180
 sixStrFlick = \markup { \rotate #180
   \center-column {
     \combine
+    \override #'(thickness . 0.08)
     \draw-line #'(0 . 8.8)
     \combine
-    \fontsize #-3 
+    \fontsize #-1 
     \arrow-head #Y #DOWN ##f
     \raise #0.4
-    \fontsize #-3 
+    \fontsize #-1 
     \arrow-head #Y #DOWN ##f
   
   }
@@ -145,45 +153,45 @@ sixStrFlick = \markup { \rotate #180
 onestrdwnstrm = \markup { \rotate #180 
   \center-column {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.1)
     \draw-line #'(0 . 1.5)
-    \fontsize #2
+    \fontsize #0.5
     \arrow-head #Y #DOWN ##t
     }
   }
 twostrdwnstrm = \markup { \rotate #180 
   \center-column {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.1)
     \draw-line #'(0 . 2.5)
-    \fontsize #2
+    \fontsize #0.5
     \arrow-head #Y #DOWN ##t
     }
   }
 threestrdwnstrm = \markup { \rotate #180 
   \center-column {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.1)
     \draw-line #'(0 . 4)
-    \fontsize #2
+    \fontsize #0.5
     \arrow-head #Y #DOWN ##t
     }
   }
 fourstrdwnstrm = \markup { \rotate #180 
   \center-column {
     \combine 
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.1)
     \draw-line #'(0 . 5.8)
-    \fontsize #2
+    \fontsize #0.5
     \arrow-head #Y #DOWN ##t
     }
   }
 fivestrdwnstrm = \markup { \rotate #180 
   \center-column {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.1)
     \draw-line #'(0 . 7.2)
-    \fontsize #2
+    \fontsize #0.5
     \arrow-head #Y #DOWN ##t
    }
   }
@@ -191,9 +199,9 @@ sixstrdwnstrm = \markup {
   \center-column {
   \rotate #180 {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.1)
     \draw-line #'(0 . 8.8)
-    \fontsize #2
+    \fontsize #0.5
     \arrow-head #Y #DOWN ##t
   }
     }
@@ -201,54 +209,54 @@ sixstrdwnstrm = \markup {
 sixstrupstrm = \markup {
   \center-column {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.1)
     \draw-line #'(0 . 8.8)
-    \fontsize #2
+    \fontsize #0.5
     \arrow-head #Y #DOWN ##t
     }
   }
 fivestrupstrm = \markup {  
   \center-column {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.1)
     \draw-line #'(0 . 7.2)
-    \fontsize #2
+    \fontsize #0.5
     \arrow-head #Y #DOWN ##t
    }
   }
 fourstrupstrm = \markup {  
   \center-column {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.1)
     \draw-line #'(0 . 5.8)
-    \fontsize #2
+    \fontsize #0.5
     \arrow-head #Y #DOWN ##t
     }
   }
 threestrupstrm = \markup {
   \center-column {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.1)
     \draw-line #'(0 . 4)
-    \fontsize #2
+    \fontsize #0.5
     \arrow-head #Y #DOWN ##t
     }
   }
 twostrupstrm = \markup {  
   \center-column {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.1)
     \draw-line #'(0 . 2.5)
-    \fontsize #2
+    \fontsize #0.5
     \arrow-head #Y #DOWN ##t
     }
   }
 onestrupstrm = \markup {  
   \center-column {
     \combine
-    \override #'(thickness . 0.08)
+    \override #'(thickness . 0.1)
     \draw-line #'(0 . 1.5)
-    \fontsize #2
+    \fontsize #0.5
     \arrow-head #Y #DOWN ##t
     }
   }
@@ -286,7 +294,7 @@ lhone = \markup { \sans \fontsize #-8 \override #'(thickness . 0.08) \circle \pa
 lhtwo = \markup { \sans \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "2" }
 lhthree = \markup { \sans \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "3" }
 lhfour = \markup { \sans \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "4" }
-lhthumb = \markup { \sans \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "t" }
+lhthumb = \markup { \sans \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "T" }
 %% Guide fingers
 lhguideone = \markup { \sans \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-1" }
 lhguidetwo = \markup {\sans  \fontsize #-8  \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-2" }
@@ -492,12 +500,16 @@ bassSnare = \markup {
     \halign #CENTER
     \override #'(box-padding . 0) 
     \box {
-      \draw-line #'(1 . 0.25) }
+    \override #'(thickness . 0.5)
+      \draw-line #'(1.25 . 0.25)
+    }
     \raise #2
       \combine
+      \raise #0.1
+      \override #'(thickness . 1.3)
       \draw-line#'(0 . 1)
       \halign #CENTER
-      \filled-box #'(-0.1 . 0.6) #'(-0.1 . 0.6) #0.2 
+      \filled-box #'(0 . 0.6) #'(0 . 0.6) #0 
   }
 }
 tomTom = \markup {
@@ -591,10 +603,21 @@ newTabNoteHead =
 
 
 %% TabNoteHead Stencils
-  %% usage:   < \tweakTabNoteHead \tickInChord c,\2 e> 
+  %% usage:   < \tweakTabNoteHead \tickInChord c,\2 \tweak #'X-offset #0.6 e> 
   %% usage:   \tick <c,4 e>
   %% usage:   \tick c,4
-tick = \newTabNoteHead \markup { \musicglyph #"noteheads.s0laThin" }
+  tick = \newTabNoteHead \markup { 
+    \center-column {
+\path #0.1 #'((moveto 0.6 0)
+                       (lineto 0.6 0.6)
+                       (lineto -0.6 0.6)
+                       (lineto -0.6 0)
+                       (lineto -0.6 -0.6)
+                       (lineto 0.6 -0.6)
+                       (closepath))
+
+}
+}
 tickInChord = \markup { \musicglyph #"noteheads.s0laThin" }
 mutedString = \markup { \musicglyph #"noteheads.s2cross" }
 stringSnare = \newTabNoteHead \markup { \override #'(box-padding . 0)
@@ -606,7 +629,7 @@ stringSnare = \newTabNoteHead \markup { \override #'(box-padding . 0)
   }
 }
 
-strpHarmSeven = \newTabNoteHead \markup { \override #'(font-name . "Arial")
+strpHarmSeven = \newTabNoteHead \markup { \override #'(font-name . "FreeSans")
   { 
     \center-column {
     \combine
@@ -624,7 +647,7 @@ strpHarmSeven = \newTabNoteHead \markup { \override #'(font-name . "Arial")
 }
   }
 }
-strpHarmFive = \newTabNoteHead \markup { \override #'(font-name . "Arial")
+strpHarmFive = \newTabNoteHead \markup { \override #'(font-name . "FreeSans")
   { 
     \center-column {
     \combine
@@ -642,7 +665,7 @@ strpHarmFive = \newTabNoteHead \markup { \override #'(font-name . "Arial")
 }
   }
 }
-strpHarmTwelve = \newTabNoteHead \markup { \override #'(font-name . "Arial")
+strpHarmTwelve = \newTabNoteHead \markup { \override #'(font-name . "FreeSans")
   { 
     \center-column {
     \combine
@@ -661,7 +684,7 @@ strpHarmTwelve = \newTabNoteHead \markup { \override #'(font-name . "Arial")
   }
 }
 
-strpHarmFiveInChord = \markup { \override #'(font-name . "Arial")
+strpHarmFiveInChord = \markup { \override #'(font-name . "FreeSans")
   { 
     \center-column {
     \combine
@@ -679,7 +702,7 @@ strpHarmFiveInChord = \markup { \override #'(font-name . "Arial")
 }
   }
 }
-strpHarmSevenInChord = \markup { \override #'(font-name . "Arial")
+strpHarmSevenInChord = \markup { \override #'(font-name . "FreeSans")
   { 
     \center-column {
     \combine
@@ -698,6 +721,24 @@ strpHarmSevenInChord = \markup { \override #'(font-name . "Arial")
   }
 }
 
+strpHarmTwelveInChord = \markup { \override #'(font-name . "FreeSans")
+  { 
+    \center-column {
+    \combine
+\path #0.1 #'((moveto 1.1 0)
+                       (lineto 0.7 0.7)
+                       (lineto -0.7 0.7)
+                       (lineto -1.1 0)
+                       (lineto -0.7 -0.7)
+                       (lineto 0.7 -0.7)
+                       (closepath))
+\override #'(font-size . -4) 
+\halign #0.1
+\raise #-0.5
+"12"
+}
+  }
+}
 % Markup extra-offset Tweaks and overrides
 mkTweak =
 #(define-event-function (parser location x y m) (number? number? ly:music?)
@@ -723,9 +764,9 @@ bsMove = #(define-music-function
         ( number? number? )
         #{ \once \override BreathingSign #'extra-offset = #(cons x y)
         #})
-tnhTweak =
-#(define-event-function (parser location x m) (number? ly:music?)
-  #{  \tweak TabNoteHead #'X-offset #(cons x) #m #})
+xTweak =
+#(define-event-function (parser location x) (number?)
+  #{  \tweak #'X-offset #'(cons x) #})
 % moderntab clef with serif
   %% -> tablature.scm
 

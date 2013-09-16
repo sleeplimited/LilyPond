@@ -29,34 +29,42 @@ __..           .           ,      .
 \pointAndClickOff
 % header
 \header {
-  title = \markup { \sans \fontsize #3 {  "Lion's Lament" } }
-  composer = \markup { \sans \fontsize #-1 {  "Kevin Horrigan" } }
-  poet = \markup { \sans \concat { \fontsize #-2 { A\fontsize #-5 {1}" "A\fontsize
+  title = \markup { \fontsize #3 { \smallCaps  "Lion's Lament" } }
+  composer = \markup { \fontsize #-1 { \smallCaps  "Kevin Horrigan" } }
+  poet = \markup { \concat { \fontsize #-2 { A\fontsize #-5 {1}" "A\fontsize
   #-5 {2}" "D\fontsize #-5 {3}" "G\fontsize #-5 {3}" "B\fontsize #-5 {3}" "E\fontsize #-5
   {4} }}}
   meter = \markup { " " }
   copyright = \markup { 
-    \sans 
-    \center-column { 
-      \line { 
-        \concat { 
-          \fontsize #-3 { 
-            \char ##x00a9 " 2008 Kevin Horrigan Music"
+    \fill-line {
+      \center-column { 
+        \line { 
+          \raise #-2.5
+          \concat { 
+            \fontsize #-3 { 
+              \char ##x00a9 " 2008 Kevin Horrigan Music"
+            } 
           } 
         } 
-      } 
-      \line {
-        \raise #1
-        \concat { 
-          \fontsize #-3 { 
-            \hspace #35 Transcription " " \char ##x00a9 " 2013 Sleep Limited"
-            " Publications"
-             \hspace #20 \normal-size-sub { "Lion's Lament 8/03/13 "
-             \fromproperty #'page:page-number-string "/12" }
+        \line {
+          \raise #-1.2
+          \concat { 
+            \fontsize #-3 { 
+              Transcription " " \char ##x00a9 " 2013 Sleep Limited"
+              " Publications"
+            }
           }
-        }
+        } 
+        \line {
+          \concat {
+            \fontsize #-3 {
+                "Lion's Lament 8/03/13 " \fromproperty #'page:page-number-string
+                "/12" 
+             }
+           }
+         }
       } 
-    } 
+    }
   } 
   tagline = " "
 
@@ -93,12 +101,11 @@ __..           .           ,      .
   \markup \fill-line { 
     % using \line removes empty-stencils 
     % produced by #not-first-page etc 
-    \line { " " }
     \line {  
       % page-number not on first-page 
       \on-the-fly #not-first-page 
       % page-number not on last-page 
-      \concat { \sans \fontsize #-3 { "Lion's Lament 8/03/13 " \fromproperty #'page:page-number-string /12
+      \concat { \fontsize #-3 { "Lion's Lament 8/03/13 " \fromproperty #'page:page-number-string /12
     }  }
     % copyright on first page 
     \on-the-fly #first-page \fromproperty #'header:copyright 
@@ -781,14 +788,13 @@ evenFooterMarkup = \oddFooterMarkup
     \override TupletNumber #'font-size = #'-1
     \override TupletBracket #'edge-height = #'(0.5 . 0.5)
     \override TupletBracket #'extra-offset = #'(0 . -0.1)
-    \override Score.BarNumber #'font-family = #'sans
     \override Score.BarNumber #'font-size = #'-6
     \override Score.OttavaBracket #'thickness = #'0.5
   % Bar 1
   \overrideProperty #"Score.NonMusicalPaperColumn"
             #'line-break-system-details #'((Y-offset . 15))
 
-  <a,, a,>8-\mkTweak #-0.7 #2.3 _\rhi -\mkTweak #-0.7 #2.3 _\rhp [ 
+  < a,, a,>8-\mkTweak #-0.7 #2.3 _\rhi -\mkTweak #-0.7 #2.3 _\rhp [ 
   \leftBracketTwo <b,, b,>-\mkTweak #-1.1 #2.3 _\rhi -\mkTweak #-1.1 #2.3 _\rhp ] 
   \tick <a,, a,>16-\mkTweak #-0.7 #2.9 _\rhi -\mkTweak #-0.7 #2.9 _\rhp 
   \tick <a,, a,>16-\mkTweak #-0.6 #-3.4 ^\rhi 
@@ -991,9 +997,11 @@ evenFooterMarkup = \oddFooterMarkup
             #'line-break-system-details #'((Y-offset . 98))
   % Bar 30
   e8\5-\mkTweak #-0.4 #-5.3 ^\rhp g16\4-\mkTweak #-0.3 #-3.35 ^\rhi
-  g\3-\mkTweak #-0.7 #-2.35 ^\rhm ~ g\3 g\4-\mkTweak #-0.3 #-3.35 ^\rhi e8\5-\mkTweak #-0.4 #-5.3 ^\rhp \slashedGrace
+  g\3-\mkTweak #-0.7 #-2.35 ^\rhm ~ g\3 g\4-\mkTweak #-0.3 #-3.35 ^\rhi
+  e8\5-\mkTweak #-0.4 #-5.3 ^\rhp \slashedGrace
   fis'8\2-\mkTweak #-0.7 #-4 ^\rhm \glissando g'8\2 a'\1-\mkTweak #-0.4 #-1.75
-  ^\rha <b'\2\harmonic a,,>4-\mkTweak #-0.5 #-7.7 ^\rhp -\mkTweak #-1.2 #-3.6 ^\rhm ~ 
+  ^\rha < \tweakTabNoteHead \strpHarmTwelveInChord b'\2 \tweak #'X-offset #0.6
+  a,,>4-\mkTweak #-0.5 #-7.7 ^\rhp -\mkTweak #-1.2 #-3.6 ^\rhm ~ 
   % Bar 31
   <\fakeSlur a,,\6 c,\6>8 e16 g~ g e c,8 \slurNeutral g16~ <\fakeSlur g\3 a\3>
   b8 < \tweak TabNoteHead #'transparent ##t a,, a>16~ <\fakeSlur a\3 g\3> e8 |
@@ -1010,7 +1018,8 @@ evenFooterMarkup = \oddFooterMarkup
   a,, d'\3>8 e' | 
   % Bar 34
   e,8 g16\4 g\3~ g16 g\4 e,8 \slashedGrace
-  fis'8\2 \glissando g'8\2 a' \slurDown <b'\2\harmonic a,,>4~ |
+  fis'8\2 \glissando g'8\2 a' \slurDown < \tweakTabNoteHead
+  \strpHarmTwelveInChord b'\2 \tweak #'X-offset #0.6 a,,>4~ |
   % Bar 35
   \slurNeutral
   <\fakeSlur a,,\6 c,\6>8 e16 g~ g e c,8 g16~ <\fakeSlur g\3 a\3> b8 < \tweak
@@ -1053,7 +1062,7 @@ evenFooterMarkup = \oddFooterMarkup
   #'extra-offset = #'(0.45 . 0) \leftBracketThree <b,, b, fis b dis'>8-\mkTweak
   #-1.5 #-8.9 ^\rhp -\mkTweak #-0.5 #-3.5 ^\rha [
   r8-\mkTweak #-0.8 #-4.4 ^\rhm  ] \once \override BreathingSign
-  #'extra-offset = #'(0.3 . 2) \leftBracketTwo \harmonicByRatio #1/3 <b' fis'>4
+  #'extra-offset = #'(0.3 . 2) \leftBracketTwo \strpHarmSeven <b' fis'>4
   \break
   \overrideProperty #"Score.NonMusicalPaperColumn"
             #'line-break-system-details #'((Y-offset . 98))
@@ -1135,7 +1144,8 @@ evenFooterMarkup = \oddFooterMarkup
   e8\5 \once \override Tie #'extra-offset = #'(0 . -0.5) fis'16\2~ <\fakeSlur fis'\2 b\2> g8 <d'\3 \invTNH a,,>8 e' |
   % Bar 54
   e8\5 g16\4 g\3~ g16 g\4 e8\5 \slashedGrace
-  fis'8\2 \glissando g'8\2 a' \slurDown <b'\2\harmonic a,,>4~ |
+  fis'8\2 \glissando g'8\2 a' \slurDown < \tweakTabNoteHead
+  \strpHarmTwelveInChord b'\2 \tweak #'X-offset #0.6 a,,>4~ |
   % Bar 55
   <\fakeSlur a,,\6 c,\6>8 e16 g~ g16 e c,8 \slurNeutral g16~ <\fakeSlur g\3
   a\3> b8 < \invTNH a,, a>16~ <\fakeSlur a\3 g\3> e8 |
@@ -1150,7 +1160,7 @@ evenFooterMarkup = \oddFooterMarkup
   fis'16\2~ <\fakeSlur fis'\2 b\2> g8 < \invTNH a,, d'\3>8 e' |
   % Bar 58
   e,8 g16\4 g\3~ g16 g\4 e,8 \slashedGrace fis'8\2 \glissando g'8\2 a'
-  \slurDown <b'\2\harmonic a,,>4~ |
+  \slurDown <\tweakTabNoteHead \strpHarmTwelveInChord b'\2 \tweak #'X-offset #0.6 a,,>4~ |
   \break
   % Bar 59
   <\fakeSlur a,,\6 c,\6>8 e16 g~ g e c,8 \slurNeutral g16~ <\fakeSlur g\3 a\3>
@@ -1330,7 +1340,7 @@ evenFooterMarkup = \oddFooterMarkup
   \parenthesize e'\2> e'\2 <\invTNH a,,>16[ b\3 \once \override BreathingSign
   #'extra-offset = #'(3 .  -2.0) \leftBracketTwo cis8\stopTextSpan] \once \override BreathingSign #'extra-offset = #'(0.5 . 0)
   \leftBracketThree <b,, b, fis b dis' >8 [ r8 ] \once \override BreathingSign
-  #'extra-offset = #'(0.3 . 2) \leftBracketTwo \harmonicByRatio #1/3 <b' fis'>4
+  #'extra-offset = #'(0.3 . 2) \leftBracketTwo \strpHarmSeven <b' fis'>4
   \break
   \overrideProperty #"Score.NonMusicalPaperColumn"
             #'line-break-system-details #'((Y-offset . 98))
