@@ -562,31 +562,31 @@ evenFooterMarkup = \oddFooterMarkup
     \override TupletBracket #'bracket-visibility = ##t
     \key g \major
   % Bar 1
-  <a,, a,>8 <b,, b,> \deadNotesOn <a,, a,>16 <a,, a,> \deadNotesOff <a,, a,>8
-  <b,, b,> d,8\rest d,4\rest |
+  < a,, a,>8 <b,, b,> \deadNotesOn <a,, a,>16 <a,, a,> \deadNotesOff <a,, a,>8
+  < b,, b,> d,8\rest d,4\rest |
   % Bar 2
-  <a,, a,>8 <b,, b,> \deadNotesOn <a,, a,>16 <a,, a,> \deadNotesOff <a,, a,>8
-  <b,, b,> d,8\rest d,4\rest |
+  < a,, a,>8 <b,, b,> \deadNotesOn <a,, a,>16 <a,, a,> \deadNotesOff <a,, a,>8
+  < b,, b,> d,8\rest d,4\rest |
   % Bar 3
-  <a,, a,>8 <b,, b,> \deadNotesOn <a,, a,>16 <a,, a,> \deadNotesOff <a,, a,>8
-  <b,, b,> d,8\rest d,4\rest |
+  < a,, a,>8 <b,, b,> \deadNotesOn <a,, a,>16 <a,, a,> \deadNotesOff <a,, a,>8
+  < b,, b,> d,8\rest d,4\rest |
   % Bar 4
-  <a,, a,>8 <b,, b,> \deadNotesOn <a,, a,>16 <a,, a,> \deadNotesOff <a,, a,>8
-  <b,, b,> d,8\rest d,4\rest |
+  < a,, a,>8 <b,, b,> \deadNotesOn <a,, a,>16 <a,, a,> \deadNotesOff <a,, a,>8
+  < b,, b,> d,8\rest d,4\rest |
   % Bar 5
-  <a,, a,>8 <b,, b,> \deadNotesOn <a,, a,>16 <a,, a,> \deadNotesOff <a,, a,>8
-  <b,, b,> d,8\rest d,4\rest |
+  < a,, a,>8 <b,, b,> \deadNotesOn <a,, a,>16 <a,, a,> \deadNotesOff <a,, a,>8
+  < b,, b,> d,8\rest d,4\rest |
   % Bar 6
-  <a,, a,>8 <b,, b,> \deadNotesOn <a,, a,>16 <a,, a,> \deadNotesOff <a,, a,>8
-  <b,, b,> d,8\rest d,4\rest |
+  < a,, a,>8 <b,, b,> \deadNotesOn <a,, a,>16 <a,, a,> \deadNotesOff <a,, a,>8
+  < b,, b,> d,8\rest d,4\rest |
  
 
   % Bar 7
-  <a,, a,>8 <b,, b,> \deadNotesOn <a,, a,>16 <a,, a,> \deadNotesOff <a,, a,>8
-  <b,, b,> d,8\rest d,4\rest |
+  < a,, a,>8 <b,, b,> \deadNotesOn <a,, a,>16 <a,, a,> \deadNotesOff <a,, a,>8
+  < b,, b,> d,8\rest d,4\rest |
   % Bar 8
-  <a,, a,>8 <b,, b,> \deadNotesOn <a,, a,>16 <a,, a,> \deadNotesOff <a,, a,>8
-  <b,, b,> d,8\rest d,4\rest |
+  < a,, a,>8 <b,, b,> \deadNotesOn <a,, a,>16 <a,, a,> \deadNotesOff <a,, a,>8
+  < b,, b,> d,8\rest d,4\rest |
   % Bar 9
   b,,4 d,16\rest b,,16 r8 b,,4 d,8\rest b,,8 |
   % Bar 10
@@ -1548,9 +1548,9 @@ evenFooterMarkup = \oddFooterMarkup
   % Bar 14
   s1 |
   % Bar 15
-  s4 s4 s16 \tsMove #0 #0 \lhSpannerUp "4" { s8. s8 s8  |
+  s4 s4 s16 \tsMove #0 #0 \lhSpannerUp "4" { s8. s8 s8 }  |
   % Bar 16
-  s8 } s8 s2. |
+  s8 s8 s2. |
   % Bar 17
   s1 |
   % Bar 18
@@ -1708,13 +1708,14 @@ evenFooterMarkup = \oddFooterMarkup
   % Bar 8
   s2. s16 \mkMove #0 #0 s16^\lhone s8 |
   % Bar 9
-  \tsMove #0 #0 \lhSpannerUp "4" { s1 
+  \tsMove #0.2 #0.5 \lhSpannerUp "4" { s1 
   % Bar 10
-  s4  s16 s16 } s8 s4 \tsMove #0 #-0.7 \lhSpannerUp "4" {s4
+  s4  s16 } s16 s8 s4\override TextSpanner #'after-line-breaking =
+  #ly:spanner::kill-zero-spanned-time \endSpanners \tsMove #0.3 #0.5 \lhSpannerUp "4" {s4
   % Bar 11
-  s2. s8 s8 
+  s2. s8 s8 }
   % Bar 12
-  s16 } s8. s8 s8-\mkTweak #0 #0.3 ^\lhfour s4 s8 s8-\mkTweak #0 #0.3 ^\lhfour -\mkTweak
+  s16 s8. s8 s8-\mkTweak #0 #0.3 ^\lhfour s4 s8 s8-\mkTweak #0 #0.3 ^\lhfour -\mkTweak
   #0.9 #-4.5 ^\markup { \draw-line #'(5 . 1) }  
   % Bar 13
   s1 |
@@ -1899,7 +1900,8 @@ evenFooterMarkup = \oddFooterMarkup
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
   % Bar 1
-  s2 s8 s16 \textSpannerDown \tsMove #0 #0 \lhSpannerDown "3" { \grace s8 s16 s16 } s8. |
+  s2 s8 s16 \textSpannerDown \tsMove #0.3 #-2.3 \lhSpannerDown "3" { \grace s8 s16
+  } s4 |
   % Bar 2
   s1 |
   % Bar 3
@@ -1913,18 +1915,19 @@ evenFooterMarkup = \oddFooterMarkup
   % Bar 7
   s1 |
   % Bar 8
-  s2 s8 s16 \tsMove #0 #0 \lhSpannerDown "3" { \grace s8 s16 s16 } s8. |
+  s2 s8 s16 \tsMove #0.3 #-2.5 \lhSpannerDown "3" { \grace s8 s16 } s4 |
   % Bar 9
-  \tsMove #0 #-1 \lhSpannerDown "3" { s1
+  \override TextSpanner #'after-line-breaking =
+  #ly:spanner::kill-zero-spanned-time \endSpanners \tsMove #0.3 #-4 \lhSpannerDown "3" { s1
   % Bar 10
   \textSpannerNeutral
   s2 s4 s4-\mkTweak #-1.0 #4.08 _\twoStrMFlick
   % Bar 11
-  s1 
+  s4 s4 s4 s8 s8 } 
   % Bar 12
-  s2. s8 s8 
+  \tsMove #0.2 #-12 \lhSpannerDown "3" { s2. s8 s8 }
   % Bar 13
-  s1 } 
+  s1
   % Bar 14
   s1
   % Bar 15  
@@ -2114,9 +2117,10 @@ evenFooterMarkup = \oddFooterMarkup
   % Bar 1
   s8 s8-\mkTweak #0 #-2.5 _\lhone s4 s4-\mkTweak #0 #-2.5 _\lhone s8. s16-\mkTweak #0 #-2.5 _\lhone |
   % Bar 2
-  s8 s8-\mkTweak #0 #-2.5 _\lhone s4 s8.-\mkTweak #0 #-2.5 _\lhone \textSpannerDown \tsMove #0 #0 \lhSpannerDown "3"
-  { \grace s8 s16 s16 }
-  s8 s16-\mkTweak #0 #-2.5 _\lhone |
+  s8 s8-\mkTweak #0 #-2.5 _\lhone s4 s8.-\mkTweak #0 #-2.5 _\lhone
+  \textSpannerDown \tsMove #0.3 #-2.5 \lhSpannerDown "3"
+  { \grace s8 s16 }
+  s16 s8 s16-\mkTweak #0 #-2.5 _\lhone |
   % Bar 3
   s1 |
   % Bar 4
@@ -2392,11 +2396,11 @@ evenFooterMarkup = \oddFooterMarkup
   s16-\mkTweak #-0.8 #4 _\onestrdwnstrm s16-\mkTweak #-0.8 #4 _\onestrupstrm s8
   % Bar 9
   \revert TextScript #'extra-offset
-  \textSpannerDown \tsMove #0 #-0.7 \lhSpannerDown "1" { s1  
+  \textSpannerDown \tsMove #0.3 #-5 \lhSpannerDown "1" { s1  
   % Bar 10
-  s2. s8 s8 
+  s2. s8 s8 }
   % Bar 11
-  s8 } s8 s2. 
+  s8 s8 s2. 
   % Bar 12
   s1
   % Bar 13
