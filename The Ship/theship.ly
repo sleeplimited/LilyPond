@@ -17,9 +17,9 @@ __..           .           ,      .
 \pointAndClickOff
 % header
 \header {
-  title = \markup { \fontsize #3 { \sans  "A Docked Ship Awakens to the Foggy Dawn" } }
+  title = \markup { \sans \bold \fontsize #2 "A Docked Ship Awakens to the Foggy Dawn" }
   composer = \markup { \fontsize #-1 { \sans  "Rachael Carlson" } }
-  poet = \markup { \concat { \sans \fontsize #-2 { D\fontsize #-5 {2}" "A\fontsize
+  poet = \markup { \concat { \sans \fontsize #-3 { D\fontsize #-5 {2}" "A\fontsize
   #-5 {2}" "D\fontsize #-5 {3}" "G\fontsize #-5 {3}" "A\fontsize #-5 {3}" "D\fontsize #-5
   {4} }}}
   meter = \markup { " " }
@@ -363,7 +363,7 @@ evenFooterMarkup = \oddFooterMarkup
     \override Rest #'font-size = #2 
     \override TabStaff.TimeSignature #'X-offset = #-1
     \override TabStaff.TimeSignature #'font-size = #5
-    \override TabStaff.TabNoteHead #'font-name = #"FreeSans"
+    \override TabStaff.TabNoteHead #'font-name = #"Tex Gyre Heros"
     \override TabStaff.Glissando #'thickness = #0.5
     \override Staff.Stem #'stemlet-length = #2.75
     \override BreathingSign #'extra-offset = #'(0.5 . -2.0)
@@ -730,7 +730,10 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextSpanner #'outside-staff-priority = ##f
     \override TextSpanner #'extra-offset = #'(0 . -5.03)
     % Bar 1-16
-    s1*16 |
+    \trMove #0.1 #1.8 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #2.4
+    ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s8 s8\eVib s4 | 
+    % Bar 2-16 
+    s1*15 |
     % Bar 17
     s2 s4 s8 \strDamp s8\startTextSpan |
     % Bar 18
