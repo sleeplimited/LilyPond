@@ -342,6 +342,20 @@ lhSpannerDown =
      #(text-spanner-start-stop music)
   #})
 
+lhSpannerDownOpen =
+#(define-music-function (parser location strg music)
+   (string? ly:music?)
+  #{
+     \once \override Voice.TextSpanner #'style = #'solid
+     \once \override Voice.TextSpanner #'font-size = #-8
+     \once \override Voice.TextSpanner #'thickness = #0.01
+     \once \override TextSpanner #'(bound-details left stencil-align-dir-y) = #CENTER
+     \once \override TextSpanner #'(bound-details left text) = \markup {
+     \sans { \circle \pad-markup #0.2 \upright { $strg }}}
+  
+     #(text-spanner-start-stop music)
+  #})
+
 lhSpannerUp =
 #(define-music-function (parser location strg music)
    (string? ly:music?)
@@ -352,6 +366,20 @@ lhSpannerUp =
      \once \override TextSpanner #'(bound-details left stencil-align-dir-y) = #CENTER
      \once \override TextSpanner #'(bound-details right text) = \markup {
      \draw-line #'(0 . -0.5) }
+     \once \override TextSpanner #'(bound-details left text) = \markup {
+     \sans { \circle \pad-markup #0.2 \upright { $strg } }}
+  
+     #(text-spanner-start-stop music)
+  #})
+
+lhSpannerUpOpen =
+#(define-music-function (parser location strg music)
+   (string? ly:music?)
+  #{
+     \once \override Voice.TextSpanner #'style = #'solid
+     \once \override Voice.TextSpanner #'font-size = #-8
+     \once \override Voice.TextSpanner #'thickness = #0.01
+     \once \override TextSpanner #'(bound-details left stencil-align-dir-y) = #CENTER
      \once \override TextSpanner #'(bound-details left text) = \markup {
      \sans { \circle \pad-markup #0.2 \upright { $strg } }}
   
