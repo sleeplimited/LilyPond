@@ -17,9 +17,9 @@ __..           .           ,      .
 \pointAndClickOff
 % header
 \header {
-  title = \markup { \fontsize #3 { \smallCaps  "A Docked Ship Awakens to the Foggy Dawn" } }
-  composer = \markup { \fontsize #-1 { \smallCaps  "Rachael Carlson" } }
-  poet = \markup { \concat { \fontsize #-2 { D\fontsize #-5 {2}" "A\fontsize
+  title = \markup { \fontsize #3 { \sans  "A Docked Ship Awakens to the Foggy Dawn" } }
+  composer = \markup { \fontsize #-1 { \sans  "Rachael Carlson" } }
+  poet = \markup { \concat { \sans \fontsize #-2 { D\fontsize #-5 {2}" "A\fontsize
   #-5 {2}" "D\fontsize #-5 {3}" "G\fontsize #-5 {3}" "A\fontsize #-5 {3}" "D\fontsize #-5
   {4} }}}
   meter = \markup { " " }
@@ -29,15 +29,15 @@ __..           .           ,      .
         \line { 
           \raise #-2.5
           \concat { 
-            \fontsize #-3 { 
-              \char ##x00a9 " Sleep Limited Music"
+            \sans \fontsize #-3 { 
+              "2013 " \char ##x00a9 " Sleep Limited Music"
             } 
           } 
         } 
         \line {
           \raise #-1.2
           \concat { 
-            \fontsize #-3 { 
+            \sans \fontsize #-3 { 
               Transcription " " \char ##x00a9 " 2013 Sleep Limited"
               " Publications"
             }
@@ -45,9 +45,8 @@ __..           .           ,      .
         } 
         \line {
           \concat {
-            \fontsize #-3 {
-                "The Ship 11/30/13 " \fromproperty #'page:page-number-string
-                "/3" 
+            \sans \fontsize #-3 {
+                "A Docked Ship Awakens to the Foggy Dawn 11/30/13 " \fromproperty #'page:page-number-string "/3" 
              }
            }
          }
@@ -68,8 +67,8 @@ __..           .           ,      .
   footnote-separator-markup = \markup \fill-line {  \override #'(span-factor . 1/2) \override #'(thickness . 0.01) \draw-hline }
   myStaffSize = #20
   #(define fonts
-  (make-pango-font-tree "FreeSerif"
-                        "FreeSans"
+  (make-pango-font-tree "Tex Gyre Termes"
+                        "Tex Gyre Heros"
                         "FreeMono"
                         (/ myStaffSize 20)))
   % see:  http://code.google.com/p/lilypond/issues/detail?id=2576
@@ -93,7 +92,7 @@ __..           .           ,      .
       % page-number not on first-page 
       \on-the-fly #not-first-page 
       % page-number not on last-page 
-      \concat { \fontsize #-3 { "The Ship 11/30/13 " \fromproperty #'page:page-number-string /3
+      \concat { \sans \fontsize #-3 { "A Docked Ship Awakens to the Foggy Dawn 11/30/13 " \fromproperty #'page:page-number-string /3
     }  }
     % copyright on first page 
     \on-the-fly #first-page \fromproperty #'header:copyright 
@@ -126,6 +125,8 @@ evenFooterMarkup = \oddFooterMarkup
     \override TupletNumber #'font-size = #'-1
     \override TupletBracket #'thickness = #'1
     \override TupletBracket #'bracket-visibility = ##t
+    \override Staff.StaffSymbol #'thickness = #'0.5
+    \override Staff.Beam #'beam-thickness = #'0.38
     \numericTimeSignature
     \time 4/4
     \set Score.tempoHideNote = ##t
@@ -351,6 +352,7 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextSpanner #'outside-staff-priority = ##f
     \override TextScript #'outside-staff-priority = ##f
     \set Staff.midiInstrument = #"acoustic grand"
+    \override TabStaff.StaffSymbol #'thickness = #'1
     \key d \minor
     \numericTimeSignature
     \time 4/4

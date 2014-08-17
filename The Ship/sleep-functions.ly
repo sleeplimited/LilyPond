@@ -787,7 +787,7 @@ xTweak =
                            ;; change 'font-family and/or 'font-name
                            ;; to fit your needs
                            ;#:override (cons 'font-family 'roman) ;; default: 'sans
-                           #:override (cons 'font-name "Liberation Serif")
+                           #:override (cons 'font-name "Tex Gyre Termes")
                            #:fontsize font-size
                            #:override (cons 'baseline-skip base-skip)
                            #:left-align #:center-column ("T" "A" "B")))))
