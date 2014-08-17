@@ -211,11 +211,11 @@ evenFooterMarkup = \oddFooterMarkup
   % Bar 4
   < g' g,>8 d g < bes f'> < g g'> d g < d f'> |
   % Bar 5
-  < g, ees'>8 d g bes g d g < d d'> |
+  < aes, ees'>8 f g bes g f g < f d'> |
   % Bar 6
   < c, c'> g, ees g ees g, ees g, |
   % Bar 7
-  c, g, ees g ees g, ees < g, g'\2> |
+  c, g, ees g ees g, ees\5 < g, g'\2> |
   % Bar 8
   < f, bes'> c < a\4 g'\2> < g d'\3> < a\4 f'\2> c < g'\2 bes\4> <
   c'\3 ees'\2>
