@@ -465,7 +465,8 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextSpanner #'outside-staff-priority = ##f
 
     % Bar 1
-    \tsMove #-2 #-1.03 \strDamp s4\startTextSpan s2 s4\stopTextSpan |
+    \tsMove #-2 #-1.03 \strDamp s4\startTextSpan s4 s8 s8
+    s8\stopTextSpan s8 |
     % Bar 2
     s2.. \tsMove #-0 #-1.03 \strDamp s8\startTextSpan |
     % Bar 3
@@ -976,6 +977,44 @@ lhTwo = {
 
 
   }
+%% lhThree
+lhThree = {
+    \textLengthOff
+    \override TextScript #'outside-staff-priority = ##f
+    \tabFullNotation
+    \override TextSpanner #'outside-staff-priority = ##f
+    \override Score.TrillSpanner #'outside-staff-priority = ##f
+    \override TextSpanner #'extra-offset = #'(0 . 0.5)
+    \override TabStaff.BreathingSign #'outside-staff-priority = ##f
+    \override BreathingSign #'outside-staff-priority = ##f
+    \override TextSpanner #'(bound-details left-broken text) = ##f 
+    \override TextSpanner #'(bound-details right-broken text) = ##f 
+    % Bar 1
+    s1 |
+    % Bar 2
+
+
+  }
+%% lhFour
+lhFour = {
+    \textLengthOff
+    \override TextScript #'outside-staff-priority = ##f
+    \tabFullNotation
+    \override TextSpanner #'outside-staff-priority = ##f
+    \override Score.TrillSpanner #'outside-staff-priority = ##f
+    \override TextSpanner #'extra-offset = #'(0 . 0.5)
+    \override TabStaff.BreathingSign #'outside-staff-priority = ##f
+    \override BreathingSign #'outside-staff-priority = ##f
+    \override TextSpanner #'(bound-details left-broken text) = ##f 
+    \override TextSpanner #'(bound-details right-broken text) = ##f 
+    % Bar 1
+    s2 s8 \tsMove #0 #0 \lhSpannerUp "4" {s8 s4 |
+    % Bar 2
+    s2 s4 s8 } s8 |
+
+
+
+  }
 % Score
   \book {
     \score {
@@ -1005,6 +1044,8 @@ lhTwo = {
           \new TabVoice = "dynamicssix" \dynamicssix
           \new TabVoice = "lhOne" \lhOne
           \new TabVoice = "lhTwo" \lhTwo
+          \new TabVoice = "lhThree" \lhThree
+          \new TabVoice = "lhFour" \lhFour
           \new TabVoice = "sixstr" \sixstr
         >>
       >>
