@@ -911,7 +911,8 @@ lhOne = {
     \override TabStaff.BreathingSign #'outside-staff-priority = ##f
     \override BreathingSign #'outside-staff-priority = ##f
     % Bar 1
-    s2. \lhSpannerUp "1" { \bsMove #0.5 #1 \leftBracketTwo s8 s8 |
+    \lhSpannerUp "1" { \bsMove #2.5 #1 \leftBracketTwo s4 s4 s8 } s8
+    \lhSpannerUp "1" { \bsMove #0.5 #1 \leftBracketTwo s8 s8 |
     % Bar 2
     s4 s4 s4 s8 s8 } |
     % Bar 3
@@ -931,6 +932,40 @@ lhOne = {
     \lhSpannerUp "1" {s8 s8 |
     % Bar 10
     s2 s4 s8 }
+    
+
+
+  }
+%% lhTwo
+lhTwo = {
+    \textLengthOff
+    \override TextScript #'outside-staff-priority = ##f
+    \tabFullNotation
+    \override TextSpanner #'outside-staff-priority = ##f
+    \override Score.TrillSpanner #'outside-staff-priority = ##f
+    \override TextSpanner #'extra-offset = #'(0 . 0.5)
+    \override TabStaff.BreathingSign #'outside-staff-priority = ##f
+    \override BreathingSign #'outside-staff-priority = ##f
+    % Bar 1
+    s1 |
+    % Bar 2
+    \tsMove #0.75 #-10 \lhSpannerDown "2" { s4 s4 s4 s8} s8 |
+    % Bar 3
+    s8 s8 s8 s8 s16 s16 s8 s4 |
+    % Bar 4
+    \tsMove #0.5 #-10 \lhSpannerDown "2" { s2 s8 } s8 s8 s8 |
+    % Bar 5
+    s1 |
+    % Bar 6
+    s1 |
+    % Bar 7
+    s1 |
+    % Bar 8
+    s1 |
+    % Bar 9
+    s2 s8 s8 s8 \tsMove #0.5 #0 \lhSpannerUp "2" { s8 |
+    % Bar 10
+    s2 s4 s4 }
     
 
 
@@ -963,6 +998,7 @@ lhOne = {
           \new TabVoice = "dynamicsfive" \dynamicsfive  
           \new TabVoice = "dynamicssix" \dynamicssix
           \new TabVoice = "lhOne" \lhOne
+          \new TabVoice = "lhTwo" \lhTwo
           \new TabVoice = "sixstr" \sixstr
         >>
       >>
