@@ -146,6 +146,9 @@ evenFooterMarkup = \oddFooterMarkup
       \voiceOne
       \mergeDifferentlyHeadedOn
       \mergeDifferentlyDottedOn
+      \partial 8
+      s8
+      \once\override Staff.BarLine #'transparent = ##t
       % Bar 1
       r8 g'2 bes'4.~ |
       % Bar 2
@@ -210,6 +213,8 @@ evenFooterMarkup = \oddFooterMarkup
       \voiceFour
       \mergeDifferentlyHeadedOn
       \mergeDifferentlyDottedOn
+      \partial 8
+      s8
       % Bar 1
       f'2~ f'8 b8\rest \tieUp e'8~ \tieNeutral < e' d'>8~ |
       % Bar 2
@@ -280,6 +285,8 @@ evenFooterMarkup = \oddFooterMarkup
     } \\ {
 %%% VoiceTwo
       \voiceTwo
+      \partial 8
+      s8
       % Bar 1
       s1 |
       % Bar 2
@@ -379,6 +386,8 @@ evenFooterMarkup = \oddFooterMarkup
     \set Timing.beatStructure = #'(2 2 2 2)
     \set Timing.beamExceptions = #'()
 %% Music
+      \partial 8
+      s8
   % Bar 1
   f'8\3~ \tieUp < f'\3 g'\2>8\2~ < f'\3 g'\2>4. bes'8 e'8\2 d'8\3 |
   % Bar 2
@@ -463,10 +472,11 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextScript #'outside-staff-priority = ##f
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
-
+    \partial 8
+    \tsMove #0 #-1.03 \strDamp s8\startTextSpan |
+    \once\override Staff.BarLine #'transparent = ##t
     % Bar 1
-    \tsMove #-2 #-1.03 \strDamp s4\startTextSpan s4 s8 s8
-    s8\stopTextSpan s8 |
+    s4 s4 s8 s8\stopTextSpan s4 |
     % Bar 2
     s2.. \tsMove #-0 #-1.03 \strDamp s8\startTextSpan |
     % Bar 3
@@ -520,8 +530,11 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextScript #'outside-staff-priority = ##f
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
+    % Anacrusis
+    \partial 8
+    \tsMove #0 #-2.03 \strDamp s8\startTextSpan |
     % Bar 1
-    \tsMove #-2 #-2.03 \strDamp s8\startTextSpan s16 s16\stopTextSpan s4 s8 \tsMove #-0 #-2.03 \strDamp
+    s8 s8\stopTextSpan s4 s8 \tsMove #-0 #-2.03 \strDamp
     s8\startTextSpan s8\stopTextSpan s8 |
     % Bar 2
     s2.. \tsMove #-0 #-2.03 \strDamp s8\startTextSpan |
@@ -589,9 +602,10 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextScript #'outside-staff-priority = ##f
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
+      \partial 8
+     \tsMove #0 #-3.03 \strDamp s8\startTextSpan
     % Bar 1
-    \tsMove #-2 #-3.03 \strDamp s16\startTextSpan s16\stopTextSpan s8
-    s4. \tsMove #-0 #-3.03 \strDamp s8\startTextSpan s8
+     s8\stopTextSpan s8 s4. \tsMove #-0 #-3.03 \strDamp s8\startTextSpan s8
     s8\stopTextSpan |
     % Bar 2
     s2.. \tsMove #-0 #-3.03 \strDamp s8\startTextSpan |
@@ -667,10 +681,11 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextScript #'outside-staff-priority = ##f
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
+    \partial 8
+    \tsMove #0 #-4.03 \strDamp s8\startTextSpan
     % Bar 1
-    \tsMove #-2 #-4.03 \strDamp s8\startTextSpan s8 s8 s16
-    s16\stopTextSpan s8 \override TextSpanner #'extra-offset = #'(0 .
-    -4.03) s8 s8 s8 |
+     s8 s8 s4\stopTextSpan s8 \override TextSpanner #'extra-offset =
+     #'(0 .  -4.03) s8 s8 s8 |
     % Bar 2
     s1 |
     % Bar 3
@@ -730,11 +745,36 @@ evenFooterMarkup = \oddFooterMarkup
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \override TextSpanner #'extra-offset = #'(0 . -5.03)
-    % Bar 1-16
+      \partial 8
+      s8
+    % Bar 1
     \trMove #0.1 #1.8 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #2.4
-    ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s8 s8\eVib s4 | 
-    % Bar 2-16 
-    s1*15 |
+    ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
+    | 
+    % Bar 2
+    \trMove #0.1 #1.8 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #2.4
+    ^\markup { \sans \fontsize #-1 n } \sVib s8 s4 s4 s8 s8 \eVib |
+    % Bar 3
+    \trMove #0.4 #2.0 \vibrato #'(1) #1.8 s8-\mkTweak #0.1 #2.6
+    ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
+    | 
+    % Bar 4
+    \trMove #0.1 #0.6 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #1.2
+    ^\markup { \sans \fontsize #-1 n } \sVib s8 s4 s16 s16 \eVib s8 s8
+    s8 | 
+    % Bar 5
+    \trMove #0.2 #0.6 \vibrato #'(1) #1.8 s8-\mkTweak #-0.1 #1.2
+    ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
+    | 
+    % Bar 6
+    \trMove #0.1 #0.8 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #1.4
+    ^\markup { \sans \fontsize #-1 n } \sVib s8 s4 s4 s8 s8 \eVib |
+    % Bar 7
+    \trMove #0.4 #1.0 \vibrato #'(1) #1.8 s8-\mkTweak #0.1 #1.6
+    ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
+    | 
+    % Bar 8-16 
+    s1*9 |
     % Bar 17
     s2 s4 s8 \strDamp s8\startTextSpan |
     % Bar 18
@@ -762,6 +802,8 @@ evenFooterMarkup = \oddFooterMarkup
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \override TextSpanner #'extra-offset = #'(0 . -6.03)
+      \partial 8
+      s8
     % Bar 1
     s2 s8 \strDamp s8\startTextSpan s4 |
     % Bar 2
@@ -821,15 +863,17 @@ evenFooterMarkup = \oddFooterMarkup
 
 
   }
-%% SixStr
+%% RH Fingering
   sixstr = {
     \textLengthOff
     \override TextScript #'outside-staff-priority = ##f
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
+      \partial 8
+      s8\mkTweak #-0.7 #-4.3 ^\rhp \mkTweak #-0.7 #-3.5 ^\rhi \mkTweak
+    #-0.7 #-3.6 ^\rhm \mkTweak #-0.7 #-3.6 ^\rha
     % Bar 1
-    s4\mkTweak #-2.7 #-4.3 ^\rhp \mkTweak #-2.7 #-3.5 ^\rhi \mkTweak
-    #-2.7 #-3.6 ^\rhm \mkTweak #-2.7 #-3.6 ^\rha s4 s8 s8\mkTweak
+    s4 s4 s8 s8\mkTweak
     #-0.3 #-6.3 ^\rhp \mkTweak #-0.35 #-3.5 ^\rhi \mkTweak #-0.35 #-3.5 ^\rhm s4 |
     % Bar 2
     s4 s2 s8 s8\mkTweak #-0.3 #-5.3 ^\rhp\mkTweak #-0.3 #-3.5
@@ -916,11 +960,13 @@ lhOne = {
     \override BreathingSign #'outside-staff-priority = ##f
     \override TextSpanner #'(bound-details left-broken text) = ##f 
     \override TextSpanner #'(bound-details right-broken text) = ##f 
+    \partial 8
+    s8
     % Bar 1
-    \lhSpannerUp "1" {  s8 \bsMove #-3.5 #1 \leftBracketTwo s8 s4 s8 }
+    \lhSpannerUp "1" {  s8 \bsMove #-3.2 #1 \leftBracketTwo s8 s4 s8 }
     s8 \lhSpannerUp "1" { \bsMove #0.5 #1 \leftBracketTwo s8 s8 |
     % Bar 2
-    s4 s4 s4 s8 s8 } |
+    s4 s4 s4 s8 } s8  |
     % Bar 3
     s8 \tsMove #0 #1.5 \lhSpannerUp "1" { s8 s4 s8 } s8 s4 |
     % Bar 4
@@ -953,6 +999,8 @@ lhTwo = {
     \override BreathingSign #'outside-staff-priority = ##f
     \override TextSpanner #'(bound-details left-broken text) = ##f 
     \override TextSpanner #'(bound-details right-broken text) = ##f 
+      \partial 8
+      s8
     % Bar 1
     s1 |
     % Bar 2
@@ -989,8 +1037,12 @@ lhThree = {
     \override BreathingSign #'outside-staff-priority = ##f
     \override TextSpanner #'(bound-details left-broken text) = ##f 
     \override TextSpanner #'(bound-details right-broken text) = ##f 
+      \partial 8
+      s8
     % Bar 1
-    s1 |
+    s2 s8 \tsMove #0 #1 \lhSpannerUp "3" {s8 s4 |
+    % Bar 2
+    s2 s4 s8 } s8 |
     % Bar 2
 
 
@@ -1007,10 +1059,9 @@ lhFour = {
     \override BreathingSign #'outside-staff-priority = ##f
     \override TextSpanner #'(bound-details left-broken text) = ##f 
     \override TextSpanner #'(bound-details right-broken text) = ##f 
+      \partial 8
+      s8
     % Bar 1
-    s2 s8 \tsMove #0 #0 \lhSpannerUp "4" {s8 s4 |
-    % Bar 2
-    s2 s4 s8 } s8 |
 
 
 
