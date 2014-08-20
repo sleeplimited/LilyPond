@@ -263,7 +263,7 @@ onestrupstrm = \markup {
 %% String-Dampening
 strDamp = { 
   \once \override TextSpanner #'style = #'line
-  \once \override TextSpanner #'thickness = #6
+  \once \override TextSpanner #'thickness = #8
   \once \override TextSpanner #'color = #(x11-color "plum")
   \once \override TextSpanner #'layer = #-1
 }

@@ -475,28 +475,29 @@ evenFooterMarkup = \oddFooterMarkup
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \partial 8
-    \tsMove #0 #-1.03 \strDamp s8\startTextSpan |
+    \override TextSpanner #'extra-offset = #'(-0.1 . -1.03)
+     \strDamp s8\startTextSpan |
     \once\override Staff.BarLine #'transparent = ##t
     % Bar 1
     s4 s4 s8 s8\stopTextSpan s4 |
     % Bar 2
-    s2.. \tsMove #-0 #-1.03 \strDamp s8\startTextSpan |
+    s2.. \strDamp s8\startTextSpan |
     % Bar 3
     s8 s8\stopTextSpan s2. |
     % Bar 4
-    s2.. \tsMove #-0 #-1.03 \strDamp s8\startTextSpan |
+    s2..  \strDamp s8\startTextSpan |
     % Bar 5
     s2 s8 s8\stopTextSpan s4 |
     % Bar 6
-    s2.. \tsMove #-0 #-1.03 \strDamp s8\startTextSpan |
+    s2..  \strDamp s8\startTextSpan |
     % Bar 7
     s8 s8\stopTextSpan s2. |
     % Bar 8
-    s2..  \tsMove #-0 #-1.03 \strDamp s8\startTextSpan |
+    s2..   \strDamp s8\startTextSpan |
     % Bar 9
     s2 s8 s8\stopTextSpan s4 |
     % Bar 10
-    s2..  \tsMove #-0 #-1.03 \strDamp s8\startTextSpan |
+    s2..   \strDamp s8\startTextSpan |
     % Bar 11
     s1 |
     % Bar 12
@@ -504,13 +505,13 @@ evenFooterMarkup = \oddFooterMarkup
     % Bar 13
     s2 s8 s8\stopTextSpan s4 |
     % Bar 14
-    s2..  \tsMove #-0 #-1.03 \strDamp s8\startTextSpan |
+    s2..   \strDamp s8\startTextSpan |
     % Bar 15
     s1 |
     % Bar 16
     s2 s8 s8\stopTextSpan s4 |
     % Bar 17
-    s8  \tsMove #-0 #-1.03 \strDamp s8\startTextSpan s8 s8\stopTextSpan s2 |
+    s8   \strDamp s8\startTextSpan s8 s8\stopTextSpan s2 |
     % Bar 18
     s1 |
     % Bar 19
@@ -522,7 +523,7 @@ evenFooterMarkup = \oddFooterMarkup
     % Bar 22
     s1 |
     % Bar 23
-    s8  \tsMove #-0 #-1.03 \strDamp s8\startTextSpan s8 s8\stopTextSpan s2 |
+    s8   \strDamp s8\startTextSpan s8 s8\stopTextSpan s2 |
 
 
   }
@@ -532,65 +533,66 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextScript #'outside-staff-priority = ##f
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
+    \override TextSpanner #'extra-offset = #'(-0.1 . -2.03)
     % Anacrusis
     \partial 8
-    \tsMove #0 #-2.03 \strDamp s8\startTextSpan |
+     \strDamp s8\startTextSpan |
     % Bar 1
-    s8 s8\stopTextSpan s4 s8 \tsMove #-0 #-2.03 \strDamp
+    s8 s8\stopTextSpan s4 s8  \strDamp
     s8\startTextSpan s8\stopTextSpan s8 |
     % Bar 2
-    s2.. \tsMove #-0 #-2.03 \strDamp s8\startTextSpan |
+    s2..  \strDamp s8\startTextSpan |
     % Bar 3
-    s4\stopTextSpan s4 s8 \tsMove #-0 #-2.03 \strDamp s8\startTextSpan s4\stopTextSpan |
+    s4\stopTextSpan s4 s8  \strDamp s8\startTextSpan s4\stopTextSpan |
     % Bar 4
-    s2.. \tsMove #-0 #-2.03 \strDamp s8\startTextSpan |
+    s2..  \strDamp s8\startTextSpan |
     % Bar 5
-    s8 s8\stopTextSpan s4. \tsMove #-0 #-2.03 \strDamp s8\startTextSpan s4\stopTextSpan |
+    s8 s8\stopTextSpan s4.  \strDamp s8\startTextSpan s4\stopTextSpan |
     % Bar 6
-    s2.. \tsMove #-0 #-2.03 \strDamp s8\startTextSpan |
+    s2..  \strDamp s8\startTextSpan |
     % Bar 7
-    s4\stopTextSpan s4 s8 \tsMove #-0 #-2.03 \strDamp s8\startTextSpan s4\stopTextSpan |
+    s4\stopTextSpan s4 s8  \strDamp s8\startTextSpan s4\stopTextSpan |
     % Bar 8
-    s2.. \tsMove #-0 #-2.03 \strDamp s8\startTextSpan |
+    s2..  \strDamp s8\startTextSpan |
     % Bar 9
-    s8 s8\stopTextSpan s4. \tsMove #-0 #-2.03 \strDamp s8\startTextSpan s4\stopTextSpan |
+    s8 s8\stopTextSpan s4.  \strDamp s8\startTextSpan s4\stopTextSpan |
     % Bar 10
-    s2.. \tsMove #-0 #-2.03 \strDamp s8\startTextSpan |
+    s2..  \strDamp s8\startTextSpan |
     % Bar 11
     s2 s8 s8\stopTextSpan s4 |
     % Bar 12
     s1 |
     % Bar 13
-    \tsMove #-0 #-2.03 \strDamp s8\startTextSpan s8\stopTextSpan s4. \tsMove #-0 #-2.03 \strDamp
+     \strDamp s8\startTextSpan s8\stopTextSpan s4.  \strDamp
     s8\startTextSpan s4\stopTextSpan |
     % Bar 14
-    s2.. \tsMove #-0 #-2.03 \strDamp s8\startTextSpan |
+    s2..  \strDamp s8\startTextSpan |
     % Bar 15
     s2 s8 s8\stopTextSpan s4 |
     % Bar 16
-    s2. \tsMove #-0 #-2.03 \strDamp s4\startTextSpan |
+    s2.  \strDamp s4\startTextSpan |
     % Bar 17
     s4\stopTextSpan s2. |
     % Bar 18
-    s2.. \tsMove #-0 #-2.03 \strDamp s8\startTextSpan |
+    s2.. \strDamp s8\startTextSpan |
     % Bar 19
     s4\stopTextSpan s2.  |
     % Bar 20
-    s2.. \tsMove #-0 #-2.03 \strDamp s8\startTextSpan |
+    s2.. \strDamp s8\startTextSpan |
     % Bar 21
-    s4\stopTextSpan s2 s8 \tsMove #-0 #-2.03 \strDamp s8\startTextSpan  |
+    s4\stopTextSpan s2 s8  \strDamp s8\startTextSpan  |
     % Bar 22
     s4 s2.\stopTextSpan |
     % Bar 23
     s1 |
     % Bar 24
-    s2.. \tsMove #-0 #-2.03 \strDamp s8\startTextSpan |
+    s2..  \strDamp s8\startTextSpan |
     % Bar 25
     s4\stopTextSpan s2.  |
     % Bar 26
-    s2.. \tsMove #-0 #-2.03 \strDamp s8\startTextSpan |
+    s2..  \strDamp s8\startTextSpan |
     % Bar 27
-    s4\stopTextSpan s2 s8 \tsMove #-0 #-2.03 \strDamp s8\startTextSpan  |
+    s4\stopTextSpan s2 s8  \strDamp s8\startTextSpan  |
     % Bar 28
     s4 s2.\stopTextSpan |
 
@@ -604,73 +606,74 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextScript #'outside-staff-priority = ##f
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
+    \override TextSpanner #'extra-offset = #'(-0.1 . -3.03)
       \partial 8
-     \tsMove #0 #-3.03 \strDamp s8\startTextSpan
+      \strDamp s8\startTextSpan
     % Bar 1
-     s8\stopTextSpan s8 s4. \tsMove #-0 #-3.03 \strDamp s8\startTextSpan s8
+     s8\stopTextSpan s8 s4.  \strDamp s8\startTextSpan s8
     s8\stopTextSpan |
     % Bar 2
-    s2.. \tsMove #-0 #-3.03 \strDamp s8\startTextSpan |
+    s2..  \strDamp s8\startTextSpan |
     % Bar 3
-    s4 s4\stopTextSpan s8 \tsMove #-0 #-3.03 \strDamp s8\startTextSpan
+    s4 s4\stopTextSpan s8  \strDamp s8\startTextSpan
     s8 s8\stopTextSpan |
     % Bar 4
-    s2.. \tsMove #-0 #-3.03 \strDamp s8\startTextSpan |
+    s2..  \strDamp s8\startTextSpan |
     % Bar 5
-    s8\stopTextSpan s8 s4. \tsMove #-0 #-3.03 \strDamp
+    s8\stopTextSpan s8 s4.  \strDamp
     s8\startTextSpan s8 s8\stopTextSpan |
     % Bar 6
-    s2.. \tsMove #-0 #-3.03 \strDamp s8\startTextSpan |
+    s2..  \strDamp s8\startTextSpan |
     % Bar 7
-    s4 s4\stopTextSpan s8 \tsMove #-0 #-3.03 \strDamp s8\startTextSpan
+    s4 s4\stopTextSpan s8  \strDamp s8\startTextSpan
     s8 s8\stopTextSpan |
     % Bar 8
-    s2.. \tsMove #-0 #-3.03 \strDamp s8\startTextSpan |
+    s2..  \strDamp s8\startTextSpan |
     % Bar 9
-    s8\stopTextSpan s8 s4. \tsMove #-0 #-3.03 \strDamp
+    s8\stopTextSpan s8 s4.  \strDamp
     s8\startTextSpan s8 s8\stopTextSpan |
     % Bar 10
-    s2.. \tsMove #-0 #-3.03 \strDamp s8\startTextSpan |
+    s2..  \strDamp s8\startTextSpan |
     % Bar 11
-    s8 s8\stopTextSpan s4. \tsMove #-0 #-3.03 \strDamp
+    s8 s8\stopTextSpan s4.  \strDamp
     s8\startTextSpan s8\stopTextSpan s8 |
     % Bar 12
     s1 |
     % Bar 13
-    s4 s4. \tsMove #0 #-3.03 \strDamp s8\startTextSpan s8
+    s4 s4.  \strDamp s8\startTextSpan s8
     s8\stopTextSpan |
     % Bar 14
-    s2.. \tsMove #-0 #-3.03 \strDamp s8\startTextSpan |
+    s2..  \strDamp s8\startTextSpan |
     % Bar 15
-    s8 s8\stopTextSpan s4.  \tsMove #-0 #-3.03 \strDamp
+    s8 s8\stopTextSpan s4.   \strDamp
     s8\startTextSpan s8\stopTextSpan s8 |
     % Bar 16
-    s2. \tsMove #0 #-3.03 \strDamp s4\startTextSpan |
+    s2.  \strDamp s4\startTextSpan |
     % Bar 17 
-    s4\stopTextSpan s4 s4 s8 \tsMove #0 #-3.03 \strDamp
+    s4\stopTextSpan s4 s4 s8  \strDamp
     s8\startTextSpan |
     % Bar 18
-    s8\stopTextSpan s2. \tsMove #0 #-3.03 \strDamp s8\startTextSpan |
+    s8\stopTextSpan s2.  \strDamp s8\startTextSpan |
     % Bar 19
-    s8\stopTextSpan s2. \tsMove #0 #-3.03 \strDamp s8\startTextSpan |
+    s8\stopTextSpan s2.  \strDamp s8\startTextSpan |
     % Bar 20
-    s8\stopTextSpan s2. \tsMove #0 #-3.03 \strDamp s8\startTextSpan |
+    s8\stopTextSpan s2.  \strDamp s8\startTextSpan |
     % Bar 21
-    s8\stopTextSpan s2. \tsMove #0 #-3.03 \strDamp s8\startTextSpan |
+    s8\stopTextSpan s2.  \strDamp s8\startTextSpan |
     % Bar 22
-    s8 s16 s16\stopTextSpan s4 s4 \tsMove #0 #-3.03 \strDamp
+    s8 s16 s16\stopTextSpan s4 s4  \strDamp
     s4\startTextSpan |
     % Bar 23
-    s4\stopTextSpan s4 s4 s8 \tsMove #0 #-3.03 \strDamp
+    s4\stopTextSpan s4 s4 s8  \strDamp
     s8\startTextSpan |
     % Bar 24
-    s8\stopTextSpan s2. \tsMove #0 #-3.03 \strDamp s8\startTextSpan |
+    s8\stopTextSpan s2.  \strDamp s8\startTextSpan |
     % BAr 25
-    s8\stopTextSpan s2. \tsMove #0 #-3.03 \strDamp s8\startTextSpan |
+    s8\stopTextSpan s2.  \strDamp s8\startTextSpan |
     % BAr 26
-    s8\stopTextSpan s2. \tsMove #0 #-3.03 \strDamp s8\startTextSpan |
+    s8\stopTextSpan s2.  \strDamp s8\startTextSpan |
     % Bar 27
-    s8\stopTextSpan s2. \tsMove #0 #-3.03 \strDamp s8\startTextSpan |
+    s8\stopTextSpan s2.  \strDamp s8\startTextSpan |
     % BAr 28
     s8 s16 s16\stopTextSpan
 
@@ -683,8 +686,9 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextScript #'outside-staff-priority = ##f
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
+    \override TextSpanner #'extra-offset = #'(-0.1 . -4.03)
     \partial 8
-    \tsMove #0 #-4.03 \strDamp s8\startTextSpan
+     \strDamp s8\startTextSpan
     % Bar 1
      s8 s8 s4\stopTextSpan s8 \override TextSpanner #'extra-offset =
      #'(0 .  -4.03) s8 s8 s8 |
@@ -746,7 +750,7 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextScript #'outside-staff-priority = ##f
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
-    \override TextSpanner #'extra-offset = #'(0 . -5.03)
+    \override TextSpanner #'extra-offset = #'(-0.1 . -5.03)
       \partial 8
       s8
     % Bar 1
@@ -773,8 +777,12 @@ evenFooterMarkup = \oddFooterMarkup
     \trMove #0.4 #1.0 \vibrato #'(1) #1.8 s8-\mkTweak #0.1 #1.6
     ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
     | 
-    % Bar 8-16 
-    s1*9 |
+    % Bar 8
+    s4 s4 s4 s8 s16 \strDamp s16\startTextSpan | 
+    % Bar 9
+    s4 s4 s8\stopTextSpan s8 s4 |
+    % Bar 10-16 
+    s1*7 |
     % Bar 17
     s2 s4 s8 \strDamp s8\startTextSpan |
     % Bar 18
@@ -801,7 +809,7 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextScript #'outside-staff-priority = ##f
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
-    \override TextSpanner #'extra-offset = #'(0 . -6.03)
+    \override TextSpanner #'extra-offset = #'(-0.1 . -6.03)
       \partial 8
       s8
     % Bar 1
@@ -895,8 +903,10 @@ evenFooterMarkup = \oddFooterMarkup
     % Bar 7
     s1 |
     % Bar 8
-    s2 s8 s8\mkTweak #-0.3 #-6.3 ^\rhp s8 s8\mkTweak #-0.3 #-6.3 ^\rhp
-    \mkTweak #-0.4 #-3.5 ^\rhi \mkTweak #-0.4 #-3.5 ^\rhm \mkTweak #-0.4 #-3.5 ^\rha |
+    s2 s8 s8\mkTweak #-0.3 #-6.3 ^\rhp s8 s16\mkTweak #-0.3 #-7.0
+    ^\rhp \mkTweak #-0.4 #-4.2 ^\rhi \mkTweak #-0.4 #-4.2 ^\rhm
+    \mkTweak #-0.4 #-4.2 ^\rha \mkTweak #-0.5 #-6.7 \tweak Script
+    #'font-size #-5 ^\rheel s16\mkTweak #-0.6 #-5.4 ^\rhp   |
     % Bar 9
     s2 s8 s8\mkTweak #-0.3 #-6.3 ^\rhp \mkTweak #-0.4 #-3.5 ^\rhi
     \mkTweak #-0.4 #-3.5 ^\rhm s4 |
