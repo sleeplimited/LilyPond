@@ -385,6 +385,8 @@ evenFooterMarkup = \oddFooterMarkup
     \set Timing.baseMoment = #(ly:make-moment 1 8)
     \set Timing.beatStructure = #'(2 2 2 2)
     \set Timing.beamExceptions = #'()
+    \override TabStaff.StaffSymbol #'thickness = #'0.75
+    \override TabStaff.Beam #'beam-thickness = #'0.38
 %% Music
       \partial 8
       s8
@@ -884,7 +886,7 @@ evenFooterMarkup = \oddFooterMarkup
     % Bar 4
     s2 s8 s8\mkTweak #-0.3 #-6.3 ^\rhp s8 s16\mkTweak #-0.3 #-7.0
     ^\rhp \mkTweak #-0.4 #-4.2 ^\rhi \mkTweak #-0.4 #-4.2 ^\rhm
-    \mkTweak #-0.4 #-4.2 ^\rha \mkTweak #-1 #-6.5 \tweak Script
+    \mkTweak #-0.4 #-4.2 ^\rha \mkTweak #-0.5 #-6.7 \tweak Script
     #'font-size #-5 ^\rheel s16\mkTweak #-0.6 #-5.4 ^\rhp   |
     % Bar 5
     s1 |
@@ -957,7 +959,7 @@ lhOne = {
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \override Score.TrillSpanner #'outside-staff-priority = ##f
-    \override TextSpanner #'extra-offset = #'(0 . 0.5)
+    \override TextSpanner #'extra-offset = #'(0 . 0.25)
     \override TabStaff.BreathingSign #'outside-staff-priority = ##f
     \override BreathingSign #'outside-staff-priority = ##f
     \override TextSpanner #'(bound-details left-broken text) = ##f 
@@ -1042,7 +1044,7 @@ lhThree = {
       \partial 8
       s8
     % Bar 1
-    s2 s8 \tsMove #0 #1 \lhSpannerUp "3" {s8 s4 |
+    s2 s8 \tsMove #0 #1.25 \lhSpannerUp "3" {s8 s4 |
     % Bar 2
     s2 s4 s8 } s8 |
     % Bar 2
