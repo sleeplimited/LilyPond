@@ -174,38 +174,38 @@ evenFooterMarkup = \oddFooterMarkup
       % Bar 12
       d'1 |
 
-      % Bar 9
+      % Bar 13
       r8 d'2 g'4.~ |
-      % Bar 10
+      % Bar 14
       g'1 |
-      % Bar 11
+      % Bar 15
       r8 a2 d'4.~ |
-      % Bar 12
+      % Bar 16
       d'1 |
 
-      % Bar 13
-      e'4. a'8 g'4 c'8 e'8~ |
-      % Bar 14
-      e'2.. fis'8~ |
-      % Bar 15
-      fis'2.. e'8~ |
-      % Bar 16
-      e'2.. fis'8~ |
       % Bar 17
-      fis'2.. e'8~ |
+      e'4. a'8 g'4 c'8 e'8~ |
       % Bar 18
-      e'2. r4 |
+      e'2.. fis'8~ |
       % Bar 19
-      e'4. a'8 gis'4 cis'8 e'8~ |
+      fis'2.. e'8~ |
       % Bar 20
-      e'2.. f'8~ |
+      e'2.. fis'8~ |
       % Bar 21
-      f'2.. e'8~ |
+      fis'2.. e'8~ |
       % Bar 22
-      e'2.. f'8~ |
+      e'2. r4 |
       % Bar 23
-      f'2.. e'8~ |
+      e'4. a'8 gis'4 cis'8 e'8~ |
       % Bar 24
+      e'2.. f'8~ |
+      % Bar 25
+      f'2.. e'8~ |
+      % Bar 26
+      e'2.. f'8~ |
+      % Bar 27
+      f'2.. e'8~ |
+      % Bar 28
       e'2. r4 |
 
     } \\ {
@@ -240,41 +240,41 @@ evenFooterMarkup = \oddFooterMarkup
       % Bar 12
       < g fis>1 |
 
-      % Bar 9
+      % Bar 13
       \tieDown c'2~ c'8 b8\rest \tieUp c'8~ \tieNeutral < c' b>8~ |
-      % Bar 10
+      % Bar 14
       < c' b>1 |
-      % Bar 11
+      % Bar 15
       \tieDown g2~ g8 g8\rest \tieUp g8~ \tieNeutral < g fis>8~ |
-      % Bar 12
+      % Bar 16
       < g fis>1 |
 
-      % Bar 13
-      < a d'>2. e4\rest |
-      % Bar 14
-      < c' a>2. g4\rest |
-      % Bar 15
-      < d' a>2. g4\rest |
-      % Bar 16
-      < c' a>2. g4\rest |
       % Bar 17
-      < d' a>2. g4\rest |
+      < a d'>2. e4\rest |
       % Bar 18
-      g16\rest b,16~ < b, e>16~ < b, e gis>~ < b, e gis a>4~ < b, e gis a>4~ a4 |
+      < c' a>2. g4\rest |
       % Bar 19
-      < a d'>2 b8\rest < e' cis'> e4\rest |
+      < d' a>2. g4\rest |
       % Bar 20
-      < cis' a>2. e4\rest |
+      < c' a>2. g4\rest |
       % Bar 21
-      < d' a>2. e4\rest |
+      < d' a>2. g4\rest |
       % Bar 22
-      < cis' a>2. e4\rest |
+      g16\rest b,16~ < b, e>16~ < b, e gis>~ < b, e gis a>4~ < b, e gis a>4~ a4 |
       % Bar 23
-      < d' a>2. e4\rest |
+      < a d'>2 e2\rest |
       % Bar 24
+      < cis' a>2. e4\rest |
+      % Bar 25
+      < d' a>2. e4\rest |
+      % Bar 26
+      < cis' a>2. e4\rest |
+      % Bar 27
+      < d' a>2. e4\rest |
+      % Bar 28
       g16\rest b,16~ < b, e>16~ < b, e gis>~ < b, e gis a>4~ < b, e
       gis a>4~ a4~ |
-      % Bar 25
+      % Bar 29
       a1 |
       
 
@@ -311,38 +311,37 @@ evenFooterMarkup = \oddFooterMarkup
       a,1 |
       % Bar 12
       d,1~ |
-      % Bar 9
-      d,1 |
-      % Bar 10
-      g,2.. a,8~ |
-      % Bar 11
-      a,1 |
-      % Bar 12
-      d,2. a,8 bes,8~  |
-
       % Bar 13
-      bes,2. s4 |
+      d,1 |
       % Bar 14
-      r8 a,2.. |
+      g,2.. a,8~ |
       % Bar 15
-      r8 < d, fis>2.. |
+      a,1 |
       % Bar 16
-      r8 a,2.. |
+      d,2. a,8 bes,8~  |
       % Bar 17
-      r8 < d, fis>2.. |
-      % Bar 18
-      e,2. a,8 bes,~ |
-      % Bar 19
       bes,2. s4 |
+      % Bar 18
+      r8 a,2.. |
+      % Bar 19
+      r8 < d, fis>2.. |
       % Bar 20
       r8 a,2.. |
       % Bar 21
-      r8 < d, f>2.. |
+      r8 < d, fis>2.. |
       % Bar 22
-      r8 a,2.. |
+      e,2. a,8 bes,~ |
       % Bar 23
-      r8 < d, f>2.. |
+      bes,2. s4 |
       % Bar 24
+      r8 a,2.. |
+      % Bar 25
+      r8 < d, f>2.. |
+      % Bar 26
+      r8 a,2.. |
+      % Bar 27
+      r8 < d, f>2.. |
+      % Bar 28
       e,2. r4 |
 
 
@@ -445,8 +444,8 @@ evenFooterMarkup = \oddFooterMarkup
   % Bar 22
   e,16 b, e gis a4~ a4 a,8 bes,\6^\repeatTie |
   % Bar 23
-  < a\4 d'\3 e'\2>4.\arpeggio a'8 gis'8\2 < e'\3 cis'\4>8 \once\override Stem #'(details
-  beamed-lengths) = #'(4)cis'8\3 e'8\2 | 
+  < a\4 d'\3 e'\2>4.\arpeggio a'8 gis'4\2 \once\override Stem
+  #'(details beamed-lengths) = #'(4)cis'8\3 e'8\2 | 
   % Bar 24
   < cis'\3 a\4>8 a,8~ a,4~ a,4~ a,8 f'8 |
   \break
@@ -959,10 +958,9 @@ evenFooterMarkup = \oddFooterMarkup
     \mkTweak #-0.4 #-4.5 ^\rhm s8 |
     % Bar 23
     s8\mkTweak #-0.3 #-1.3 ^\rha s8\mkTweak #-0.5 #-0.3 ^\rha s4
-    s8\mkTweak #-0.8 #-1.3 ^\rhm s8\mkTweak #-0.7 #-4.3 ^\rhp \mkTweak
-    #-0.3 #-3.5 ^\rhi s8\mkTweak #-0.3 #-2.3 ^\rhi s8\mkTweak #-0.3
-    #-5.3 ^\rhp \mkTweak #-0.3 #-4.5 ^\rhi \mkTweak #-0.3 #-4.5 ^\rhm
-    \mkTweak #-0.3 #-4.5 ^\rha |
+    s4\mkTweak #-0.8 #-1.3 ^\rhm s8\mkTweak #-0.3 #-2.3 ^\rhi
+    s8\mkTweak #-0.3 #-5.3 ^\rhp \mkTweak #-0.3 #-4.5 ^\rhi \mkTweak
+    #-0.3 #-4.5 ^\rhm \mkTweak #-0.3 #-4.5 ^\rha |
     % Bar 24
     s2. s8 s8\mkTweak #-0.3 #-6.3 ^\rhp \mkTweak #-0.4 #-3.5 ^\rhi
     \mkTweak #-0.4 #-3.5 ^\rhm \mkTweak #-0.4 #-3.5 ^\rha |
@@ -1054,6 +1052,30 @@ lhTwo = {
     s2 s4 s8 \tsMove #0 #-10 \lhSpannerDown "2" {s8 |
     % Bar 12
     s4 s4 s4 s4} |
+    % Bar 13
+    s1 |
+    % Bar 14
+    s1 |
+    % Bar 15
+    s1 |
+    % Bar 16
+    s4 s4 s4 s8 \tsMove #0 #-10 \lhSpannerDown "2" { s8 |
+    % Bar 17
+    s4 s4 s4} s4 |
+    % Bar 18
+    s1 |
+    % Bar 19
+    s8 \tsMove #0 #-10 \lhSpannerDown "2" { s8 s4 s4 s8 } s8 |
+    % Bar 20
+    s1 |
+    % Bar 21
+    s8 \tsMove #0 #-10 \lhSpannerDown "2" { s8 s4 s4 s8 } s8 |
+    % Bar 22
+    \tsMove #0 #-11 \lhSpannerDown "2" { s4 \bsMove #-8.75 #-2
+    \leftBracketThree s4 s4 } s8 \tsMove #0 #-10 \lhSpannerDown "2"
+    {s8  |
+    % Bar 23
+    s4 s4 s4} s4 |
     
 
 
