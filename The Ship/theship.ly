@@ -442,7 +442,8 @@ evenFooterMarkup = \oddFooterMarkup
   < d'\2 a\3 >8 < d, fis>8~ < d, fis>4~ < d, fis>4~ < d, fis>8 e'8\1 |
   \break
   % Bar 22
-  e,16 b, e gis a4~ a4 a,8 bes,\6^\repeatTie |
+  < e, \parenthesize b,  \parenthesize e \parenthesize \tweak
+  #'whiteout #f gis >16 b, e gis a4~ a4 a,8 bes,\6^\repeatTie | 
   % Bar 23
   < a\4 d'\3 e'\2>4.\arpeggio a'8 gis'4\2 \once\override Stem
   #'(details beamed-lengths) = #'(4)cis'8\3 e'8\2 | 
@@ -457,7 +458,8 @@ evenFooterMarkup = \oddFooterMarkup
   < d'\2 a\3>8 < d, f>8~ < d, f>4~ < d, f>4~ < d, f>8 e'8\1 |
   \break
   % Bar 28
-  e,16 b, e gis a4~ a4~ a4~ | 
+  < e, \parenthesize b,  \parenthesize e \parenthesize \tweak
+  #'whiteout #f gis >16 b, e gis a4~ a4~ a4~ | 
   % Bar 29
   a4~ a4~ a4~ a4 \bar "|."
 
@@ -703,7 +705,9 @@ evenFooterMarkup = \oddFooterMarkup
     % Bar 7
     s1 |
     % Bar 8
-    s1 |
+    \trMove #0.1 #0.8 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #1.4
+    ^\markup { \sans \fontsize #-1 n } \sVib s8 s4 s16 s16 \eVib s8 s8
+    s8 |
     % Bar 9
     \trMove #0.1 #1.0 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #1.6
     ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
@@ -1009,7 +1013,40 @@ lhOne = {
     % Bar 10
     s8 s8 s4 s4 s4} |
     % Bar 11
-    s8 \tsMove #0 #1.25 \lhSpannerUp "1" { s8 s4 s8}
+    s8 \tsMove #0 #1.25 \lhSpannerUp "1" { s8 s4 s8} s8 s4 |
+    % Bar 12
+    s1 |
+    % Bar 13
+    s1 |
+    % Bar 14
+    s1 |
+    % Bar 15
+    s1 |
+    % Bar 16
+    s1 |
+    % Bar 17
+    \trMove #1.0 #-0.0 \vibrato #'(0) #1.8 s8-\mkTweak #-0.8 #1.0
+    ^\markup { \sans \fontsize #-8 "4/6 C VII" } \sVib s8 s4 s8 s8
+    \eVib \tsMove #0 #0.25 \lhSpannerUp "1" { s4 |
+    % Bar 18
+    s8 s8 s4 s4 s8} s8 |
+    % Bar 19
+    \tsMove #0 #-12.0 \lhSpannerDown "1" { s8 s8 s4 s4 s8 } s8 |
+    % Bar 20
+    s1 |
+    % Bar 21
+    s1 |
+    % Bar 22
+    \tsMove #0 #0 \lhSpannerUp "1" { s8 s8 s4 s4 } s4 |
+    % Bar 23
+    \trMove #1.0 #-0.0 \vibrato #'(0) #1.8 s8-\mkTweak #-0.8 #1.0
+    ^\markup { \sans \fontsize #-8 "4/6 C VII" } \sVib s8 s4 s8 s8
+    \eVib \tsMove #0 #0.25 \lhSpannerUp "1" { s4 |
+    % Bar 24
+    s8 s8 s4 s4 s8 } s8 |
+    % Bar 25
+    \tsMove #0 #-12 \lhSpannerDown "1" { s8 s8 s4 s4 s8 } s8 |
+    
     
 
 
@@ -1069,13 +1106,17 @@ lhTwo = {
     % Bar 20
     s1 |
     % Bar 21
-    s8 \tsMove #0 #-10 \lhSpannerDown "2" { s8 s4 s4 s8 } s8 |
+    s8  s8 s4 s4 s8 s8 |
     % Bar 22
-    \tsMove #0 #-11 \lhSpannerDown "2" { s4 \bsMove #-8.75 #-2
-    \leftBracketThree s4 s4 } s8 \tsMove #0 #-10 \lhSpannerDown "2"
+    \tsMove #0 #-11 \lhSpannerDown "2" { s4 \bsMove #-8.85 #-2
+    \leftBracketThree s4 s4 } s8 \tsMove #0 #-9.7 \lhSpannerDown "2"
     {s8  |
     % Bar 23
     s4 s4 s4} s4 |
+    % Bar 24
+    \tsMove #0 #-10 \lhSpannerDown "2" { s8 s8 s4 s4 s8} s8 |
+    % Bar 25
+    s8 \tsMove #0 #-10 \lhSpannerDown "2" { s8 s4 s4 s8 } s8 |
     
 
 
@@ -1114,6 +1155,37 @@ lhThree = {
     s1 |
     % Bar 10
     \tsMove #0 #-11 \lhSpannerDown "3" {s4 s4 s4 s8} s8 |
+    % Bar 11
+    s1 |
+    % Bar 12
+    s1 |
+    % Bar 13
+    s1 |
+    % Bar 14
+    s1 |
+    % Bar 15
+    s1 |
+    % Bar 16
+    s1 |
+    % Bar 17
+    s1 |
+    % Bar 18
+    \tsMove #0 #-9 \lhSpannerDown "2" { s8 s8 s4 s4 s8 } \tsMove #0
+    #0 \lhSpannerUp "3" {s8 |
+    % Bar 19
+    s8 s8 s4 s4 s8}  s8 |
+    % Bar 20
+    s1 |
+    % Bar 21
+    s4 s4 s4 s8 \tsMove #0 #1.25 \lhSpannerUp "3" {s8 |
+    % Bar 22
+    s8 s8 s4 s4} s4 |
+    % bar 23
+    s1 |
+    % Bar 24
+    s4 s4 s4 s8 \tsMove #0 #0 \lhSpannerUp "3" {s8 |
+    % Bar 25
+    s4 s4 s4 s8} s8 |
 
 
   }
@@ -1157,6 +1229,34 @@ lhFour = {
     \lhSpannerUp "4" { s8 s8 s8 |
     % Bar 12
     s4 s4 s4 s4} |
+    % Bar 13
+    s1 |
+    % Bar 14
+    s1 |
+    % Bar 15
+    s1 |
+    % Bar 16
+    s1 |
+    % Bar 17
+    s4 s4 s4\mkTweak #0.25 #6.75 -\lhfour s8 \tsMove #0 #1.25
+    \lhSpannerUp "3" {s8 |
+    % Bar 18
+    s8 s8 s4 s4 s8 } s8  |
+    % Bar 19
+    \tsMove #0 #-11.0 \lhSpannerDown "4" { s8 s8 s4 s4 s8 } s8  |
+    % Bar 20
+    s1 |
+    % Bar 21
+    s1 |
+    % Bar 22
+    s1 |
+    % Bar 23
+    s4 s4 s4\mkTweak #0.25 #6.75 -\lhfour s8 \tsMove #0 #1.25
+    \lhSpannerUp "3" { s8 |
+    % Bar 24
+    s8 s8 s4 s4 s8 } s8 |
+    % Bar 25
+    \tsMove #0 #-11 \lhSpannerDown "4" { s8 s8 s4 s4 s8 } s8  |
 
 
 
