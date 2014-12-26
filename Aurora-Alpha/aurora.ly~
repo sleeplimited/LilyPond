@@ -203,7 +203,39 @@ evenFooterMarkup = \oddFooterMarkup
     \override TabStaff.Beam #'beam-thickness = #'0.38
 %% Music
 % Bar 1
-	gis,8\6 
+	gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
+	% bar 2
+	gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
+	% bar 3
+	gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
+	% Bar 4
+	gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
+	% Bar 5
+	e,\6 a, e\4 e\3 cis'\2 e\3 e\4 cis'\2 |
+	% Bar 6
+	e,\6 a, e\4 e\3 cis'\2 e\3 e\4 e'\1 |
+	% Bar 7
+	gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
+	% Bar 8
+	gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
+	% bar 9
+	a,\6 cis\5 cis'\4 e\3 b\2 e\3 cis'\4 b\2 |
+	% Bar 10
+	a,\6 cis\5 cis'\4 e\3 b\2 e\3 cis'\4 e'\1 |
+	% Bar 11
+	gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
+	% Bar 12
+	gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
+	% Bar 13
+	e,\6 a, e\4 e\3 cis'\2 e\3 e\4 cis'\2 |
+	% Bar 14
+	e,\6 a, e\4 e\3 cis'\2 e\3 e\4 cis'\2 |
+	% Bar 15
+	a,\6 cis\5 cis'\4 e\3 b\2 e\3 cis'\4 e'\1 |
+	% Bar 16
+	a,\6 cis\5 cis'\4 e\3 b\2 e\3 cis'\4 e'\1 |
+
+
 
 
 
