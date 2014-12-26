@@ -1,0 +1,58 @@
+# -*-compilation-*-
+Processing `C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly'
+Parsing...
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:20:2: error: GUILE signaled an error for the expression beginning here
+#
+ (define (make_ps no-sib? lbound xspan span-so-far amplitude-vector wavelength) 
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:20:2: error: syntax error, unexpected EVENT_IDENTIFIER
+#
+ (define (make_ps no-sib? lbound xspan span-so-far amplitude-vector wavelength) 
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:20:79: error: syntax error, unexpected EVENT_IDENTIFIER, expecting '='
+#(define (make_ps no-sib? lbound xspan span-so-far amplitude-vector wavelength
+                                                                              ) 
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:32:11: error: not a symbol
+          
+          #f "gsave currentpoint translate 0.05 setlinewidth newpath /x ~a\
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:33:27: error: not a symbol
+ def\nx 0.0 moveto\n ~a ~a
+                          "
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:35:11: error: syntax error, unexpected EVENT_IDENTIFIER, expecting '='
+          
+          (let make-curve 
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:39:54: error: syntax error, unexpected EVENT_IDENTIFIER, expecting '='
+             ((< (vector-ref amplitude-vector current
+                                                     ) 0) "")
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:43:23: error: not a symbol
+                      
+                      #f " x ~a add ~a x ~a add ~a x ~a \
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:44:35: error: not a symbol
+add 0.0 curveto\n/x x ~a add def\n
+                                  "
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:45:23: error: syntax error, unexpected EVENT_IDENTIFIER, expecting '='
+                      
+                      (exact->inexact (/ wavelength 3)) 
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:46:59: error: syntax error, unexpected EVENT_IDENTIFIER, expecting '='
+                      (vector-ref amplitude-vector current
+                                                          )
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:48:62: error: syntax error, unexpected EVENT_IDENTIFIER, expecting '='
+                      (- (vector-ref amplitude-vector current
+                                                             ))
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:53:29: error: not a symbol
+                    (format 
+                            #f "~a~a" current-ps 
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:53:37: error: not a symbol
+                    (format #f "~a~a
+                                    " current-ps 
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:54:29: error: syntax error, unexpected EVENT_IDENTIFIER, expecting '='
+                            
+                            (make-curve (+ 1 current))))))))
+Interpreting music...
+Preprocessing graphical objects...
+Interpreting music...
+MIDI output to `/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.mid'...
+Finding the ideal number of pages...
+Fitting music on 1 page...
+Drawing systems...
+Layout output to `/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ps'...
+Converting to `/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.pdf'...
+fatal error: failed files: "C:\\Users\\Rachae\\Documents\\LilyPond\\Aurora-Alpha\\aurora.ly"
