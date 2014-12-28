@@ -46,7 +46,55 @@ C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:53:37: error: not a s
 C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/vibrato.ly:54:29: error: syntax error, unexpected EVENT_IDENTIFIER, expecting '='
                             
                             (make-curve (+ 1 current))))))))
-Interpreting music...[8]
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly:244:7: error: wrong type for argument 3.  Expecting symbol list or music, found #t
+    < 
+      \invTNH fis\4 \invTNH fis\3 e\4 e\3 > ~ < \invTNH e\4
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly:244:21: error: error in #{ ... #}
+    < \invTNH fis\4 
+                    \invTNH fis\3 e\4 e\3 > ~ < \invTNH e\4
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly:244:7: error: not a rhythmic event
+    < 
+      \invTNH fis\4 \invTNH fis\3 e\4 e\3 > ~ < \invTNH e\4
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly:244:21: error: wrong type for argument 3.  Expecting symbol list or music, found #t
+    < \invTNH fis\4 
+                    \invTNH fis\3 e\4 e\3 > ~ < \invTNH e\4
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly:244:35: error: error in #{ ... #}
+    < \invTNH fis\4 \invTNH fis\3 
+                                  e\4 e\3 > ~ < \invTNH e\4
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly:244:21: error: not a rhythmic event
+    < \invTNH fis\4 
+                    \invTNH fis\3 e\4 e\3 > ~ < \invTNH e\4
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly:244:49: error: wrong type for argument 3.  Expecting symbol list or music, found #t
+    < \invTNH fis\4 \invTNH fis\3 e\4 e\3 > ~ < 
+                                                \invTNH e\4
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly:245:5: error: error in #{ ... #}
+    
+    \invTNH e\3 fis\4 fis\3 > |
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly:244:49: error: not a rhythmic event
+    < \invTNH fis\4 \invTNH fis\3 e\4 e\3 > ~ < 
+                                                \invTNH e\4
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly:245:5: error: wrong type for argument 3.  Expecting symbol list or music, found #t
+    
+    \invTNH e\3 fis\4 fis\3 > |
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly:245:17: error: error in #{ ... #}
+    \invTNH e\3 
+                fis\4 fis\3 > |
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly:245:5: error: not a rhythmic event
+    
+    \invTNH e\3 fis\4 fis\3 > |
+Interpreting music...[8][16]
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly:243:64: warning: unterminated tie
+    e, b, gis\4 e\3 < gis\4 gis\3 > \glissando < fis\4 fis\3 > 
+                                                               ~
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly:243:64: warning: unterminated tie
+    e, b, gis\4 e\3 < gis\4 gis\3 > \glissando < fis\4 fis\3 > 
+                                                               ~
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly:244:45: warning: unterminated tie
+    < \invTNH fis\4 \invTNH fis\3 e\4 e\3 > 
+                                            ~ < \invTNH e\4
+C:/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.ly:244:45: warning: unterminated tie
+    < \invTNH fis\4 \invTNH fis\3 e\4 e\3 > 
+                                            ~ < \invTNH e\4
 Preprocessing graphical objects...
 Interpreting music...
 MIDI output to `/Users/Rachae/Documents/LilyPond/Aurora-Alpha/aurora.mid'...
