@@ -113,11 +113,11 @@ evenFooterMarkup = \oddFooterMarkup
     }
   }
 
-  % Includes and functions
+% Includes and functions
   \include "sleep-functions.ly"
   \include "vibrato.ly"
-  % Standard Notation
-  %% Upper
+% Standard Notation
+%% Upper
   upper = {
     \set Staff.midiInstrument = #"acoustic grand"
     \override TupletNumber #'text = \markup { \sans "3" }
@@ -142,12 +142,12 @@ evenFooterMarkup = \oddFooterMarkup
     \mergeDifferentlyDottedOn
     % Bar 1
     << {
-      %%% VoiceOne
+%%% VoiceOne
       \voiceOne
       \mergeDifferentlyHeadedOn
       \mergeDifferentlyDottedOn
     } \\ {
-      %%% VoiceFour
+%%% VoiceFour
       \voiceFour
       \mergeDifferentlyHeadedOn
       \mergeDifferentlyDottedOn
@@ -156,7 +156,7 @@ evenFooterMarkup = \oddFooterMarkup
 
 
     } \\ {
-      %%% VoiceTwo
+%%% VoiceTwo
       \voiceTwo
 
 
@@ -166,9 +166,9 @@ evenFooterMarkup = \oddFooterMarkup
 
 
   }
-  % Tab
+% Tab
   tab = {
-    %% stuff
+%% stuff
     \textLengthOff
     \override TextSpanner #'outside-staff-priority = ##f
     \override TextScript #'outside-staff-priority = ##f
@@ -201,37 +201,42 @@ evenFooterMarkup = \oddFooterMarkup
     \set Timing.beamExceptions = #'()
     \override TabStaff.StaffSymbol #'thickness = #'0.75
     \override TabStaff.Beam #'beam-thickness = #'0.38
-    %% Music
+%% Music
     % Bar 1
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
     % bar 2
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
     % bar 3
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
+    \break
     % Bar 4
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
     % Bar 5
     e,\6 a, e\4 e\3 cis'\2 e\3 e\4 cis'\2 |
     % Bar 6
     e,\6 a, e\4 e\3 cis'\2 e\3 e\4 e'\1 |
+    \break
     % Bar 7
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
     % Bar 8
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
     % bar 9
     a,\6 cis\5 cis'\4 e\3 b\2 e\3 cis'\4 b\2 |
+    \break
     % Bar 10
     a,\6 cis\5 cis'\4 e\3 b\2 e\3 cis'\4 e'\1 |
     % Bar 11
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
     % Bar 12
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
+    \break
     % Bar 13
     e,\6 a, e\4 e\3 cis'\2 e\3 e\4 cis'\2 |
     % Bar 14
     e,\6 a, e\4 e\3 cis'\2 e\3 e\4 cis'\2 |
     % Bar 15
     a,\6 cis\5 cis'\4 e\3 b\2 e\3 cis'\4 e'\1 |
+    \break
     % Bar 16
     a,\6 cis\5 cis'\4 e\3 b\2 e\3 cis'\4 e'\1 |
     %% Check 1
@@ -239,9 +244,25 @@ evenFooterMarkup = \oddFooterMarkup
     e, b, gis\4 e\3 b\2 gis\4 e\3 b\2 |
     % Bar 18
     e, b, gis\4 e\3 b\2 gis\4 e\3 b\2 |
+    \break
     % Bar 19
-    e, b, gis\4 e\3 < gis\4 gis\3 > \glissando < fis\4 fis\3 >
-    < e\4 e\3 > < fis\4 fis\3 > |
+    \tieUp
+    e, b, gis\4 e\3 < gis\4 gis\3 > \glissando < fis\4 fis\3 \fakeSlur
+    g\4 \fakeSlur g\3  > ~ 
+    < \fakeSlur g\4 \fakeSlur g\4 e\4 e\3 > ~ < \fakeSlur g\4
+    \fakeSlur g\3 fis\4 fis\3 > | 
+    % Bar 20
+    cis, gis, fis\4 e\3 b fis\4 e\3 b |
+    % Bar 21
+    cis, gis, fis\4 e\3 b fis\4 e\3 b |
+    % Bar 22
+    dis\5 b\4 gis\3 dis' gis' dis' gis\3 gis' |
+    % Bar 23
+    dis\5 b\4 gis\3 dis' gis' dis' gis\3 gis' |
+    % Bar 25
+    cis\5 b\4 gis\3 dis' gis' dis' gis\3 gis' |
+    % Bar 26
+    cis\5 b\4 gis\3 dis' gis' dis' r8 a' |
 
 
 
@@ -250,8 +271,8 @@ evenFooterMarkup = \oddFooterMarkup
 
   }
 
-  % Dynamics
-  %% DynamicsOne
+% Dynamics
+%% DynamicsOne
 
   dynamicsone = {
     \textLengthOff
@@ -262,7 +283,7 @@ evenFooterMarkup = \oddFooterMarkup
 
 
   }
-  %% DynamicsTwo
+%% DynamicsTwo
   dynamicstwo = {
     \textLengthOff
     \override TextScript #'outside-staff-priority = ##f
@@ -274,7 +295,7 @@ evenFooterMarkup = \oddFooterMarkup
 
   }
 
-  %% DynamicsThree
+%% DynamicsThree
   dynamicsthree = {
     \textLengthOff
     \override TextScript #'outside-staff-priority = ##f
@@ -284,7 +305,7 @@ evenFooterMarkup = \oddFooterMarkup
 
   }
 
-  %% DynamicsFour
+%% DynamicsFour
   dynamicsfour = {
     \textLengthOff
     \override TextScript #'outside-staff-priority = ##f
@@ -293,7 +314,7 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextSpanner #'extra-offset = #'(-0.1 . -4.03)
 
   }
-  %% DynamicsFive
+%% DynamicsFive
   dynamicsfive = {
     \textLengthOff
     \override TextScript #'outside-staff-priority = ##f
@@ -301,7 +322,7 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextSpanner #'outside-staff-priority = ##f
     \override TextSpanner #'extra-offset = #'(-0.1 . -5.03)
   }
-  %% DynamicsSix
+%% DynamicsSix
   dynamicssix = {
     \textLengthOff
     \override TextScript #'outside-staff-priority = ##f
@@ -311,7 +332,7 @@ evenFooterMarkup = \oddFooterMarkup
 
 
   }
-  %% RH Fingering
+%% RH Fingering
   sixstr = {
     \textLengthOff
     \override TextScript #'outside-staff-priority = ##f
@@ -320,7 +341,7 @@ evenFooterMarkup = \oddFooterMarkup
 
 
   }
-  %% lhOne
+%% lhOne
   lhOne = {
     \textLengthOff
     \override TextScript #'outside-staff-priority = ##f
@@ -337,7 +358,7 @@ evenFooterMarkup = \oddFooterMarkup
 
 
   }
-  %% lhTwo
+%% lhTwo
   lhTwo = {
     \textLengthOff
     \override TextScript #'outside-staff-priority = ##f
@@ -350,7 +371,7 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextSpanner #'(bound-details left-broken text) = ##f 
     \override TextSpanner #'(bound-details right-broken text) = ##f 
   }
-  %% lhThree
+%% lhThree
   lhThree = {
     \textLengthOff
     \override TextScript #'outside-staff-priority = ##f
@@ -364,7 +385,7 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextSpanner #'(bound-details right-broken text) = ##f 
 
   }
-  %% lhFour
+%% lhFour
   lhFour = {
     \textLengthOff
     \override TextScript #'outside-staff-priority = ##f
@@ -378,7 +399,7 @@ evenFooterMarkup = \oddFooterMarkup
     \override TextSpanner #'(bound-details right-broken text) = ##f 
 
   }
-  % Score
+% Score
   \book {
     \score {
       <<
@@ -412,7 +433,7 @@ evenFooterMarkup = \oddFooterMarkup
           \new TabVoice = "sixstr" \sixstr
         >>
       >>
-      %% Layout
+%% Layout
       \layout {
         indent = 0\cm
         \context { 
