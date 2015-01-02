@@ -5,7 +5,7 @@
   right-margin = 0.6\in
   top-margin = 0.5\in
   bottom-margin = 0.5\in
-  max-systems-per-page = 4
+  max-systems-per-page = 3
   footnote-separator-markup = \markup \fill-line {  \override #'(span-factor . 1/2) \override #'(thickness . 0.01) \draw-hline }
   myStaffSize = #20
   #(define fonts
@@ -34,7 +34,7 @@
       % page-number not on first-page 
       \on-the-fly #not-first-page 
       % page-number not on last-page 
-      \concat { \sans \fontsize #-3 { "Aurora/Alpha 12/15/14" \fromproperty #'page:page-number-string /3
+      \concat { \sans \fontsize #-3 { "Aurora/Alpha 12/15/14 " \fromproperty #'page:page-number-string /3
     }  }
     % copyright on first page 
     \on-the-fly #first-page \fromproperty #'header:copyright 
