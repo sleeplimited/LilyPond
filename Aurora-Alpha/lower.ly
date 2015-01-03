@@ -75,7 +75,9 @@ lower = {
     % Bar 1
   } \\ {
     %%% VoiceTwo
+
     \voiceTwo
+    \tieNeutral
     % Bar 1
     gis,8 ~ < gis, b,>2.. |
     % Bar 2
@@ -136,6 +138,65 @@ lower = {
     cis8 ~ < cis b>2.. |
     % Bar 30
     cis8 ~ < cis b>4. r2 |
-
+    % Bar 31
+    a,8 ~ < a, e>2.. |
+    % Bar 32
+    a,8 ~ < a, e>2.. |
+    % Bar 33
+    a,8 ~ < a, e>2.. |
+    % Bar 34
+    a,8 ~ < a, e>2.. |
+    % Bar 35
+    e,8 ~ < e, b,>2.. |
+    % Bar 36
+    e,8 ~ < e, b,>2.. |
+    % Bar 37
+    cis,8 ~ < cis, gis,>2.. |
+    % Bar 38
+    cis,8 ~ < cis, gis,>2.. |
+    % Bar 39
+    cis,8 ~ < cis, gis,>2.. |
+    % Bar 40
+    cis,8 ~ < cis, gis,>2.. |
+    % Bar 41
+    cis,8 ~ < cis, a,>2.. |
+    % Bar 42
+    cis,8 ~ < cis, a,>2.. |
+    % Bar 43
+    e,8 ~ < e, a,>2.. |
+    % Bar 44
+    e,8 ~ < e, a,>2.. |
+    % Bar 45
+    gis,8 ~ < gis, b,>2.. |
+    % Bar 46
+    gis,8 ~ < gis, b,>2.. |
+    % Bar 47
+    a,8 ~ < a, cis>2.. |
+    % Bar 48
+    a,8 ~ < a, cis>2.. |
+    % Bar 49
+    gis,8 ~ < gis, b,>2.. |
+    % Bar 50
+    gis,8 ~ < gis, b,>2.. |
+    % Bar 51
+    e,8 ~ < e, a,>2.. |
+    % Bar 52
+    e,8 ~ < e, a,>2.. |
+    % Bar 53
+    gis,8 ~ < gis, b,>2.. |
+    % Bar 54
+    gis,8 ~ < gis, b,>2.. |
+    % Bar 55
+    a,8 ~ < a, cis>2.. |
+    % Bar 56
+    a,8 ~ < a, cis>2.. |
+    % Bar 57
+    e,8 ~ <e, b,>2.. ~ |
+    % Bar 58
+    < e, b,>1 |
+    
+    
+    
+    
   } >>
 }

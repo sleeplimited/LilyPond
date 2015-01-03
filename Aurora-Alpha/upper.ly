@@ -139,9 +139,9 @@ upper = {
     % Bar 56
     b4 cis'4 b4 cis'8 e' ~ |
     % Bar 57
-    e'2 b2 |
+    e'2 b2 ~ |
     % Bar 58
-    e'1 |
+    < b e'>1 |
   } \\ {
     %%% VoiceFour
     \voiceFour
