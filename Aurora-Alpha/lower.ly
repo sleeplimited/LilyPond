@@ -67,6 +67,76 @@ lower = {
     r4 fis4. fis4. ~ |
     % Bar 23
     fis4 fis4. fis4. |
+    % Bar 24
+    r4 gis2 gis4 ~ |
+    % Bar 25
+    gis4 gis2 gis4 ~ |
+    % Bar 26
+    gis4 gis2 gis4 ~ |
+    % Bar 27
+    gis4 gis2 r4 |
+    % Bar 28
+    r4 a2 a4 ~ |
+    % Bar 29
+    a4 a2 a4 ~ |
+    % Bar 30
+    a4 a4 r2 |
+    % Bar 31
+    r4 cis'2. ~ |
+    % Bar 32
+    cis'4 cis'2. ~ |
+    % Bar 33
+    cis'4 cis'2. ~ |
+    % Bar 34
+    cis'4 cis'2 r4 |
+    % Bar 35
+    r4 gis2. ~ |
+    % Bar 36
+    gis4 gis2. ~ |
+    % Bar 37
+    gis4 gis2. ~ |
+    % Bar 38
+    gis4 gis2. ~ |
+    % Bar 39
+    gis4 gis2. ~ |
+    % Bar 40
+    gis4 gis2. ~ |
+    % Bar 41
+    gis4 gis2. ~ |
+    % Bar 42
+    gis4 gis2. |
+    % Bar 43
+    r4 e2 e4 ~ |
+    % Bar 44
+    e4 e2 e4 ~ |
+    % Bar 45
+    e4 e2 e4 ~ |
+    % Bar 46
+    e4 e2 e4 |
+    % Bar 47
+    s1 |
+    % Bar 48
+    s1 |
+    % Bar 49
+    r4 e2 e4 ~ |
+    % Bar 50
+    e4 e2 e4 ~ |
+    % Bar 51
+    e4 e2 e4 ~ |
+    % Bar 52
+    e4 e2 e4 ~ |
+    % Bar 53
+    e4 e2 e4 ~ |
+    % Bar 54
+    e4 e2 e4 |
+    % Bar 55
+    s1 |
+    % Bar 56
+    s1 |
+    % Bar 57
+    r4 r8 gis8~ gis2 ~ |
+    % Bar 58
+    gis1 |
   } \\ {
     %%% VoiceFour
     \voiceFour

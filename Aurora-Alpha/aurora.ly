@@ -1,6 +1,6 @@
 \version "2.16.2"
 %{ Declaration
-=============================================================================
+=======================================================================
 "Aurora/Alpha", by Rachael Carlson
 
 This transcription is by Rachael Thomas Carlson for Sleep Limited 
@@ -12,8 +12,7 @@ __..           .           ,      .
 .__    .  .        ,                
 [__). .|_ |* _. _.-+-* _ ._  __     
 |   (_|[_)||(_.(_] | |(_)[ )_)      
-
-============================================================================%} 
+====================================================================%} 
 \pointAndClickOff
 % Header contains the composer information, Song title and copyright
 % information.  This includes Transcription copyright.

@@ -10,13 +10,13 @@ upper = {
   \numericTimeSignature
   \time 4/4
   \set Score.tempoHideNote = ##t
-  \tempo 4 = 60
+  \tempo 4 = 116
   \key cis \minor
   \override Score.RehearsalMark #'break-align-symbols = #'(key-signature)
   \once \override Score.KeySignature #'break-align-anchor = #2.3
   \once \override Score.RehearsalMark #'extra-offset = #'(0 . 2)
   \mark \markup  { \fontsize #-4 \concat {
-    \fontsize #0 { \note #"4" #1 }" =" \fontsize #-4 \number " 60"
+    \fontsize #0 { \note #"4" #1 }" =" \fontsize #-4 \number " 116"
   }}
   \mergeDifferentlyHeadedOn
   \mergeDifferentlyDottedOn
@@ -26,6 +26,7 @@ upper = {
     \voiceOne
     \mergeDifferentlyHeadedOn
     \mergeDifferentlyDottedOn
+    \tieNeutral
     % Bar 1
     r2 b4. b8 ~ |
     % Bar 2
@@ -151,6 +152,7 @@ upper = {
   } \\ {
     %%% VoiceTwo
     \voiceTwo
+    \tieNeutral
     % Bar 1
     e4.\rest e4 e4.~ |
     % Bar 2
@@ -204,7 +206,7 @@ upper = {
     % Bar 26
     dis'4. dis'4 dis'4. ~ |
     % Bar 27
-    dis'4 dis'4. dis'8 r4 |
+    dis'4. dis'4 dis'8 r4 |
     % Bar 28
     r4 s8 e'4 e'4. ~ |
     % Bar 29

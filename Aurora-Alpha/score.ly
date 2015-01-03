@@ -2,9 +2,9 @@
   \score {
     <<
       \new GrandStaff = "tab with traditional" \with {
-        systemStartDelimiter = #'SystemStartBar
-        \override SystemStartBar #'thickness = #5
-        \override SystemStartBar #'X-offset = #-1
+        % systemStartDelimiter = #'SystemStartBar
+        % \override SystemStartBar #'thickness = #5
+        % \override SystemStartBar #'X-offset = #-1
         \override StaffSymbol #'staff-space = #(magstep -2)
         fontSize = #-2
       }  <<
