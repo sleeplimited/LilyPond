@@ -34,7 +34,7 @@
       % page-number not on first-page 
       \on-the-fly #not-first-page 
       % page-number not on last-page 
-      \concat { \sans \fontsize #-3 { "Aurora/Alpha 12/15/14 " \fromproperty #'page:page-number-string /3
+      \concat { \sans \fontsize #-3 { "Aurora/Alpha 12/15/14 " \fromproperty #'page:page-number-string /5
     }  }
     % copyright on first page 
     \on-the-fly #first-page \fromproperty #'header:copyright 

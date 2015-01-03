@@ -29,7 +29,7 @@
         \line {
           \concat {
             \sans \fontsize #-3 {
-              "Aurora/Alpha 12/15/2014 " \fromproperty #'page:page-number-string "/3" 
+              "Aurora/Alpha 12/15/2014 " \fromproperty #'page:page-number-string "/5" 
             }
           }
         }

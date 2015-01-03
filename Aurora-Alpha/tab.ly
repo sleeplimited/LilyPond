@@ -156,7 +156,7 @@
     % Bar 51
     e,\6 a, e\4 e\3 cis'\2 e\3 e\4 cis'\2 |
     % Bar 52
-    e,\6 a, e\4 e\3 cis'\2 e\3 e\4 cis'\2 |
+    e,\6 a, e\4 e\3 cis'\2 e\3 e\4 e'\1 |
     \break
     % Bar 53
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
