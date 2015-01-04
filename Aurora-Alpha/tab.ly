@@ -34,6 +34,9 @@
     \override TabStaff.StaffSymbol #'thickness = #'0.75
     \override TabStaff.Beam #'beam-thickness = #'0.38
 %% Music
+    % Page 1
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 13))
     % Bar 1
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
     % bar 2
@@ -43,6 +46,8 @@
     % Bar 4
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
     \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 56))
     \repeat volta 2 {
     % Bar 5
     e,\6 a, e\4 e\3 cis'\2 e\3 e\4 cis'\2 |
@@ -53,6 +58,8 @@
     % Bar 8
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
     \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 97))
     % bar 9
     a,\6 cis\5 cis'\4 e\3 b\2 e\3 cis'\4 b\2 |
     % Bar 10
@@ -62,6 +69,9 @@
     % Bar 12
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
     \break
+    % Page2
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 8))
     % Bar 13
     e,\6 a, e\4 e\3 cis'\2 e\3 e\4 cis'\2 |
     % Bar 14
@@ -71,6 +81,8 @@
     % Bar 16
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
     \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 50))
     % Bar 17
     a,\6 cis\5 cis'\4 e\3 b\2 e\3 cis'\4 b\2 |
     % Bar 18
@@ -81,6 +93,8 @@
     % Bar 20
     e, b, gis\4 e\3 b\2 gis\4 e\3 b\2 |
     \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 91))
     % Bar 21
     \tieUp
     e, b, gis\4 e\3 < gis\4 gis\3 > \glissando < fis\4 fis\3 \fakeSlur
@@ -94,6 +108,9 @@
     % Bar 24
     dis\5 b\4 gis\3 dis' gis' dis' gis\3 gis' |
     \break
+    % Page 3
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 8))
     % Bar 25
     dis\5 b\4 gis\3 dis' gis' dis' gis\3 gis' |
     % Bar 26
@@ -103,6 +120,8 @@
     % Bar 28
     cis b\4 a\3 e'\2 a' e'\2 a\3 a' |
     \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 51))
     % Bar 29
     cis b\4 a\3 e'\2 a' e'\2 a\3 a' |
     % Bar 30
@@ -112,6 +131,8 @@
     % Bar 32
     a,\6 e\5 cis'\4 e\3 gis'\2 e\3 e' fis'\2 |
     \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 91))
     % Bar 33
     a,\6 e\5 cis'\4 e\3 fis'\2 e\3 e' fis'\2 |
     % Bar 34
@@ -121,6 +142,9 @@
     % Bar 36
     e, b, gis\4 e\3 dis'\2 e\3 e' dis'\2 |
     \break
+    % Page 4
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 8))
     % Bar 37
     cis, gis, gis\4 e\3 dis'\2 e\3 e' dis'\2 |
     % Bar 38
@@ -130,6 +154,8 @@
     % Bar 40
     cis, gis, gis\4 e\3 cis'\2 e\3 e' cis'\2 |
     \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 50))
     % Bar 41
     cis, a, gis\4 e\3 cis'\2 e\3 e' cis'\2 |
     % Bar 42
@@ -140,6 +166,8 @@
     % Bar 44
     e,\6 a, e\4 e\3 cis'\2 e\3 e\4 e'\1 |
     \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 91))
     % Bar 45
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
     % Bar 46
@@ -149,6 +177,9 @@
     % Bar 48
     a,\6 cis\5 cis'\4 e\3 b\2 e\3 cis'\4 e'\1 |
     \break
+    % Page 5
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 8))
     % Bar 49
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
     % Bar 50
@@ -158,6 +189,8 @@
     % Bar 52
     e,\6 a, e\4 e\3 cis'\2 e\3 e\4 e'\1 |
     \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 50))
     % Bar 53
     gis,8\6 b,\5 e\4 e\3 b\2 e\3 e\4 b\2 | 
     % Bar 54
@@ -167,6 +200,8 @@
     % Bar 56
     a,\6 cis\5 cis'\4 e\3 b\2 e\3 cis'\4 e'\1 |
     \break
+    \overrideProperty #"Score.NonMusicalPaperColumn"
+    #'line-break-system-details #'((Y-offset . 91))
     % Bar 57
     e, b, e\3 gis\4 b4 ~ b4 |
     % Bar 58

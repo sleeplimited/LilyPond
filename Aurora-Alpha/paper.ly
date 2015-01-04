@@ -34,7 +34,7 @@
       % page-number not on first-page 
       \on-the-fly #not-first-page 
       % page-number not on last-page 
-      \concat { \sans \fontsize #-3 { "Aurora/Alpha 12/15/14 " \fromproperty #'page:page-number-string /5
+      \concat { \fontsize #-3 { "Aurora/Alpha 12/15/14 " \fromproperty #'page:page-number-string /5
     }  }
     % copyright on first page 
     \on-the-fly #first-page \fromproperty #'header:copyright 
@@ -50,7 +50,7 @@ evenFooterMarkup = \oddFooterMarkup
     \Score
     \override StaffGrouper #'staffgroup-staff-spacing =
     #'((basic-distance . 15)
-    (padding . -10)
+    (padding . -20)
     (stretchability . 0))
     }
   }
