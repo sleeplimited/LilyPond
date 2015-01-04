@@ -50,6 +50,25 @@
     s8_\rhp s2.. |
     % Bar 22
     s8_\rhp s2.. |
+    % Bar 23 - 30
+    s1*8 |
+    % Bar 31
+    s8_\rhp s2.. |
+    % Bar 32
+    s1 |
+    % Bar 33
+    s1 |
+    % Bar 34
+    s1 |
+    % Bar 35
+    s8_\rhp s2.. |
+    % Bar 36
+    s1 |
+    % Bar 37
+    s8_\rhp s2.. |
+
+
+
 
 
     
