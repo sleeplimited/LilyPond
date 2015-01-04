@@ -31,7 +31,7 @@
     % Bar 24
     s8 s8_\rhp s2. |
     % Bar 25 - 27
-    s1*3 |
+    s1*4 |
     % Bar 29
     s8 s8_\rhp s2. |
     % Bar 30
@@ -47,7 +47,7 @@
     % Bar 37
     s4 s4_\rhp s2 |
     % Bar 38 - 56
-    s1*20 |
+    s1*19 |
     % Bar 57
     s4. s8_\rhp s2 |
     
