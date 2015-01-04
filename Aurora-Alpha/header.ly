@@ -2,9 +2,7 @@
 \header {
   title = \markup {  \bold \fontsize #2 "Aurora/Alpha" }
   composer = \markup { \fontsize #-1 {   "Rachael Carlson" } }
-  poet = \markup { \concat { \fontsize #-3 { C\sharp\fontsize #-5 {2}" "G\sharp\fontsize
-  #-5 {2}" "E\fontsize #-5 {3}" "E\fontsize #-5 {3}" "B\fontsize #-5 {3}" "E\fontsize #-5
-  {4} }}}
+  poet = \markup { \concat { \fontsize #-3 { C\raise #0.6 \fontsize #-5 \sharp\fontsize #-5 {2}" "G\raise #0.6 \fontsize #-5 \sharp\fontsize #-5 {2}" "E\fontsize #-5 {3}" "E\fontsize #-5 {3}" "B\fontsize #-5 {3}" "E\fontsize #-5 {4} }}}
   meter = \markup { " " }
   copyright = \markup { 
     \fill-line {

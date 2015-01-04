@@ -1,4 +1,3 @@
-\version "2.16.2"
 %{ Declaration
 =======================================================================
 "Aurora/Alpha", by Rachael Carlson
@@ -13,6 +12,7 @@ __..           .           ,      .
 [__). .|_ |* _. _.-+-* _ ._  __     
 |   (_|[_)||(_.(_] | |(_)[ )_)      
 ====================================================================%} 
+\version "2.16.2"
 \pointAndClickOff
 % Header contains the composer information, Song title and copyright
 % information.  This includes Transcription copyright.
