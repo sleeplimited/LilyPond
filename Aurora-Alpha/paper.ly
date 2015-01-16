@@ -9,7 +9,7 @@
   footnote-separator-markup = \markup \fill-line {  \override #'(span-factor . 1/2) \override #'(thickness . 0.01) \draw-hline }
   myStaffSize = #20
   #(define fonts
-  (make-pango-font-tree "Tex Gyre Termes"
+  (make-pango-font-tree "Tex Gyre Schola"
                         "Tex Gyre Heros"
                         "FreeMono"
                         (/ myStaffSize 20)))

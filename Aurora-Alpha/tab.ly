@@ -16,7 +16,7 @@
     \override Rest #'font-size = #2 
     \override TabStaff.TimeSignature #'X-offset = #-1
     \override TabStaff.TimeSignature #'font-size = #5
-    \override TabStaff.TabNoteHead #'font-name = #"Tex Gyre Heros"
+    \override TabStaff.TabNoteHead #'font-name = #"Tex Gyre Schola"
     \override TabStaff.Glissando #'thickness = #0.5
     \override Staff.Stem #'stemlet-length = #2.75
     \override BreathingSign #'extra-offset = #'(0.5 . -2.0)

@@ -1,7 +1,7 @@
 % header
 \header {
-  title = \markup {  \bold \fontsize #2 "Aurora/Alpha" }
-  composer = \markup { \fontsize #-1 {   "Rachael Carlson" } }
+  title = \markup { \fontsize #2 {  \smallCaps "Aurora/Alpha" } }
+  composer = \markup { \fontsize #-1 { \smallCaps "Rachael Carlson" } }
   poet = \markup { \concat { \fontsize #-3 { C\raise #0.6 \fontsize #-5 \sharp\fontsize #-5 {2}" "G\raise #0.6 \fontsize #-5 \sharp\fontsize #-5 {2}" "E\fontsize #-5 {3}" "E\fontsize #-5 {3}" "B\fontsize #-5 {3}" "E\fontsize #-5 {4} }}}
   meter = \markup { " " }
   copyright = \markup { 
