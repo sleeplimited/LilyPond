@@ -17,9 +17,9 @@ __..           .           ,      .
 \pointAndClickOff
 % header
 \header {
-  title = \markup { \sans \bold \fontsize #2 "A Docked Ship Awakens to the Foggy Dawn" }
-  composer = \markup { \fontsize #-1 { \sans  "Rachael Carlson" } }
-  poet = \markup { \concat { \sans \fontsize #-3 { D\fontsize #-5 {2}" "A\fontsize
+  title = \markup { \fontsize #2 \smallCaps  "A Docked Ship Awakens to the Foggy Dawn" }
+  composer = \markup {\fontsize #-1 \smallCaps  "Rachael Carlson"}
+  poet = \markup { \concat {  \fontsize #-3 { D\fontsize #-5 {2}" "A\fontsize
   #-5 {2}" "D\fontsize #-5 {3}" "G\fontsize #-5 {3}" "A\fontsize #-5 {3}" "D\fontsize #-5
   {4} }}}
   meter = \markup { " " }
@@ -29,7 +29,7 @@ __..           .           ,      .
         \line { 
           \raise #-2.5
           \concat { 
-            \sans \fontsize #-3 { 
+             \fontsize #-3 { 
               "2013 " \char ##x00a9 " Sleep Limited Music"
             } 
           } 
@@ -37,7 +37,7 @@ __..           .           ,      .
         \line {
           \raise #-1.2
           \concat { 
-            \sans \fontsize #-3 { 
+             \fontsize #-3 { 
               Transcription " " \char ##x00a9 " 2013 Sleep Limited"
               " Publications"
             }
@@ -45,7 +45,7 @@ __..           .           ,      .
         } 
         \line {
           \concat {
-            \sans \fontsize #-3 {
+             \fontsize #-3 {
                 "A Docked Ship Awakens to the Foggy Dawn 11/30/13 " \fromproperty #'page:page-number-string "/3" 
              }
            }
@@ -67,7 +67,7 @@ __..           .           ,      .
   footnote-separator-markup = \markup \fill-line {  \override #'(span-factor . 1/2) \override #'(thickness . 0.01) \draw-hline }
   myStaffSize = #20
   #(define fonts
-  (make-pango-font-tree "Tex Gyre Termes"
+  (make-pango-font-tree "Tex Gyre Schola"
                         "Tex Gyre Heros"
                         "FreeMono"
                         (/ myStaffSize 20)))
@@ -92,7 +92,7 @@ __..           .           ,      .
       % page-number not on first-page 
       \on-the-fly #not-first-page 
       % page-number not on last-page 
-      \concat { \sans \fontsize #-3 { "A Docked Ship Awakens to the Foggy Dawn 11/30/13 " \fromproperty #'page:page-number-string /3
+      \concat {  \fontsize #-3 { "A Docked Ship Awakens to the Foggy Dawn 11/30/13 " \fromproperty #'page:page-number-string /3
     }  }
     % copyright on first page 
     \on-the-fly #first-page \fromproperty #'header:copyright 
@@ -120,7 +120,7 @@ evenFooterMarkup = \oddFooterMarkup
 %% Upper
   upper = {
     \set Staff.midiInstrument = #"acoustic grand"
-    \override TupletNumber #'text = \markup { \sans "3" }
+    \override TupletNumber #'text = \markup {  "3" }
     \override TupletNumber #'font-shape = #'upright
     \override TupletNumber #'font-size = #'-1
     \override TupletBracket #'thickness = #'1
@@ -369,12 +369,12 @@ evenFooterMarkup = \oddFooterMarkup
     \override Rest #'font-size = #2 
     \override TabStaff.TimeSignature #'X-offset = #-1
     \override TabStaff.TimeSignature #'font-size = #5
-    \override TabStaff.TabNoteHead #'font-name = #"Tex Gyre Heros"
+    \override TabStaff.TabNoteHead #'font-name = #"Tex Gyre Schola"
     \override TabStaff.Glissando #'thickness = #0.5
     \override Staff.Stem #'stemlet-length = #2.75
     \override BreathingSign #'extra-offset = #'(0.5 . -2.0)
     \override TupletBracket #'thickness = #'1
-    \override TupletNumber #'text = \markup { \sans "3" }
+    \override TupletNumber #'text = \markup {  "3" }
     \override TupletNumber #'font-shape = #'upright
     \override TupletNumber #'font-size = #'-1
     \override TupletBracket #'edge-height = #'(0.5 . 0.5)
@@ -706,36 +706,36 @@ evenFooterMarkup = \oddFooterMarkup
     s1 |
     % Bar 8
     \trMove #0.1 #0.8 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #1.4
-    ^\markup { \sans \fontsize #-1 n } \sVib s8 s4 s16 s16 \eVib s8 s8
+    ^\markup {  \fontsize #-1 n } \sVib s8 s4 s16 s16 \eVib s8 s8
     s8 |
     % Bar 9
     \trMove #0.1 #1.0 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #1.6
-    ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
+    ^\markup {  \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
     | 
     % Bar 10
     \trMove #0.1 #1.6 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #2.2
-    ^\markup { \sans \fontsize #-1 n } \sVib s8 s4 s4 s8 s8 \eVib |
+    ^\markup {  \fontsize #-1 n } \sVib s8 s4 s4 s8 s8 \eVib |
     % BAr 11
     \trMove #0.1 #2.0 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #2.6
-    ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
+    ^\markup {  \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
     | 
     % Bar 12
     \trMove #0.1 #1.2 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #1.8
-    ^\markup { \sans \fontsize #-1 n } \sVib s8 s4 s4 s8 s8 \eVib |
+    ^\markup {  \fontsize #-1 n } \sVib s8 s4 s4 s8 s8 \eVib |
     % Bar 13
     \trMove #0.1 #0.4 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #1.0
-    ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
+    ^\markup {  \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
     | 
     % Bar 14
     \trMove #0.1 #0.4 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #1.0
-    ^\markup { \sans \fontsize #-1 n } \sVib s8 s4 s4 s8 s8 \eVib |
+    ^\markup {  \fontsize #-1 n } \sVib s8 s4 s4 s8 s8 \eVib |
     % Bar 15
     \trMove #0.1 #0.4 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #1.0
-    ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
+    ^\markup {  \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
     | 
     % Bar 16
     \trMove #0.1 #0.4 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #1.0
-    ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s16 s16 s8 \eVib
+    ^\markup {  \fontsize #-1 h } \sVib s8 s4 s16 s16 s8 \eVib
     \tsMove #-0.1 #-4.03 \strDamp s4\startTextSpan |
     % Bar 17
     s4\stopTextSpan s8 s4 s8 s8 \strDamp s8\startTextSpan |
@@ -770,27 +770,27 @@ evenFooterMarkup = \oddFooterMarkup
       s8
     % Bar 1
     \trMove #0.1 #1.8 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #2.4
-    ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
+    ^\markup {  \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
     | 
     % Bar 2
     \trMove #0.1 #1.8 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #2.4
-    ^\markup { \sans \fontsize #-1 n } \sVib s8 s4 s4 s8 s8 \eVib |
+    ^\markup {  \fontsize #-1 n } \sVib s8 s4 s4 s8 s8 \eVib |
     % Bar 3
     \trMove #0.4 #2.0 \vibrato #'(1) #1.8 s8-\mkTweak #0.1 #2.6
-    ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
+    ^\markup {  \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
     | 
     % Bar 4
     \trMove #0.1 #0.8 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #1.4
-    ^\markup { \sans \fontsize #-1 n } \sVib s8 s4 s16 s16 \eVib s8 s8
+    ^\markup {  \fontsize #-1 n } \sVib s8 s4 s16 s16 \eVib s8 s8
     s16 \strDamp s16\startTextSpan | 
     % Bar 5
     s4 s4 s8\stopTextSpan s8 s4 |
     % Bar 6
     \trMove #0.1 #0.8 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #1.4
-    ^\markup { \sans \fontsize #-1 n } \sVib s8 s4 s4 s8 s8 \eVib |
+    ^\markup {  \fontsize #-1 n } \sVib s8 s4 s4 s8 s8 \eVib |
     % Bar 7
     \trMove #0.4 #1.0 \vibrato #'(1) #1.8 s8-\mkTweak #0.1 #1.6
-    ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
+    ^\markup {  \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib s8 s4
     | 
     % Bar 8
     s4 s4 s4 s8 s16 \strDamp s16\startTextSpan | 
@@ -837,7 +837,7 @@ evenFooterMarkup = \oddFooterMarkup
     s4\stopTextSpan s2. |
     % Bar 5
     \trMove #0.2 #0.6 \vibrato #'(1) #1.8 s8-\mkTweak #-0.1 #1.2
-    ^\markup { \sans \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib
+    ^\markup {  \fontsize #-1 h } \sVib s8 s4 s16 s16 \eVib
     \strDamp s8\startTextSpan s4 | 
     % Bar 6
     s4\stopTextSpan s2. |
@@ -1026,7 +1026,7 @@ lhOne = {
     s1 |
     % Bar 17
     \trMove #1.0 #-0.0 \vibrato #'(0) #1.8 s8-\mkTweak #-0.8 #1.0
-    ^\markup { \sans \fontsize #-8 "4/6 C VII" } \sVib s8 s4 s8 s8
+    ^\markup {  \fontsize #-8 "4/6 C VII" } \sVib s8 s4 s8 s8
     \eVib \tsMove #0 #0.25 \lhSpannerUp "1" { s4 |
     % Bar 18
     s8 s8 s4 s4 s8} s8 |
@@ -1040,7 +1040,7 @@ lhOne = {
     \tsMove #0 #0 \lhSpannerUp "1" { s8 s8 s4 s4 } s4 |
     % Bar 23
     \trMove #1.0 #-0.0 \vibrato #'(0) #1.8 s8-\mkTweak #-0.8 #1.0
-    ^\markup { \sans \fontsize #-8 "4/6 C VII" } \sVib s8 s4 s8 s8
+    ^\markup {  \fontsize #-8 "4/6 C VII" } \sVib s8 s4 s8 s8
     \eVib \tsMove #0 #0.25 \lhSpannerUp "1" { s4 |
     % Bar 24
     s8 s8 s4 s4 s8 } s8 |
