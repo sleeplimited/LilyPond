@@ -895,22 +895,22 @@ evenFooterMarkup = \oddFooterMarkup
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
       \partial 8
-      s8\mkTweak #-0.7 #-4.3 ^\rhp \mkTweak #-0.7 #-3.5 ^\rhi \mkTweak
-    #-0.7 #-3.6 ^\rhm \mkTweak #-0.7 #-3.6 ^\rha
+      s8\mkTweak #-0.7 #-4.2 ^\rhp \mkTweak #-0.7 #-3.4 ^\rhi \mkTweak
+    #-0l.8 #-3.5 ^\rhm \mkTweak #-0.8 #-3.4 ^\rha
     % Bar 1
     s4 s4 s8 s8\mkTweak
-    #-0.3 #-6.3 ^\rhp \mkTweak #-0.35 #-3.5 ^\rhi \mkTweak #-0.35 #-3.5 ^\rhm s4 |
+    #-0.3 #-6.2 ^\rhp \mkTweak #-0.35 #-3.4 ^\rhi \mkTweak #-0.4 #-3.5 ^\rhm s4 |
     % Bar 2
-    s4 s2 s8 s8\mkTweak #-0.3 #-5.3 ^\rhp\mkTweak #-0.3 #-3.5
-    ^\rhi \mkTweak #-0.3 #-3.5  ^\rhm \mkTweak #-0.3 #-3.5 ^\rha |
+    s4 s2 s8 s8\mkTweak #-0.3 #-5.2 ^\rhp\mkTweak #-0.35 #-3.4
+    ^\rhi \mkTweak #-0.4 #-3.5  ^\rhm \mkTweak #-0.3 #-3.4 ^\rha |
     % Bar 3
-    s4 s4 s8 s8\mkTweak #-0.3 #-6.3 ^\rhp \mkTweak #-0.4 #-3.5 ^\rhi
-    \mkTweak #-0.4 #-3.5 ^\rhm \mkTweak #-0.4 #-3.5 ^\rha s4 |
+    s4 s4 s8 s8\mkTweak #-0.3 #-6.2 ^\rhp \mkTweak #-0.35 #-3.4 ^\rhi
+    \mkTweak #-0.4 #-3.5 ^\rhm \mkTweak #-0.3 #-3.4 ^\rha s4 |
     % Bar 4
-    s2 s8 s8\mkTweak #-0.3 #-6.3 ^\rhp s8 s16\mkTweak #-0.3 #-7.0
-    ^\rhp \mkTweak #-0.4 #-4.2 ^\rhi \mkTweak #-0.4 #-4.2 ^\rhm
-    \mkTweak #-0.4 #-4.2 ^\rha \mkTweak #-0.5 #-6.7 \tweak Script
-    #'font-size #-5 ^\rheel s16\mkTweak #-0.6 #-5.4 ^\rhp   |
+    s2 s8 s8\mkTweak #-0.3 #-6.2 ^\rhp s8 s16\mkTweak #-0.3 #-6.9
+    ^\rhp \mkTweak #-0.35 #-4.1 ^\rhi \mkTweak #-0.4 #-4.2 ^\rhm
+    \mkTweak #-0.4 #-4.1 ^\rha \mkTweak #-0.5 #-6.6 \tweak Script
+    #'font-size #-5 ^\rheel s16\mkTweak #-0.6 #-5.3 ^\rhp   |
     % Bar 5
     s1 |
     % Bar 6
@@ -918,18 +918,17 @@ evenFooterMarkup = \oddFooterMarkup
     % Bar 7
     s1 |
     % Bar 8
-    s2 s8 s8\mkTweak #-0.3 #-6.3 ^\rhp s8 s16\mkTweak #-0.3 #-7.0
-    ^\rhp \mkTweak #-0.4 #-4.2 ^\rhi \mkTweak #-0.4 #-4.2 ^\rhm
-    \mkTweak #-0.4 #-4.2 ^\rha \mkTweak #-0.5 #-6.7 \tweak Script
-    #'font-size #-5 ^\rheel s16\mkTweak #-0.6 #-5.4 ^\rhp   |
+    s2 s8 s8\mkTweak #-0.3 #-6.2 ^\rhp s8 s16\mkTweak #-0.3 #-6.9
+    ^\rhp \mkTweak #-0.35 #-4.2 ^\rhi \mkTweak #-0.4 #-4.2 ^\rhm
+    \mkTweak #-0.4 #-4.1 ^\rha \mkTweak #-0.5 #-6.6 \tweak Script
+    #'font-size #-5 ^\rheel s16\mkTweak #-0.6 #-5.2 ^\rhp   |
     % Bar 9
-    s2 s8 s8\mkTweak #-0.3 #-6.3 ^\rhp \mkTweak #-0.4 #-3.5 ^\rhi
+    s2 s8 s8\mkTweak #-0.4 #-6.2 ^\rhp \mkTweak #-0.35 #-3.4 ^\rhi
     \mkTweak #-0.4 #-3.5 ^\rhm s4 |
     % Bar 10
-    s2 s4 s8 s8 \mkTweak #-0.3 #-5.3 ^\rhp \mkTweak #-0.4 #-3.5 ^\rhi \mkTweak #-0.4 #-3.5
-    ^\rhm \mkTweak #-0.4 #-3.5 ^\rha |
+    s2 s4 s8 s8 \mkTweak #-0.3 #-5.2 ^\rhp \mkTweak #-0.35 #-3.4 ^\rhi \mkTweak #-0.4 #-3.5 ^\rhm \mkTweak #-0.4 #-3.4 ^\rha |
     % Bar 11
-    s8\mkTweak #-0.3 #-4.3 ^\rhp s8 s4. s8\mkTweak #-0.3 #-6.3 ^\rhp \mkTweak #-0.4 #-3.5 ^\rhi s4 |
+    s8\mkTweak #-0.3 #-4.2 ^\rhp s8 s4. s8\mkTweak #-0.4 #-6.2 ^\rhp \mkTweak #-0.35 #-3.4 ^\rhi s4 |
     % Bar 12
     s1 |
     % Bar 13
@@ -939,38 +938,38 @@ evenFooterMarkup = \oddFooterMarkup
     % Bar 15
     s1 |
     % Bar 16
-    s4 s4 s4 s8\mkTweak #-0.3 #-5.3 ^\rhp \mkTweak #-0.4 #-4.5 ^\rhi
-    \mkTweak #-0.4 #-4.5 ^\rhm \mkTweak #-0.4 #-4.5 ^\rha s8 |
+    s4 s4 s4 s8\mkTweak #-0.3 #-5.2 ^\rhp \mkTweak #-0.35 #-4.4 ^\rhi
+    \mkTweak #-0.4 #-4.5 ^\rhm \mkTweak #-0.4 #-4.4 ^\rha s8 |
     % Bar 17
-    s8 s8\mkTweak #-0.5 #-0.3 ^\rha s4 s4\mkTweak #-0.8 #-1.3 ^\rhm
-    s8\mkTweak #-0.3 #-2.3 ^\rhi s8\mkTweak #-0.3 #-5.3 ^\rhp \mkTweak
-    #-0.4 #-4.5 ^\rhi \mkTweak #-0.4 #-4.5 ^\rhm \mkTweak #-0.4 #-4.5 ^\rha |
+    s8 s8\mkTweak #-0.5 #-0.3 ^\rha s4 s4\mkTweak #-0.7 #-1.4 ^\rhm
+    s8\mkTweak #-0.2 #-2.3 ^\rhi s8\mkTweak #-0.4 #-5.2 ^\rhp \mkTweak
+    #-0.35 #-4.4 ^\rhi \mkTweak #-0.4 #-4.5 ^\rhm \mkTweak #-0.3 #-4.4 ^\rha |
     % Bar 18
-    s2. s8 s8\mkTweak #-0.3 #-6.3 ^\rhp \mkTweak #-0.4 #-3.5 ^\rhi
-    \mkTweak #-0.4 #-3.5 ^\rhm \mkTweak #-0.4 #-3.5 ^\rha |
+    s2. s8 s8\mkTweak #-0.3 #-6.2 ^\rhp \mkTweak #-0.35 #-3.4 ^\rhi
+    \mkTweak #-0.4 #-3.5 ^\rhm \mkTweak #-0.3 #-3.4 ^\rha |
     % Bar 19
-    s8 s8\mkTweak #-0.3 #-3.3 ^\rhi s2 s8 s8\mkTweak #-0.3 #-5.3 ^\rhp \mkTweak
-    #-0.4 #-4.5 ^\rhi \mkTweak #-0.4 #-4.5 ^\rhm \mkTweak #-0.4 #-4.5 ^\rha |
+    s8 s8\mkTweak #-0.2 #-3.4 ^\rhi s2 s8 s8\mkTweak #-0.4 #-5.2 ^\rhp \mkTweak
+    #-0.4 #-4.4 ^\rhi \mkTweak #-0.4 #-4.5 ^\rhm \mkTweak #-0.3 #-4.4 ^\rha |
     % Bar 20
     s1 |
     % Bar 21
-    s2. s8 s8\mkTweak #-0.3 #-6.3 ^\rhp \mkTweak #-0.4 #-3.5 ^\rhi
-    \mkTweak #-0.4 #-3.5 ^\rhm \mkTweak #-0.4 #-3.5 ^\rha |
+    s2. s8 s8\mkTweak #-0.4 #-6.2 ^\rhp \mkTweak #-0.35 #-3.4 ^\rhi
+    \mkTweak #-0.4 #-3.5 ^\rhm \mkTweak #-0.3 #-3.4 ^\rha |
     % Bar 22
-    s16 s16\mkTweak #-0.3 #-5.3 ^\rhp s8\mkTweak #-0.3 #-4.3 ^\rhp s4
-    s4 s8\mkTweak #-0.3 #-5.3 ^\rhp \mkTweak #-0.4 #-4.5 ^\rhi
+    s16 s16\mkTweak #-0.3 #-5.2 ^\rhp s8\mkTweak #-0.3 #-4.2 ^\rhp s4
+    s4 s8\mkTweak #-0.3 #-5.2 ^\rhp \mkTweak #-0.35 #-4.4 ^\rhi
     \mkTweak #-0.4 #-4.5 ^\rhm s8 |
     % Bar 23
-    s8\mkTweak #-0.3 #-1.3 ^\rha s8\mkTweak #-0.5 #-0.3 ^\rha s4
-    s4\mkTweak #-0.8 #-1.3 ^\rhm s8\mkTweak #-0.3 #-2.3 ^\rhi
-    s8\mkTweak #-0.3 #-5.3 ^\rhp \mkTweak #-0.3 #-4.5 ^\rhi \mkTweak
-    #-0.3 #-4.5 ^\rhm \mkTweak #-0.3 #-4.5 ^\rha |
+    s8\mkTweak #-0.25 #-1.3 ^\rha s8\mkTweak #-0.55 #-0.3 ^\rha s4
+    s4\mkTweak #-0.7 #-1.3 ^\rhm s8\mkTweak #-0.3 #-2.2 ^\rhi
+    s8\mkTweak #-0.4 #-5.2 ^\rhp \mkTweak #-0.3 #-4.5 ^\rhi \mkTweak
+    #-0.4 #-4.5 ^\rhm \mkTweak #-0.3 #-4.4 ^\rha |
     % Bar 24
-    s2. s8 s8\mkTweak #-0.3 #-6.3 ^\rhp \mkTweak #-0.4 #-3.5 ^\rhi
-    \mkTweak #-0.4 #-3.5 ^\rhm \mkTweak #-0.4 #-3.5 ^\rha |
+    s2. s8 s8\mkTweak #-0.4 #-6.2 ^\rhp \mkTweak #-0.35 #-3.4 ^\rhi
+    \mkTweak #-0.45 #-3.5 ^\rhm \mkTweak #-0.3 #-3.4 ^\rha |
     % Bar 25
-    s8 s8\mkTweak #-0.3 #-3.3 ^\rhi s2 s8 s8\mkTweak #-0.3 #-5.3 ^\rhp \mkTweak
-    #-0.4 #-4.5 ^\rhi \mkTweak #-0.4 #-4.5 ^\rhm \mkTweak #-0.4 #-4.5 ^\rha |
+    s8 s8\mkTweak #-0.2 #-3.3 ^\rhi s2 s8 s8\mkTweak #-0.4 #-5.2 ^\rhp \mkTweak
+    #-0.35 #-4.4 ^\rhi \mkTweak #-0.4 #-4.5 ^\rhm \mkTweak #-0.3 #-4.4 ^\rha |
     % Bar 26
     s1 |
 
