@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.9)  19 JAN 2015 10:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.9)  19 JAN 2015 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -601,49 +601,49 @@ File: tikzlibrarycalc.code.tex 2009/09/04 v2.10 (rcs-revision 1.6)
 ) (./backcover.aux)
 \openout1 = `backcover.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 14.
-LaTeX Font Info:    Try loading font information for FML+fncmi on input line 14
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 15.
+LaTeX Font Info:    Try loading font information for FML+fncmi on input line 15
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 14.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 14.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 15.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 15.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 14.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 14.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 15.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 15.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 14.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    ... okay on input line 15.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -719,24 +719,32 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-[1
+</home/rtc/lilypond/theShip/TexLive/logo.png, id=4, 374.39874pt x 809.0225pt>
+File: /home/rtc/lilypond/theShip/TexLive/logo.png Graphic file (type png)
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./backcover.aux) ) 
+<use /home/rtc/lilypond/theShip/TexLive/logo.png>
+Package pdftex.def Info: /home/rtc/lilypond/theShip/TexLive/logo.png used on in
+put line 53.
+(pdftex.def)             Requested size: 28.07869pt x 60.67406pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/rtc/lilypond/theShip
+/TexLive/logo.png>]
+(./backcover.aux) ) 
 Here is how much of TeX's memory you used:
- 11284 strings out of 493304
- 207297 string characters out of 6139872
- 248380 words of memory out of 5000000
- 14505 multiletter control sequences out of 15000+600000
+ 11290 strings out of 493304
+ 207531 string characters out of 6139872
+ 248421 words of memory out of 5000000
+ 14509 multiletter control sequences out of 15000+600000
  11173 words of font info for 18 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,5n,55p,439b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/s
-hare/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}</usr/share/texmf/fonts/type1/p
-ublic/tex-gyre/qcsr.pfb>
-Output written on backcover.pdf (1 page, 18285 bytes).
+{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}</usr
+/share/texmf/fonts/type1/public/tex-gyre/qcsr.pfb>
+Output written on backcover.pdf (1 page, 51647 bytes).
 PDF statistics:
- 16 PDF objects out of 1000 (max. 8388607)
- 11 compressed objects within 1 object stream
+ 19 PDF objects out of 1000 (max. 8388607)
+ 12 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

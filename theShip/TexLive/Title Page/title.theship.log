@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.9)  19 JAN 2015 10:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.9)  19 JAN 2015 14:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -359,49 +359,49 @@ File: t1qcs.fd 2009/09/25 v1.2 font definition file for T1/qcs
 )) (./title.theship.aux)
 \openout1 = `title.theship.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 11.
-LaTeX Font Info:    Try loading font information for FML+fncmi on input line 11
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 12.
+LaTeX Font Info:    Try loading font information for FML+fncmi on input line 12
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 11.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 11.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 12.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 12.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 11.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 11.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 12.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 12.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 11.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 12.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    ... okay on input line 12.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -477,52 +477,33 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 (./title.tex
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 8.
- (/usr/share/texlive/texmf-dist/tex/latex/fouriernc/t1fnc.fd
-File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
-)
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 8.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 8.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 6.50995pt on input line 8.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 8.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 8.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 8.
-LaTeX Font Info:    Try loading font information for FML+fncm on input line 8.
+</home/rtc/lilypond/theShip/TexLive/logo.png, id=1, 374.39874pt x 809.0225pt>
+File: /home/rtc/lilypond/theShip/TexLive/logo.png Graphic file (type png)
 
-(/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
-File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
-)
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 8.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 8.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 8.
+<use /home/rtc/lilypond/theShip/TexLive/logo.png>
+Package pdftex.def Info: /home/rtc/lilypond/theShip/TexLive/logo.png used on in
+put line 13.
+(pdftex.def)             Requested size: 28.07869pt x 60.67406pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./title.theship.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/rtc/lilypond/theShip
+/TexLive/logo.png>])
+(./title.theship.aux) ) 
 Here is how much of TeX's memory you used:
- 3026 strings out of 493304
- 42664 string characters out of 6139872
- 98146 words of memory out of 5000000
- 6431 multiletter control sequences out of 15000+600000
- 26362 words of font info for 38 fonts, out of 8000000 for 9000
+ 2969 strings out of 493304
+ 41887 string characters out of 6139872
+ 98187 words of memory out of 5000000
+ 6383 multiletter control sequences out of 15000+600000
+ 17644 words of font info for 20 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 37i,4n,23p,301b,155s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/
-usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/enc/d
-vips/tex-gyre/q-ec-sc.enc}</usr/share/texmf/fonts/type1/public/tex-gyre/qcsr.pf
-b>
-Output written on title.theship.pdf (1 page, 28997 bytes).
+ 37i,5n,23p,301b,190s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}{/us
+r/share/texmf/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}</usr/share/texmf/fonts/type
+1/public/tex-gyre/qcsr.pfb>
+Output written on title.theship.pdf (1 page, 62348 bytes).
 PDF statistics:
- 16 PDF objects out of 1000 (max. 8388607)
- 11 compressed objects within 1 object stream
+ 19 PDF objects out of 1000 (max. 8388607)
+ 12 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

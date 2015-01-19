@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.9)  19 JAN 2015 14:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.9)  19 JAN 2015 14:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -716,27 +716,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 19.28804pt on input line 52.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 55.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 6.50995pt on input line 55.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 55.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 55.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 55.
-LaTeX Font Info:    Try loading font information for FML+fncm on input line 55.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
-File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
-)
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 55.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 55.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 55.
+(Font)              scaled to size 5.57996pt on input line 55.
 
 </home/rtc/lilypond/theShip/TexLive/logo.png, id=4, 374.39874pt x 809.0225pt>
 File: /home/rtc/lilypond/theShip/TexLive/logo.png Graphic file (type png)
@@ -751,16 +731,16 @@ put line 57.
 /TexLive/logo.png>]
 (./cover.aux) ) 
 Here is how much of TeX's memory you used:
- 11294 strings out of 493304
- 207250 string characters out of 6139872
+ 11259 strings out of 493304
+ 206712 string characters out of 6139872
  248079 words of memory out of 5000000
- 14508 multiletter control sequences out of 15000+600000
- 23958 words of font info for 41 fonts, out of 8000000 for 9000
+ 14481 multiletter control sequences out of 15000+600000
+ 17956 words of font info for 25 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,5n,55p,435b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr
 /share/texlive/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb>
-Output written on cover.pdf (1 page, 48547 bytes).
+Output written on cover.pdf (1 page, 48539 bytes).
 PDF statistics:
  19 PDF objects out of 1000 (max. 8388607)
  12 compressed objects within 1 object stream
