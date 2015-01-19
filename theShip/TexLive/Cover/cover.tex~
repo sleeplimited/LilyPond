@@ -1,58 +1,60 @@
 \documentclass[12pt]{report}
-\usepackage{letterpaper,margin=1in,heightrounded]{geometry}
+\usepackage[letterpaper,margin=1in,heightrounded]{geometry}
+%
 \usepackage{tikz}
 \usepackage{graphicx}
 \usepackage{fouriernc}
 \usepackage{fixltx2e}
-\usepackage{tgschola}
-\usepackage[T1]{fontenc}
+\graphicspath{/home/rtc/lilypond/The\ Ship/TexLive/Cover/}
+%
 \usetikzlibrary{calc}
+%
 \pagestyle{empty}
 \begin{document}
 \begin{center}
     \vspace*{1.3cm}
 \begin{tikzpicture}[overlay,remember picture]
-    \draw [line width=1pt,rounded corners=4pt]
+    \draw [line width=1pt]
         ($ (current page.north west) + (1.05cm,-1.05cm) $)
         rectangle
         ($ (current page.south east) + (-1.05cm,1.05cm) $);
-    \draw [line width=1pt,rounded corners=4pt,
-        ]
+    \draw [line width=1pt]
         ($ (current page.north west) + (1.25cm,-1.25cm) $)
         rectangle
         ($ (current page.south east) + (-1.25cm,1.25cm) $);
-        \draw [xshift=4mm,line width=1pt,rounded corners=4pt]
+        \draw [xshift=4mm,line width=1pt]
         ($ (current page.north west) + (.5cm,-.5cm) $)
         rectangle
         ($ (current page.south east) + (-.5cm,.5cm) $);
-    \draw [line width=1pt,rounded corners=4pt]
+    \draw [line width=1pt]
         ($ (current page.north west) + (1.475cm,-1.475cm) $)
         rectangle
         ($ (current page.south east) + (-1.475cm,1.475cm) $);
-    \draw [line width=1pt,rounded corners=4pt]
+    \draw [line width=1pt]
         ($ (current page.north west) + (1.725cm,-1.725cm) $)
         rectangle
         ($ (current page.south east) + (-1.725cm,1.725cm) $);
-    \draw [line width=1pt,rounded corners=4pt]
+    \draw [line width=1pt]
         ($ (current page.north west) + (.875cm,-.875cm) $)
         rectangle
         ($ (current page.south east) + (-.875cm,.875cm) $);
-    \draw [line width=1pt,rounded corners=4pt]
+    \draw [line width=1pt]
         ($ (current page.north west) + (.6cm,-.6cm) $)
         rectangle
         ($ (current page.south east) + (-.6cm,.6cm) $);
-    \draw [line width=1pt,rounded corners=4pt]
+    \draw [line width=1pt]
         ($ (current page.north west) + (.725cm,-.725cm) $)
         rectangle
         ($ (current page.south east) + (-.725cm,.725cm) $);
 \end{tikzpicture}
-\textsc{resizebox{5cm}{!}{Rachael}\\
-\textsc{resizebox{15cm}{!}{Carlson}\\[3cm]
-\textsc{\huge A Docked Ship Awakens to the Foggy Dawn}\\[.5cm]
+\textsc{\resizebox{5cm}{!}{Rachael}}\\
+\textsc{\resizebox{15cm}{!}{Carlson}}\\[3cm]
+\textsc{\LARGE A Docked Ship Awakens to the Foggy Dawn}\\[.5cm]
 for Solo Acoustic Six-String Guitar\\[.5cm]
 Tuning:\\
-D\texsubscript{2}A\textsubscript{2}D\textsubscript{3}G\textsubscript{3}A\textsubscript{3}D\textsubscript{4}\\
+D\textsubscript{2}A\textsubscript{2}D\textsubscript{3}G\textsubscript{3}A\textsubscript{3}D\textsubscript{4}\\
 \vfill
+\includegraphics[scale=1.5]{logo.png}
 \textsc{Sleep Limited Publications}
 \end{center}
 \end{document}
