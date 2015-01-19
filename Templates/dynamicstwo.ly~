@@ -1,7 +1,0 @@
-%% DynamicsTwo
-  dynamicstwo = {
-    \textLengthOff
-    \override TextScript #'outside-staff-priority = ##f
-    \tabFullNotation
-  }
-
