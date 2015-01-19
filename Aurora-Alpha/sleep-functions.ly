@@ -1,10 +1,10 @@
 % Right-Hand Articulations
 %% p i m a c
-rhc = \markup { \halign #CENTER \fontsize #-5 "c" }
-rha = \markup { \halign #CENTER \fontsize #-5 "a" }
-rhm = \markup { \halign #CENTER \fontsize #-5 "m" }
-rhi = \markup { \halign #CENTER \fontsize #-5 "i" }
-rhp = \markup { \halign #CENTER \fontsize #-5 "p" }
+rhc = \markup { \halign #CENTER \italic \fontsize #-5 "c" }
+rha = \markup { \halign #CENTER \italic \fontsize #-5 "a" }
+rhm = \markup { \halign #CENTER \italic \fontsize #-5 "m" }
+rhi = \markup { \halign #CENTER \italic \fontsize #-5 "i" }
+rhp = \markup { \halign #CENTER \italic \fontsize #-5 "p" }
 %% Flicks Two arrow Heads
 oneStrFlick = \markup { \rotate #180
   \center-column {
@@ -33,7 +33,7 @@ oneStrMFlick = \markup {
             \arrow-head #Y #DOWN ##f
       }
   \raise #2.2
-   \fontsize #-5 "m" 
+   \italic \fontsize #-5 "m" 
  } 
  }
   
@@ -66,7 +66,7 @@ twoStrMFlick = \markup {
     \arrow-head #Y #DOWN ##f
   }
   \raise #2.2
-   \fontsize #-5 "m" 
+   \italic \fontsize #-5 "m" 
   }
 
 }
@@ -99,7 +99,7 @@ threeStrMFlick = \markup {
     \arrow-head #Y #DOWN ##f
   }
   \raise #2.2
-   \fontsize #-5 "m" 
+   \italic \fontsize #-5 "m" 
   }
 
 }
@@ -290,17 +290,17 @@ threeStrDamp = {
 }
 % Left Hand Articulations
 %% 1 2 3 4 t
-lhone = \markup { \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "1" }
-lhtwo = \markup { \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "2" }
+lhone = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "1" }
+lhtwo = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "2" }
 lhthree = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "3" }
-lhfour = \markup { \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "4" }
-lhthumb = \markup { \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "T" }
+lhfour = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "4" }
+lhthumb = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "T" }
 %% Guide fingers
-lhguideone = \markup { \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-1" }
-lhguidetwo = \markup {\fontsize #-8  \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-2" }
-lhguidethree = \markup {\fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-3" }
-lhguidefour = \markup {\fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-4" }
-lhguidethumb = \markup {\fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-t" }
+lhguideone = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-1" }
+lhguidetwo = \markup {  \fontsize #-8  \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-2" }
+lhguidethree = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-3" }
+lhguidefour = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-4" }
+lhguidethumb = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-t" }
 %% add left-hand fingering with Text-Spanners
   % contributed by harm6
   % Code by David Nalesnik and Thomas Morley (v2.16.0)
@@ -337,7 +337,7 @@ lhSpannerDown =
      \once \override TextSpanner #'(bound-details right text) = \markup {
      \draw-line #'(0 . 0.5) }
      \once \override TextSpanner #'(bound-details left text) = \markup {
-     { \circle \pad-markup #0.2 \upright { $strg }}}
+      { \circle \pad-markup #0.2 \upright { $strg }}}
   
      #(text-spanner-start-stop music)
   #})
@@ -351,7 +351,7 @@ lhSpannerDownOpen =
      \once \override Voice.TextSpanner #'thickness = #0.01
      \once \override TextSpanner #'(bound-details left stencil-align-dir-y) = #CENTER
      \once \override TextSpanner #'(bound-details left text) = \markup {
-     { \circle \pad-markup #0.2 \upright { $strg }}}
+      { \circle \pad-markup #0.2 \upright { $strg }}}
   
      #(text-spanner-start-stop music)
   #})
@@ -367,7 +367,7 @@ lhSpannerUp =
      \once \override TextSpanner #'(bound-details right text) = \markup {
      \draw-line #'(0 . -0.5) }
      \once \override TextSpanner #'(bound-details left text) = \markup {
-     { \circle \pad-markup #0.2 \upright { $strg } }}
+      { \circle \pad-markup #0.2 \upright { $strg } }}
   
      #(text-spanner-start-stop music)
   #})
@@ -381,7 +381,7 @@ lhSpannerUpOpen =
      \once \override Voice.TextSpanner #'thickness = #0.01
      \once \override TextSpanner #'(bound-details left stencil-align-dir-y) = #CENTER
      \once \override TextSpanner #'(bound-details left text) = \markup {
-     { \circle \pad-markup #0.2 \upright { $strg } }}
+      { \circle \pad-markup #0.2 \upright { $strg } }}
   
      #(text-spanner-start-stop music)
   #})

@@ -11,11 +11,11 @@
     % Bar 2 - 4
     s1*3 |
     % Bar 5
-    s8 s8_\rhp s2. |
+    s8 s8 s2. |
     % Bar 6 - 8
     s1*3 |
     % Bar 9
-    s8 s8_\rhp s2. |
+    s8 s8 s2. |
     % Bar 10 - 18
     s1*9 |
     % Bar 19
@@ -33,11 +33,11 @@
     % Bar 25
     s1 |
     % Bar 26
-    s8_\rhp s2.. |
+    s1 |
     % Bar 27
     s1 |
     % Bar 28
-    s8_\rhp s2.. |
+    s1 |
     % Bar 29
     s1 |
     % Bar 30
@@ -47,14 +47,18 @@
     % Bar 32 - 34
     s1*3 |
     % Bar 35
-    s8 s8_\rhp s2. |
+    s1 |
     % Bar 36
     s1 |
     % Bar 37
-    s8 s8_\rhp s2. |
+    s1 |
     % Bar 38 - 40
     s1*3 |
     % Bar 41
+    s1 |
+    % Bar 42 - 56
+    s1*15 |
+    % Bar 57
     s8 s8_\rhp s2. |
     
     

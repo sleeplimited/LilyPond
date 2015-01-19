@@ -15,7 +15,7 @@
     % Bar 4
     s1 |
     % Bar 5
-    s8_\rhp s2.. |
+    s8 s2.. |
     % Bar 6
     s1 |
     % Bar 7
@@ -23,7 +23,7 @@
     % Bar 8
     s1 |
     % Bar 9
-    s8_\rhp s2.. |
+    s8 s2.. |
     % Bar 10
     s1 |
     % Bar 11
@@ -61,11 +61,15 @@
     % Bar 34
     s1 |
     % Bar 35
-    s8_\rhp s2.. |
+    s1 |
     % Bar 36
     s1 |
     % Bar 37
-    s8_\rhp s2.. |
+    s1 |
+    % Bar 38-56
+    s1*19 |
+    % Bar 57
+    s4_\rhp s2. |
 
 
 
