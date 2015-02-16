@@ -1,6 +1,6 @@
 % header
 \header {
-  title = \markup { \fontsize #2 { \smallCaps "Watch the Tiger" }}
+  title = \markup { \fontsize #2 { \smallCaps "Watch the Tiger Walk" }}
   composer = \markup {  \fontsize #-1 {\smallCaps "Rachael Carlson" } }
   poet = \markup { \concat { \fontsize #-3 { C\sharp\fontsize #-5 {2}" "G\sharp\fontsize
   #-5 {2}" "E\fontsize #-5 {3}" "E\fontsize #-5 {3}" "B\fontsize #-5 {3}" "E\fontsize #-5
