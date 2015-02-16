@@ -21,17 +21,20 @@ tab = {
   \override TupletBracket #'extra-offset = #'(0 . -0.1)
   \override Score.OttavaBracket #'thickness = #'0.5
   \tieUp
+  \partial 4
+  <\invTNH cis,\6>8. e16\3 |
   % Bar 1
-  <a, cis' fis'>4. b4.  <gis\5\harmonic e'>4 ~ |
+  \stemDown
+  \slashedGrace b8\2 <a, cis' fis'>4. b4.  <gis\5\harmonic e'>4 ~ |
   % Bar 2
-  <gis\5\harmonic e'>4 ~ <gis\5\harmonic e'>4 ~ <gis\5\harmonic e'>4 e4\4 |
+  <gis\5\harmonic e'>4 ~ <gis\5\harmonic e'>4 ~ <gis\5\harmonic e'>4  <\invTNH cis,\6>8. e16\3 |
   % Bar 3
   <d, a, fis\4>4. <e, b, gis\4>4. e4\3 ~ |
   % Bar 4
-  e4 ~ e4 ~ e4 ~ e4 |
+  e4 ~ e4 ~ e4 <\invTNH cis,\6>8. e16\3 |
   \break
   % Bar 5
-  <a, cis' fis'>4. b4.  <gis\5\harmonic e'>4 ~ |
+  \stemDown \slashedGrace b8\2  <a, cis' fis'>4. b4.  <gis\5\harmonic e'>4 ~ |
   % Bar 6
   <gis\5\harmonic e'>4 ~ <gis\5\harmonic e'>4 ~ <gis\5\harmonic e'>4 e4\4 |
   % Bar 7
