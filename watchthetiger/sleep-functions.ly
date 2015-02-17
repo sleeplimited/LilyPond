@@ -1,10 +1,10 @@
 % Right-Hand Articulations
 %% p i m a c
-rhc = \markup { \halign #CENTER \sans \fontsize #-5 "c" }
-rha = \markup { \halign #CENTER \sans \fontsize #-5 "a" }
-rhm = \markup { \halign #CENTER \sans \fontsize #-5 "m" }
-rhi = \markup { \halign #CENTER \sans \fontsize #-5 "i" }
-rhp = \markup { \halign #CENTER \sans \fontsize #-5 "p" }
+rhc = \markup { \halign #CENTER  \fontsize #-5 "c" }
+rha = \markup { \halign #CENTER  \fontsize #-5 "a" }
+rhm = \markup { \halign #CENTER  \fontsize #-5 "m" }
+rhi = \markup { \halign #CENTER  \fontsize #-5 "i" }
+rhp = \markup { \halign #CENTER  \fontsize #-5 "p" }
 %% Flicks Two arrow Heads
 oneStrFlick = \markup { \rotate #180
   \center-column {
@@ -33,7 +33,7 @@ oneStrMFlick = \markup {
             \arrow-head #Y #DOWN ##f
       }
   \raise #2.2
-   \sans \fontsize #-5 "m" 
+    \fontsize #-5 "m" 
  } 
  }
   
@@ -66,7 +66,7 @@ twoStrMFlick = \markup {
     \arrow-head #Y #DOWN ##f
   }
   \raise #2.2
-   \sans \fontsize #-5 "m" 
+    \fontsize #-5 "m" 
   }
 
 }
@@ -99,7 +99,7 @@ threeStrMFlick = \markup {
     \arrow-head #Y #DOWN ##f
   }
   \raise #2.2
-   \sans \fontsize #-5 "m" 
+    \fontsize #-5 "m" 
   }
 
 }
@@ -290,17 +290,17 @@ threeStrDamp = {
 }
 % Left Hand Articulations
 %% 1 2 3 4 t
-lhone = \markup { \sans \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "1" }
-lhtwo = \markup { \sans \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "2" }
-lhthree = \markup { \sans \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "3" }
-lhfour = \markup { \sans \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "4" }
-lhthumb = \markup { \sans \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "T" }
+lhone = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "1" }
+lhtwo = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "2" }
+lhthree = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "3" }
+lhfour = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "4" }
+lhthumb = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "T" }
 %% Guide fingers
-lhguideone = \markup { \sans \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-1" }
-lhguidetwo = \markup {\sans  \fontsize #-8  \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-2" }
-lhguidethree = \markup {\sans  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-3" }
-lhguidefour = \markup {\sans  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-4" }
-lhguidethumb = \markup {\sans  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-t" }
+lhguideone = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-1" }
+lhguidetwo = \markup {  \fontsize #-8  \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-2" }
+lhguidethree = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-3" }
+lhguidefour = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-4" }
+lhguidethumb = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-t" }
 %% add left-hand fingering with Text-Spanners
   % contributed by harm6
   % Code by David Nalesnik and Thomas Morley (v2.16.0)
@@ -337,7 +337,7 @@ lhSpannerDown =
      \once \override TextSpanner #'(bound-details right text) = \markup {
      \draw-line #'(0 . 0.5) }
      \once \override TextSpanner #'(bound-details left text) = \markup {
-     \sans { \circle \pad-markup #0.2 \upright { $strg }}}
+      { \circle \pad-markup #0.2 \upright { $strg }}}
   
      #(text-spanner-start-stop music)
   #})
@@ -351,7 +351,7 @@ lhSpannerDownOpen =
      \once \override Voice.TextSpanner #'thickness = #0.01
      \once \override TextSpanner #'(bound-details left stencil-align-dir-y) = #CENTER
      \once \override TextSpanner #'(bound-details left text) = \markup {
-     \sans { \circle \pad-markup #0.2 \upright { $strg }}}
+      { \circle \pad-markup #0.2 \upright { $strg }}}
   
      #(text-spanner-start-stop music)
   #})
@@ -367,7 +367,7 @@ lhSpannerUp =
      \once \override TextSpanner #'(bound-details right text) = \markup {
      \draw-line #'(0 . -0.5) }
      \once \override TextSpanner #'(bound-details left text) = \markup {
-     \sans { \circle \pad-markup #0.2 \upright { $strg } }}
+      { \circle \pad-markup #0.2 \upright { $strg } }}
   
      #(text-spanner-start-stop music)
   #})
@@ -381,7 +381,7 @@ lhSpannerUpOpen =
      \once \override Voice.TextSpanner #'thickness = #0.01
      \once \override TextSpanner #'(bound-details left stencil-align-dir-y) = #CENTER
      \once \override TextSpanner #'(bound-details left text) = \markup {
-     \sans { \circle \pad-markup #0.2 \upright { $strg } }}
+      { \circle \pad-markup #0.2 \upright { $strg } }}
   
      #(text-spanner-start-stop music)
   #})
@@ -657,7 +657,7 @@ stringSnare = \newTabNoteHead \markup { \override #'(box-padding . 0)
   }
 }
 
-strpHarmSeven = \newTabNoteHead \markup { \override #'(font-name . "FreeSans")
+strpHarmSeven = \newTabNoteHead \markup { \override #'(font-name . "Tex Gyre Schola")
   { 
     \center-column {
     \combine
@@ -675,7 +675,7 @@ strpHarmSeven = \newTabNoteHead \markup { \override #'(font-name . "FreeSans")
 }
   }
 }
-strpHarmFive = \newTabNoteHead \markup { \override #'(font-name . "FreeSans")
+strpHarmFive = \newTabNoteHead \markup { \override #'(font-name . "Tex Gyre Schola")
   { 
     \center-column {
     \combine
@@ -693,7 +693,7 @@ strpHarmFive = \newTabNoteHead \markup { \override #'(font-name . "FreeSans")
 }
   }
 }
-strpHarmTwelve = \newTabNoteHead \markup { \override #'(font-name . "FreeSans")
+strpHarmTwelve = \newTabNoteHead \markup { \override #'(font-name . "Tex Gyre Schola")
   { 
     \center-column {
     \combine

@@ -34,7 +34,7 @@
       % page-number not on first-page 
       \on-the-fly #not-first-page 
       % page-number not on last-page 
-      \concat { \sans \fontsize #-3 { "A Docked Ship Awakens to the Foggy Dawn 11/30/13 " \fromproperty #'page:page-number-string /3
+      \concat { \fontsize #-3 { "Watch the Tiger Walk 02/14/2015 " \fromproperty #'page:page-number-string /3
     }  }
     % copyright on first page 
     \on-the-fly #first-page \fromproperty #'header:copyright 
