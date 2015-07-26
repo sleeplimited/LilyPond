@@ -1,3 +1,4 @@
+% Score
 \book {
   \score {
     <<
