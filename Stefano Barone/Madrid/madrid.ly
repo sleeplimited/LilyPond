@@ -203,6 +203,54 @@ evenFooterMarkup = \oddFooterMarkup
       % Bar 16
       fis'16 fis'16 fis fis' fis
       fis'16 fis'16 fis fis' fis
+      % Bar 17
+      fis'16 fis'16 fis fis' fis
+      fis'16 fis'16 fis fis' fis
+      % Bar 18
+      fis'16 fis'16 fis fis' fis
+      fis'16 fis'16 fis fis' fis
+      % Bar 19
+      fis'16 fis'16 fis fis' fis
+      fis'16 fis'16 fis fis' fis
+      % Bar 20
+      fis'16 fis'16 fis fis' fis
+      fis'16 fis'16 fis fis' fis
+      % Bar 21
+      fis'16 fis'16 fis fis' fis
+      fis'16 fis'16 fis fis' fis'
+      % Bar 22
+      fis'16 fis'16 fis fis' fis
+      fis'16 fis'16 fis fis' fis
+      % Bar 23
+      fis'16 fis'16 fis fis' fis
+      fis'16 fis'16 fis fis' fis
+      % Bar 24
+      fis'16 fis'16 fis fis' fis
+      fis'16 fis'16 fis fis' fis
+      % Bar 25
+      fis'16 fis'16 fis fis' fis
+      fis'16 fis'16 fis fis' fis'
+      % Bar 26
+      fis'16 fis'16 fis fis' fis
+      fis'16 fis'16 fis fis' fis
+      % Bar 27
+      fis'16 fis'16 fis fis' fis
+      fis'16 fis'16 fis fis' fis
+      % Bar 28
+      fis'16 fis'16 fis fis' fis
+      fis'16 fis'16 fis fis' fis
+      % Bar 29
+      fis'16 fis'16 fis fis' fis
+      fis'16 fis'16 fis fis' fis'
+      % Bar 30
+      fis'16 fis'16 fis fis' fis
+      fis'16 fis'16 fis fis' fis
+      % Bar 31
+      fis'16 fis'16 fis fis' fis
+      fis'16 fis'16 fis fis' fis
+      % Bar 32
+      fis'16 fis'16 fis fis' fis
+      fis'16 fis'16 fis fis' fis
 
 
     } >>
@@ -211,7 +259,6 @@ evenFooterMarkup = \oddFooterMarkup
  }
 %% Lower
 lower = {
-
     \set Staff.midiInstrument = #"xylophone"
     \override TupletNumber #'text = \markup {  "3" }
     \override TupletNumber #'font-shape = #'upright
@@ -227,6 +274,7 @@ lower = {
     \once \override Score.KeySignature #'break-align-anchor = #2.3
     \mergeDifferentlyHeadedOn
       \mergeDifferentlyDottedOn
+%%% VoiceTwo
     % Bar 1 - 4
     s4*10 |
     % Bar 5
@@ -253,6 +301,40 @@ lower = {
     d,2 ~ d,8 | 
     % Bar 16
     d2 ~ d8 |
+    % Bar 17
+    a,,2 ~ a,,8 |
+    % Bar 18
+    a,,8. r8 r8. r8 |
+    % Bar 19
+    a8. cis8 ~ cis8. ~ cis8 ~ |
+    % Bar 20
+    cis8. ~ cis8 r8. r8 |
+    % Bar 21
+    < a d>2 ~ < a d>8 ~ |
+    % Bar 22 
+    < a d>2 ~ < a d>8 |
+    % Bar 23
+    a8. cis8 ~ cis8. ~ cis8 |
+    % Bar 24
+    a,,8. e8 ~ e8. ~ e8 |
+    % Bar 25
+    d,2 ~ d,8 | 
+    % Bar 26
+    d2 ~ d8 |
+    % Bar 27
+    a,,2 ~ a,,8 |
+    % Bar 28
+    a,,8. e8 ~ e8. ~ e8 |
+    % Bar 29
+    d,2 ~ d,8 | 
+    % Bar 30
+    d2 ~ d8 |
+    % Bar 31
+    a,,2 ~ a,,8 |
+    % Bar 32
+    a,,8. e8 ~ e8. r8 |
+    \time 7/8
+
 
 }
 % Tab
@@ -340,7 +422,61 @@ lower = {
   % Bar 16
   < d\5 fis'\1> fis'\2 fis fis'\1 fis
   fis'16\1 fis'\2 fis fis'\1 fis
-
+  % Bar 17
+  < fis'\1 a,,\6^\laissezVibrer > fis'\2 fis fis'\1 fis
+  fis'16\1 fis'\2 fis fis'\1 fis |
+  % Bar 18
+  < a,, fis'\1> fis'\2 fis fis'\1 fis
+  fis'16\1 fis'\2 fis fis'\1 fis
+  % Bar 19
+  < fis'\1 a\4> fis'\2 fis < fis'\1 cis\5> fis
+  fis'16\1 fis'\2 fis fis'\1 fis
+  % Bar 20
+  fis'16\1 fis'\2 fis fis'\1 fis
+  fis'16\1 fis'\2 fis fis'\1 fis
+  % Bar 21
+  < fis'\1 a\4 d\5> fis'\2 fis fis'\1 fis
+  fis'16\1 fis'\2 fis fis'\1 fis'\2
+  % Bar 22
+  fis'16\1 fis'\2 fis fis'\1 fis
+  fis'16\1 fis'\2 fis fis'\1 fis
+  % Bar 23
+  < fis'\1 a\4> fis'\2 fis < fis'\1 cis\5> fis
+  fis'16\1 fis'\2 fis fis'\1 fis
+  % Bar 24
+  < fis'\1 a,,> fis'\2 fis < fis'\1 e\5> fis
+  fis'16\1 fis'\2 fis fis'\1 fis
+  % Bar 25
+  < fis'\1 d,\6 > fis'\2 fis fis'\1 fis
+  fis'16\1 fis'\2 fis fis'\1 fis'\2
+  % Bar 26
+  < d\5 fis'\1> fis'\2 fis fis'\1 fis
+  fis'16\1 fis'\2 fis fis'\1 fis
+  % Bar 27
+  < fis'\1 a,,\6^\laissezVibrer > fis'\2 fis fis'\1 fis
+  fis'16\1 fis'\2 fis fis'\1 fis |
+  % Bar 28
+  < fis'\1 a,,> fis'\2 fis < fis'\1 e\5> fis
+  fis'16\1 fis'\2 fis fis'\1 fis
+  % Bar 29
+  < fis'\1 d,\6 > fis'\2 fis fis'\1 fis
+  fis'16\1 fis'\2 fis fis'\1 fis'\2
+  % Bar 30
+  < d\5 fis'\1> fis'\2 fis fis'\1 fis
+  fis'16\1 fis'\2 fis fis'\1 fis
+  % Bar 31
+  < fis'\1 a,,\6^\laissezVibrer > fis'\2 fis fis'\1 fis
+  fis'16\1 fis'\2 fis fis'\1 fis |
+  % Bar 32
+  < fis'\1 a,,> fis'\2 fis < fis'\1 e\5> fis
+  fis'16\1 fis'\2 fis fis'\1 fis
+    \time 7/8
+    \set Timing.baseMoment = #(ly:make-moment 1 16)
+    \set Timing.beatStructure = #'(2 2 3 2 2 3)
+  % Bar 33
+  < d\5 fis'\1>16 fis'\2 < a,, fis'\1> fis'\2 < cis\5 fis'\1> fis'\2 
+  < fis a,,> < d\5 fis'\1> fis'\2 < fis'\1 a,,> < fis'\2 cis\5> fis'\1
+  < fis'\2 a,,> fis |
 
 
 }
