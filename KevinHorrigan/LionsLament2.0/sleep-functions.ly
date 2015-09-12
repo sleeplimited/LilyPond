@@ -598,8 +598,7 @@ invTNH =
    (parser location note)
    (ly:music?)
    #{
-   \tweak TabNoteHead.color #white
-   \tweak TabNoteHead.layer #-1
+   \tweak TabNoteHead #'transparent ##t
    #note
    #})
 % Changing the TabNoteHead stencil
