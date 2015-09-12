@@ -73,7 +73,7 @@ __..           .           ,      .
   right-margin = 0.6\in
   top-margin = 0.5\in
   bottom-margin = 0.5\in
-  max-systems-per-page = 4
+  max-systems-per-page = 3
   footnote-separator-markup = \markup \fill-line {  \override #'(span-factor . 1/2) \override #'(thickness . 0.01) \draw-hline }
   myStaffSize = #20
   #(define fonts
@@ -251,6 +251,37 @@ evenFooterMarkup = \oddFooterMarkup
       % Bar 32
       fis'16 fis'16 fis fis' fis
       fis'16 fis'16 fis fis' fis
+    \time 7/8
+    \set Timing.baseMoment = #(ly:make-moment 1 16)
+    \set Timing.beatStructure = #'(2 2 3 2 2 3)
+      % Bar 33
+      fis'16 fis' fis' fis' fis' fis' fis
+      fis'16 fis' fis' fis' fis' fis' fis
+      % Bar 34
+      fis'16 fis' fis' fis' fis' fis' fis
+      fis'16 fis' fis' fis' fis' fis' fis
+      % Bar 35
+      fis'16 fis' fis' fis' fis' fis' fis
+      fis'16 fis' fis' fis' fis' fis' fis
+      % Bar 36
+      fis'16 fis' fis' fis' fis' fis' fis
+      fis'16 fis' fis' fis' fis' fis' fis
+      % Bar 37
+      fis' b fis' b fis' b cis'
+      fis' b fis' b fis' b cis'
+      % Bar 38
+      fis' b fis' b fis' b cis'
+      fis' b fis' b fis' b cis'
+      % Bar 39
+      fis' b fis' b fis' b cis'
+      fis' b fis' b fis' b cis'
+      % Bar 40
+    \time 8/8
+    \set Timing.baseMoment = #(ly:make-moment 1 16)
+    \set Timing.beatStructure = #'(2 2 3 2 2 3 2)
+      fis' b fis' b fis' b cis'
+      fis' b fis' b fis' b cis'
+      r8 |
 
 
     } >>
@@ -334,6 +365,29 @@ lower = {
     % Bar 32
     a,,8. e8 ~ e8. r8 |
     \time 7/8
+    % Bar 33
+    d8 a,, cis a,,16 d8 a,,16 cis8 a,,8 |
+    % Bar 34
+    d8 a,, cis a,,16 d8 a,,16 cis8 a,,8 |
+    % Bar 35
+    d8 a,, cis a,,16 d8 a,,16 cis8 a,,8 |
+    % Bar 36
+    d8 a,, fis16 r16 a,,16
+    d8 a,, fis16 r16 a,,16 |
+    % Bar 37
+    d8 a,, fis16 r16 a,,16
+    d8 a,, fis16 r16 a,,16 |
+    % Bar 38
+    d8 a,, fis16 r16 a,,16
+    d8 a,,16 cis8 a,, |
+    % Bar 39
+    d8 a,, fis16 r16 a,,16
+    d8 a,, fis16 r16 a,,16 |
+    % Bar 40
+    \time 8/8
+    d8 a,, cis a,,16
+    d8 a,, cis16 ~ < cis eis> < d fis> r8 |
+
 
 
 }
@@ -475,9 +529,41 @@ lower = {
     \set Timing.beatStructure = #'(2 2 3 2 2 3)
   % Bar 33
   < d\5 fis'\1>16 fis'\2 < a,, fis'\1> fis'\2 < cis\5 fis'\1> fis'\2 
-  < fis a,,> < d\5 fis'\1> fis'\2 < fis'\1 a,,> < fis'\2 cis\5> fis'\1
+  < fis a,,> 
+  < d\5 fis'\1> fis'\2 < fis'\1 a,,> < fis'\2 cis\5> fis'\1
   < fis'\2 a,,> fis |
-
+  % Bar 34
+  < d\5 fis'\1>16 fis'\2 < a,, fis'\1> fis'\2 < cis\5 fis'\1> fis'\2 
+  < fis a,,> 
+  < d\5 fis'\1> fis'\2 < fis'\1 a,,> < fis'\2 cis\5> fis'\1
+  < fis'\2 a,,> fis |
+  % Bar 35
+  < d\5 fis'\1>16 fis'\2 < a,, fis'\1> fis'\2 < cis\5 fis'\1> fis'\2 
+  < fis a,,> 
+  < d\5 fis'\1> fis'\2 < fis'\1 a,,> < fis'\2 cis\5> fis'\1
+  < fis'\2 a,,> fis |
+  % Bar 36
+  < d\5 fis'\1>16 fis'\2 < a,, fis'> fis'\2 < fis\4 fis'> fis'\2 < a,,
+  fis\3>
+  < d\5 fis'> fis'\2 < a,, fis'> fis'\2 < fis\4 fis'> fis'\2 < fis
+  a,,> |
+  % Bar 37
+  < fis' d\5> b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>
+  < fis' d\5> b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>
+  % Bar 38
+  < fis' d\5> b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>
+  < fis' d\5> b < a,, fis'> < b cis\4> fis' < a,, b> cis'\3 |
+  % Bar 39
+  < fis' d\5> b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>
+  < fis' d\5> b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>
+  % Bar 40
+  \time 8/8
+    \set Timing.baseMoment = #(ly:make-moment 1 16)
+    \set Timing.beatStructure = #'(2 2 3 2 2 3 2)
+  < fis' d\5> b < fis' a,,> b < fis' cis\5> b < a,, cis'\3>
+  < fis' d\5> b < fis' a,,> b < fis' cis\5 ~ > < b\2 cis\5
+  eis\4>^glissando
+  < fis\4 d\5 fis\3> r8 |
 
 }
 
@@ -674,7 +760,5 @@ lhFour = {
     }
       }
       \midi {}
-
-
     }
   }
