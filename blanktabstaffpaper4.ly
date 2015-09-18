@@ -9,7 +9,7 @@
   <<
           \clef "moderntab"
     {
-    \repeat unfold 8 { s1 \break }
+    \repeat unfold 4 { s1 \break }
   }
 >>
   \layout {

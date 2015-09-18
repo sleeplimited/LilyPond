@@ -49,14 +49,15 @@ __..           .           ,      .
           \raise #-1.2
           \concat { 
              \fontsize #-3 { 
-              "Transcription by Vittorio Albergamo. Typeset by Sleep Limited Publications."
+              "Transcription by Vittorio Albergamo. Typeset by Rachael Carlson."
             }
           }
         } 
         \line {
           \concat {
              \fontsize #-3 {
-                "Madrid 09/11/2015 " \fromproperty #'page:page-number-string "/3" 
+                "Madrid " #(strftime "%m/%d/%Y" (localtime
+                (current-time))) " " \fromproperty #'page:page-number-string "/5" 
              }
            }
          }
@@ -102,7 +103,8 @@ __..           .           ,      .
       % page-number not on first-page 
       \on-the-fly #not-first-page 
       % page-number not on last-page 
-      \concat {  \fontsize #-3 { "Madrid 09/11/2015 " \fromproperty #'page:page-number-string /3
+      \concat {  \fontsize #-3 { "Madrid " #(strftime "%m/%d/%Y" (localtime
+                (current-time))) " "\fromproperty #'page:page-number-string /5
     }  }
     % copyright on first page 
     \on-the-fly #first-page \fromproperty #'header:copyright 
@@ -138,7 +140,7 @@ evenFooterMarkup = \oddFooterMarkup
     \override Staff.StaffSymbol #'thickness = #'0.5
     \override Staff.Beam #'beam-thickness = #'0.38
     \numericTimeSignature
-    \time 5/8
+    \time 10/16
     \set Score.tempoHideNote = ##t
     \tempo 4 = 90
     \key cis \minor
@@ -251,7 +253,7 @@ evenFooterMarkup = \oddFooterMarkup
       % Bar 32
       fis'16 fis'16 fis fis' fis
       fis'16 fis'16 fis fis' fis
-    \time 7/8
+    \time 14/16
     \set Timing.baseMoment = #(ly:make-moment 1 16)
     \set Timing.beatStructure = #'(2 2 3 2 2 3)
       % Bar 33
@@ -299,7 +301,7 @@ lower = {
     \override Staff.StaffSymbol #'thickness = #'0.5
     \override Staff.Beam #'beam-thickness = #'0.38
     \numericTimeSignature
-    \time 5/8
+    \time 10/16
     \key cis \minor
     \override Score.RehearsalMark #'break-align-symbols = #'(key-signature)
     \once \override Score.KeySignature #'break-align-anchor = #2.3
@@ -364,7 +366,7 @@ lower = {
     a,,2 ~ a,,8 |
     % Bar 32
     a,,8. e8 ~ e8. r8 |
-    \time 7/8
+    \time 14/16
     % Bar 33
     d8 a,, cis a,,16 d8 a,,16 cis8 a,,8 |
     % Bar 34
@@ -401,8 +403,7 @@ lower = {
     \override TabStaff.StaffSymbol #'thickness = #'1
     \key cis \minor
     \numericTimeSignature
-    \time 5/8
-    \override Beam #'damping = #100000
+    \time 10/16
     \override TabNoteHead #'whiteout = ##t
     \tabFullNotation
     \stemDown
@@ -421,152 +422,156 @@ lower = {
     \override TupletBracket #'extra-offset = #'(0 . -0.1)
     \override Score.BarNumber #'font-size = #'-6
     \override Score.OttavaBracket #'thickness = #'0.5
-    \set Timing.baseMoment = #(ly:make-moment 1 16)
-    \set Timing.beatStructure = #'(3 2 3 2)
+    \set Timing.baseMoment = #(ly:make-moment 1 32)
+    \set Timing.beatStructure = #'(6 4 6 4)
+    \set subdivideBeams = ##t
     \set Timing.beamExceptions = #'()
     \override TabStaff.StaffSymbol #'thickness = #'0.75
     \override TabStaff.Beam #'beam-thickness = #'0.38
     \override LaissezVibrerTie.extra-offset = #'(-1.5 . 0)
+    \override Voice.Beam.damping = #+inf.0
+    \override Beam.details.damping-direction-penalty = #0
+    \override Beam.details.round-to-zero-slope = #0
 %% Music
   % Bar 1
-  < fis'\1 \parenthesize fis'\2>16 fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  < fis'\1 \parenthesize fis'\2>16[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 2
-  fis'16\1 fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 3
-  fis'16\1 fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis'\2
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
   % Bar 4
-  fis'16\1 fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 5
-  < fis'\1 a\4> fis'\2 fis < fis'\1 cis\5> fis
-  fis'16\1 fis'\2 fis fis'\1 fis
-  % Bar 6
-  fis'16\1 fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  < fis'\1 a\4>[ fis'\2 fis < fis'\1 cis\5> fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  % Bar 6]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 7
-  < fis'\1 a\4 d\5> fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis'\2
+  < fis'\1 a\4 d\5>[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
   % Bar 8
-  fis'16\1 fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  fis'16\1[fis'\2 fis fis'\1 fis]
   % Bar 9
-  < fis'\1 a\4> fis'\2 fis < fis'\1 cis\5> fis
-  fis'16\1 fis'\2 fis fis'\1 fis
-  % Bar 10
-  < fis'\1 a,,> fis'\2 fis < fis'\1 e\5> fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  < fis'\1 a\4>[ fis'\2 fis < fis'\1 cis\5> fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  % Bar 10]
+  < fis'\1 a,,>[ fis'\2 fis < fis'\1 e\5> fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 11
-  \shape #'((0.7 . -0.4) (0.5 . -0.4) (0.3 . -0.3) (0 . -0.2)) Slur
-  \once\override Slur.extra-offset = #'(0 . -6)
-  \slurDashed
-  < fis'\1 d,\6 >16( fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis'\2
+  % \once\override Slur.outside-staff-priority = ##f
+  % \shape #'((0.0 . 0.0) (1.0 . -1.0) (1.0 . -1.0) (0 . 0.0)) Slur
+  % \once\override Slur.extra-offset = #'(0 . -6)
+  < fis'\1 d,\6 >16[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
   % Bar 12
-  < d\5 fis'\1> fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  < d\5 fis'\1>[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 13
-  < fis'\1 a,,\6>) fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis |
+  < fis'\1 a,,\6^\laissezVibrer>[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis] |
   % Bar 14
-  < fis'\1 a,,> fis'\2 fis < fis'\1 e\5> fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  < fis'\1 a,,>[ fis'\2 fis < fis'\1 e\5> fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 15
-  < fis'\1 d,\6 > fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis'\2
+  < fis'\1 d,\6 >[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
   % Bar 16
-  < d\5 fis'\1> fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  < d\5 fis'\1>[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 17
-  < fis'\1 a,,\6^\laissezVibrer > fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis |
+  < fis'\1 a,,\6^\laissezVibrer >[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis] |
   % Bar 18
-  < a,, fis'\1> fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  < a,, fis'\1>[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 19
-  < fis'\1 a\4> fis'\2 fis < fis'\1 cis\5> fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  < fis'\1 a\4>[ fis'\2 fis < fis'\1 cis\5> fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 20
-  fis'16\1 fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 21
-  < fis'\1 a\4 d\5> fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis'\2
+  < fis'\1 a\4 d\5>[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
   % Bar 22
-  fis'16\1 fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 23
-  < fis'\1 a\4> fis'\2 fis < fis'\1 cis\5> fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  < fis'\1 a\4>[ fis'\2 fis < fis'\1 cis\5> fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 24
-  < fis'\1 a,,> fis'\2 fis < fis'\1 e\5> fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  < fis'\1 a,,>[ fis'\2 fis < fis'\1 e\5> fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 25
-  < fis'\1 d,\6 > fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis'\2
+  < fis'\1 d,\6 >[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
   % Bar 26
-  < d\5 fis'\1> fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  < d\5 fis'\1>[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 27
-  < fis'\1 a,,\6^\laissezVibrer > fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis |
+  < fis'\1 a,,\6^\laissezVibrer >[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis] |
   % Bar 28
-  < fis'\1 a,,> fis'\2 fis < fis'\1 e\5> fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  < fis'\1 a,,>[ fis'\2 fis < fis'\1 e\5> fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 29
-  < fis'\1 d,\6 > fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis'\2
+  < fis'\1 d,\6 >[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
   % Bar 30
-  < d\5 fis'\1> fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis
+  < d\5 fis'\1>[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 31
-  < fis'\1 a,,\6^\laissezVibrer > fis'\2 fis fis'\1 fis
-  fis'16\1 fis'\2 fis fis'\1 fis |
+  < fis'\1 a,,\6^\laissezVibrer >[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis] |
   % Bar 32
-  < fis'\1 a,,> fis'\2 fis < fis'\1 e\5> fis
-  fis'16\1 fis'\2 fis fis'\1 fis
-    \time 7/8
-    \set Timing.baseMoment = #(ly:make-moment 1 16)
-    \set Timing.beatStructure = #'(2 2 3 2 2 3)
+  < fis'\1 a,,>[ fis'\2 fis < fis'\1 e\5> fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+    \time 14/16
+    \set Timing.baseMoment = #(ly:make-moment 1 32)
+    \set Timing.beatStructure = #'(4 4 6 6 4 4)
   % Bar 33
-  < d\5 fis'\1>16 fis'\2 < a,, fis'\1> fis'\2 < cis\5 fis'\1> fis'\2 
-  < fis a,,> 
-  < d\5 fis'\1> fis'\2 < fis'\1 a,,> < fis'\2 cis\5> fis'\1
-  < fis'\2 a,,> fis |
+  < d\5 fis'\1>16[ fis'\2 < a,, fis'\1> fis'\2 < cis\5 fis'\1> fis'\2 
+  < fis a,,>] 
+  < d\5 fis'\1>[ fis'\2 < fis'\1 a,,> < fis'\2 cis\5> fis'\1
+  < fis'\2 a,,> fis] |
   % Bar 34
-  < d\5 fis'\1>16 fis'\2 < a,, fis'\1> fis'\2 < cis\5 fis'\1> fis'\2 
-  < fis a,,> 
-  < d\5 fis'\1> fis'\2 < fis'\1 a,,> < fis'\2 cis\5> fis'\1
-  < fis'\2 a,,> fis |
+  < d\5 fis'\1>16[ fis'\2 < a,, fis'\1> fis'\2 < cis\5 fis'\1> fis'\2 
+  < fis a,,>]
+  < d\5 fis'\1>[ fis'\2 < fis'\1 a,,> < fis'\2 cis\5> fis'\1
+  < fis'\2 a,,> fis] |
   % Bar 35
-  < d\5 fis'\1>16 fis'\2 < a,, fis'\1> fis'\2 < cis\5 fis'\1> fis'\2 
-  < fis a,,> 
-  < d\5 fis'\1> fis'\2 < fis'\1 a,,> < fis'\2 cis\5> fis'\1
-  < fis'\2 a,,> fis |
+  < d\5 fis'\1>16[ fis'\2 < a,, fis'\1> fis'\2 < cis\5 fis'\1> fis'\2 
+  < fis a,,>]
+  < d\5 fis'\1>[ fis'\2 < fis'\1 a,,> < fis'\2 cis\5> fis'\1
+  < fis'\2 a,,> fis] |
   % Bar 36
-  < d\5 fis'\1>16 fis'\2 < a,, fis'> fis'\2 < fis\4 fis'> fis'\2 < a,,
-  fis\3>
-  < d\5 fis'> fis'\2 < a,, fis'> fis'\2 < fis\4 fis'> fis'\2 < fis
-  a,,> |
+  < d\5 fis'\1>16[ fis'\2 < a,, fis'> fis'\2 < fis\4 fis'> fis'\2 < a,,
+  fis\3>]
+  < d\5 fis'>[ fis'\2 < a,, fis'> fis'\2 < fis\4 fis'> fis'\2 < fis
+  a,,>] |
   % Bar 37
-  < fis' d\5> b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>
-  < fis' d\5> b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>
+  < fis' d\5>[ b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>]
+  < fis' d\5>[ b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>]
   % Bar 38
-  < fis' d\5> b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>
-  < fis' d\5> b < a,, fis'> < b cis\4> fis' < a,, b> cis'\3 |
+  < fis' d\5>[ b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>]
+  < fis' d\5>[ b < a,, fis'> < b cis\4> fis' < a,, b> cis'\3] 
   % Bar 39
-  < fis' d\5> b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>
-  < fis' d\5> b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>
+  < fis' d\5>[ b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>]
+  < fis' d\5>[ b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>]
   % Bar 40
   \time 8/8
-    \set Timing.baseMoment = #(ly:make-moment 1 16)
-    \set Timing.beatStructure = #'(2 2 3 2 2 3 2)
-  < fis' d\5> b < fis' a,,> b < fis' cis\5> b < a,, cis'\3>
-  < fis' d\5> b < fis' a,,> b < cis'\1 cis\5 ~ > < b\2 cis\5
+    \set Timing.baseMoment = #(ly:make-moment 1 32)
+    \set Timing.beatStructure = #'(4 4 6 4 4 6 4)
+  < fis' d\5>[ b < fis' a,,> b < fis' cis\5> b < a,, cis'\3>]
+  < fis' d\5>[ b < fis' a,,> b < cis'\1 cis\5 ~ > < b\2 cis\5
   eis\4>^glissando
-  < fis\4 d\5 fis\3> r8 |
+  < fis\4 d\5 fis\3>] r8 |
 
 }
 
@@ -584,6 +589,9 @@ lower = {
     \once\override Staff.BarLine #'transparent = ##t
     % Bar 1
     s4 s4 s8 s8\stopTextSpan s4 | %}
+    % Bar 1
+    \override TextScript.extra-offset = #'(-0.2 . -0.3)
+    s8.^\rha s8 ^\rha s8.^\rha s8^\rha
 
   }
 %% DynamicsTwo
@@ -593,6 +601,13 @@ lower = {
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \override TextSpanner #'extra-offset = #'(-0.1 . -2.03)
+    % Bar 1
+    \override TextScript.extra-offset = #'(-0.3 . -1.3)
+    s16 s8^\rhm s8 s16 s8^\rhm s8 |
+    % Bar 2
+    s8. s8 s8. s8 |
+    % Bar 3
+    s8. s8 s8. s16 s16^\rhm |
 
   }
 
@@ -603,6 +618,9 @@ lower = {
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \override TextSpanner #'extra-offset = #'(-0.1 . -3.03)
+    % Bar 1
+    \override TextScript.extra-offset = #'(-0.1 . -2.3)
+    s8 s8^\rhi s8.^\rhi s8^\rhi s16^\rhi |
 
   }
 
@@ -618,6 +636,23 @@ lower = {
     \trMove #0.1 #0.8 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #1.4
     ^\markup {  \fontsize #-1 n } \sVib s8 s4 s16 s16 \eVib s8 s8
     s8 | %}
+    % Bar 1 - 4
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    % Bar 5
+    \override TextScript.extra-offset = #'(-0.2 . -4.1)
+    s8.^\rhp s8 s8. s8 |
+    % Bar 6
+    s8. s8 s8. s8 |
+    % Bar 7
+    s8. s8 s8. s8 |
+    % Bar 8
+    s8. s8 s8. s8 |
+    % Bar 9
+    s8.^\rhp s8 s8. s8 |
+
 
   }
 %% DynamicsFive
@@ -627,6 +662,41 @@ lower = {
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \override TextSpanner #'extra-offset = #'(-0.1 . -5.03)
+    % Bar 1 - 4
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    % Bar 5
+    \override TextScript.extra-offset = #'(-0.2 . -5.1)
+    s8. s8^\rhp s8. s8 |
+    % Bar 6
+    s8. s8 s8. s8 |
+    % Bar 7
+    s8.\mkTweak #-0.4 -4.8 ^\twostrdwnstrm \mkTweak #-0.25 -7.0 ^\rhp
+    s8 s8. s8 |
+    % Bar 8
+    s8. s8 s8. s8 |
+    % Bar 9
+    s8. s8^\rhp s8. s8 |
+    % Bar 10
+    s8. s8^\rhp s8. s8 |
+    % Bar 11
+    s8. s8 s8. s8 |
+    % Bar 12
+    s8.^\rhp s8 s8. s8 |
+    % Bar 13 - 20
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    % Bar 21
+    s8.\mkTweak #-0.4 -4.8 ^\twostrdwnstrm s8 s8. s8 |
+    
   }
 %% DynamicsSix
   dynamicssix = {
@@ -634,7 +704,32 @@ lower = {
     \override TextScript #'outside-staff-priority = ##f
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
-    \override TextSpanner #'extra-offset = #'(-0.1 . -6.03)
+    \override TextSpanner #'extra-offset = #'(0.2 . -5.825)
+    % Bar 1 - 9
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    % Bar 10
+    \override TextScript.extra-offset = #'(-0.2 . -6.1)
+    s8.^\rhp s8 s8. s8 |
+    % Bar 11
+    s8.^\rhp s8 s8. s8 |
+    % Bar 12
+    s8. s8 s8. s8 |
+    % Bar 13 - 17
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    % Bar 18
+    s8.^\rhp \strDamp s8^\rhp\startTextSpan s8. s16 s16\stopTextSpan |
 
   }
 %% RH Fingering
@@ -652,7 +747,7 @@ lhOne = {
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \override Score.TrillSpanner #'outside-staff-priority = ##f
-    \override TextSpanner #'extra-offset = #'(0 . 0.25)
+    \override TextSpanner.extra-offset = #'(0 . 1.3)
     \override TabStaff.BreathingSign #'outside-staff-priority = ##f
     \override BreathingSign #'outside-staff-priority = ##f
     \override TextSpanner #'(bound-details left-broken text) = ##f 
@@ -663,6 +758,9 @@ lhOne = {
     s8 \lhSpannerUp "1" { \bsMove #0.5 #1 \leftBracketTwo s8 s8 |
     % Bar 2 
     s4 s4 s4 s8 } s8  | %}
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 12.5))
     % Bar 1
     \lhSpannerUp "1" { 
       s8. s8 s8. s8 |
@@ -670,69 +768,110 @@ lhOne = {
     s8. s8 s8. s8 |
     % Bar 3
     s8. s8 s8. s8 |
+    \break
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 50))
     % Bar 4
     s8. s8 s8. s8 |
-    \break
     % Bar 5
     s8. s8 s8. s8 |
     % Bar 6
     s8. s8 s8. s8 |
+    \break
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 95))
     % Bar 7
     s8. s8 s8. s8 |
-    \break
     % Bar 8
     s8. s8 s8. s8 |
     % Bar 9
     s8. s8 s8. s8 |
+    \break
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 5))
     % Bar 10
     s8. s8 s8. s8 |
-    \break
     % Bar 11
     s8. s8 s8. s8 |
     % Bar 12
     s8. s8 s8. s8 |
+    \break
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 50))
     % Bar 13
     s8. s8 s8. s8 |
     % Bar 14
     s8. s8 s8. s8 |
     % Bar 15
     s8. s8 s8. s8 |
+    \break
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 95))
     % Bar 16
     s8. s8 s8. s8 |
     % Bar 17
     s8. s8 s8. s8 |
     % Bar 18
     s8. s8 s8. s8 |
+    \break
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 5))
     % Bar 19
     s8. s8 s8. s8 |
     % Bar 20
     s8. s8 s8. s8 |
     % Bar 21
     s8. s8 s8. s8 |
+    \break
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 50))
     % Bar 22
     s8. s8 s8. s8 |
     % Bar 23
     s8. s8 s8. s8 |
     % Bar 24
     s8. s8 s8. s8 |
+    \break
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 95))
     % Bar 25
     s8. s8 s8. s8 |
     % Bar 26
     s8. s8 s8. s8 |
     % Bar 27
     s8. s8 s8. s8 |
+    \break
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 5))
     % Bar 28
     s8. s8 s8. s8 |
     % Bar 29
     s8. s8 s8. s8 |
     % Bar 30
     s8. s8 s8. s8 |
+    \break
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 50))
     % Bar 31
     s8. s8 s8. s8 |
     % Bar 32
     s8. s8 s8. s8 |
     % Bar 33
     % \time 7/8
+    \break
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 95))
     s2 s4. |
     % Bar 34
     s2 s4. |
@@ -758,11 +897,35 @@ lhTwo = {
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \override Score.TrillSpanner #'outside-staff-priority = ##f
-    \override TextSpanner #'extra-offset = #'(0 . 0.5)
+    \override TextSpanner #'extra-offset = #'(0 . -9.8)
     \override TabStaff.BreathingSign #'outside-staff-priority = ##f
     \override BreathingSign #'outside-staff-priority = ##f
     \override TextSpanner #'(bound-details left-broken text) = ##f 
     \override TextSpanner #'(bound-details right-broken text) = ##f 
+    % \lhSpannerUp "2" { }
+    % Bar 1 - 4
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    % Bar 5
+    s8. \lhSpannerDown "2" {s8 s8. s8 |
+    % Bar 6
+    s8. s8 s8 s16 } s8 |
+    % Bar 7
+    \lhSpannerDown "2" {s8. s8 s8. s8 |
+    % Bar 8
+    s8. s8 s8 s16 } s8 |
+    % Bar 9
+    s8. \lhSpannerDown "2" {s8 s8. s16 s16} |
+    % Bar 10
+    s8. s8 s8. s8 |
+    % Bar 11
+    \override TextSpanner.extra-offset = #'(0 . -10.6)
+    \lhSpannerDown "2" {s8. s8 s8. s8 |
+    % Bar 12
+    s8. s8 s8. s16 s16} |
+
 
   }
 %% lhThree
@@ -777,6 +940,33 @@ lhThree = {
     \override BreathingSign #'outside-staff-priority = ##f
     \override TextSpanner #'(bound-details left-broken text) = ##f 
     \override TextSpanner #'(bound-details right-broken text) = ##f 
+    % Bar 1
+    \lhSpannerUp "3" {s8. s8 s8. s8 |
+    % Bar 2
+    s8. s8 s8. s8 |
+    % Bar 3
+    s8. s8 s8. s8 |
+    % Bar 4
+    s8. s8 s8. s8 | 
+    % Bar 5
+    s8. s8 s8. s8 |
+    % Bar 6
+    s8. s8 s8. s8 |
+    % Bar 7
+    s8. s8 s8. s8 |
+    % Bar 8
+    s8. s8 s8. s8 |
+    % Bar 9
+    s8. s8 s8. s8 |
+    % Bar 10
+    s8. s8 s8. s16 s16 |}
+    % Bar 11
+    s8. s8 s8. s8 |
+    % Bar 12
+    \override TextSpanner.extra-offset = #'(0 . -9.8)
+    \lhSpannerDown "3" {s8. s8 s8. s8 |
+    % Bar 13
+    s8. s8 s8 s16} s8 |
 
   }
 %% lhFour
@@ -786,11 +976,37 @@ lhFour = {
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \override Score.TrillSpanner #'outside-staff-priority = ##f
-    \override TextSpanner #'extra-offset = #'(0 . 0.5)
+    \override TextSpanner #'extra-offset = #'(0 . -9)
     \override TabStaff.BreathingSign #'outside-staff-priority = ##f
     \override BreathingSign #'outside-staff-priority = ##f
     \override TextSpanner #'(bound-details left-broken text) = ##f 
     \override TextSpanner #'(bound-details right-broken text) = ##f 
+    % Bar 1 - 4
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    s8. s8 s8. s8 |
+    % Bar 5
+    \lhSpannerDown "4" {s8. s8 s8. s8 |
+    % Bar 6
+    s8. s8 s8. s8 |
+    % Bar 7
+    s8. s8 s8. s8 |
+    % Bar 8
+    s8. s8 s8. s8 |
+    % Bar 9
+    s8. s8 s8. s16 s16} |
+    % Bar 10
+    \override TextSpanner.extra-offset = #'(0 . -9.8)
+    s8. \lhSpannerDown "4" {s8 s8 s16} s8 |
+    % Bar 11
+    \override TextSpanner.extra-offset = #'(0 . 0.5)
+    s16 \lhSpannerUp "4" {s8 s8 s8. s8 |
+    % Bar 12
+    s8. s8 s8. s8 |
+    % Bar 13
+    s8. s8 s8 s16} s8 |
+    % Bar 14
 
 
   }

@@ -155,7 +155,7 @@ onestrdwnstrm = \markup { \rotate #180
     \combine
     \override #'(thickness . 0.5)
     \draw-line #'(0 . 1.5)
-    \fontsize #-0.5
+    \fontsize #0.5
     \arrow-head #Y #DOWN ##t
     }
   }
@@ -163,8 +163,8 @@ twostrdwnstrm = \markup { \rotate #180
   \center-column {
     \combine
     \override #'(thickness . 0.5)
-    \draw-line #'(0 . 2.25)
-    \fontsize #-5
+    \draw-line #'(0 . 2.5)
+    \fontsize #0.5
     \arrow-head #Y #DOWN ##t
     }
   }
@@ -598,18 +598,9 @@ invTNH =
    (parser location note)
    (ly:music?)
    #{
-   \tweak TabNoteHead.color #white
-   \tweak TabNoteHead.layer #-1
+   \tweak TabNoteHead #'transparent ##t
    #note
    #})
-%% Date
-printDate = 
-#(strftime "%m-%d-%Y" 
-           (localtime 
-             (current-time)
-             )
-           )
-
 % Changing the TabNoteHead stencil
   %% Created by HARM
   % Because it is important to know how one can change the TabNoteHead easily 
