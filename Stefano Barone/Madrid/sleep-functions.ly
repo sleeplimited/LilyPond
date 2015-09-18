@@ -332,7 +332,7 @@ lhSpannerDown =
   #{
      \once \override Voice.TextSpanner #'style = #'solid
      \once \override Voice.TextSpanner #'font-size = #-8
-     \once \override Voice.TextSpanner #'thickness = #0.01
+     \once \override Voice.TextSpanner #'thickness = #0.5
      \once \override TextSpanner #'(bound-details left stencil-align-dir-y) = #CENTER
      \once \override TextSpanner #'(bound-details right text) = \markup {
      \draw-line #'(0 . 0.5) }
@@ -362,7 +362,7 @@ lhSpannerUp =
   #{
      \once \override Voice.TextSpanner #'style = #'solid
      \once \override Voice.TextSpanner #'font-size = #-8
-     \once \override Voice.TextSpanner #'thickness = #0.01
+     \once \override Voice.TextSpanner #'thickness = #0.5
      \once \override TextSpanner #'(bound-details left stencil-align-dir-y) = #CENTER
      \once \override TextSpanner #'(bound-details right text) = \markup {
      \draw-line #'(0 . -0.5) }

@@ -747,7 +747,7 @@ lhOne = {
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \override Score.TrillSpanner #'outside-staff-priority = ##f
-    \override TextSpanner.extra-offset = #'(0 . 1.3)
+    \override TextSpanner.extra-offset = #'(0 . 1.4)
     \override TabStaff.BreathingSign #'outside-staff-priority = ##f
     \override BreathingSign #'outside-staff-priority = ##f
     \override TextSpanner #'(bound-details left-broken text) = ##f 
@@ -897,7 +897,7 @@ lhTwo = {
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \override Score.TrillSpanner #'outside-staff-priority = ##f
-    \override TextSpanner #'extra-offset = #'(0 . -9.8)
+    \override TextSpanner #'extra-offset = #'(0 . -9.9)
     \override TabStaff.BreathingSign #'outside-staff-priority = ##f
     \override BreathingSign #'outside-staff-priority = ##f
     \override TextSpanner #'(bound-details left-broken text) = ##f 
@@ -963,7 +963,7 @@ lhThree = {
     % Bar 11
     s8. s8 s8. s8 |
     % Bar 12
-    \override TextSpanner.extra-offset = #'(0 . -9.8)
+    \override TextSpanner.extra-offset = #'(0 . -9.9)
     \lhSpannerDown "3" {s8. s8 s8. s8 |
     % Bar 13
     s8. s8 s8 s16} s8 |
