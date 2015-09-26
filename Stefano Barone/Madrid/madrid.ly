@@ -637,6 +637,9 @@ lower = {
   b\4[ d\3 a'\2 b\4 cis']
   b\4[ d\3 b\4 cis' a'\2] |
   % Bar 50
+  b\4[ d\3 a'\2 b\4 cis']
+  b\4[ d\3 cis\4 cis' a'\2] |
+
 
 
   
