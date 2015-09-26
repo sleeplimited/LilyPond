@@ -663,6 +663,13 @@ lower = {
   % Bar 58
   b,,\laissezVibrer[ g d'\2 b, cis']
   cis[ g a,, cis' a'\2] |
+  % Bar 59
+  fis,\6\laissezVibrer[ fis a'\2 < fis,\6\laissezVibrer cis> cis']
+  < fis,\6\laissezVibrer cis>[ fis cis cis' a'\2] |
+  % Bar 60
+  fis,\6\laissezVibrer[ fis a'\2 < fis,\6\laissezVibrer cis> cis']
+  < fis,\6\laissezVibrer cis>[ fis cis cis' d'\2] |
+  % Bar 61
 
 
 
