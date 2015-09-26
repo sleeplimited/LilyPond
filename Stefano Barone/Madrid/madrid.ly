@@ -624,6 +624,14 @@ lower = {
   fis'\1[ fis'\2 < d\5 fis'\1> fis]
   < a,, fis'\1>[ fis'\2 fis < cis\5 fis'\1> fis'\2] |
   % Bar 48
+  \time 15/16
+  \set Timing.baseMoment = #(ly:make-moment 1 32)
+  \set Timing.beatStructure = #'(6 4 6 4 4 6)
+  fis'\1[ < fis'\2 a,,> fis fis'\1 < fis d\5>]
+  fis'\1[ fis'\2 < fis a,,> fis'\1 < fis cis\5>]
+  < fis'\1 < fis'\2 a,,> cis' fis'\2^glissando < a'\2 fis>] |
+  % Bar 49
+
   
 
 
