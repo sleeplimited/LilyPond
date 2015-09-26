@@ -657,6 +657,12 @@ lower = {
   % Bar 56
   a,,[ d'\3 a'\2 cis cis']
   a,,[ d'\3 cis cis' d'\2] |
+  % Bar 57
+  b,,\laissezVibrer[ g d'\2 b, cis']
+  cis[ g a,, cis' d'\2] |
+  % Bar 58
+  b,,\laissezVibrer[ g d'\2 b, cis']
+  cis[ g a,, cis' a'\2] |
 
 
 
