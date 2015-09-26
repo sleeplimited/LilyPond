@@ -670,15 +670,12 @@ lower = {
   fis,\6\laissezVibrer[ fis a'\2 < fis,\6\laissezVibrer cis> cis']
   < fis,\6\laissezVibrer cis>[ fis cis cis' d'\2] |
   % Bar 61
-
-
-
-
+  b,,\laissezVibrer[ g d'\2 b, cis']
+  cis[ g a,, cis' d'\2] |
+  % Bar 62
+  b,,\laissezVibrer[ g d'\2 b, cis']
+  cis[ g a,, cis' < gis\3 a'\2>] |
   
-
-
-
-
 }
 
 % Dynamics
