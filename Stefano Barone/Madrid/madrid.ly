@@ -621,7 +621,7 @@ lower = {
   < a,, a'>[ fis'\2 fis < a'\1 e\4> fis]
   a'[ fis'\2 fis cis' < fis cis\5>] |
   % Bar 47
-  fis'\1[ fis'\2 < d\5 fis'\1> fis]
+  fis'\1[ fis'\2 < d\5 fis> fis'\1 fis]
   < a,, fis'\1>[ fis'\2 fis < cis\5 fis'\1> fis'\2] |
   % Bar 48
   \time 15/16
@@ -629,16 +629,22 @@ lower = {
   \set Timing.beatStructure = #'(6 4 6 4 4 6)
   fis'\1[ < fis'\2 a,,> fis fis'\1 < fis d\5>]
   fis'\1[ fis'\2 < fis a,,> fis'\1 < fis cis\5>]
-  < fis'\1 < fis'\2 a,,> cis' fis'\2^glissando < a'\2 fis>] |
+  fis'\1[ < fis'\2 a,,> cis' fis'\2^glissando < a'\2 fis>] |
   % Bar 49
   \time 10/16
   \set Timing.baseMoment = #(ly:make-moment 1 32)
   \set Timing.beatStructure = #'(6 4 4 6)
-  b\4[ d\3 a'\2 b\4 cis']
-  b\4[ d\3 b\4 cis' a'\2] |
+  b\4[ d'\3 a'\2 b\4 cis']
+  b\4[ d'\3 b\4 cis' a'\2] |
   % Bar 50
-  b\4[ d\3 a'\2 b\4 cis']
-  b\4[ d\3 cis\4 cis' a'\2] |
+  b\4[ d'\3 a'\2 b\4 cis']
+  b\4[ d'\3 cis\4 cis' a'\2] |
+  % Bar 51
+  < cis fis,\6>[ d'\3 a'\2 < cis fis,\6> cis']
+  < cis fis,\6>[ d'\3 cis cis' a'\2] |
+  % Bar 52
+  < cis fis,\6>[ d'\3 a'\2 < cis fis,\6> cis']
+  < cis fis,\6>[ d'\3 cis cis' a'\2] |
 
 
 
