@@ -684,6 +684,18 @@ lower = {
   \strpHarmTwelve < gis\5> cis' < fis a'\2>
   a\4 cis' a'\2
   \strpHarmTwelve < cis'\4> cis' a'\2 |
+  % Bar 64
+  \time 12/16
+  \set Timing.baseMoment = #(ly:make-moment 1 32)
+  \set Timing.beatStructure = #'(6 6 6 6) 
+  b\3[ a'\2 fis b\3 a'\2 fis]
+  b\3[ a'\2 fis b\3 a'\2 fis]
+  % Bar 65
+  b\3[ a'\2 fis b\3 a'\2 fis]
+  b\3[ a'\2 fis b\3 a'\2 fis]
+  % Bar 66
+
+
   
 }
 
