@@ -645,6 +645,12 @@ lower = {
   % Bar 52
   < cis fis,\6>[ d'\3 a'\2 < cis fis,\6> cis']
   < cis fis,\6>[ d'\3 cis cis' a'\2] |
+  % Bar 53
+  b\4[ d'\3 a'\2 b\4 cis']
+  b\4[ d'\3 b\4 cis' a'\2] |
+  % Bar 54
+  b\4[ d'\3 a'\2 b\4 cis']
+  b\4[ d'\3 cis\4 cis' a'\2] |
 
 
 
