@@ -747,6 +747,11 @@ lower = {
   < gis,\5 b'\1>[ < cis fis,\6\laissezVibrer> a'\2 < fis
   e\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 cis>] |
   % Bar 73
+  < a'\1 fis,\6\laissezVibrer>[ < cis fis\5\laissezVibrer> < a'\2
+  e\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 fis> < fis,\6 cis>]
+  b'\1[ < cis e\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 a'\2> < cis
+  fis,\6\laissezVibrer> < cis fis\5\laissezVibrer>] |
+  % Bar 74
 
 
 
