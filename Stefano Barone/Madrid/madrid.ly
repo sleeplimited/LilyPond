@@ -771,6 +771,19 @@ lower = {
   \chordSlurT #0 #0.1 #-3.7 < a'\1 fis\4\laissezVibrer>[( fis'\2 < fis
   d\5\laissezVibrer> < a'\1 cis>]) |
   % Bar 76
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %% Requires Attention
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \set Timing.beatStructure = #'(6 4 6 4) 
+  < fis'\2 d,\6\laissezVibrer>[ fis a'\1 < fis'\2 d\5\laissezVibrer>
+  fis]
+  % \set tieWaitForNote = ##t 
+  \once \tabSlur #`(0.8 0 -0.5 -0.5 0.5 0 -1.0 0)
+  \chordSlurT #28 #0.1 #-2.7 < a'\1 fis\4\laissezVibrer>[( < fis'\2
+  d\5\laissezVibrer> < cis\4 fis\3>) a'\1 fis'\2] |
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %% Requires Attention
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
