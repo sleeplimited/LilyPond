@@ -128,6 +128,10 @@ evenFooterMarkup = \oddFooterMarkup
 % Includes and functions
   \include "sleep-functions.ly"
   \include "vibrato.ly"
+  startASlur = - #(make-music 'SlurEvent 'span-direction START 'spanner-id "A")
+  startBSlur = - #(make-music 'SlurEvent 'span-direction START 'spanner-id "B")
+  stopASlur = - #(make-music 'SlurEvent 'span-direction STOP 'spanner-id "A")
+  stopBSlur = - #(make-music 'SlurEvent 'span-direction STOP 'spanner-id "B")
 % Standard Notation
 %% Upper
   upper = {
@@ -141,15 +145,14 @@ evenFooterMarkup = \oddFooterMarkup
     \override Staff.Beam #'beam-thickness = #'0.38
     \numericTimeSignature
     \time 10/16
-    \set Score.tempoHideNote = ##t
-    \tempo 4 = 90
+    % \set Score.tempoHideNote = ##t
+    \tempo 16 = 300
     \key cis \minor
     \override Score.RehearsalMark #'break-align-symbols = #'(key-signature)
     \once \override Score.KeySignature #'break-align-anchor = #2.3
     \once \override Score.RehearsalMark #'extra-offset = #'(0 . 2)
-    \mark \markup  { \fontsize #-4 \concat {
-      \fontsize #0 { \note #"4" #1 }" =" \fontsize #-4 \number " 90"
-    }}
+    % \mark \markup  { \fontsize #-4 \concat { \note "16"  " ="
+    % \fontsize #-4 \number " 90" }}
     \mergeDifferentlyHeadedOn
       \mergeDifferentlyDottedOn
     % Bar 1
@@ -157,133 +160,142 @@ evenFooterMarkup = \oddFooterMarkup
 %%% VoiceOne
       \mergeDifferentlyHeadedOn
       \mergeDifferentlyDottedOn
+    \set Timing.baseMoment = #(ly:make-moment 1 32)
+    \set Timing.beatStructure = #'(6 4 6 4)
+    \set subdivideBeams = ##t
+    \set Timing.beamExceptions = #'()
       % Bar 1
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 2
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 3
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis'
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis']
       % Bar 4
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 5
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 6
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 7
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis'
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis']
       % Bar 8
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 9
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 10
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 11
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis'
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis']
       % Bar 12
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 13
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 14
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 15
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis'
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis']
       % Bar 16
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 17
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 18
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 19
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 20
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 21
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis'
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis']
       % Bar 22
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 23
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 24
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 25
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis'
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis']
       % Bar 26
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 27
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 28
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 29
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis'
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis']
       % Bar 30
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 31
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 32
-      fis'16 fis'16 fis fis' fis
-      fis'16 fis'16 fis fis' fis
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
     \time 14/16
-    \set Timing.baseMoment = #(ly:make-moment 1 16)
-    \set Timing.beatStructure = #'(2 2 3 2 2 3)
+    \set Timing.baseMoment = #(ly:make-moment 1 32)
+    \set Timing.beatStructure = #'(4 4 6 6 4 4)
       % Bar 33
-      fis'16 fis' fis' fis' fis' fis' fis
-      fis'16 fis' fis' fis' fis' fis' fis
+      fis'16[ fis' fis' fis' fis' fis' fis]
+      fis'16[ fis' fis' fis' fis' fis' fis]
       % Bar 34
-      fis'16 fis' fis' fis' fis' fis' fis
-      fis'16 fis' fis' fis' fis' fis' fis
+      fis'16[ fis' fis' fis' fis' fis' fis]
+      fis'16[ fis' fis' fis' fis' fis' fis]
       % Bar 35
-      fis'16 fis' fis' fis' fis' fis' fis
-      fis'16 fis' fis' fis' fis' fis' fis
+      fis'16[ fis' fis' fis' fis' fis' fis]
+      fis'16[ fis' fis' fis' fis' fis' fis]
+    \set Timing.baseMoment = #(ly:make-moment 1 32)
+    \set Timing.beatStructure = #'(4 4 6 4 4 6)
       % Bar 36
-      fis'16 fis' fis' fis' fis' fis' fis
-      fis'16 fis' fis' fis' fis' fis' fis
+      fis'16[ fis' fis' fis' fis' fis' fis]
+      fis'16[ fis' fis' fis' fis' fis' fis]
       % Bar 37
-      fis' b fis' b fis' b cis'
-      fis' b fis' b fis' b cis'
+      fis'[ b fis' b fis' b cis']
+      fis'[ b fis' b fis' b cis']
       % Bar 38
-      fis' b fis' b fis' b cis'
-      fis' b fis' b fis' b cis'
+    \set Timing.baseMoment = #(ly:make-moment 1 32)
+    \set Timing.beatStructure = #'(4 4 6 6 4 4)
+      fis'[ b fis' b fis' b cis']
+      fis'[ b fis' b fis' b cis']
       % Bar 39
-      fis' b fis' b fis' b cis'
-      fis' b fis' b fis' b cis'
+    \set Timing.baseMoment = #(ly:make-moment 1 32)
+    \set Timing.beatStructure = #'(4 4 6 4 4 6)
+      fis'[ b fis' b fis' b cis']
+      fis'[ b fis' b fis' b cis']
       % Bar 40
-    \time 8/8
-    \set Timing.baseMoment = #(ly:make-moment 1 16)
-    \set Timing.beatStructure = #'(2 2 3 2 2 3 2)
-      fis' b fis' b fis' b cis'
-      fis' b fis' b cis' b cis'
-      r8 |
+    \time 16/16
+    \set Timing.baseMoment = #(ly:make-moment 1 32)
+    \set Timing.beatStructure = #'(4 4 6 4 4 6 4)
+      fis'[ b fis' b fis' b cis']
+      fis'[ b fis' b cis' b cis'] r8 |
 
 
     } >>
@@ -313,15 +325,15 @@ lower = {
     % Bar 5
     a8. cis8 ~ cis8. ~ cis8 ~ |
     % Bar 6
-    cis8. ~ cis8 r8. r8 |
+    cis8. ~ cis8 cis8. r8 |
     % Bar 7
     < a d>2 ~ < a d>8 ~ |
     % Bar 8 
-    < a d>2 ~ < a d>8 |
+    < a d>8.[ ~ < a d>8] ~ < a d>8.[ ~ a8] |
     % Bar 9
     a8. cis8 ~ cis8. ~ cis8 |
     % Bar 10
-    a,,8. e8 ~ e8. ~ e8 |
+    a,,8. e8 ~ e8. r8 |
     % Bar 11
     d,2 ~ d,8 | 
     % Bar 12
@@ -551,6 +563,8 @@ lower = {
   < d\5 fis'\1>[ fis'\2 < fis'\1 a,,> < fis'\2 cis\5> fis'\1
   < fis'\2 a,,> fis] |
   % Bar 36
+    \set Timing.baseMoment = #(ly:make-moment 1 32)
+    \set Timing.beatStructure = #'(4 4 6 4 4 6)
   < d\5 fis'\1>16[ fis'\2 < a,, fis'> fis'\2 < fis\4 fis'> fis'\2 < a,,
   fis\3>]
   < d\5 fis'>[ fis'\2 < a,, fis'> fis'\2 < fis\4 fis'> fis'\2 < fis
@@ -559,19 +573,61 @@ lower = {
   < fis' d\5>[ b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>]
   < fis' d\5>[ b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>]
   % Bar 38
+    \set Timing.baseMoment = #(ly:make-moment 1 32)
+    \set Timing.beatStructure = #'(4 4 6 6 4 4)
   < fis' d\5>[ b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>]
-  < fis' d\5>[ b < a,, fis'> < b cis\4> fis' < a,, b> cis'\3] 
+  < fis' d\5>[ b < a,, fis'> < b cis\5> fis' < a,, b> cis'\3] 
   % Bar 39
+    \set Timing.baseMoment = #(ly:make-moment 1 32)
+    \set Timing.beatStructure = #'(4 4 6 4 4 6)
   < fis' d\5>[ b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>]
   < fis' d\5>[ b < a,, fis'> b < fis' fis\4> b < a,, cis'\3>]
   % Bar 40
-  \time 8/8
+  \time 16/16
     \set Timing.baseMoment = #(ly:make-moment 1 32)
     \set Timing.beatStructure = #'(4 4 6 4 4 6 4)
   < fis' d\5>[ b < fis' a,,> b < fis' cis\5> b < a,, cis'\3>]
   < fis' d\5>[ b < fis' a,,> b < cis'\1 cis\5 ~ > < b\2 cis\5
   eis\4>^glissando
-  < fis\4 d\5 fis\3>] r8 |
+  < fis\4 d\5 fis\3> r16 r] |
+  % Bar 41
+  \time 10/16
+    \set Timing.baseMoment = #(ly:make-moment 1 32)
+    \set Timing.beatStructure = #'(6 4 6 4)
+    \once \tabSlur #`(0 -2 -2 -2.3 -2.6 0 -4 0)
+    \chordSlurT #79 #1.2 #-1 < a' fis\4>16([ < fis'\2 d\5> < cis\4
+    fis\3>) a' fis] a'[ fis'\2 < fis gis,> a' fis] |
+  % Bar 42
+  < a' cis cis,\laissezVibrer>[ fis'\2 fis a' fis]
+  a'[ fis'\2 fis a' < fis cis cis,\laissezVibrer>] |
+  % Bar 43
+  a'[ fis'\2 \override Voice.LaissezVibrerTie.direction = #UP < fis
+  d\5\laissezVibrer d,\6\laissezVibrer> a' fis] a'[ fis'\2 fis a'
+  fis'\2] |
+  % Bar 44
+  \time 12/16
+  \set Timing.baseMoment = #(ly:make-moment 1 32)
+  \set Timing.beatStructure = #'(6 4 6 4 4)
+  a'[ fis'\2 < fis d\5>32 fis\4\laissezVibrer a'16 fis]
+  a'[ fis'\2 fis a' fis cis' fis'\2] |
+  % Bar 45
+  \time 10/16
+  \set Timing.baseMoment = #(ly:make-moment 1 32)
+  \set Timing.beatStructure = #'(6 4 6 4)
+  \once \tabSlur #`(0 -2 -2 -2.3 -2.6 0 -4 0)
+  \chordSlurT #79 #1.2 #-1 < a' fis\4>16([ < fis'\2 d\5> < cis\4
+  fis\3>) a' fis] a'[ fis'\2 < fis gis,> a' fis] |
+  % Bar 46
+  < a,, a'>[ fis'\2 fis < a'\1 e\4> fis]
+  a'[ fis'\2 fis cis' < fis cis\5>] |
+  % Bar 47
+  fis'\1[ fis'\2 < d\5 fis'\1> fis]
+  < a,, fis'\1>[ fis'\2 fis < cis\5 fis'\1> fis'\2] |
+  % Bar 48
+  
+
+
+
 
 }
 
@@ -673,7 +729,7 @@ lower = {
     % Bar 6
     s8. s8 s8. s8 |
     % Bar 7
-    s8.\mkTweak #-0.4 -4.8 ^\twostrdwnstrm \mkTweak #-0.25 -7.0 ^\rhp
+    s8.\mkTweak #-0.55 -4.7 ^\twostrdwnstrm \mkTweak #-0.25 -6.8 ^\rhp
     s8 s8. s8 |
     % Bar 8
     s8. s8 s8. s8 |
@@ -695,7 +751,7 @@ lower = {
     s8. s8 s8. s8 |
     s8. s8 s8. s8 |
     % Bar 21
-    s8.\mkTweak #-0.4 -4.8 ^\twostrdwnstrm s8 s8. s8 |
+    s8.\mkTweak #-0.55 -4.7 ^\twostrdwnstrm s8 s8. s8 |
     
   }
 %% DynamicsSix
@@ -868,23 +924,25 @@ lhOne = {
     s8. s8 s8. s8 |
     % Bar 33
     % \time 7/8
+    s2 s4. |
     \break
     \overrideProperty
     Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
     . 95))
-    s2 s4. |
     % Bar 34
     s2 s4. |
     % Bar 35
     s2 s4. |
     % Bar 36
     s2 s4. |
+    \break
     % Bar 37
     s2 s4. |
     % Bar 38
     s2 s4. |
     % Bar 39
     s2 s4. |
+    \break
     % Bar 40
     % \time 8/8
     s8 s8 s8. s8 s16 s16 } 
