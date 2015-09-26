@@ -762,6 +762,16 @@ lower = {
   gis,\5 cis>]
   < b'\1 fis,\6\laissezVibrer>[ cis] |
   % Bar 75
+  \time 10/16
+  \set Timing.baseMoment = #(ly:make-moment 1 32)
+  \set Timing.beatStructure = #'(6 6 4 4) 
+  < a'\1 d,\6\laissezVibrer>[ fis'\2 fis < a'\1 d\5\laissezVibrer>
+  fis'\2 fis]
+  \once \tabSlur #`(0.5 0 -1 -1 0 0 -0.6 0)
+  \chordSlurT #0 #0.1 #-3.7 < a'\1 fis\4\laissezVibrer>[( fis'\2 < fis
+  d\5\laissezVibrer> < a'\1 cis>]) |
+  % Bar 76
+
 
 
 
