@@ -651,6 +651,13 @@ lower = {
   % Bar 54
   b\4[ d'\3 a'\2 b\4 cis']
   b\4[ d'\3 cis\4 cis' a'\2] |
+  % Bar 55
+  a,,[ d'\3 a'\2 cis cis']
+  a,,[ d'\3 cis cis' a'\2] |
+  % Bar 56
+  a,,[ d'\3 a'\2 cis cis']
+  a,,[ d'\3 cis cis' d'\2] |
+
 
 
 
