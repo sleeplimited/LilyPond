@@ -688,20 +688,33 @@ lower = {
   \time 12/16
   \set Timing.baseMoment = #(ly:make-moment 1 32)
   \set Timing.beatStructure = #'(6 6 6 6) 
-  b\3[ a'\2 fis b\3 a'\2 fis]
-  b\3[ a'\2 fis b\3 a'\2 fis]
+  b\4[ a'\2 fis b\4 a'\2 fis]
+  b\4[ a'\2 fis b\4 a'\2 fis]
   % Bar 65
-  b\3[ a'\2 fis b\3 a'\2 fis]
-  b\3[ a'\2 fis b\3 a'\2 fis]
+  b\4[ a'\2 fis b\4 a'\2 fis]
+  b\4[ a'\2 fis b\4 a'\2 fis]
   % Bar 66
+  b\4[ < a'\2 f\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 fis> < b\4
+  fis,\6\laissezVibrer \invTNH a,,\6> ~ < a,,\6 a'\2> < fis
+  f\5\laissezVibrer \invTNH gis,\5>] ~
+  < gis,\5 b\4> < a'\2 fis,\6\laissezVibrer \invTNH a,,\6> ~ < a,,\6
+  fis> < b\4 f\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 a'\2> < fis
+  fis,\6\laissezVibrer \invTNH a,,\6>] ~ |
+  % Bar 67
+  < a,,\6 b\4> [ < a'\2 f\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5
+  fis> < b\4 fis,\6\laissezVibrer \invTNH a,,\6> ~ < a,,\6 a'\2> < fis
+  f\5\laissezVibrer \invTNH gis,\5>] ~ 
+  < gis,\5 b\4> < a'\2 fis,\6\laissezVibrer \invTNH a,,\6> ~ < a,,\6
+  fis> < b\4 f\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 a'\2> < fis
+  fis,\6\laissezVibrer \invTNH a,,\6>] ~ |
+  % Bar 68
 
 
   
 }
 
 % Dynamics
-%% DynamicsOne
-
+%% DynamicsOne 
   dynamicsone = {
     \textLengthOff
     \override TextScript #'outside-staff-priority = ##f
