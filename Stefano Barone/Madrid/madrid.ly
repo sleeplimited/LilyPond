@@ -674,7 +674,16 @@ lower = {
   cis[ g a,, cis' d'\2] |
   % Bar 62
   b,,\laissezVibrer[ g d'\2 b, cis']
-  cis[ g a,, cis' < gis\3 a'\2>] |
+  cis[ g a,, cis' < gis\3 d'\2>] |
+  % Bar 63
+  \time 15/16
+  \set Timing.baseMoment = #(ly:make-moment 1 32)
+  \set Timing.beatStructure = #'(6 6 6 6 6)
+  cis cis' < gis\4 f'\2>
+  fis cis' < b\4 gis'\2>
+  \strpHarmTwelve < gis\5> cis' < fis a'\2>
+  a\4 cis' a'\2
+  \strpHarmTwelve < cis'\4> cis' a'\2 |
   
 }
 
