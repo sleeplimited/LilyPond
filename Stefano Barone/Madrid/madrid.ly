@@ -719,6 +719,17 @@ lower = {
   fis,\6\laissezVibrer \invTNH a,,\6>] ~ < a,,\6 b\4> < a'\2
   f\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 fis> < b\4
   fis,\6\laissezVibrer> |
+  % Bar 69
+  \time 10/16
+  \set Timing.baseMoment = #(ly:make-moment 1 32)
+  \set Timing.beatStructure = #'(4 6 4 6) 
+  < b'\1 f\5\laissezVibrer \invTNH gis,\5>[ ~ < gis,\5 b\4> < a'\2
+  fis,\6\laissezVibrer \invTNH a,,\6> ~ < a,,\6 fis> < b\4
+  f\5\laissezVibrer \invTNH gis,\5>] ~
+  < gis,\5 b'\1>[ < b\4 fis,\6\laissezVibrer \invTNH a,,\6> ~ < a,,\6
+  a'\2> < fis f\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 b\4>] |
+  % bar 70
+
 
 
 
