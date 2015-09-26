@@ -631,6 +631,13 @@ lower = {
   fis'\1[ fis'\2 < fis a,,> fis'\1 < fis cis\5>]
   < fis'\1 < fis'\2 a,,> cis' fis'\2^glissando < a'\2 fis>] |
   % Bar 49
+  \time 10/16
+  \set Timing.baseMoment = #(ly:make-moment 1 32)
+  \set Timing.beatStructure = #'(6 4 4 6)
+  b\4[ d\3 a'\2 b\4 cis']
+  b\4[ d\3 b\4 cis' a'\2] |
+  % Bar 50
+
 
   
 
