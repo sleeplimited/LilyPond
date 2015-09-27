@@ -803,6 +803,12 @@ lower = {
   < fis'\2 fis\4\laissezVibrer>[( fis < a'\1 d\5\laissezVibrer> <
   fis'\2 cis\4>)] |
   % Bar 80
+  \set Timing.beatStructure = #'(6 4 6 4) 
+  < fis d,\6\laissezVibrer>[ a'\1 fis'\2 < fis d\5\laissezVibrer>
+  a'\1]
+  < fis'\2 fis\4\laissezVibrer>[( < fis d\5\laissezVibrer> < a'\1
+  cis\4>) fis'\2 cis] |
+  % Bar 81
 
 
 
