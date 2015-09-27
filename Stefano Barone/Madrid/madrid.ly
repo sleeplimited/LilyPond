@@ -809,6 +809,17 @@ lower = {
   < fis'\2 fis\4\laissezVibrer>[( < fis d\5\laissezVibrer> < a'\1
   cis\4>) fis'\2 cis] |
   % Bar 81
+  \time 16/16
+  \set Timing.beatStructure = #'(6 6 6 8) 
+  \set subdivideBeams = ##f
+  < gis'\1 cis,\6\laissezVibrer>[ < f'\2 cis\5\laissezVibrer \invTNH
+  gis,\5> ~ < gis,\5 fis>]
+  < gis'\1 cis\5\laissezVibrer>[ < f'\2 cis,\6\laissezVibrer \invTNH
+  a,,\6> ~ < a,,\6 fis>]
+  < gis'\1 d\5\laissezVibrer d,\6\laissezVibrer>^glissando[ < f'\2
+  cis\5 cis,\6> < gis,\5 cis\4>]
+  r16 r16 r16 b'\1
+  % Bar 82
 
 
 
