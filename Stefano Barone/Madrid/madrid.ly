@@ -784,6 +784,13 @@ lower = {
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %% Requires Attention
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Bar 77
+  \set Timing.beatStructure = #'(6 6 4 4) 
+  cis,\6\laissezVibrer[ gis'\1 f'\2 < cis\5\laissezVibrer fis> gis'\1
+  f'\2]
+  < fis f\4\laissezVibrer>[( gis'\1 < cis\5\laissezVibrer f'\2> < fis
+  cis\4>)] |
+  % Bar 78
 
 
 
