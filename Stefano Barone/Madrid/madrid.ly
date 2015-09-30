@@ -57,7 +57,7 @@ __..           .           ,      .
           \concat {
              \fontsize #-3 {
                 "Madrid " #(strftime "%m/%d/%Y" (localtime
-                (current-time))) " " \fromproperty #'page:page-number-string "/5" 
+                (current-time))) " " \fromproperty #'page:page-number-string "/9" 
              }
            }
          }
@@ -104,7 +104,7 @@ __..           .           ,      .
       \on-the-fly #not-first-page 
       % page-number not on last-page 
       \concat {  \fontsize #-3 { "Madrid " #(strftime "%m/%d/%Y" (localtime
-                (current-time))) " "\fromproperty #'page:page-number-string /5
+                (current-time))) " "\fromproperty #'page:page-number-string /9
     }  }
     % copyright on first page 
     \on-the-fly #first-page \fromproperty #'header:copyright 
@@ -126,12 +126,8 @@ evenFooterMarkup = \oddFooterMarkup
   }
 
 % Includes and functions
-  \include "sleep-functions.ly"
+  \include "../../sleep-functions.ly"
   \include "vibrato.ly"
-  startASlur = - #(make-music 'SlurEvent 'span-direction START 'spanner-id "A")
-  startBSlur = - #(make-music 'SlurEvent 'span-direction START 'spanner-id "B")
-  stopASlur = - #(make-music 'SlurEvent 'span-direction STOP 'spanner-id "A")
-  stopBSlur = - #(make-music 'SlurEvent 'span-direction STOP 'spanner-id "B")
 % Standard Notation
 %% Upper
   upper = {
@@ -444,6 +440,7 @@ lower = {
     \override Voice.Beam.damping = #+inf.0
     \override Beam.details.damping-direction-penalty = #0
     \override Beam.details.round-to-zero-slope = #0
+    \override TabStaff.Tie.layer = #-1
 %% Music
   % Bar 1
   < fis'\1 \parenthesize fis'\2>16[ fis'\2 fis fis'\1 fis]
@@ -479,25 +476,26 @@ lower = {
   % \once\override Slur.outside-staff-priority = ##f
   % \shape #'((0.0 . 0.0) (1.0 . -1.0) (1.0 . -1.0) (0 . 0.0)) Slur
   % \once\override Slur.extra-offset = #'(0 . -6)
-  < fis'\1 d,\6 >16[ fis'\2 fis fis'\1 fis]
+  \set tieWaitForNote = ##t
+  < fis'\1 d,\6 \invTNH a,,\6~ >16[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis'\2]
   % Bar 12
   < d\5 fis'\1>[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 13
-  < fis'\1 a,,\6^\laissezVibrer>[ fis'\2 fis fis'\1 fis]
+  < fis'\1 a,,\6>[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis] |
   % Bar 14
   < fis'\1 a,,>[ fis'\2 fis < fis'\1 e\5> fis]
   fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 15
-  < fis'\1 d,\6 >[ fis'\2 fis fis'\1 fis]
+  < fis'\1 d,\6 \invTNH a,,\6~ >[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis'\2]
   % Bar 16
   < d\5 fis'\1>[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 17
-  < fis'\1 a,,\6^\laissezVibrer >[ fis'\2 fis fis'\1 fis]
+  < fis'\1 a,,\6>[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis] |
   % Bar 18
   < a,, fis'\1>[ fis'\2 fis fis'\1 fis]
@@ -521,25 +519,25 @@ lower = {
   < fis'\1 a,,>[ fis'\2 fis < fis'\1 e\5> fis]
   fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 25
-  < fis'\1 d,\6 >[ fis'\2 fis fis'\1 fis]
+  < fis'\1 d,\6 \invTNH a,,\6~ >[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis'\2]
   % Bar 26
   < d\5 fis'\1>[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 27
-  < fis'\1 a,,\6^\laissezVibrer >[ fis'\2 fis fis'\1 fis]
+  < fis'\1 a,,\6>[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis] |
   % Bar 28
   < fis'\1 a,,>[ fis'\2 fis < fis'\1 e\5> fis]
   fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 29
-  < fis'\1 d,\6 >[ fis'\2 fis fis'\1 fis]
+  < fis'\1 d,\6 \invTNH a,,\6~ >[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis'\2]
   % Bar 30
   < d\5 fis'\1>[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 31
-  < fis'\1 a,,\6^\laissezVibrer >[ fis'\2 fis fis'\1 fis]
+  < fis'\1 a,,\6>[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis] |
   % Bar 32
   < fis'\1 a,,>[ fis'\2 fis < fis'\1 e\5> fis]
@@ -594,9 +592,11 @@ lower = {
   \time 10/16
     \set Timing.baseMoment = #(ly:make-moment 1 32)
     \set Timing.beatStructure = #'(6 4 6 4)
-    \once \tabSlur #`(0 -2 -2 -2.3 -2.6 0 -4 0)
-    \chordSlurT #79 #1.2 #-1 < a' fis\4>16([ < fis'\2 d\5> < cis\4
-    fis\3>) a' fis] a'[ fis'\2 < fis gis,> a' fis] |
+    % \once \tabSlur #`(0 -2 -2 -2.3 -2.6 0 -4 0)
+    % \chordSlurT #79 #1.2 #-1 
+    % \set tieWaitForNote = ##t
+    < a' fis\4 \invTNH cis\4~>16[ < fis'\2 d\5> < cis\4
+    fis\3> a' fis] a'[ fis'\2 < fis gis,> a' fis] |
   % Bar 42
   < a' cis cis,\laissezVibrer>[ fis'\2 fis a' fis]
   a'[ fis'\2 fis a' < fis cis cis,\laissezVibrer>] |
@@ -614,9 +614,10 @@ lower = {
   \time 10/16
   \set Timing.baseMoment = #(ly:make-moment 1 32)
   \set Timing.beatStructure = #'(6 4 6 4)
-  \once \tabSlur #`(0 -2 -2 -2.3 -2.6 0 -4 0)
-  \chordSlurT #79 #1.2 #-1 < a' fis\4>16([ < fis'\2 d\5> < cis\4
-  fis\3>) a' fis] a'[ fis'\2 < fis gis,> a' fis] |
+  % \once \tabSlur #`(0 -2 -2 -2.3 -2.6 0 -4 0)
+  % \chordSlurT #79 #1.2 #-1 
+  < a' fis\4 \invTNH cis\4~ >16[ < fis'\2 d\5> < cis\4
+  fis\3> a' fis] a'[ fis'\2 < fis gis,> a' fis] |
   % Bar 46
   < a,, a'>[ fis'\2 fis < a'\1 e\4> fis]
   a'[ fis'\2 fis cis' < fis cis\5>] |
@@ -694,71 +695,71 @@ lower = {
   b\4[ a'\2 fis b\4 a'\2 fis]
   b\4[ a'\2 fis b\4 a'\2 fis]
   % Bar 66
-  b\4[ < a'\2 f\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 fis> < b\4
-  fis,\6\laissezVibrer \invTNH a,,\6> ~ < a,,\6 a'\2> < fis
-  f\5\laissezVibrer \invTNH gis,\5>] ~
-  < gis,\5 b\4> < a'\2 fis,\6\laissezVibrer \invTNH a,,\6> ~ < a,,\6
-  fis> < b\4 f\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 a'\2> < fis
-  fis,\6\laissezVibrer \invTNH a,,\6>] ~ |
+  b\4[ < a'\2 f\5\laissezVibrer \invTNH gis,\5~ > < gis,\5 fis> < b\4
+  fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6 a'\2> < fis
+  f\5\laissezVibrer \invTNH gis,\5~ >] 
+  < gis,\5 b\4> < a'\2 fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6
+  fis> < b\4 f\5\laissezVibrer \invTNH gis,\5~ > < gis,\5 a'\2> < fis
+  fis,\6\laissezVibrer \invTNH a,,\6~ >]  |
   % Bar 67
-  < a,,\6 b\4> [ < a'\2 f\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5
-  fis> < b\4 fis,\6\laissezVibrer \invTNH a,,\6> ~ < a,,\6 a'\2> < fis
-  f\5\laissezVibrer \invTNH gis,\5>] ~ 
-  < gis,\5 b\4> < a'\2 fis,\6\laissezVibrer \invTNH a,,\6> ~ < a,,\6
-  fis> < b\4 f\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 a'\2> < fis
-  fis,\6\laissezVibrer \invTNH a,,\6>] ~ |
+  < a,,\6 b\4> [ < a'\2 f\5\laissezVibrer \invTNH gis,\5~ > < gis,\5
+  fis> < b\4 fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6 a'\2> < fis
+  f\5\laissezVibrer \invTNH gis,\5~ >] 
+  < gis,\5 b\4> < a'\2 fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6
+  fis> < b\4 f\5\laissezVibrer \invTNH gis,\5~ > < gis,\5 a'\2> < fis
+  fis,\6\laissezVibrer \invTNH a,,\6~ >] |
   % Bar 68
   \time 16/16
   \set Timing.baseMoment = #(ly:make-moment 1 32)
   \set Timing.beatStructure = #'(6 6 6 6 8) 
-  < a,,\6 b\4> [ < a'\2 f\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5
-  fis> < b\4 fis,\6\laissezVibrer \invTNH a,,\6> ~ < a,,\6 a'\2> < fis
-  f\5\laissezVibrer \invTNH gis,\5>] ~ 
-  < gis,\5 b\4> < a'\2 fis,\6\laissezVibrer \invTNH a,,\6> ~ < a,,\6
-  fis> < b\4 f\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 a'\2> < fis
-  fis,\6\laissezVibrer \invTNH a,,\6>] ~ < a,,\6 b\4> < a'\2
-  f\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 fis> < b\4
+  < a,,\6 b\4> [ < a'\2 f\5\laissezVibrer \invTNH gis,\5~ > < gis,\5
+  fis> < b\4 fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6 a'\2> < fis
+  f\5\laissezVibrer \invTNH gis,\5~ >] 
+  < gis,\5 b\4> < a'\2 fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6
+  fis> < b\4 f\5\laissezVibrer \invTNH gis,\5~ > < gis,\5 a'\2> < fis
+  fis,\6\laissezVibrer \invTNH a,,\6~ >] < a,,\6 b\4> < a'\2
+  f\5\laissezVibrer \invTNH gis,\5~ > < gis,\5 fis> < b\4
   fis,\6\laissezVibrer> |
   % Bar 69
   \time 10/16
   \set Timing.baseMoment = #(ly:make-moment 1 32)
   \set Timing.beatStructure = #'(4 6 4 6) 
-  < b'\1 f\5\laissezVibrer \invTNH gis,\5>[ ~ < gis,\5 b\4> < a'\2
-  fis,\6\laissezVibrer \invTNH a,,\6> ~ < a,,\6 fis> < b\4
-  f\5\laissezVibrer \invTNH gis,\5>] ~
-  < gis,\5 b'\1>[ < b\4 fis,\6\laissezVibrer \invTNH a,,\6> ~ < a,,\6
-  a'\2> < fis f\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 b\4>] |
+  < b'\1 f\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 b\4> < a'\2
+  fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6 fis> < b\4
+  f\5\laissezVibrer \invTNH gis,\5~ >] 
+  < gis,\5 b'\1>[ < b\4 fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6
+  a'\2> < fis f\5\laissezVibrer \invTNH gis,\5~ > < gis,\5 b\4>] |
   % bar 70
-  < b'\1 fis,\6\laissezVibrer \invTNH a,,\6>[ ~ < a,,\6 b\4> < a'\2
-  f\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 fis> < b\4
-  fis,\6\laissezVibrer \invTNH a,,\6>] ~ 
-  < a,,\6 a'\1>[ < b\4 f\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5
-  a'\2> < fis fis,\6\laissezVibrer \invTNH a,,\6> ~ < a,,\6 cis>] |
+  < b'\1 fis,\6\laissezVibrer \invTNH a,,\6~ >[ < a,,\6 b\4> < a'\2
+  f\5\laissezVibrer \invTNH gis,\5~ > < gis,\5 fis> < b\4
+  fis,\6\laissezVibrer \invTNH a,,\6~ >] 
+  < a,,\6 b'\1>[ < b\4 f\5\laissezVibrer \invTNH gis,\5~ > < gis,\5
+  a'\2> < fis fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6 cis>] |
   % Bar 71
-  < b'\1 f\5\laissezVibrer \invTNH gis,\5>[ ~ < gis,\5 cis> < a'\2
-  e\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 fis> < cis
+  < b'\1 f\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 cis> < a'\2
+  e\5\laissezVibrer \invTNH gis,\5~ > < gis,\5 fis> < cis
   fis,\6\laissezVibrer>]
-  < b'\1 fis\5\laissezVibrer>[ < cis e\5\laissezVibrer \invTNH gis,\5>
-  ~ < gis,\5 a'\2> < fis,\6\laissezVibrer fis> cis] |
+  < b'\1 fis\5\laissezVibrer>[ < cis e\5\laissezVibrer \invTNH gis,\5~ >
+  < gis,\5 a'\2> < fis,\6\laissezVibrer fis> cis] |
   % Bar 72
-  < b'\1 e\5\laissezVibrer \invTNH gis,\5>[ ~ < gis,\5 cis> <
+  < b'\1 e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 cis> <
   fis,\6\laissezVibrer a'\2> < fis fis\5\laissezVibrer> < cis
-  e\5\laissezVibrer \invTNH gis,\5>] ~
+  e\5\laissezVibrer \invTNH gis,\5~>] 
   < gis,\5 b'\1>[ < cis fis,\6\laissezVibrer> a'\2 < fis
-  e\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 cis>] |
+  e\5\laissezVibrer \invTNH gis,\5~ > < gis,\5 cis>] |
   % Bar 73
   < a'\1 fis,\6\laissezVibrer>[ < cis fis\5\laissezVibrer> < a'\2
-  e\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 fis> < fis,\6 cis>]
-  b'\1[ < cis e\5\laissezVibrer \invTNH gis,\5> ~ < gis,\5 a'\2> < cis
+  e\5\laissezVibrer \invTNH gis,\5~ > < gis,\5 fis> < fis,\6 cis>]
+  b'\1[ < cis e\5\laissezVibrer \invTNH gis,\5~ > < gis,\5 a'\2> < cis
   fis,\6\laissezVibrer> < cis fis\5\laissezVibrer>] |
   % Bar 74
   \time 12/16
   \set Timing.baseMoment = #(ly:make-moment 1 32)
   \set Timing.beatStructure = #'(4 6 4 6 4) 
-  < b'\1 e\5\laissezVibrer \invTNH gis,\5>[ ~ < gis,\5 cis> < a'\2
-  fis,\6\laissezVibrer> fis < cis e\5\laissezVibrer \invTNH gis,\5>] ~
+  < b'\1 e\5\laissezVibrer \invTNH gis,\5~>[ < gis,\5 cis> < a'\2
+  fis,\6\laissezVibrer> fis < cis e\5\laissezVibrer \invTNH gis,\5~ >]
   < gis,\5 b'\1>[ < cis fis,\6\laissezVibrer> < a'\2
-  fis\5\laissezVibrer> < fis e\5\laissezVibrer \invTNH gis,\5> ~ <
+  fis\5\laissezVibrer> < fis e\5\laissezVibrer \invTNH gis,\5~ > <
   gis,\5 cis>]
   < b'\1 fis,\6\laissezVibrer>[ cis] |
   % Bar 75
@@ -767,56 +768,52 @@ lower = {
   \set Timing.beatStructure = #'(6 6 4 4) 
   < a'\1 d,\6\laissezVibrer>[ fis'\2 fis < a'\1 d\5\laissezVibrer>
   fis'\2 fis]
-  \once \tabSlur #`(0.5 0 -1 -1 0 0 -0.6 0)
-  \chordSlurT #0 #0.1 #-3.7 < a'\1 fis\4\laissezVibrer>[( fis'\2 < fis
-  d\5\laissezVibrer> < a'\1 cis>]) |
+  % \once \tabSlur #`(0.5 0 -1 -1 0 0 -0.6 0)
+  % \chordSlurT #0 #0.1 #-3.7 
+  < a'\1 fis\4\laissezVibrer \invTNH cis\4~ >[ fis'\2 < fis
+  d\5\laissezVibrer> < a'\1 cis>] |
   % Bar 76
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %% Requires Attention
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \set Timing.beatStructure = #'(6 4 6 4) 
   < fis'\2 d,\6\laissezVibrer>[ fis a'\1 < fis'\2 d\5\laissezVibrer>
   fis]
-  % \set tieWaitForNote = ##t 
-  \once \tabSlur #`(0.8 0 -0.5 -0.5 0.5 0 -1.0 0)
-  \chordSlurT #28 #0.1 #-2.7 < a'\1 fis\4\laissezVibrer>[( < fis'\2
-  d\5\laissezVibrer> < cis\4 fis\3>) a'\1 fis'\2] |
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %% Requires Attention
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % \once \tabSlur #`(0.8 0 -0.5 -0.5 0.5 0 -1.0 0)
+  % \chordSlurT #28 #0.1 #-2.7 
+  < a'\1 fis\4\laissezVibrer \invTNH cis\4~ >[ < fis'\2
+  d\5\laissezVibrer> < cis\4 fis\3> a'\1 fis'\2] |
   % Bar 77
   \set Timing.beatStructure = #'(6 6 4 4) 
   cis,\6\laissezVibrer[ gis'\1 f'\2 < cis\5\laissezVibrer fis> gis'\1
   f'\2]
-  < fis f\4\laissezVibrer>[( gis'\1 < cis\5\laissezVibrer f'\2> < fis
-  cis\4>)] |
+  < fis f\4\laissezVibrer \invTNH d\4~ >[ gis'\1 <
+  cis\5\laissezVibrer f'\2> < fis cis\4 \invTNH d\4>] |
   % Bar 78
   \set Timing.beatStructure = #'(6 4 6 4) 
   < gis'\1 cis,\6\laissezVibrer>[ f'\2 fis < gis'\1
   cis\5\laissezVibrer> f'\2]
-  < fis f\4\laissezVibrer>([ < gis'\1 cis\5\laissezVibrer> < cis\4
-  f'\2>) < fis cis,\6\laissezVibrer> a'\1] |
+  < fis f\4\laissezVibrer \invTNH d\4~ >[ < gis'\1
+  cis\5\laissezVibrer> < cis\4 f'\2 \invTNH d\4> < fis
+  cis,\6\laissezVibrer> a'\1] |
   % Bar 79
   \set Timing.beatStructure = #'(6 6 4 4) 
   < fis'\2 d,\6\laissezVibrer>[ fis a'\1 < fis'\2 d\5\laissezVibrer>
   fis a'\1] 
-  < fis'\2 fis\4\laissezVibrer>[( fis < a'\1 d\5\laissezVibrer> <
-  fis'\2 cis\4>)] |
+  < fis'\2 fis\4\laissezVibrer \invTNH cis\4~ >[ fis < a'\1
+  d\5\laissezVibrer> < fis'\2 cis\4>] |
   % Bar 80
   \set Timing.beatStructure = #'(6 4 6 4) 
   < fis d,\6\laissezVibrer>[ a'\1 fis'\2 < fis d\5\laissezVibrer>
   a'\1]
-  < fis'\2 fis\4\laissezVibrer>[( < fis d\5\laissezVibrer> < a'\1
-  cis\4>) fis'\2 cis] |
+  < fis'\2 fis\4\laissezVibrer \invTNH cis\4~ >[ < fis
+  d\5\laissezVibrer> < a'\1 cis\4> fis'\2 cis] |
   % Bar 81
   \time 16/16
   \set Timing.beatStructure = #'(6 6 6 8) 
   \set subdivideBeams = ##f
   < gis'\1 cis,\6\laissezVibrer>[ < f'\2 cis\5\laissezVibrer \invTNH
-  gis,\5> ~ < gis,\5 fis>]
-  < gis'\1 cis\5\laissezVibrer>[ < f'\2 cis,\6\laissezVibrer \invTNH
-  a,,\6> ~ < a,,\6 fis>]
-  < gis'\1 d\5\laissezVibrer d,\6\laissezVibrer>^glissando[ < f'\2
+  gis,\5~ > < gis,\5~ fis>]
+  < gis'\1 cis\5 \invTNH gis,\5>[ < f'\2 cis,\6\laissezVibrer \invTNH
+  a,,\6~ > < a,,\6~ fis>]
+  < gis'\1 d\5\laissezVibrer d,\6 \invTNH a,,\6>^glissando[ < f'\2
   cis\5 cis,\6> < gis,\5 cis\4>]
   r16 r16 r16 b'\1
   % Bar 82
@@ -1131,11 +1128,12 @@ lhOne = {
     s2 s4. |
     % Bar 35
     s2 s4. |
+    \break
     % Bar 36
     s2 s4. |
-    \break
     % Bar 37
     s2 s4. |
+    \break
     % Bar 38
     s2 s4. |
     % Bar 39
