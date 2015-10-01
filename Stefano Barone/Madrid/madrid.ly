@@ -292,6 +292,15 @@ evenFooterMarkup = \oddFooterMarkup
     \set Timing.beatStructure = #'(4 4 6 4 4 6 4)
       fis'[ b fis' b fis' b cis']
       fis'[ b fis' b cis' b cis'] r8 |
+      % Bar 41
+    \time 10/16
+    a'16[ fis' fis a' fis]
+    a'[ fis' fis a' fis] |
+    % Bar 42
+    a'16[ fis' fis a' fis]
+    a'[ fis' fis a' fis] |
+    % Bar 43
+
 
 
     } >>
