@@ -529,6 +529,9 @@ lower = {
     % Bar 62
     b,,8. b,8 cis8 a,,8. |
     % Bar 63
+    \clef "treble_8"
+    cis8 r16 fis8. \once\override NoteHead.style = #'harmonic-mixed gis a
+    \once\override NoteHead.style = #'harmonic-mixed cis' |
 
 
 
