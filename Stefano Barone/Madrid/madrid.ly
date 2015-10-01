@@ -483,6 +483,18 @@ lower = {
     % Bar 41
     \time 10/16
     fis16 d cis~ cis8~ cis8.~ cis8 |
+    % Bar 42
+    < cis cis,>2 r16 < cis cis,>16~ |
+    % Bar 42
+    < cis cis,>8 < d, d>2~ |
+    % Bar 43
+    \time 12/16
+    < d, d>8 d32 fis32~ fis16~ fis2 |
+    % Bar 44
+    \time 10/16
+    fis16 d cis~ cis8~ cis8 gis,16~ gis,8 |
+    % Bar 45
+
 
 
 
