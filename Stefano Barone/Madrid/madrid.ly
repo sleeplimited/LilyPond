@@ -333,8 +333,20 @@ evenFooterMarkup = \oddFooterMarkup
     cis'16[ d'8 cis'16 a'~] |
     % Bar 52
     a'[ d' a'16~ a'16 cis'16~]
-    cis'16[ d'8 cis'16 a'~] |
+    cis'16[ d'8 cis'16 a'] |
     % Bar 53
+    b16[ d' a' d' cis']
+    b[ d' b cis' a'] |
+    % Bar 54
+    b16[ d' a' d' cis']
+    b[ d'16~ d'16 cis' a'~] |
+    % Bar 55
+    a'[ d' a'16~ a'16 cis'16~]
+    cis'16[ d'8 cis'16 a'~] |
+    % Bar 56
+    a'[ d' a'16~ a'16 cis'16~]
+    cis'16[ d'8 cis'16 d'] |
+    % Bar 57
 
 
 
