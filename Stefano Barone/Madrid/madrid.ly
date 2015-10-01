@@ -520,6 +520,15 @@ lower = {
     b,,8. b,8 cis8 a,,8. |
     % Bar 58
     b,,8. b,8 cis8 a,,8. |
+    % Bar 59
+    fis,8. < fis, cis>8 < fis, cis>8 cis8. |
+    % Bar 60
+    fis,8. < fis, cis>8 < fis, cis>8 cis8. |
+    % Bar 61
+    b,,8. b,8 cis8 a,,8. |
+    % Bar 62
+    b,,8. b,8 cis8 a,,8. |
+    % Bar 63
 
 
 
