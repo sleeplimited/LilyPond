@@ -477,9 +477,12 @@ lower = {
     d8 a,, fis16 r16 a,,16
     d8 a,, fis16 r16 a,,16 |
     % Bar 40
-    \time 8/8
+    \time 16/16
     d8 a,, cis a,,16
     d8 a,, cis16 ~ < cis eis> < d fis> r8 |
+    % Bar 41
+    \time 10/16
+    fis16 d cis~ cis8~ cis8.~ cis8 |
 
 
 
