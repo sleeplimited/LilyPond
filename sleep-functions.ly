@@ -155,7 +155,7 @@ onestrdwnstrm = \markup { \rotate #180
     \combine
     \override #'(thickness . 0.5)
     \draw-line #'(0 . 1.5)
-    \fontsize #0.5
+    \fontsize #-0.5
     \arrow-head #Y #DOWN ##t
     }
   }
@@ -163,8 +163,8 @@ twostrdwnstrm = \markup { \rotate #180
   \center-column {
     \combine
     \override #'(thickness . 0.5)
-    \draw-line #'(0 . 2.5)
-    \fontsize #0.5
+    \draw-line #'(0 . 2.25)
+    \fontsize #-2
     \arrow-head #Y #DOWN ##t
     }
   }
@@ -301,7 +301,7 @@ lhguidetwo = \markup {  \fontsize #-8  \override #'(thickness . 0.08) \circle \p
 lhguidethree = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-3" }
 lhguidefour = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-4" }
 lhguidethumb = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-t" }
-%% add left-hand fingering with Text-Spanners
+%% left-hand fingering with Text-Spanners
   % contributed by harm6
   % Code by David Nalesnik and Thomas Morley (v2.16.0)
   % => http://lists.gnu.org/archive/html/lilypond-user/2011-10/msg00500.html
@@ -332,7 +332,7 @@ lhSpannerDown =
   #{
      \once \override Voice.TextSpanner #'style = #'solid
      \once \override Voice.TextSpanner #'font-size = #-8
-     \once \override Voice.TextSpanner #'thickness = #0.01
+     \once \override Voice.TextSpanner #'thickness = #0.5
      \once \override TextSpanner #'(bound-details left stencil-align-dir-y) = #CENTER
      \once \override TextSpanner #'(bound-details right text) = \markup {
      \draw-line #'(0 . 0.5) }
@@ -362,7 +362,7 @@ lhSpannerUp =
   #{
      \once \override Voice.TextSpanner #'style = #'solid
      \once \override Voice.TextSpanner #'font-size = #-8
-     \once \override Voice.TextSpanner #'thickness = #0.01
+     \once \override Voice.TextSpanner #'thickness = #0.5
      \once \override TextSpanner #'(bound-details left stencil-align-dir-y) = #CENTER
      \once \override TextSpanner #'(bound-details right text) = \markup {
      \draw-line #'(0 . -0.5) }
@@ -481,6 +481,53 @@ rightBracketFive = {
 \once\override BreathingSign #'Y-offset = ##f
 \breathe
 }
+%% Slurs and Ties
+ %% was shapeSlur
+
+ %% Contributed by Stephen MacNeil
+tabSlur = #(define-music-function (parser location offsets) (list?)
+#{
+\override TabVoice.Slur.control-points = #(alter-slur-curve offsets)
+#})
+#(define ((alter-slur-curve offsets) grob)
+;; get default control-points
+(let ((coords (ly:slur::calc-control-points grob))
+(n 0))
+;; add offsets to default coordinates
+(define loop (lambda (n)
+(set-car! (list-ref coords n)
+(+ (list-ref offsets (* 2 n))
+(car (list-ref coords n))))
+(set-cdr! (list-ref coords n)
+(+ (list-ref offsets (1+ (* 1 n))) ;was (* 2 n)))
+(cdr (list-ref coords n))))
+(if (< n 3)
+(loop (1+ n)))))
+;; return altered coordinates
+(loop n)
+coords))
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+chordSlurT =
+#(define-music-function (parser location tro tx ty) (number? number? number?)
+#{
+
+\once \override TabVoice.Slur.extra-offset = #`(,tx . ,ty)
+\once \override TabVoice.Slur.rotation = #`(,tro 0 0)
+\once \override TabStaff.Slur.layer = #4
+\once \override TabStaff.NoteHead.layer = #1
+
+#})
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  %%% Example of Usage
+  %%% \version "2.18.2"
+  %%% 
+  %%% \new TabStaff {
+  %%% \tabFullNotation
+  %%% \once \tabSlur #`(0 -2 -2 -2.3 -2.6 0 -4 0)
+  %%% \chordSlurT #79 #1.2 #-1 < bis'\1 g\4>16[( < fis'\2 ees\5> < g d>)]
+  %%% }
 % Percussion
 snare = \markup {
   \center-column {
@@ -598,9 +645,18 @@ invTNH =
    (parser location note)
    (ly:music?)
    #{
-   \tweak TabNoteHead #'transparent ##t
+   \tweak TabNoteHead.color #white
+   \tweak TabNoteHead.layer #-1
    #note
    #})
+%% Date
+printDate = 
+#(strftime "%m-%d-%Y" 
+           (localtime 
+             (current-time)
+             )
+           )
+
 % Changing the TabNoteHead stencil
   %% Created by HARM
   % Because it is important to know how one can change the TabNoteHead easily 
@@ -693,7 +749,7 @@ strpHarmFive = \newTabNoteHead \markup { \override #'(font-name . "FreeSans")
 }
   }
 }
-strpHarmTwelve = \newTabNoteHead \markup { \override #'(font-name . "FreeSans")
+strpHarmTwelve = \newTabNoteHead \markup { \override #'(font-name .  "Tex Gyre Schola")
   { 
     \center-column {
     \combine

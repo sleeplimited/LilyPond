@@ -1,0 +1,5 @@
+\version "2.18.2"
+
+\new TabStaff \relative c' {
+<bis'\1 g\4>( <fis'\2 ees\5> <g d>)
+}

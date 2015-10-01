@@ -1,0 +1,2 @@
+@image{madrid-tempo-1}
+@c eof
