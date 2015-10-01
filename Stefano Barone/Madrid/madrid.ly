@@ -682,7 +682,7 @@ lower = {
     % \chordSlurT #79 #1.2 #-1 
     % \set tieWaitForNote = ##t
     < a' fis\4 \invTNH cis\4~>16[ < fis'\2 d\5> < cis\4
-    fis\3> a' fis] a'[ fis'\2 < fis gis,> a' fis] |
+    fis\3> a' fis] a'[ fis'\2 fis a' fis] |
   % Bar 42
   < a' cis cis,\laissezVibrer>[ fis'\2 fis a' fis]
   a'[ fis'\2 fis a' < fis cis cis,\laissezVibrer>] |
