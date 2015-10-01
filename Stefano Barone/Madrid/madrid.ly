@@ -505,8 +505,17 @@ lower = {
     % Bar 50
     r8. r8 r8 cis8. |
     % Bar 51
-
-
+    < cis fis,>8. < cis fis,>8 < cis fis,>8 cis8. |
+    % Bar 52
+    < cis fis,>8. < cis fis,>8 < cis fis,>8 cis8. |
+    % Bar 53
+    r8. r8 r8 r8. |
+    % Bar 54
+    r8. r8 r8 cis8. |
+    % Bar 55
+    a,,8. cis8 a,,8 cis8. |
+    % Bar 56
+    a,,8. cis8 a,,8 cis8. |
 
 
 
