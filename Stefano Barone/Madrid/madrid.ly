@@ -516,6 +516,10 @@ lower = {
     a,,8. cis8 a,,8 cis8. |
     % Bar 56
     a,,8. cis8 a,,8 cis8. |
+    % Bar 57
+    b,,8. b,8 cis8 a,,8. |
+    % Bar 58
+    b,,8. b,8 cis8 a,,8. |
 
 
 
