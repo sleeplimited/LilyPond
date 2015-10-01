@@ -485,15 +485,27 @@ lower = {
     fis16 d cis~ cis8~ cis8.~ cis8 |
     % Bar 42
     < cis cis,>2 r16 < cis cis,>16~ |
-    % Bar 42
-    < cis cis,>8 < d, d>2~ |
     % Bar 43
+    < cis cis,>8 < d, d>2~ |
+    % Bar 44
     \time 12/16
     < d, d>8 d32 fis32~ fis16~ fis2 |
-    % Bar 44
+    % Bar 45
     \time 10/16
     fis16 d cis~ cis8~ cis8 gis,16~ gis,8 |
-    % Bar 45
+    % Bar 46
+    a,,8. e8~ e8.~ e16 cis~ |
+    % Bar 47
+    cis8 d8. a,,8. cis8~ |
+    % Bar 48
+    \time 15/16
+    cis16 a,,8. d16~ d8 a,,8 cis16~ cis16 a,,16~ a,,8. |
+    % Bar 49
+    r8. r8 r8 r8. |
+    % Bar 50
+    r8. r8 r8 cis8. |
+    % Bar 51
+
 
 
 
