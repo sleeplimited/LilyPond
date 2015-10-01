@@ -353,6 +353,11 @@ evenFooterMarkup = \oddFooterMarkup
     d'[ f d'~ d' cis'~]
     cis'[ f~ f cis' a'~] |
     % Bar 59
+    a'[ fis a'~ a' cis'~]
+    cis'[ fis~ fis cis' a'~] |
+    % Bar 60
+    a'[ fis a'~ a' cis'~]
+    cis'[ fis~ fis cis' d'~] |
 
 
 
