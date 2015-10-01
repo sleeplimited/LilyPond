@@ -300,6 +300,14 @@ evenFooterMarkup = \oddFooterMarkup
     a'16[ fis' fis a' fis]
     a'[ fis' fis a' fis] |
     % Bar 43
+    a'16[ fis' fis a' fis]
+    a'[ fis' fis a' fis'] |
+    % Bar 44
+    \time 12/16
+    a'16[ fis' fis a' fis]
+    a'[ fis' fis a' fis cis' fis'] |
+    % Bar 45
+
 
 
 
