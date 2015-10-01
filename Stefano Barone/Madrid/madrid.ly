@@ -325,6 +325,18 @@ evenFooterMarkup = \oddFooterMarkup
     \time 10/16
     b16[ d' a' b cis']
     b[ d' b cis' a'] |
+    % Bar 50
+    b16[ d' a' b cis']
+    b[ d'16~ d'16 cis' a'~] |
+    % Bar 51
+    a'[ d' a'16~ a'16 cis'16~]
+    cis'16[ d'8 cis'16 a'~] |
+    % Bar 52
+    a'[ d' a'16~ a'16 cis'16~]
+    cis'16[ d'8 cis'16 a'~] |
+    % Bar 53
+
+
 
 
 
@@ -783,7 +795,7 @@ lower = {
   < gis,\5 b'\1>[ < cis fis,\6\laissezVibrer> a'\2 < fis
   e\5\laissezVibrer \invTNH gis,\5~ > < gis,\5 cis>] |
   % Bar 73
-  < a'\1 fis,\6\laissezVibrer>[ < cis fis\5\laissezVibrer> < a'\2
+  < b'\1 fis,\6\laissezVibrer>[ < cis fis\5\laissezVibrer> < a'\2
   e\5\laissezVibrer \invTNH gis,\5~ > < gis,\5 fis> < fis,\6 cis>]
   b'\1[ < cis e\5\laissezVibrer \invTNH gis,\5~ > < gis,\5 a'\2> < cis
   fis,\6\laissezVibrer> < cis fis\5\laissezVibrer>] |
