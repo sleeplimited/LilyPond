@@ -126,7 +126,7 @@ evenFooterMarkup = \oddFooterMarkup
   }
 
 % Includes and functions
-  \include "../../sleep-functions.ly"
+  \include "../../sleep-functions.ily"
   \include "vibrato.ly"
 % Standard Notation
 %% Upper
@@ -399,6 +399,7 @@ lower = {
     \mergeDifferentlyHeadedOn
       \mergeDifferentlyDottedOn
 %%% VoiceTwo
+\override Staff.ClefModifier.extra-offset = #'(-1.25 . 1.25)
     % Bar 1 - 4
     s4*10 |
     % Bar 5
