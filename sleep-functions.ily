@@ -1,10 +1,10 @@
 % Right-Hand Articulations
 %% p i m a c
-rhc = \markup { \halign #CENTER \italic \fontsize #-5 "c" }
-rha = \markup { \halign #CENTER \italic \fontsize #-5 "a" }
-rhm = \markup { \halign #CENTER \italic \fontsize #-5 "m" }
-rhi = \markup { \halign #CENTER \italic \fontsize #-5 "i" }
-rhp = \markup { \halign #CENTER \italic \fontsize #-5 "p" }
+rhc = \markup { \halign #CENTER \fontsize #-5 "c" }
+rha = \markup { \halign #CENTER \fontsize #-5 "a" }
+rhm = \markup { \halign #CENTER \fontsize #-5 "m" }
+rhi = \markup { \halign #CENTER \fontsize #-5 "i" }
+rhp = \markup { \halign #CENTER \fontsize #-5 "p" }
 %% Flicks Two arrow Heads
 oneStrFlick = \markup { \rotate #180
   \center-column {
