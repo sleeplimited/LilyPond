@@ -141,14 +141,20 @@ evenFooterMarkup = \oddFooterMarkup
     \override Staff.Beam #'beam-thickness = #'0.38
     \numericTimeSignature
     \time 10/16
-    % \set Score.tempoHideNote = ##t
+    \set Score.tempoHideNote = ##t
     \tempo 16 = 300
     \key cis \minor
     \override Score.RehearsalMark #'break-align-symbols = #'(key-signature)
+    \mark \markup  { 
+      \fontsize #-4 \concat { 
+        \fontsize #0 { 
+          \note #"16" #1 
+        }
+          " =" \fontsize #-4 \number " 300"
+        }
+      }
     \once \override Score.KeySignature #'break-align-anchor = #2.3
     \once \override Score.RehearsalMark #'extra-offset = #'(0 . 2)
-    % \mark \markup  { \fontsize #-4 \concat { \note "16"  " ="
-    % \fontsize #-4 \number " 90" }}
     \mergeDifferentlyHeadedOn
       \mergeDifferentlyDottedOn
     % Bar 1
@@ -1447,8 +1453,8 @@ lhFour = {
         }
         \context {
           \Staff
-          \override TimeSignature #'space-alist #'first-note = #'(extra-space .
-          4.9) }
+          % \override TimeSignature #'space-alist #'first-note = #'(extra-space .  4.9) 
+          }
         \context {
       \TabStaff
       \override Clef #'stencil = #clef::print-modern-custom-tab-if-set
