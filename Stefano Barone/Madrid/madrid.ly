@@ -147,7 +147,7 @@ evenFooterMarkup = \oddFooterMarkup
     \override Score.RehearsalMark #'break-align-symbols = #'(key-signature)
     \mark \markup  { 
       \fontsize #-4 \concat { 
-        \fontsize #0 { 
+        \fontsize #-1 { 
           \note #"16" #1 
         }
           " =" \fontsize #-4 \number " 300"
@@ -562,7 +562,7 @@ lower = {
     \override TabStaff.TimeSignature #'font-size = #5
     \override TabStaff.TabNoteHead #'font-name = #"Tex Gyre Schola"
     \override TabStaff.Glissando #'thickness = #0.5
-    \override Staff.Stem #'stemlet-length = #2.75
+    \override Staff.Stem #'stemlet-length = #1.75
     \override BreathingSign #'extra-offset = #'(0.5 . -2.0)
     \override TupletBracket #'thickness = #'1
     \override TupletNumber #'text = \markup {  "3" }
@@ -579,9 +579,11 @@ lower = {
     \override TabStaff.StaffSymbol #'thickness = #'0.75
     \override TabStaff.Beam #'beam-thickness = #'0.38
     \override LaissezVibrerTie.extra-offset = #'(-1.5 . 0)
-    \override Voice.Beam.damping = #+inf.0
-    \override Beam.details.damping-direction-penalty = #0
-    \override Beam.details.round-to-zero-slope = #0
+    % \override Voice.Beam.damping = #10
+    % To make the beams perfectly straight use the following:
+    % \override Voice.Beam.damping = #+inf.0
+    % \override Beam.details.damping-direction-penalty = #0
+    % \override Beam.details.round-to-zero-slope = #0
     \override TabStaff.Tie.layer = #-1
 %% Music
   % Bar 1
