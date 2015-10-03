@@ -666,7 +666,7 @@ stringSnare = \newTabNoteHead \markup { \override #'(box-padding . 0)
   }
 }
 
-strpHarmSeven = \newTabNoteHead \markup { \override #'(font-name . "FreeSans")
+strpHarmSeven = \newTabNoteHead \markup { \override #'(font-name .  "Tex Gyre Schola")
   { 
     \center-column {
     \combine
@@ -684,7 +684,7 @@ strpHarmSeven = \newTabNoteHead \markup { \override #'(font-name . "FreeSans")
 }
   }
 }
-strpHarmFive = \newTabNoteHead \markup { \override #'(font-name . "FreeSans")
+strpHarmFive = \newTabNoteHead \markup { \override #'(font-name . "Tex Gyre Schola")
   { 
     \center-column {
     \combine
@@ -702,7 +702,7 @@ strpHarmFive = \newTabNoteHead \markup { \override #'(font-name . "FreeSans")
 }
   }
 }
-strpHarmTwelve = \newTabNoteHead \markup { \override #'(font-name . "FreeSans")
+strpHarmTwelve = \newTabNoteHead \markup { \override #'(font-name .  "Tex Gyre Schola")
   { 
     \center-column {
     \combine
@@ -721,7 +721,7 @@ strpHarmTwelve = \newTabNoteHead \markup { \override #'(font-name . "FreeSans")
   }
 }
 
-strpHarmFiveInChord = \markup { \override #'(font-name . "FreeSans")
+strpHarmFiveInChord = \markup { \override #'(font-name . "Tex Gyre Schola")
   { 
     \center-column {
     \combine
@@ -739,7 +739,7 @@ strpHarmFiveInChord = \markup { \override #'(font-name . "FreeSans")
 }
   }
 }
-strpHarmSevenInChord = \markup { \override #'(font-name . "FreeSans")
+strpHarmSevenInChord = \markup { \override #'(font-name . "Tex Gyre Schola")
   { 
     \center-column {
     \combine
@@ -758,7 +758,7 @@ strpHarmSevenInChord = \markup { \override #'(font-name . "FreeSans")
   }
 }
 
-strpHarmTwelveInChord = \markup { \override #'(font-name . "FreeSans")
+strpHarmTwelveInChord = \markup { \override #'(font-name . "Tex Gyre Schola")
   { 
     \center-column {
     \combine
