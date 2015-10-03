@@ -562,7 +562,7 @@ lower = {
     \override TabStaff.TimeSignature #'font-size = #5
     \override TabStaff.TabNoteHead #'font-name = #"Tex Gyre Schola"
     \override TabStaff.Glissando #'thickness = #0.5
-    \override Staff.Stem #'stemlet-length = #1.75
+    \override TabStaff.Stem.stemlet-length = #1.75
     \override BreathingSign #'extra-offset = #'(0.5 . -2.0)
     \override TupletBracket #'thickness = #'1
     \override TupletNumber #'text = \markup {  "3" }
@@ -574,20 +574,20 @@ lower = {
     \override Score.OttavaBracket #'thickness = #'0.5
     \set Timing.baseMoment = #(ly:make-moment 1 32)
     \set Timing.beatStructure = #'(6 4 6 4)
-    \set subdivideBeams = ##t
+    % \set subdivideBeams = ##t
     \set Timing.beamExceptions = #'()
     \override TabStaff.StaffSymbol #'thickness = #'0.75
     \override TabStaff.Beam #'beam-thickness = #'0.38
     \override LaissezVibrerTie.extra-offset = #'(-1.5 . 0)
-    % \override Voice.Beam.damping = #10
+    \override TabStaff.Beam.damping = #10000
     % To make the beams perfectly straight use the following:
     % \override Voice.Beam.damping = #+inf.0
-    % \override Beam.details.damping-direction-penalty = #0
-    % \override Beam.details.round-to-zero-slope = #0
+    % \override Beam.details.damping-direction-penalty = #1
+    % \override Beam.details.round-to-zero-slope = #1
     \override TabStaff.Tie.layer = #-1
 %% Music
   % Bar 1
-  < fis'\1 \parenthesize fis'\2>16[ fis'\2 fis fis'\1 fis]
+  < fis'\1 \tweakTabNoteHead \parenInChordSeven \tweak #'X-offset #0.6 fis'\2  >16[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 2
   fis'16\1[ fis'\2 fis fis'\1 fis]
@@ -621,6 +621,7 @@ lower = {
   % \shape #'((0.0 . 0.0) (1.0 . -1.0) (1.0 . -1.0) (0 . 0.0)) Slur
   % \once\override Slur.extra-offset = #'(0 . -6)
   \set tieWaitForNote = ##t
+  \tieDown
   < fis'\1 d,\6 \invTNH a,,\6~ >16[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis'\2]
   % Bar 12
