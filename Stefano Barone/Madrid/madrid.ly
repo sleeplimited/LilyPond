@@ -989,8 +989,10 @@ lower = {
     % Bar 1
     s4 s4 s8 s8\stopTextSpan s4 | %}
     % Bar 1
-    \override TextScript.extra-offset = #'(-0.2 . -0.3)
-    s8.^\rha s8 ^\rha s8.^\rha s8^\rha
+    \override TextScript.extra-offset = #'(-0.3 . -0.3)
+    s8.^\rha s8 ^\rha s8.^\rha s8^\rha |
+    % Bar 2
+    s8.^\rha s8 ^\rha s8.^\rha s8^\rha |
 
   }
 %% DynamicsTwo
