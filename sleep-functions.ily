@@ -339,7 +339,7 @@ lhSpannerDown =
      \once \override TextSpanner #'(bound-details left text) = \markup {
       { \circle \pad-markup #0.2 \upright { $strg }}}
      \once \override TextSpanner #'(bound-details left-broken text) = \markup {
-     \parenthesize { \circle \pad-markup #0.2 \upright { $strg } } }
+     \override #'(angularity . 1) \parenthesize { \circle \pad-markup #0.2 \upright { $strg } } }
   
      #(text-spanner-start-stop music)
   #})
@@ -371,7 +371,8 @@ lhSpannerUp =
      \once \override TextSpanner #'(bound-details left text) = \markup {
       { \circle \pad-markup #0.2 \upright { $strg } }}
      \once \override TextSpanner #'(bound-details left-broken text) = \markup {
-     \parenthesize { \circle \pad-markup #0.2 \upright { $strg } } }
+     \override #'(angularity . 1) \parenthesize { \circle \pad-markup
+     #0.2 \upright { $strg } } }
      #(text-spanner-start-stop music)
   #})
 
