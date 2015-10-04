@@ -301,7 +301,7 @@ lhguidetwo = \markup {  \fontsize #-8  \override #'(thickness . 0.08) \circle \p
 lhguidethree = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-3" }
 lhguidefour = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-4" }
 lhguidethumb = \markup {  \fontsize #-8 \override #'(thickness . 0.08) \circle \pad-markup #0.2 "-t" }
-%% add left-hand fingering with Text-Spanners
+%% left-hand fingering with Text-Spanners
   % contributed by harm6
   % Code by David Nalesnik and Thomas Morley (v2.16.0)
   % => http://lists.gnu.org/archive/html/lilypond-user/2011-10/msg00500.html
@@ -338,6 +338,8 @@ lhSpannerDown =
      \draw-line #'(0 . 0.5) }
      \once \override TextSpanner #'(bound-details left text) = \markup {
       { \circle \pad-markup #0.2 \upright { $strg }}}
+     \once \override TextSpanner #'(bound-details left-broken text) = \markup {
+     \parenthesize { \circle \pad-markup #0.2 \upright { $strg } } }
   
      #(text-spanner-start-stop music)
   #})
@@ -368,7 +370,8 @@ lhSpannerUp =
      \draw-line #'(0 . -0.5) }
      \once \override TextSpanner #'(bound-details left text) = \markup {
       { \circle \pad-markup #0.2 \upright { $strg } }}
-  
+     \once \override TextSpanner #'(bound-details left-broken text) = \markup {
+     \parenthesize { \circle \pad-markup #0.2 \upright { $strg } } }
      #(text-spanner-start-stop music)
   #})
 
@@ -382,6 +385,8 @@ lhSpannerUpOpen =
      \once \override TextSpanner #'(bound-details left stencil-align-dir-y) = #CENTER
      \once \override TextSpanner #'(bound-details left text) = \markup {
       { \circle \pad-markup #0.2 \upright { $strg } }}
+     \once \override TextSpanner #'(bound-details left-broken text) = \markup {
+     \parenthesize { \circle \pad-markup #0.2 \upright { $strg } } }
   
      #(text-spanner-start-stop music)
   #})
