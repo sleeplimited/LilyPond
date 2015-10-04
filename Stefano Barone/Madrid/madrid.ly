@@ -1085,7 +1085,7 @@ lower = {
     % Bar 6
     s8. s8 s8. s8 |
     % Bar 7
-    s8.\mkTweak #-0.55 -4.7 ^\twostrdwnstrm \mkTweak #-0.25 -6.8 ^\rhp
+    s8.\mkTweak #-0.55 -4.7 ^\twostrdwnstrm \mkTweak #-0.3 -7 ^\rhp
     s8 s8. s8 |
     % Bar 8
     s8. s8 s8. s8 |
@@ -1128,7 +1128,7 @@ lower = {
     s8. s8 s8. s8 |
     s8. s8 s8. s8 |
     % Bar 10
-    \override TextScript.extra-offset = #'(-0.2 . -6.1)
+    \override TextScript.extra-offset = #'(-0.3 . -6.1)
     s8.^\rhp s8 s8. s8 |
     % Bar 11
     s8.^\rhp s8 s8. s8 |
@@ -1312,7 +1312,7 @@ lhTwo = {
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \override Score.TrillSpanner #'outside-staff-priority = ##f
-    \override TextSpanner #'extra-offset = #'(0 . -9.9)
+    \override TextSpanner #'extra-offset = #'(0 . -10)
     \override TabStaff.BreathingSign #'outside-staff-priority = ##f
     \override BreathingSign #'outside-staff-priority = ##f
     % \override TextSpanner #'(bound-details left-broken text) = ##f 
