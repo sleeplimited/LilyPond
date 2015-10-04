@@ -562,7 +562,8 @@ lower = {
     \override TabStaff.TimeSignature #'font-size = #5
     \override TabStaff.TabNoteHead #'font-name = #"Tex Gyre Schola"
     \override TabStaff.Glissando #'thickness = #0.5
-    \override TabStaff.Stem.stemlet-length = #1.75
+    \override TabStaff.Stem.stemlet-length = #2.75
+    \override Stem.details.beamed-lengths = #'(0)
     \override BreathingSign #'extra-offset = #'(0.5 . -2.0)
     \override TupletBracket #'thickness = #'1
     \override TupletNumber #'text = \markup {  "3" }
@@ -574,12 +575,12 @@ lower = {
     \override Score.OttavaBracket #'thickness = #'0.5
     \set Timing.baseMoment = #(ly:make-moment 1 32)
     \set Timing.beatStructure = #'(6 4 6 4)
-    % \set subdivideBeams = ##t
+    \set subdivideBeams = ##t
     \set Timing.beamExceptions = #'()
     \override TabStaff.StaffSymbol #'thickness = #'0.75
     \override TabStaff.Beam #'beam-thickness = #'0.38
     \override LaissezVibrerTie.extra-offset = #'(-1.5 . 0)
-    \override TabStaff.Beam.damping = #10000
+    % \override Beam.damping = #10000
     % To make the beams perfectly straight use the following:
     % \override Voice.Beam.damping = #+inf.0
     % \override Beam.details.damping-direction-penalty = #1
@@ -622,6 +623,8 @@ lower = {
   % \once\override Slur.extra-offset = #'(0 . -6)
   \set tieWaitForNote = ##t
   \tieDown
+  \override Voice.Tie.padding = #5
+  \override Beam.positions = #'(-4 . -4)
   < fis'\1 d,\6 \invTNH a,,\6~ >16[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis'\2]
   % Bar 12
@@ -1143,10 +1146,10 @@ lhOne = {
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \override Score.TrillSpanner #'outside-staff-priority = ##f
-    \override TextSpanner.extra-offset = #'(0 . 1.4)
+    \override TextSpanner.extra-offset = #'(0 . 1.6)
     \override TabStaff.BreathingSign #'outside-staff-priority = ##f
     \override BreathingSign #'outside-staff-priority = ##f
-    \override TextSpanner #'(bound-details left-broken text) = ##f 
+    % \override TextSpanner #'(bound-details left-broken text) = ##f 
     \override TextSpanner #'(bound-details right-broken text) = ##f 
     %{Example:
     % Bar 1
@@ -1299,7 +1302,7 @@ lhTwo = {
     \override TextSpanner #'extra-offset = #'(0 . -9.9)
     \override TabStaff.BreathingSign #'outside-staff-priority = ##f
     \override BreathingSign #'outside-staff-priority = ##f
-    \override TextSpanner #'(bound-details left-broken text) = ##f 
+    % \override TextSpanner #'(bound-details left-broken text) = ##f 
     \override TextSpanner #'(bound-details right-broken text) = ##f 
     % \lhSpannerUp "2" { }
     % Bar 1 - 4
@@ -1334,10 +1337,9 @@ lhThree = {
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \override Score.TrillSpanner #'outside-staff-priority = ##f
-    \override TextSpanner #'extra-offset = #'(0 . 0.5)
+    \override TextSpanner #'extra-offset = #'(0 . 0.6)
     \override TabStaff.BreathingSign #'outside-staff-priority = ##f
     \override BreathingSign #'outside-staff-priority = ##f
-    \override TextSpanner #'(bound-details left-broken text) = ##f 
     \override TextSpanner #'(bound-details right-broken text) = ##f 
     % Bar 1
     \lhSpannerUp "3" {s8. s8 s8. s8 |
@@ -1378,7 +1380,6 @@ lhFour = {
     \override TextSpanner #'extra-offset = #'(0 . -9)
     \override TabStaff.BreathingSign #'outside-staff-priority = ##f
     \override BreathingSign #'outside-staff-priority = ##f
-    \override TextSpanner #'(bound-details left-broken text) = ##f 
     \override TextSpanner #'(bound-details right-broken text) = ##f 
     % Bar 1 - 4
     s8. s8 s8. s8 |
