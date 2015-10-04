@@ -993,6 +993,10 @@ lower = {
     s8.^\rha s8 ^\rha s8.^\rha s8^\rha |
     % Bar 2
     s8.^\rha s8 ^\rha s8.^\rha s8^\rha |
+    % Bar 3
+    s8.^\rha s8 ^\rha s8.^\rha s8^\rha |
+    % Bar 4
+    s8.^\rha s8 ^\rha s8.^\rha s8^\rha |
 
   }
 %% DynamicsTwo
@@ -1006,10 +1010,11 @@ lower = {
     \override TextScript.extra-offset = #'(-0.3 . -1.3)
     s16 s8^\rhm s8 s16 s8^\rhm s8 |
     % Bar 2
-    s8. s8 s8. s8 |
+    s16 s8^\rhm s8 s16 s8^\rhm s8 |
     % Bar 3
-    s8. s8 s8. s16 s16^\rhm |
-
+    s16 s8^\rhm s8 s16 s8^\rhm s16 s16^\rhm |
+    % Bar 4
+    s16 s8^\rhm s8 s16 s8^\rhm s8 |
   }
 
 %% DynamicsThree
