@@ -1007,7 +1007,7 @@ lower = {
     \override TextSpanner #'outside-staff-priority = ##f
     \override TextSpanner #'extra-offset = #'(-0.1 . -2.03)
     % Bar 1
-    \override TextScript.extra-offset = #'(-0.3 . -1.3)
+    \override TextScript.extra-offset = #'(-0.4 . -1.3)
     s16 s8^\rhm s8 s16 s8^\rhm s8 |
     % Bar 2
     s16 s8^\rhm s8 s16 s8^\rhm s8 |
@@ -1025,7 +1025,13 @@ lower = {
     \override TextSpanner #'outside-staff-priority = ##f
     \override TextSpanner #'extra-offset = #'(-0.1 . -3.03)
     % Bar 1
-    \override TextScript.extra-offset = #'(-0.1 . -2.3)
+    \override TextScript.extra-offset = #'(-0.2 . -2.3)
+    s8 s8^\rhi s8.^\rhi s8^\rhi s16^\rhi |
+    % Bar 2
+    s8 s8^\rhi s8.^\rhi s8^\rhi s16^\rhi |
+    % Bar 3
+    s8 s8^\rhi s8.^\rhi s8.^\rhi |
+    % Bar 4
     s8 s8^\rhi s8.^\rhi s8^\rhi s16^\rhi |
 
   }
@@ -1048,7 +1054,7 @@ lower = {
     s8. s8 s8. s8 |
     s8. s8 s8. s8 |
     % Bar 5
-    \override TextScript.extra-offset = #'(-0.2 . -4.1)
+    \override TextScript.extra-offset = #'(-0.3 . -4.1)
     s8.^\rhp s8 s8. s8 |
     % Bar 6
     s8. s8 s8. s8 |
@@ -1074,7 +1080,7 @@ lower = {
     s8. s8 s8. s8 |
     s8. s8 s8. s8 |
     % Bar 5
-    \override TextScript.extra-offset = #'(-0.2 . -5.1)
+    \override TextScript.extra-offset = #'(-0.3 . -5.1)
     s8. s8^\rhp s8. s8 |
     % Bar 6
     s8. s8 s8. s8 |
