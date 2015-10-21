@@ -1092,10 +1092,16 @@ lower = {
   a,,4~ a,, gis,~ gis, |
 
   % Bar 94
-  < a,, cis gis ees'\2>~ < a,, cis gis ees'\2> gis,~ gis, |
+  \arpeggioArrowUp
+  < a,, cis gis ees'\2>\arpeggio~ < a,, cis gis ees'\2> gis,~ gis, |
 
   % Bar 95
   a,,4~ a,, gis,~ gis, |
+
+  % Bar 96
+  < a,, cis'\3 gis'\2>\arpeggio~ < a,, cis'\3 gis'\2> gis, b\3 |
+
+  % Bar 97
 }
 
 % Dynamics
