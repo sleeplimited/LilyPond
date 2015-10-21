@@ -1063,6 +1063,22 @@ lower = {
   fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6 b'\1>] |
 
   % Bar 89
+  \time 15/16
+  \set Timing.beatStructure = #'(8 8 8 6) 
+  < cis e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 a'\2> < fis
+  fis,\6\laissezVibrer > < cis fis\5\laissezVibrer >]
+
+  < b'\1 e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 a'\2> < cis
+  fis,\6\laissezVibrer > < b'\1 fis\5\laissezVibrer >]
+
+  < cis e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 a'\2> < fis
+  fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6 cis>]
+
+  < a'\2 e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 fis> < cis
+  fis,\6\laissezVibrer \invTNH a,,\6~ >] |
+
+  % Bar 90
+  \time 4/4
 
 }
 
