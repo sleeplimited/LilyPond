@@ -1075,10 +1075,21 @@ lower = {
   fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6 cis>]
 
   < a'\2 e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 fis> < cis
-  fis,\6\laissezVibrer \invTNH a,,\6~ >] |
+  fis,\6\laissezVibrer >] |
 
   % Bar 90
   \time 4/4
+  \set Timing.beatStructure = #'(8 8 8 8) 
+  a,,4~ a,, gis,~ gis, |
+
+  % Bar 91
+  a,,4~ a,, gis,~ gis, |
+
+  % Bar 92
+  a,,4~ a,, gis,~ gis, |
+
+  % Bar 93
+  a,,4~ a,, gis,~ gis, |
 
 }
 
