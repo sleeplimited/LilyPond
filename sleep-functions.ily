@@ -789,6 +789,13 @@ parenInChordSeven = \markup {
   \raise #-0.5 
   "(7)" 
 }
+parenInChordFive = \markup { 
+  \override #'(font-name . "Tex Gyre Schola") 
+  \override #'(font-size . -3) 
+  \halign #0.1 
+  \raise #-0.5 
+  "(5)" 
+}
 % Markup extra-offset Tweaks and overrides
 mkTweak =
 #(define-event-function (parser location x y m) (number? number? ly:music?)
