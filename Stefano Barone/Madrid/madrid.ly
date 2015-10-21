@@ -1023,15 +1023,33 @@ lower = {
   cis,\6 cis\5 cis \invTNH gis,\5~>]
 
   < gis,\5~ eis'\2>[ < \invTNH gis,\5 d,\6\laissezVibrer d\5 \invTNH
-  a,,\6~ > a,,\6~ < \invTNH a,,\6 cis,\6 cis\5\laissezVibrer~ gis'\1>]
+  a,,\6~ > a,,\6~ < \invTNH a,,\6 cis,\6 cis\5\laissezVibrer \invTNH
+  gis,\5~ gis'\1>]
 
-  cis[ < \invTNH cis\5 gis,\5~ eis'\2> < \invTNH gis,\5 d\5
+  < cis \tweakTabNoteHead \parenInChordFive \tweak #'X-offset #0.6
+  cis\5 \invTNH gis,\5~ >[ < gis,\5~ eis'\2> < \invTNH gis,\5 d\5
   d,\6\laissezVibrer fis> < cis cis\5~ cis,\6>]
 
   < \invTNH cis\5 gis,\5~ eis'\2>[ < \invTNH gis,\5 d,\6\laissezVibrer
-  d\5>8 < gis'\1 cis\5\laissezVibrer~ cis,\6>] |
+  d\5>8 < gis'\1 cis\5\laissezVibrer \invTNH gis,\5~ cis,\6>16] |
 
   % Bar 87
+  < cis \tweakTabNoteHead \parenInChordFive \tweak #'X-offset #0.6
+  cis\5 \invTNH gis,\5~ >[ < gis,\5~ eis'\2> < \invTNH gis,\5 d\5
+  d,\6\laissezVibrer fis> < cis cis\5~ cis,\6>]
+
+  < \invTNH cis\5 gis,\5~ eis'\2>[ < \invTNH gis,\5 d,\6\laissezVibrer d\5 \invTNH
+  a,,\6~ > a,,\6~ < \invTNH a,,\6 cis,\6 cis\5\laissezVibrer \invTNH
+  gis,\5~ gis'\1>]
+
+  < cis \tweakTabNoteHead \parenInChordFive \tweak #'X-offset #0.6
+  cis\5 \invTNH gis,\5~ >[ < gis,\5~ eis'\2> < \invTNH gis,\5 d\5
+  d,\6\laissezVibrer fis> < cis cis\5~ cis,\6>]
+
+  < \invTNH cis\5 gis,\5~ eis'\2>[ < \invTNH gis,\5 d,\6\laissezVibrer
+  d\5>8 b'16\1] |
+  
+  % Bar 88
 }
 
 % Dynamics
