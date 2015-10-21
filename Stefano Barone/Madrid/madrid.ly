@@ -688,6 +688,7 @@ lower = {
   < fis'\1 a,,\6>[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis] |
   % Bar 32
+  \tieUp
   < fis'\1 a,,>[ fis'\2 fis < fis'\1 e\5> fis]
   fis'16\1[ fis'\2 fis fis'\1 fis]
     \time 14/16
@@ -963,16 +964,74 @@ lower = {
   a,,\6~ > < a,,\6~ fis>]
   < gis'\1 d\5\laissezVibrer d,\6 \invTNH a,,\6>^glissando[ < f'\2
   cis\5 cis,\6> < gis,\5 cis\4>]
-  r16 r16 r16 b'\1
+  r8. r8. b'16\1 |
   % Bar 82
+  \set Timing.beatStructure = #'(8 8 8 8) 
+  % \set subdivideBeams = ##t
+  < cis e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 a'\2> < fis
+  fis,\6\laissezVibrer > < cis fis\5\laissezVibrer >]
 
+  < b'\1 e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 a'\2> < cis
+  fis,\6\laissezVibrer > < b'\1 fis\5\laissezVibrer >]
 
+  < cis e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 a'\2> < fis
+  fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6 cis>]
 
+  < a'\2 e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 fis> < cis
+  fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6 b'\1>] |
 
-
-
-
+  % Bar 83
+  < cis e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 a'\2> < fis
+  fis,\6\laissezVibrer > < cis fis\5\laissezVibrer >]
   
+  < b'\1 e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 a'\2> < cis
+  fis,\6\laissezVibrer > < b'\1 fis\5\laissezVibrer >]
+
+  < cis e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 a'\2> < fis
+  fis,\6\laissezVibrer > cis] 
+  
+  e,\6 cis f,\6  b'\1 |
+
+  % Bar 84
+  < cis e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 a'\2> < fis
+  fis,\6\laissezVibrer > < cis fis\5\laissezVibrer >]
+
+  < b'\1 e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 a'\2> < cis
+  fis,\6\laissezVibrer > < b'\1 fis\5\laissezVibrer >]
+
+  < cis e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 a'\2> < fis
+  fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6 cis>]
+
+  < a'\2 e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 fis> < cis
+  fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6 b'\1>] |
+
+  % Bar 85
+  < cis e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 a'\2> < fis
+  fis,\6\laissezVibrer > < cis fis\5\laissezVibrer >]
+
+  < b'\1 e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 a'\2> < cis
+  fis,\6\laissezVibrer > < b'\1 fis\5\laissezVibrer >]
+
+  < cis e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 a'\2> < fis
+  fis,\6\laissezVibrer \invTNH a,,\6~ > < a,,\6 cis>]
+
+  < a'\2 e\5\laissezVibrer \invTNH gis,\5~ >[ < gis,\5 fis> cis gis'\1] |
+
+  % Bar 86
+  < cis,\6\laissezVibrer cis cis\5\laissezVibrer \invTNH gis,\5~ >[ <
+  gis,\5~ eis'\2> < \invTNH gis,\5 d\5 d,\6\laissezVibrer fis> <
+  cis,\6 cis\5 cis \invTNH gis,\5~>]
+
+  < gis,\5~ eis'\2>[ < \invTNH gis,\5 d,\6\laissezVibrer d\5 \invTNH
+  a,,\6~ > a,,\6~ < \invTNH a,,\6 cis,\6 cis\5\laissezVibrer~ gis'\1>]
+
+  cis[ < \invTNH cis\5 gis,\5~ eis'\2> < \invTNH gis,\5 d\5
+  d,\6\laissezVibrer fis> < cis cis\5~ cis,\6>]
+
+  < \invTNH cis\5 gis,\5~ eis'\2>[ < \invTNH gis,\5 d,\6\laissezVibrer
+  d\5>8 < gis'\1 cis\5\laissezVibrer~ cis,\6>] |
+
+  % Bar 87
 }
 
 % Dynamics
