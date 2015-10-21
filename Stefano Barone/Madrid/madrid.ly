@@ -1091,6 +1091,11 @@ lower = {
   % Bar 93
   a,,4~ a,, gis,~ gis, |
 
+  % Bar 94
+  < a,, cis gis ees'\2>~ < a,, cis gis ees'\2> gis,~ gis, |
+
+  % Bar 95
+  a,,4~ a,, gis,~ gis, |
 }
 
 % Dynamics
