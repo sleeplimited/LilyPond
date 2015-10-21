@@ -1099,9 +1099,42 @@ lower = {
   a,,4~ a,, gis,~ gis, |
 
   % Bar 96
-  < a,, cis'\3 gis'\2>\arpeggio~ < a,, cis'\3 gis'\2> gis, b\3 |
+  < a,, cis'\3 gis'\2>\arpeggio b'\1 gis, b\3 |
 
   % Bar 97
+  < a,, fis'\2>\arpeggio~ < a,, fis'\2> gis,~ gis, |
+
+  % Bar 98
+  a,,4~ a,, gis,~ gis, |
+
+  % Bar 99
+  < a,, cis'\3 ees'\2>\arpeggio cis'\1 gis, e'\2 |
+
+  % Bar 100
+  a,,4~ a,, gis,~ gis, |
+
+  % Bar 101
+  a,,4~ a,, gis,~ gis, |
+
+  % Bar 102
+  < a,, cis'\3 gis'\2>\arpeggio b'\1 gis, b\3 |
+
+  % Bar 103
+  < a,, fis'\2>\arpeggio~ < a,, fis'\2> gis,~ gis, |
+
+  % Bar 104
+  a,,~ a,, gis,~ gis, |
+  %
+  % Bar 105
+  < a,, a\3 e'\2>\arpeggio~ < a,, a\3 e'\2> gis,~ gis, |
+
+  % Bar 106
+  < a,, gis\3 ees'\2>\arpeggio~ < a,, gis\3 ees'\2> gis,8 cis'8~ cis'8
+  b8 |
+
+  % Bar 107
+  < a,, gis\3 cis'\2>4\arpeggio~  < a,, gis\3 cis'\2>~    < a,, gis\3 cis'\2>~
+  < a,, gis\3 cis'\2>  \bar "|."
 }
 
 % Dynamics
