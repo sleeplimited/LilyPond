@@ -569,7 +569,9 @@ extendLV = #(define-music-function (parser location further) (number?)
    \once \override LaissezVibrerTie  #'details #'note-head-gap = #(/ further -2)
    \once \override LaissezVibrerTie  #'extra-offset = #(cons (/ further 2) 0)
 #})
-%%{ hideFretNumber to be used with creating slides from and to nowhere %}
+%%{ hideFretNumber to be used with creating slides from and to nowhere 
+  %% USAGE:
+  %% \grace { \hideFretNumber < e, a,>8 \glissando s} < g, c>4 %}
 hideFretNumber = {
   \once \override TabNoteHead #'transparent = ##t
   \once \override NoteHead #'transparent = ##t
