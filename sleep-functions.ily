@@ -836,9 +836,9 @@ xTweak =
     #:category music
     "Draw a tab clef sans-serif style."
     (define (square x) (* x x))
-    (let* ((scale-factor (/ staff-space 1.5))
+    (let* ((scale-factor (/ staff-space 1.6))
            (font-size (- (* num-strings 1.8 scale-factor) 7))
-           (base-skip (* (square (+ (* num-strings 0.195) 0.4)) scale-factor)))
+           (base-skip (* (square (+ (* num-strings 0.195) 0.45)) scale-factor)))
   ;font-name
       (interpret-markup layout props
                    (markup #:vcenter #:bold
@@ -846,7 +846,7 @@ xTweak =
                            ;; change 'font-family and/or 'font-name
                            ;; to fit your needs
                            ;#:override (cons 'font-family 'roman) ;; default: 'sans
-                           #:override (cons 'font-name "Tex Gyre Termes")
+                           #:override (cons 'font-name "Tex Gyre Schola")
                            #:fontsize font-size
                            #:override (cons 'baseline-skip base-skip)
                            #:left-align #:center-column ("T" "A" "B")))))
