@@ -17,8 +17,8 @@ __..           .           ,      .
 \pointAndClickOff
 % header
 \header {
-  title = \markup { \fontsize #2 \smallCaps  "M.G." }
-  composer = \markup {\fontsize #-1 \smallCaps  "Rachael Carlson"}
+  title = \markup { \fontsize #2 \smallCaps  "Of the Fearless" }
+  composer = \markup {\fontsize #-1 "Rachael Carlson"}
   poet = \markup { 
     \concat {  
       \fontsize #-3 { 
@@ -55,7 +55,7 @@ __..           .           ,      .
         \line {
           \concat {
              \fontsize #-3 {
-                "M.G. " #(strftime "%m/%d/%Y" (localtime (current-time))) " " \fromproperty #'page:page-number-string "/3" 
+                "Of the Fearless " #(strftime "%m/%d/%Y" (localtime (current-time))) " " \fromproperty #'page:page-number-string "/3" 
              }
            }
          }
@@ -101,7 +101,7 @@ __..           .           ,      .
       % page-number not on first-page 
       \on-the-fly #not-first-page 
       % page-number not on last-page 
-      \concat {  \fontsize #-3 { "M.G. " #(strftime "%m/%d/%Y" (localtime
+      \concat {  \fontsize #-3 { "Of the Fearless " #(strftime "%m/%d/%Y" (localtime
                 (current-time))) " "\fromproperty #'page:page-number-string /9
     }  }
     % copyright on first page 

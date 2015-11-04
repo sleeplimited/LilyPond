@@ -164,7 +164,7 @@ twostrdwnstrm = \markup { \rotate #180
     \combine
     \override #'(thickness . 0.5)
     \draw-line #'(0 . 2.25)
-    \fontsize #-5
+    \fontsize #0.5
     \arrow-head #Y #DOWN ##t
     }
   }
