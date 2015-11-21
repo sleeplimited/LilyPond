@@ -170,97 +170,81 @@ evenFooterMarkup = \oddFooterMarkup
       % Bar 1
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 2
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis']
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
       % Bar 3
       fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis']
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 4
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis']
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
       % Bar 5
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 6
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis']
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
       % Bar 7
       fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis']
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 8
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis']
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
       % Bar 9
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 10
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
       % Bar 11
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis']
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 12
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 13
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis']
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
       % Bar 14
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 15
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis']
+      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis]
       % Bar 16
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
-      % Bar 17
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      % Bar 18
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      % Bar 19
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      % Bar 20
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      % Bar 21
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis']
-      % Bar 22
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      % Bar 23
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      % Bar 24
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      % Bar 25
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis']
-      % Bar 26
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      % Bar 27
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      % Bar 28
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      % Bar 29
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis']
-      % Bar 30
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      % Bar 31
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      % Bar 32
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
     \time 14/16
@@ -408,63 +392,49 @@ lower = {
 %%% VoiceTwo
 \override Staff.ClefModifier.extra-offset = #'(0 . 0.75)
 \override Staff.ClefModifier.font-shape = #'upright
-    % Bar 1 - 4
+    % Bar 1 - 2
     s4*10 |
-    % Bar 5
-    a8. cis8 ~ cis8. ~ cis8 ~ |
-    % Bar 6
+    % Bar 3
+    a8. cis8 ~ cis8. ~ cis8 ~ 
     cis8. ~ cis8 cis8. r8 |
-    % Bar 7
-    < a d>2 ~ < a d>8 ~ |
-    % Bar 8 
+    % Bar 4
+    < a d>2 ~ < a d>8 ~ 
     < a d>8.[ ~ < a d>8] ~ < a d>8.[ ~ a8] |
-    % Bar 9
-    a8. cis8 ~ cis8. ~ cis8 |
-    % Bar 10
+    % Bar 5
+    a8. cis8 ~ cis8. ~ cis8 
     a,,8. e8 ~ e8. r8 |
-    % Bar 11
-    d,2 ~ d,8 | 
-    % Bar 12
+    % Bar 6
+    d,2 ~ d,8 
     d2 ~ d8 |
+    % Bar 7
+    a,,2 ~ a,,8 
+    a,,8. e8 ~ e8. ~ e8 |
+    % Bar 8
+    d,2 ~ d,8  
+    d2 ~ d8 |
+    % Bar 9
+    a,,2 ~ a,,8 
+    a,,8. r8 r8. r8 |
+    % Bar 10
+    a8. cis8 ~ cis8. ~ cis8 ~ 
+    cis8. ~ cis8 r8. r8 |
+    % Bar 11
+    < a d>2 ~ < a d>8 ~ 
+    < a d>2 ~ < a d>8 |
+    % Bar 12
+    a8. cis8 ~ cis8. ~ cis8 
+    a,,8. e8 ~ e8. ~ e8 |
     % Bar 13
-    a,,2 ~ a,,8 |
+    d,2 ~ d,8  
+    d2 ~ d8 |
     % Bar 14
+    a,,2 ~ a,,8 
     a,,8. e8 ~ e8. ~ e8 |
     % Bar 15
-    d,2 ~ d,8 | 
+    d,2 ~ d,8  
+    d2 ~ d8 |
     % Bar 16
-    d2 ~ d8 |
-    % Bar 17
-    a,,2 ~ a,,8 |
-    % Bar 18
-    a,,8. r8 r8. r8 |
-    % Bar 19
-    a8. cis8 ~ cis8. ~ cis8 ~ |
-    % Bar 20
-    cis8. ~ cis8 r8. r8 |
-    % Bar 21
-    < a d>2 ~ < a d>8 ~ |
-    % Bar 22 
-    < a d>2 ~ < a d>8 |
-    % Bar 23
-    a8. cis8 ~ cis8. ~ cis8 |
-    % Bar 24
-    a,,8. e8 ~ e8. ~ e8 |
-    % Bar 25
-    d,2 ~ d,8 | 
-    % Bar 26
-    d2 ~ d8 |
-    % Bar 27
-    a,,2 ~ a,,8 |
-    % Bar 28
-    a,,8. e8 ~ e8. ~ e8 |
-    % Bar 29
-    d,2 ~ d,8 | 
-    % Bar 30
-    d2 ~ d8 |
-    % Bar 31
-    a,,2 ~ a,,8 |
-    % Bar 32
+    a,,2 ~ a,,8 
     a,,8. e8 ~ e8. r8 |
     \time 14/16
     % Bar 33
@@ -555,7 +525,7 @@ lower = {
     \override TabStaff.StaffSymbol #'thickness = #'1
     \key cis \minor
     \numericTimeSignature
-    \time 10/16
+    \time 20/16
     \override TabNoteHead #'whiteout = ##t
     \tabFullNotation
     \stemDown
@@ -576,7 +546,7 @@ lower = {
     \override Score.BarNumber #'font-size = #'-6
     \override Score.OttavaBracket #'thickness = #'0.5
     \set Timing.baseMoment = #(ly:make-moment 1 32)
-    \set Timing.beatStructure = #'(6 4 6 4)
+    \set Timing.beatStructure = #'(6 4 6 4 6 4 6 4)
     \set subdivideBeams = ##t
     \set Timing.beamExceptions = #'()
     \override TabStaff.StaffSymbol #'thickness = #'0.75
@@ -592,34 +562,29 @@ lower = {
   % Bar 1
   < fis'\1 \tweakTabNoteHead \parenInChordSeven \tweak #'X-offset #0.6 fis'\2  >16[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 2
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
   fis'16\1[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 3
+  < fis'\1 a\4>[ fis'\2 fis < fis'\1 cis\5> fis]
   fis'16\1[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 4
+  < fis'\1 a\4 d\5>[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
   fis'16\1[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis]
+  fis'16\1[fis'\2 fis fis'\1 fis]
   % Bar 5
   < fis'\1 a\4>[ fis'\2 fis < fis'\1 cis\5> fis]
   fis'16\1[ fis'\2 fis fis'\1 fis]
-  % Bar 6]
-  fis'16\1[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis]
-  % Bar 7
-  < fis'\1 a\4 d\5>[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
-  % Bar 8
-  fis'16\1[ fis'\2 fis fis'\1 fis]
-  fis'16\1[fis'\2 fis fis'\1 fis]
-  % Bar 9
-  < fis'\1 a\4>[ fis'\2 fis < fis'\1 cis\5> fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis]
-  % Bar 10]
   < fis'\1 a,,>[ fis'\2 fis < fis'\1 e\5> fis]
   fis'16\1[ fis'\2 fis fis'\1 fis]
-  % Bar 11
+  % Bar 6
   % \once\override Slur.outside-staff-priority = ##f
   % \shape #'((0.0 . 0.0) (1.0 . -1.0) (1.0 . -1.0) (0 . 0.0)) Slur
   % \once\override Slur.extra-offset = #'(0 . -6)
@@ -629,76 +594,65 @@ lower = {
   % \override Beam.positions = #'(-4 . -4)
   < fis'\1 d,\6 \invTNH a,,\6~ >16[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis'\2]
-  % Bar 12
   \once\override Beam.positions = #'(-3 . -3)
   < d\5 fis'\1>[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis]
-  % Bar 13
+  % Bar 7
   < fis'\1 a,,\6>[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis] |
-  % Bar 14
+  fis'16\1[ fis'\2 fis fis'\1 fis] 
   < fis'\1 a,, \tweakTabNoteHead \parenInChordSeven \tweak #'X-offset
   #0.6 fis'\2 >[ fis'\2 fis < fis'\1 e\5> fis] fis'16\1[ fis'\2 fis
-  fis'\1 fis]
+  fis'\1 fis] |
+  % Bar 8
+  < fis'\1 d,\6 \invTNH a,,\6~ >[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
+  \once\override Beam.positions = #'(-3 . -3)
+  < d\5 fis'\1>[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  % Bar 9
+  < fis'\1 a,,\6>[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis] 
+  < a,, fis'\1 \tweakTabNoteHead \parenInChordSeven \tweak #'X-offset
+  #0.6 fis'\2 >[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis] |
+  % Bar 10
+  < fis'\1 a\4>[ fis'\2 fis < fis'\1 cis\5> fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  % Bar 11
+  < fis'\1 a\4 d\5>[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  % Bar 12
+  < fis'\1 a\4>[ fis'\2 fis < fis'\1 cis\5> fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  < fis'\1 a,,>[ fis'\2 fis < fis'\1 e\5> fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  % Bar 13
+  < fis'\1 d,\6 \invTNH a,,\6~ >[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
+  \once\override Beam.positions = #'(-3 . -3)
+  < d\5 fis'\1>[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
+  % Bar 14
+  < fis'\1 a,,\6>[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis] 
+  < fis'\1 a,,>[ fis'\2 fis < fis'\1 e\5> fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis] |
   % Bar 15
   < fis'\1 d,\6 \invTNH a,,\6~ >[ fis'\2 fis fis'\1 fis]
   fis'16\1[ fis'\2 fis fis'\1 fis'\2]
+  \once\override Beam.positions = #'(-3 . -3)
+  < d\5 fis'\1>[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis]
   % Bar 16
-  \once\override Beam.positions = #'(-3 . -3)
-  < d\5 fis'\1>[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis]
-  % Bar 17
   < fis'\1 a,,\6>[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis] |
-  % Bar 18
-  < a,, fis'\1 \tweakTabNoteHead \parenInChordSeven \tweak #'X-offset
-  #0.6 fis'\2 >[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis]
-  % Bar 19
-  < fis'\1 a\4>[ fis'\2 fis < fis'\1 cis\5> fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis]
-  % Bar 20
-  fis'16\1[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis]
-  % Bar 21
-  < fis'\1 a\4 d\5>[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
-  % Bar 22
-  fis'16\1[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis]
-  % Bar 23
-  < fis'\1 a\4>[ fis'\2 fis < fis'\1 cis\5> fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis]
-  % Bar 24
-  < fis'\1 a,,>[ fis'\2 fis < fis'\1 e\5> fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis]
-  % Bar 25
-  < fis'\1 d,\6 \invTNH a,,\6~ >[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
-  % Bar 26
-  \once\override Beam.positions = #'(-3 . -3)
-  < d\5 fis'\1>[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis]
-  % Bar 27
-  < fis'\1 a,,\6>[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis] |
-  % Bar 28
-  < fis'\1 a,,>[ fis'\2 fis < fis'\1 e\5> fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis]
-  % Bar 29
-  < fis'\1 d,\6 \invTNH a,,\6~ >[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis'\2]
-  % Bar 30
-  \once\override Beam.positions = #'(-3 . -3)
-  < d\5 fis'\1>[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis]
-  % Bar 31
-  < fis'\1 a,,\6>[ fis'\2 fis fis'\1 fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis] |
-  % Bar 32
+  fis'16\1[ fis'\2 fis fis'\1 fis] 
   \tieUp
   < fis'\1 a,,>[ fis'\2 fis < fis'\1 e\5> fis]
-  fis'16\1[ fis'\2 fis fis'\1 fis]
+  fis'16\1[ fis'\2 fis fis'\1 fis] |
     \time 14/16
     \set Timing.baseMoment = #(ly:make-moment 1 32)
     \set Timing.beatStructure = #'(4 4 6 6 4 4)
@@ -1162,12 +1116,10 @@ lower = {
     s4 s4 s8 s8\stopTextSpan s4 | %}
     % Bar 1
     \override TextScript.extra-offset = #'(-0.3 . -0.3)
+    s8.^\rha s8 ^\rha s8.^\rha s8^\rha 
     s8.^\rha s8 ^\rha s8.^\rha s8^\rha |
     % Bar 2
-    s8.^\rha s8 ^\rha s8.^\rha s8^\rha |
-    % Bar 3
-    s8.^\rha s8 ^\rha s8.^\rha s8^\rha |
-    % Bar 4
+    s8.^\rha s8 ^\rha s8.^\rha s8^\rha 
     s8.^\rha s8 ^\rha s8.^\rha s8^\rha |
 
   }
@@ -1179,13 +1131,13 @@ lower = {
     \override TextSpanner #'outside-staff-priority = ##f
     \override TextSpanner #'extra-offset = #'(-0.1 . -2.03)
     % Bar 1
-    \override TextScript.extra-offset = #'(-0.4 . -1.3)
+    \override TextScript.extra-offset = #'(-0.3 . -1.3)
+    s16 
+    \once\override TextScript.extra-offset = #'(-0.3 . -1.2)
+    s8^\rhm s8 s16 s8^\rhm s8 
     s16 s8^\rhm s8 s16 s8^\rhm s8 |
     % Bar 2
-    s16 s8^\rhm s8 s16 s8^\rhm s8 |
-    % Bar 3
-    s16 s8^\rhm s8 s16 s8^\rhm s16 s16^\rhm |
-    % Bar 4
+    s16 s8^\rhm s8 s16 s8^\rhm s16 s16^\rhm 
     s16 s8^\rhm s8 s16 s8^\rhm s8 |
   }
 
@@ -1198,11 +1150,10 @@ lower = {
     \override TextSpanner #'extra-offset = #'(-0.1 . -3.03)
     % Bar 1
     \override TextScript.extra-offset = #'(-0.2 . -2.3)
+    s8 s8^\rhi s8.^\rhi s8^\rhi s16^\rhi 
     s8 s8^\rhi s8.^\rhi s8^\rhi s16^\rhi |
     % Bar 2
-    s8 s8^\rhi s8.^\rhi s8^\rhi s16^\rhi |
-    % Bar 3
-    s8 s8^\rhi s8.^\rhi s8.^\rhi |
+    s8 s8^\rhi s8.^\rhi s8.^\rhi 
     % Bar 4
     s8 s8^\rhi s8.^\rhi s8^\rhi s16^\rhi |
 
@@ -1220,22 +1171,20 @@ lower = {
     \trMove #0.1 #0.8 \vibrato #'(1) #1.8 s8-\mkTweak #-0.2 #1.4
     ^\markup {  \fontsize #-1 n } \sVib s8 s4 s16 s16 \eVib s8 s8
     s8 | %}
-    % Bar 1 - 4
+    % Bar 1 - 2
+    s8. s8 s8. s8 
     s8. s8 s8. s8 |
+    s8. s8 s8. s8 
     s8. s8 s8. s8 |
+    % Bar 3
+    \override TextScript.extra-offset = #'(-0.3 . -4.1)
+    s8.^\rhp s8 s8. s8 
     s8. s8 s8. s8 |
+    % Bar 4
+    s8. s8 s8. s8 
     s8. s8 s8. s8 |
     % Bar 5
-    \override TextScript.extra-offset = #'(-0.3 . -4.1)
-    s8.^\rhp s8 s8. s8 |
-    % Bar 6
-    s8. s8 s8. s8 |
-    % Bar 7
-    s8. s8 s8. s8 |
-    % Bar 8
-    s8. s8 s8. s8 |
-    % Bar 9
-    s8.^\rhp s8 s8. s8 |
+    s8.^\rhp s8 s8. s8 
 
 
   }
@@ -1246,40 +1195,36 @@ lower = {
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \override TextSpanner #'extra-offset = #'(-0.1 . -5.03)
-    % Bar 1 - 4
+    % Bar 1 - 2
+    s8. s8 s8. s8 
     s8. s8 s8. s8 |
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
+    % Bar 3
+    \override TextScript.extra-offset = #'(-0.3 . -5.1)
+    s8. s8^\rhp s8. s8 
     s8. s8 s8. s8 |
+    % Bar 4
+    s8.\mkTweak #-0.7 -4.7 ^\twostrdwnstrm \mkTweak #-0.3 -6.6 ^\rhp
+    s8 s8. s8 
     s8. s8 s8. s8 |
     % Bar 5
-    \override TextScript.extra-offset = #'(-0.3 . -5.1)
+    s8. s8^\rhp s8. s8 
     s8. s8^\rhp s8. s8 |
     % Bar 6
-    s8. s8 s8. s8 |
-    % Bar 7
-    s8.\mkTweak #-0.7 -4.7 ^\twostrdwnstrm \mkTweak #-0.3 -6.6 ^\rhp
-    s8 s8. s8 |
-    % Bar 8
-    s8. s8 s8. s8 |
-    % Bar 9
-    s8. s8^\rhp s8. s8 |
-    % Bar 10
-    s8. s8^\rhp s8. s8 |
-    % Bar 11
-    s8. s8 s8. s8 |
-    % Bar 12
+    s8. s8 s8. s8 
     s8.^\rhp s8 s8. s8 |
-    % Bar 13 - 20
+    % Bar 7 - 10
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
-    s8. s8 s8. s8 |
-    s8. s8 s8. s8 |
-    s8. s8 s8. s8 |
-    s8. s8 s8. s8 |
-    % Bar 21
-    s8.\mkTweak #-0.7 -4.7 ^\twostrdwnstrm s8 s8. s8 |
+    % Bar 11
+    s8.\mkTweak #-0.7 -4.7 ^\twostrdwnstrm s8 s8. s8 
     
   }
 %% DynamicsSix
@@ -1289,30 +1234,29 @@ lower = {
     \tabFullNotation
     \override TextSpanner #'outside-staff-priority = ##f
     \override TextSpanner #'extra-offset = #'(0.2 . -5.825)
-    % Bar 1 - 9
+    % Bar 1 - 4
+    s8. s8 s8. s8 
     s8. s8 s8. s8 |
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
-    s8. s8 s8. s8 |
-    s8. s8 s8. s8 |
-    s8. s8 s8. s8 |
-    s8. s8 s8. s8 |
-    s8. s8 s8. s8 |
-    % Bar 10
+    % Bar 5
+    s8. s8 s8. s8
     \override TextScript.extra-offset = #'(-0.3 . -6.1)
     s8.^\rhp s8 s8. s8 |
-    % Bar 11
-    s8.^\rhp s8 s8. s8 |
-    % Bar 12
+    % Bar 6
+    s8.^\rhp s8 s8. s8 
     s8. s8 s8. s8 |
-    % Bar 13 - 17
+    % Bar 7 - 8
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
-    s8. s8 s8. s8 |
-    s8. s8 s8. s8 |
-    s8. s8 s8. s8 |
-    % Bar 18
+    % Bar 9
+    s8. s8 s8. s8
     s8.^\rhp \strDamp s8^\rhp\startTextSpan s8. s16 s16\stopTextSpan |
 
   }
@@ -1347,134 +1291,116 @@ lhOne = {
     . 12.5))
     % Bar 1
     \lhSpannerUp "1" { 
-      s8. s8 s8. s8 |
-    % Bar 2
+      s8. s8 s8. s8
     s8. s8 s8. s8 |
-    % Bar 3
+    % Bar 2
+    s8. s8 s8. s8 
     s8. s8 s8. s8 |
     \break
     \overrideProperty
     Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
     . 50))
+    % Bar 3
+    s8. s8 s8. s8 
+    s8. s8 s8. s8 |
     % Bar 4
-    s8. s8 s8. s8 |
-    % Bar 5
-    s8. s8 s8. s8 |
-    % Bar 6
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
     \break
     \overrideProperty
     Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
     . 95))
-    % Bar 7
+    % Bar 5
+    s8. s8 s8. s8 
     s8. s8 s8. s8 |
-    % Bar 8
-    s8. s8 s8. s8 |
-    % Bar 9
+    % Bar 6
+    s8. s8 s8. s8 
     s8. s8 s8. s8 |
     \break
     \overrideProperty
     Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
     . 5))
-    % Bar 10
+    % Bar 7
+    s8. s8 s8. s8 
     s8. s8 s8. s8 |
-    % Bar 11
-    s8. s8 s8. s8 |
-    % Bar 12
+    % Bar 8
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
     \break
     \overrideProperty
     Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
     . 50))
-    % Bar 13
+    % Bar 9
+    s8. s8 s8. s8 
     s8. s8 s8. s8 |
-    % Bar 14
-    s8. s8 s8. s8 |
-    % Bar 15
+    % Bar 10
+    s8. s8 s8. s8 
     s8. s8 s8. s8 |
     \break
     \overrideProperty
     Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
     . 95))
+    % Bar 11
+    s8. s8 s8. s8 
+    s8. s8 s8. s8 |
+    % Bar 12
+    s8. s8 s8. s8 
+    s8. s8 s8. s8 |
+    \break
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 5))
+    % Bar 13
+    s8. s8 s8. s8
+    s8. s8 s8. s8 |
+    % Bar 14
+    s8. s8 s8. s8
+    s8. s8 s8. s8 |
+    \break
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 50))
+    % Bar 15
+    s8. s8 s8. s8
+    s8. s8 s8. s8 |
     % Bar 16
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
+    \break
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 95))
     % Bar 17
-    s8. s8 s8. s8 |
+    % \time 14/16
+    s2 s4. |
     % Bar 18
-    s8. s8 s8. s8 |
+    s2 s4. |
     \break
     \overrideProperty
     Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
     . 5))
     % Bar 19
-    s8. s8 s8. s8 |
+    s2 s4. |
     % Bar 20
-    s8. s8 s8. s8 |
+    s2 s4. |
+    \break
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 50))
     % Bar 21
-    s8. s8 s8. s8 |
-    \break
-    \overrideProperty
-    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
-    . 50))
+    s2 s4. |
     % Bar 22
-    s8. s8 s8. s8 |
+    s2 s4. |
+    \break
+    \overrideProperty
+    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
+    . 95))
     % Bar 23
-    s8. s8 s8. s8 |
+    s2 s4. |
     % Bar 24
-    s8. s8 s8. s8 |
-    \break
-    \overrideProperty
-    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
-    . 95))
-    % Bar 25
-    s8. s8 s8. s8 |
-    % Bar 26
-    s8. s8 s8. s8 |
-    % Bar 27
-    s8. s8 s8. s8 |
-    \break
-    \overrideProperty
-    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
-    . 5))
-    % Bar 28
-    s8. s8 s8. s8 |
-    % Bar 29
-    s8. s8 s8. s8 |
-    % Bar 30
-    s8. s8 s8. s8 |
-    \break
-    \overrideProperty
-    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
-    . 50))
-    % Bar 31
-    s8. s8 s8. s8 |
-    % Bar 32
-    s8. s8 s8. s8 |
-    % Bar 33
-    % \time 7/8
-    s2 s4. |
-    \break
-    \overrideProperty
-    Score.NonMusicalPaperColumn.line-break-system-details #'((Y-offset
-    . 95))
-    % Bar 34
-    s2 s4. |
-    % Bar 35
-    s2 s4. |
-    \break
-    % Bar 36
-    s2 s4. |
-    % Bar 37
-    s2 s4. |
-    \break
-    % Bar 38
-    s2 s4. |
-    % Bar 39
-    s2 s4. |
-    \break
-    % Bar 40
     % \time 8/8
-    s8 s8 s8. s8 s16 s16 } 
+    s8 s8 s8. s8 s16 s16 } s16 s4 |
+    \break
 
   }
 %% lhTwo
@@ -1490,36 +1416,30 @@ lhTwo = {
     % \override TextSpanner #'(bound-details left-broken text) = ##f 
     \override TextSpanner #'(bound-details right-broken text) = ##f 
     % \lhSpannerUp "2" { }
-    % Bar 1 - 4
+    % Bar 1 - 2
+    s8. s8 s8. s8 
     s8. s8 s8. s8 |
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
-    s8. s8 s8. s8 |
-    s8. s8 s8. s8 |
+    % Bar 3
+    s8. \lhSpannerDown "2" {s8 s8. s8 
+    s8. s8 s8 s16 } s8 |
+    % Bar 4
+    \lhSpannerDown "2" {s8. s8 s8. s8 
+    s8. s8 s8 s16 } s8 |
     % Bar 5
-    s8. \lhSpannerDown "2" {s8 s8. s8 |
+    s8. \lhSpannerDown "2" {s8 s8. s16 s16} 
+    s8. s8 s8. s8 |
     % Bar 6
-    s8. s8 s8 s16 } s8 |
-    % Bar 7
-    \lhSpannerDown "2" {s8. s8 s8. s8 |
-    % Bar 8
-    s8. s8 s8 s16 } s8 |
-    % Bar 9
-    s8. \lhSpannerDown "2" {s8 s8. s16 s16} |
-    % Bar 10
-    s8. s8 s8. s8 |
-    % Bar 11
     \override TextSpanner.extra-offset = #'(0 . -10.6)
-    \lhSpannerDown "2" {s8. s8 s8. s8 |
-    % Bar 12
+    \lhSpannerDown "2" {s8. s8 s8. s8 
     s8. s8 s8. s16 s16} |
-    % Bar 13
+    % Bar 7
+    s8. s8 s8. s8 
     s8. s8 s8. s8 |
-    % Bar 14
-    s8. s8 s8. s8 |
-    % Bar 15
+    % Bar 8
     \override TextSpanner.extra-offset = #'(0 . -10.6)
-    \lhSpannerDown "2" {s8. s8 s8. s8 |
-    % Bar 16
+    \lhSpannerDown "2" {s8. s8 s8. s8 
     s8. s8 s8. s16 s16} |
 
 
@@ -1536,54 +1456,42 @@ lhThree = {
     \override BreathingSign #'outside-staff-priority = ##f
     \override TextSpanner #'(bound-details right-broken text) = ##f 
     % Bar 1
-    \lhSpannerUp "3" {s8. s8 s8. s8 |
-    % Bar 2
+    \lhSpannerUp "3" {s8. s8 s8. s8 
     s8. s8 s8. s8 |
+    % Bar 2
+    s8. s8 s8. s8 
+    s8. s8 s8. s8 | 
     % Bar 3
+    s8. s8 s8. s8 
     s8. s8 s8. s8 |
     % Bar 4
-    s8. s8 s8. s8 | 
+    s8. s8 s8. s8 
+    s8. s8 s8. s8 |
     % Bar 5
-    s8. s8 s8. s8 |
-    % Bar 6
-    s8. s8 s8. s8 |
-    % Bar 7
-    s8. s8 s8. s8 |
-    % Bar 8
-    s8. s8 s8. s8 |
-    % Bar 9
-    s8. s8 s8. s8 |
-    % Bar 10
+    s8. s8 s8. s8 
     s8. s8 s8. s16 s16 |}
-    % Bar 11
-    s8. s8 s8. s8 |
-    % Bar 12
+    % Bar 6
+    s8. s8 s8. s8 
     \once\override TextSpanner.extra-offset = #'(0 . -9.9)
     \lhSpannerDown "3" {s8. s8 s8. s8 |
-    % Bar 13
-    s8. s8 s8 s16} s8 |
-    % Bar 14
+    % Bar 7
+    s8. s8 s8 s16} s8 
     \lhSpannerUp "3" {s8. s8 s8. s8 |
-    % Bar 15
-    s16} s8 s8 s8. s8 |
-    % Bar 16
+    % Bar 8
+    s16} s8 s8 s8. s8 
     \once\override TextSpanner.extra-offset = #'(0.25 . -9.9)
     \lhSpannerDown "3" {s8. s8 s8. s8 |
-    % Bar 17
-    s8. s8 s8 s16} s8 |
-    % Bar 18
+    % Bar 9
+    s8. s8 s8 s16} s8 
     \lhSpannerUp "3" {s8. s8 s8. s8 |
-    % Bar 19
+    % Bar 10
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
-    % Bar 20
+    % Bar 11
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
-    % Bar 21
-    s8. s8 s8. s8 |
-    % Bar 22
-    s8. s8 s8. s8 |
-    % Bar 23
-    s8. s8 s8. s8 |
-    % Bar 24
+    % Bar 12
+    s8. s8 s8. s8 
     s8. s8 s8. s16 s16} |
 
 
@@ -1599,41 +1507,35 @@ lhFour = {
     \override TabStaff.BreathingSign #'outside-staff-priority = ##f
     \override BreathingSign #'outside-staff-priority = ##f
     \override TextSpanner #'(bound-details right-broken text) = ##f 
-    % Bar 1 - 4
+    % Bar 1 - 2
+    s8. s8 s8. s8 
     s8. s8 s8. s8 |
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
+    % Bar 3
+    \lhSpannerDown "4" {s8. s8 s8. s8 
     s8. s8 s8. s8 |
+    % Bar 4
+    s8. s8 s8. s8
     s8. s8 s8. s8 |
     % Bar 5
-    \lhSpannerDown "4" {s8. s8 s8. s8 |
+    s8. s8 s8. s16 s16} 
+    \override TextSpanner.extra-offset = #'(0.25 . -9.8)
+    s8. \lhSpannerDown "4" {s8 s8 s16} s8 |
     % Bar 6
+    \override TextSpanner.extra-offset = #'(0.25 . 0.5)
+    s16 \lhSpannerUp "4" {s8 s8 s8. s8 
     s8. s8 s8. s8 |
     % Bar 7
-    s8. s8 s8. s8 |
+    s8. s8 s8 s16} s8 
+    \override TextSpanner.extra-offset = #'(0.25 . -9.8)
+    s8. \lhSpannerDown "4" {s8 s8 s16} s8 |
     % Bar 8
+    \override TextSpanner.extra-offset = #'(0.25 . 0.5)
+    s16 \lhSpannerUp "4" {s8 s8 s8. s8 
     s8. s8 s8. s8 |
     % Bar 9
-    s8. s8 s8. s16 s16} |
-    % Bar 10
-    \override TextSpanner.extra-offset = #'(0.25 . -9.8)
-    s8. \lhSpannerDown "4" {s8 s8 s16} s8 |
-    % Bar 11
-    \override TextSpanner.extra-offset = #'(0.25 . 0.5)
-    s16 \lhSpannerUp "4" {s8 s8 s8. s8 |
-    % Bar 12
-    s8. s8 s8. s8 |
-    % Bar 13
-    s8. s8 s8 s16} s8 |
-    % Bar 14
-    \override TextSpanner.extra-offset = #'(0.25 . -9.8)
-    s8. \lhSpannerDown "4" {s8 s8 s16} s8 |
-    % Bar 15
-    \override TextSpanner.extra-offset = #'(0.25 . 0.5)
-    s16 \lhSpannerUp "4" {s8 s8 s8. s8 |
-    % Bar 16
-    s8. s8 s8. s8 |
-    % Bar 17
-    s8. s8 s8 s16} s8 |
+    s8. s8 s8 s16} s8 
 
 
   }
