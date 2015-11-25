@@ -161,6 +161,8 @@ evenFooterMarkup = \oddFooterMarkup
     % Bar 1
     << {
 %%% VoiceOne
+      \voiceOne
+      \time 20/16
       \mergeDifferentlyHeadedOn
       \mergeDifferentlyDottedOn
     \set Timing.baseMoment = #(ly:make-moment 1 32)
@@ -168,85 +170,85 @@ evenFooterMarkup = \oddFooterMarkup
     \set subdivideBeams = ##t
     \set Timing.beamExceptions = #'()
       % Bar 1
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8] |
       % Bar 2
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis']
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'16 fis']
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8] |
       % Bar 3
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8] |
       % Bar 4
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis']
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'16 fis']
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8] |
       % Bar 5
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis] |
       % Bar 6
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis']
       fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis] |
       % Bar 7
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis] |
       % Bar 8
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis']
       fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis] |
       % Bar 9
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis] |
       % Bar 10
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis] |
       % Bar 11
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis']
       fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis] |
       % Bar 12
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis] |
       % Bar 13
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis']
       fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis] |
       % Bar 14
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis] |
       % Bar 15
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis']
       fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis] |
       % Bar 16
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
+      fis'16[ fis'16 fis fis' fis] |
     \time 14/16
     \set Timing.baseMoment = #(ly:make-moment 1 32)
     \set Timing.beatStructure = #'(4 4 6 6 4 4)
@@ -362,10 +364,32 @@ evenFooterMarkup = \oddFooterMarkup
     < gis' b> cis' < fis a'>~
     < fis a'> cis' a'~
     a' cis' a' |
-
-
-
-
+  }
+  \\
+  {
+%%% VoiceTwo
+      \voiceTwo
+      \mergeDifferentlyHeadedOn
+      \mergeDifferentlyDottedOn
+    \set Timing.baseMoment = #(ly:make-moment 1 32)
+    \set Timing.beatStructure = #'(6 4 6 4)
+    \set subdivideBeams = ##t
+    \set Timing.beamExceptions = #'()
+    % Bar 1
+    \time 20/16
+    s8 fis8 fis16~ fis8 fis8 fis16~ fis8 fis8 fis16~ fis8 fis8 fis16~
+    |
+    % bar 2
+    fis8 fis8 fis16~ fis8 fis8.~ fis8 fis8 fis16~ fis8 fis8
+    fis16~ |
+    % Bar 3
+    fis8 fis8 fis16~ fis8 fis8 fis16~ fis8 fis8 fis16~ fis8 fis8
+    fis16~ |
+    % Bar 4
+    fis8 fis8 fis16~ fis8 fis8.~ fis8 fis8 fis16~ fis8 fis8
+    fis16~ |
+    % Bar 5
+    fis8
 
 
     } >>
