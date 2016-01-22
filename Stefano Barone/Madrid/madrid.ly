@@ -210,25 +210,25 @@ evenFooterMarkup = \oddFooterMarkup
       fis'16[ fis'8 fis'8]
       fis'16[ fis'8 fis'8] |
       % Bar 9
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis] |
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8] |
       % Bar 10
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis] |
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8] |
       % Bar 11
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis']
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis] |
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'16 fis']
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8] |
       % Bar 12
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis] |
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8] |
       % Bar 13
       fis'16[ fis'16 fis fis' fis]
       fis'16[ fis'16 fis fis' fis']
@@ -399,6 +399,18 @@ evenFooterMarkup = \oddFooterMarkup
     fis16~ |
     % Bar 8
     fis8 fis8 fis16~ fis8 fis8.~ fis8 fis8 fis16~ fis8 fis8
+    fis16~ |
+    % Bar 9
+    fis8 fis8 fis16~ fis8 fis8 fis16~ fis8 fis8 fis16~ fis8 fis8
+    fis16~ |
+    % Bar 10
+    fis8 fis8 fis16~ fis8 fis8 fis16~ fis8 fis8 fis16~ fis8 fis8
+    fis16~ |
+    % Bar 11
+    fis8 fis8 fis16~ fis8 fis8.~ fis8 fis8 fis16~ fis8 fis8
+    fis16~ |
+    % Bar 12
+    fis8 fis8 fis16~ fis8 fis8 fis16~ fis8 fis8 fis16~ fis8 fis8
     fis16~ |
 
 
