@@ -240,24 +240,24 @@ evenFooterMarkup = \oddFooterMarkup
       fis'16[ fis'8 fis'8]
       fis'16[ fis'8 fis'8] |
       % Bar 15
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis']
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis] |
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'16 fis']
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8] |
       % Bar 16
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis]
-      fis'16[ fis'16 fis fis' fis] |
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8]
+      fis'16[ fis'8 fis'8] |
     \time 14/16
     \set Timing.baseMoment = #(ly:make-moment 1 32)
     \set Timing.beatStructure = #'(4 4 6 6 4 4)
-      % Bar 33
-      fis'16[ fis' fis' fis' fis' fis' fis]
-      fis'16[ fis' fis' fis' fis' fis' fis]
-      % Bar 34
-      fis'16[ fis' fis' fis' fis' fis' fis]
-      fis'16[ fis' fis' fis' fis' fis' fis]
+      % Bar 17
+      fis'16[ fis' fis' fis' fis' fis'8]
+      fis'16[ fis' fis' fis' fis' fis'8]
+      % Bar 18
+      fis'16[ fis' fis' fis' fis' fis'8]
+      fis'16[ fis' fis' fis' fis' fis'8]
       % Bar 35
       fis'16[ fis' fis' fis' fis' fis' fis]
       fis'16[ fis' fis' fis' fis' fis' fis]
@@ -418,6 +418,16 @@ evenFooterMarkup = \oddFooterMarkup
     % Bar 14
     fis8 fis8 fis16~ fis8 fis8 fis16~ fis8 fis8 fis16~ fis8 fis8
     fis16~ |
+    % Bar 15
+    fis8 fis8 fis16~ fis8 fis8.~ fis8 fis8 fis16~ fis8 fis8
+    fis16~ |
+    % Bar 16
+    fis8 fis8 fis16~ fis8 fis8 fis16~ fis8 fis8 fis16~ fis8 fis8
+    fis16~ |
+    % Bar 17
+    fis4. fis16~ fis4. fis16~ |
+    % Bar 18
+    fis4. fis16~ fis4. fis16~ |
 
 
     } >>
